@@ -1,14 +1,14 @@
 {
-  "_what_this_is": "The four-way read of the ten worked cases, required before construction scales beyond them. Kept as data rather than as text inside a generated document, so regenerating WORKED_CASES.md cannot erase it.",
-  "read_held": true,
-  "date": "2026-08-10",
-  "recorded_by": "Annotator D",
-  "provenance": "Entered by Annotator D from the group read. Each reader confirmed having read all ten worked cases; the entries below are Annotator D's record of that session rather than individually typed attestations.",
-  "readers": {
-    "Annotator D": {"read_all_ten": true, "items_killed": 4, "date": "2026-08-10"},
-    "Annotator A":    {"read_all_ten": true, "items_killed": 0, "date": "2026-08-10"},
-    "Annotator C":   {"read_all_ten": true, "items_killed": 0, "date": "2026-08-10"},
-    "Annotator B":   {"read_all_ten": true, "items_killed": 0, "date": "2026-08-10"}
-  },
-  "outcome": "No further items killed at the read. The four items already removed by human reading stand; see data/hand_kills.json. Construction is cleared to scale to all 40 seeds."
+ "_what_this_is": "The four-way read of the ten worked cases, required before construction scales beyond them. Kept as data rather than as text inside a generated document, so regenerating WORKED_CASES.md cannot erase it.",
+ "read_held": true,
+ "date": "2026-08-10",
+ "recorded_by": "a contributor",
+ "provenance": "Entered by a contributor from the group read. Each reader confirmed having read all ten worked cases; the entries below are a contributor's record of that session rather than individually typed attestations.",
+ "readers": {
+ "a contributor": {"read_all_ten": true, "items_killed": 4, "date": "2026-08-10"},
+ "a contributor": {"read_all_ten": true, "items_killed": 0, "date": "2026-08-10"},
+ "a contributor": {"read_all_ten": true, "items_killed": 0, "date": "2026-08-10"},
+ "a contributor": {"read_all_ten": true, "items_killed": 0, "date": "2026-08-10"}
+ },
+ "outcome": "No further items killed at the read. The four items already removed by human reading stand; see data/hand_kills.json. Construction is cleared to scale to all 40 seeds."
 }

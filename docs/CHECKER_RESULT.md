@@ -1,6 +1,5 @@
 # The deterministic checker: the number, extracted
 
-**Task owner:** Annotator D — mentor revision 2, "you say arithmetic alone solves families A and B,
 can you write the checker and give me that number? No model calls needed."
 
 The checker was already written. `checker.py` (387 lines) recomputes every stated derived value

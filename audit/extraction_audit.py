@@ -1,8 +1,6 @@
 #!/usr/bin/env python3
 """Check MedCalc-Bench's extracted values against the notes they were taken from.
 
-Task owner: Annotator D -- Week 1 task S1.
-Completed by Annotator D.
 
 `label_audit.py` answers a narrow question: does the shipped label match what the
 shipped code produces from the shipped entities? It comes back clean, and it was
@@ -306,7 +304,6 @@ def write_markdown(r):
     confirmed = sum(o.get(k, 0) for k in ("verified", "verified_ordinal",
                                           "verified_no_unit"))
     L = ["# Extraction audit: are MedCalc-Bench's extracted values in the notes?\n"]
-    L.append("**Task owner:** Annotator D — Week 1 task S1  \n**Completed by:** Annotator D\n")
     L.append(f"_Generated {r['generated_utc']} over {r['n_rows']} published notes. "
              "Regenerate with `python3 audit/extraction_audit.py`._\n")
 

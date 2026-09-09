@@ -1,8 +1,6 @@
 #!/usr/bin/env python3
 """Build the dissociation variants from the frozen seeds.
 
-Task owner: Annotator D -- Week 1 task S3.
-Completed by Annotator D.
 
 Four conditions per seed, differing only in why the item is or is not answerable:
 
@@ -116,7 +114,7 @@ CUE_BLOCKLIST = [
 # no earlier and later. And it drops the register mismatch of a narrative clause
 # inserted into a lab table.
 #
-# `prose` is the earlier form, kept because Week 3 has to test whether flagging
+# `prose` is the earlier form, kept because  has to test whether flagging
 # tracks our phrasing rather than the conflict. Same two values, different
 # sentence; if the flag rates diverge, the effect is partly ours.
 CONFLICT_FORMS = {
@@ -500,7 +498,7 @@ def build_seed(seed, note):
                    unit_text, injection)
 
     # The alternative phrasing, built and checked but not shipped as a condition.
-    # Week 3 compares flag rates across the two to test whether the model responds
+    #  compares flag rates across the two to test whether the model responds
     # to the conflict or to how we wrote it.
     variant_note, variant_injection = inject_conflict(
         note, cre, second["value"], unit_text, form="prose")
@@ -581,7 +579,7 @@ def build_seed(seed, note):
                 "form": "prose",
                 "injection": variant_injection,
                 "note": variant_note,
-                "purpose": "Week 3 phrasing check: same two values, different "
+                "purpose": " phrasing check: same two values, different "
                            "sentence. A flag-rate difference between this and the "
                            "primary form is a difference our wording made.",
             },

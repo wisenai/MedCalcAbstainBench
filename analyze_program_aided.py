@@ -1,12 +1,12 @@
 """
 Builds a standalone results doc for the program_aided format: flag rate
-by condition, by family, and by model -- same shape as WEEK3_TASK1_RESULT.md's
+by condition, by family, and by model -- same shape as TASK1_RESULT.md's
 open_ended tables, but for program_aided specifically.
 
 Deliberately a separate script, not a change to analyze_flag_rates.py:
-that pipeline's already-generated outputs (data/week3_scored.csv,
-docs/WEEK3_TASK1_RESULT.md) stay untouched. This reads the same already-
-joined data/week3_grid_rows.json (written by join_grid.py -- no
+that pipeline's already-generated outputs (data/scored.csv,
+docs/FLAG_RATES.md) stay untouched. This reads the same already-
+joined data/grid_rows.json (written by join_grid.py -- no
 rejoining, no API calls) and only writes its own new doc.
 
 Reports flagged/committed_with_acknowledgment/committed_silent rates only
@@ -29,8 +29,8 @@ from statsmodels.stats.proportion import proportion_confint
 from scoring_program_aided import classify_program_aided
 
 ALPHA = 0.05
-IN_JSON = "data/week3_grid_rows.json"
-OUT_MD = "docs/WEEK3_PROGRAM_AIDED_RESULT.md"
+IN_JSON = "data/grid_rows.json"
+OUT_MD = "docs/PROGRAM_AIDED.md"
 
 MODELS = [
     "anthropic/claude-opus-4.8", "openai/gpt-5", "meta-llama/llama-4-maverick",
@@ -78,7 +78,7 @@ def main():
         return up, len(sub)
 
     lines = []
-    lines.append("# Week 3 -- program_aided format: flag rate by condition, by family, and by model")
+    lines.append("#  -- program_aided format: flag rate by condition, by family, and by model")
     lines.append("")
     lines.append(
         "**What this measures.** Every `program_aided` completion in the "
@@ -87,7 +87,7 @@ def main():
         "`flagged` (declined), `committed_with_acknowledgment` (noticed, "
         "computed anyway), `committed_silent` (computed with no mention "
         "of the problem). This is a standalone companion to "
-        "WEEK3_TASK1_RESULT.md's open_ended tables -- program_aided was "
+        "TASK1_RESULT.md's open_ended tables -- program_aided was "
         "scored as part of that task's \"score the full grid\" scope but "
         "never got its own reported table; this fills that gap."
     )
@@ -156,7 +156,7 @@ def main():
     lines.append("## Committed-silent rate, non-clean conditions")
     lines.append("")
     lines.append(
-        "Same framing as WEEK3_TASK3_RESULT.md: `clean` excluded, since "
+        "Same framing as TASK3_RESULT.md: `clean` excluded, since "
         "silent computation there is correct behavior, not danger."
     )
     lines.append("")

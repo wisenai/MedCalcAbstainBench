@@ -1,8 +1,6 @@
 #!/usr/bin/env python3
 """Build Family A: a documented BMI contradicting the note's own height and weight.
 
-Task owner: Annotator D -- Week 3.
-Completed by Annotator D.
 
 WHERE THIS IS BUILT, AND WHY NOT WHERE THE SPEC SAID. On 2026-08-18 the spec was
 amended to build Family A on BMI (calc 6) and Target Weight (calc 61), on the
@@ -282,7 +280,7 @@ def screen(entry, spec=None):
     # checker sees neither. Screening on the checker keeps the guarantee honest.
     #
     # This is a gate rather than a fix to checker.py on purpose. The checker is
-    # the instrument Maia's catch-rate numbers are measured with, and its Week 2
+    # the instrument a contributor's catch-rate numbers are measured with, and its 
     # figures are already reported; widening its extraction mid-study would make
     # those non-comparable. The gap is written up for her instead.
     seen = checker.check(note)["quantities"]

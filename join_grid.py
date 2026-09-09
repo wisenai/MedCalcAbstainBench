@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Join the full Week 3 grid (all 8 item files) to their cached completions.
+"""Join the full  grid (all 8 item files) to their cached completions.
 
 Covers the three formats Task 1 needs (open_ended, mcq, program_aided) plus
 neutral_exit for Task 2's clean-condition validity check -- 676 item_ids x
@@ -46,8 +46,8 @@ TASK1_COMBOS = [("open_ended", "open_ended"), ("mcq", "mcq"), ("program_aided", 
 TASK2_COMBO = ("neutral_exit", "open_ended")
 ALL_COMBOS = TASK1_COMBOS + [TASK2_COMBO]
 
-OUT_CSV = "data/week3_grid_rows.csv"
-OUT_JSON = "data/week3_grid_rows.json"
+OUT_CSV = "data/grid_rows.csv"
+OUT_JSON = "data/grid_rows.json"
 
 CSV_FIELDS = [
     "item_id", "seed_id", "case_id", "condition", "family", "calculator_short",
@@ -79,7 +79,7 @@ def load_grid_units():
 def load_dissociation_units():
     """Same shape as load_grid_units, but item_id is reconstructed
     (this file predates the item_id field) and family is always
-    'dissociation' -- Maia's checker_boundary.py convention
+    'dissociation' -- a contributor's checker_boundary.py convention
     (item.get('family') or 'dissociation'), applied identically here."""
     doc = json.load(open(f"data/{DISSOCIATION_FILE}", encoding="utf-8"))
     for item in doc["items"]:

@@ -1,8 +1,6 @@
 #!/usr/bin/env python3
 """A deterministic consistency checker for clinical notes. No model involved.
 
-Task owner: Annotator B -- Week 1 task J1.
-Completed by Annotator D.
 
 It does two things. It recomputes every derived value the note states from the
 components the note also states, and it asserts that a stated systolic pressure
@@ -64,7 +62,7 @@ PATTERNS = {
     "hdl": rf"hdl(?:-cholesterol)?\b[^.\n\d]{{0,25}}?{NUM}\s{{0,3}}mg\s*/\s*d[lL]",
     "ldl": rf"ldl(?:-cholesterol)?\b[^.\n\d]{{0,25}}?{NUM}\s{{0,3}}mg\s*/\s*d[lL]",
     "triglycerides": rf"triglycerides?\b[^.\n\d]{{0,25}}?{NUM}\s{{0,3}}mg\s*/\s*d[lL]",
-    # Serum osmolality and the two inputs it needs beyond sodium. Added Week 3;
+    # Serum osmolality and the two inputs it needs beyond sodium. Added ;
     # see the note on check_osmolality for what it changed.
     # The `serum |plasma |calculated ` prefix is inside the match on purpose: the
     # qualifier lookback is 12 characters, and `measured serum osmolality` puts
@@ -200,7 +198,7 @@ def check_ldl(q):
 def check_osmolality(q):
     """Calculated serum osmolality: 2*Na + BUN/2.8 + glucose/18.
 
-    Added in Week 3, and not silently. This checker is the instrument Maia's
+    Added in , and not silently. This checker is the instrument a contributor's
     catch-rate figures are measured with, so adding a quantity to it was tested
     against the corpus those figures came from before being committed: of 454
     distinct notes, **three** change, each from no finding to one. All three are
@@ -352,7 +350,7 @@ def run_over_corpus(path):
     print("not ours and we did not inject them; they are what a checker finds when")
     print("pointed at real case reports. Whether each is a genuine contradiction or")
     print("an extraction artifact of this file is a reading task, not an arithmetic")
-    print("one -- and that reading is Week 2's naturally-occurring-conflict search.")
+    print("one -- and that reading is 's naturally-occurring-conflict search.")
 
 
 def main():

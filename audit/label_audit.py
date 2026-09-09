@@ -1,8 +1,6 @@
 #!/usr/bin/env python3
 """Re-run MedCalc-Bench's own calculators on published cases and score the shipped labels.
 
-Task owner: Annotator D -- Week 1 task S1.
-Completed by Annotator D.
 
 Why this exists: an external audit (arXiv 2603.02222) reports a substantial error
 rate in MedCalc-Bench's shipped ground-truth answers. Everything we build sits on
@@ -303,8 +301,6 @@ def write_markdown(report):
 
     L = []
     L.append("# Label audit: recomputing MedCalc-Bench's shipped answers\n")
-    L.append("**Task owner:** Annotator D — Week 1 task S1  \n"
-             "**Completed by:** Annotator D\n")
     L.append(f"_Generated {report['generated_utc']} from "
              f"MedCalc-Bench `{sub['tag']}` ({sub['commit'][:10]}), "
              f"{sub['rows_in_test_set']} test rows. "
@@ -481,8 +477,8 @@ def write_markdown(report):
         f"So the headline covers {report['coverage']['n_registered']} of "
         f"{report['coverage']['n_calculators_in_test_set']} calculators in the test set — "
         "the continuous ones, which is where our own items live. Extending it to the rule-based "
-        "scores means hand-mapping their criteria, which is Week 3 work for the Family C set "
-        "and not a Week 1 blocker.\n")
+        "scores means hand-mapping their criteria, which is  work for the Family C set "
+        "and not a  blocker.\n")
 
     L.append("## What we do about it\n")
     L.append(

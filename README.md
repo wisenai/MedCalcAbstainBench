@@ -20,9 +20,9 @@ and 64% of the same notes with that value contradicted instead.
 
 ```bash
 pip install -r requirements.txt
-python3 reproduce.py --list      # every stage, and the paper claim it produces
-python3 reproduce.py verify      # offline: does the construction still hold?
-python3 reproduce.py analyze     # rebuild the reported tables from cached responses
+python3 reproduce.py --list # every stage, and the paper claim it produces
+python3 reproduce.py verify # offline: does the construction still hold?
+python3 reproduce.py analyze # rebuild the reported tables from cached responses
 ```
 
 `verify` needs no dependencies, no API key and no network. `analyze` needs the
@@ -53,21 +53,21 @@ offline.
 ## Where things are
 
 ```
-reproduce.py         one entry point for every stage
-verify_all.py        the offline construction check
-select_seeds.py      seed selection, eight gates
-spans.py             span localization: label, number and unit in one phrase
-construct.py         the four conditions, one contiguous edit each
-family_a|b|c.py      derived-quantity, impossible-BP, and asserted-then-denied
-breadth_conflict.py  the breadth set
-checker.py           the deterministic contradiction checker
-score.py stats.py    labelling, scoring, Wilson intervals, McNemar
-analyze_*.py         one script per reported table group
-data/                seeds, items, digests, cached responses, scored rows
-docs/                generated result tables
-tests/               the regression suite
-prompts/             all six prompts, frozen and hashed
-PREREGISTRATION.md   the analysis plan, with content digests
+reproduce.py one entry point for every stage
+verify_all.py the offline construction check
+select_seeds.py seed selection, eight gates
+spans.py span localization: label, number and unit in one phrase
+construct.py the four conditions, one contiguous edit each
+family_a|b|c.py derived-quantity, impossible-BP, and asserted-then-denied
+breadth_conflict.py the breadth set
+checker.py the deterministic contradiction checker
+score.py stats.py labelling, scoring, Wilson intervals, McNemar
+analyze_*.py one script per reported table group
+data/ seeds, items, digests, cached responses, scored rows
+docs/ generated result tables
+tests/ the regression suite
+prompts/ all six prompts, frozen and hashed
+PREREGISTRATION.md the analysis plan, with content digests
 ```
 
 ## Known state

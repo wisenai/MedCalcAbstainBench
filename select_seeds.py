@@ -1,8 +1,6 @@
 #!/usr/bin/env python3
 """Freeze the seed list for the dissociation arm into data/seeds_dissociation.json.
 
-Task owner: Annotator D -- Week 1 task S2.
-Completed by Annotator D.
 
 The dissociation arm needs base notes on which we can construct three variants
 that differ only in *why* the item is or is not answerable. That imposes
@@ -18,19 +16,19 @@ is that those requirements were applied once, in public, before any item was bui
   4. The note states no derived renal value -- eGFR, creatinine clearance, MELD.
      Such a value re-states the creatinine, so deleting the creatinine leaves the
      item answerable and injecting a conflict leaves it resolvable. Added after
-     the Week 1 hand-check found it in the worked cases.
+     the  hand-check found it in the worked cases.
   5. The sentence carrying the creatinine does not characterise it -- neither as
      changing ("creatinine decreasing to 1.6 mg/dL") nor as normal or elevated
      ("results were within the normal ranges, as follows: ..."). Either framing
      tells a reader which of two values belongs and dissolves the conflict.
-     Added after the Week 1 hand-check.
+     Added after the  hand-check.
   6. The released implementation reproduces the shipped label on the case, so the
      clean condition rests on an answer both we and MedCalc-Bench agree on.
   7. The seed has not been killed by human reading. data/hand_kills.json holds
      those decisions with their reasons, so a judgement made in a review is
      enforced by the build instead of living in a document nobody re-reads.
   8. The creatinine belongs to the patient, not to a relative whose illness the
-     note also narrates. Added in Week 2 after the pilot surfaced a value taken
+     note also narrates. Added in  after the pilot surfaced a value taken
      from a passage about the patient's grandmother.
 
 Rows that fail are recorded with their reason rather than dropped silently — the
@@ -82,7 +80,7 @@ CREATININE_UNITS = ["mg/dL", "µmol/L", "mmol/L"]
 
 # A note that also states a renal function estimate has stated the creatinine
 # twice: once directly and once through a value derived from it. Found in the
-# Week 1 hand-check of the worked cases, where a note reading "impaired renal
+#  hand-check of the worked cases, where a note reading "impaired renal
 # function [i.e., serum creatinine: 1.42 mg/dL; eGFR: 49.1 mL/min/1.73 m2]"
 # breaks both defect conditions at once. Deleting the creatinine does not make
 # the item unanswerable, because the eGFR still pins it. And injecting a second
@@ -94,7 +92,7 @@ DERIVED_RENAL = re.compile(
     r"\b(?:e?GFR|glomerular filtration|creatinine clearance|CrCl|MELD)\b", re.I)
 
 # The sentence carrying the creatinine must not characterise it, in either of two
-# ways. Both were found in the Week 1 hand-check.
+# ways. Both were found in the  hand-check.
 #
 # TREND: "the patient had an improvement in renal function with serum creatinine
 # decreasing to 1.6 mg/dL". The note has already asserted the value changed, so a
@@ -157,7 +155,7 @@ def attached_framing(sentence):
 
 # Whose measurement is it? A case report often narrates a relative's illness in
 # its own paragraph, and a value inside that passage belongs to them. Found by
-# Annotator A in the Week 2 pilot on mdrd-tr3279, where the closing paragraph describes
+# a contributor in the  pilot on mdrd-tr3279, where the closing paragraph describes
 # the paternal grandmother -- "developed renal failure at 77 ... Kidney size was
 # about 16 cm ... and serum creatinine was 180 umol/l" -- and MedCalc extracted
 # that creatinine as the patient's. The patient is 45 with ESRD, for which 180
@@ -460,8 +458,6 @@ def write_markdown(out):
     from collections import Counter
 
     L = ["# Dissociation seeds\n"]
-    L.append("**Task owner:** Annotator D — Week 1 task S2  \n"
-             "**Completed by:** Annotator D\n")
     L.append(f"_Frozen {out['frozen_utc']} from MedCalc-Bench `{out['substrate']['tag']}` "
              f"({(out['substrate']['commit'] or '')[:10]}). "
              "Regenerate with `python3 select_seeds.py`; the machine-readable list with "

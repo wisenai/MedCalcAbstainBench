@@ -1,302 +1,302 @@
 {
-  "calculator": "Mean Arterial Pressure (MAP)",
-  "calculator_id": "5",
-  "family": "B",
-  "n_screened": 948,
-  "n_eligible": 251,
-  "n_selected": 30,
-  "rejections": {
-    "lowered systolic would be implausible on its own": 42,
-    "pressure carries no unit": 70,
-    "transposition separable by <= 15%": 436,
-    "clinical framing 'normal' sits in the same sentence": 13,
-    "entities disagree with the note's own text": 59,
-    "note states more than one blood pressure": 60,
-    "clinical framing 'stable' sits in the same sentence": 11,
-    "more than one span matches the consumed pair": 3,
-    "clinical framing 'normotensive' sits in the same sentence": 1,
-    "clinical framing 'within normal limits' sits in the same sentence": 1,
-    "clinical framing 'unremarkable' sits in the same sentence": 1
-  },
-  "gates": {
-    "one pressure in the note": true,
-    "entities agree with the note's text": true,
-    "published pair is possible": true,
-    "pressure carries a unit": true,
-    "transposition separable by more than": 0.15,
-    "lowered systolic at least": 40
-  },
-  "seeds_digest": "60de65e8e1d264f749d9980e827d577a35c7221f1b37df7ea92b5d9d289077cf",
-  "seeds": [
-    {
-      "note_id": "pmc-2567296-1",
-      "split": "test",
-      "systolic": 140.0,
-      "diastolic": 80.0,
-      "question": "What is patient's mean arterial pressure in mm Hg?",
-      "published_answer": "100",
-      "separation": 0.1667
-    },
-    {
-      "note_id": "pmc-6996699-1",
-      "split": "test",
-      "systolic": 150.0,
-      "diastolic": 75.0,
-      "question": "What is patient's mean arterial pressure in mm Hg?",
-      "published_answer": "100",
-      "separation": 0.2
-    },
-    {
-      "note_id": "pmc-4641864-2",
-      "split": "test",
-      "systolic": 132.0,
-      "diastolic": 78.0,
-      "question": "What is patient's mean arterial pressure in mm Hg?",
-      "published_answer": "96",
-      "separation": 0.1579
-    },
-    {
-      "note_id": "usmle-9720",
-      "split": "test",
-      "systolic": 178.0,
-      "diastolic": 100.0,
-      "question": "What is patient's mean arterial pressure in mm Hg?",
-      "published_answer": "126",
-      "separation": 0.1711
-    },
-    {
-      "note_id": "usmle-976",
-      "split": "test",
-      "systolic": 120.0,
-      "diastolic": 70.0,
-      "question": "What is patient's mean arterial pressure in mm Hg?",
-      "published_answer": "86.667",
-      "separation": 0.1613
-    },
-    {
-      "note_id": "trec-ct-2021-46",
-      "split": "test",
-      "systolic": 125.0,
-      "diastolic": 75.0,
-      "question": "What is patient's mean arterial pressure in mm Hg?",
-      "published_answer": "91.667",
-      "separation": 0.1538
-    },
-    {
-      "note_id": "pmc-7793211-1",
-      "split": "test",
-      "systolic": 115.0,
-      "diastolic": 67.0,
-      "question": "What is patient's mean arterial pressure in mm Hg?",
-      "published_answer": "83",
-      "separation": 0.1616
-    },
-    {
-      "note_id": "pmc-5634588-1",
-      "split": "train",
-      "systolic": 133.0,
-      "diastolic": 68.0,
-      "question": "What is patient's mean arterial pressure in mm Hg?",
-      "published_answer": "89.667",
-      "separation": 0.1946
-    },
-    {
-      "note_id": "usmle-568",
-      "split": "train",
-      "systolic": 135.0,
-      "diastolic": 82.0,
-      "question": "What is patient's mean arterial pressure in mm Hg?",
-      "published_answer": "99.667",
-      "separation": 0.1506
-    },
-    {
-      "note_id": "usmle-5877",
-      "split": "train",
-      "systolic": 140.0,
-      "diastolic": 85.0,
-      "question": "What is patient's mean arterial pressure in mm Hg?",
-      "published_answer": "103.333",
-      "separation": 0.1507
-    },
-    {
-      "note_id": "pmc-5633098-1",
-      "split": "train",
-      "systolic": 187.0,
-      "diastolic": 79.0,
-      "question": "What is patient's mean arterial pressure in mm Hg?",
-      "published_answer": "115.0",
-      "separation": 0.2384
-    },
-    {
-      "note_id": "pmc-6205061-1",
-      "split": "train",
-      "systolic": 110.0,
-      "diastolic": 65.0,
-      "question": "What is patient's mean arterial pressure in mm Hg?",
-      "published_answer": "80.0",
-      "separation": 0.1579
-    },
-    {
-      "note_id": "pmc-7769789-1",
-      "split": "train",
-      "systolic": 188.0,
-      "diastolic": 79.0,
-      "question": "What is patient's mean arterial pressure in mm Hg?",
-      "published_answer": "115.333",
-      "separation": 0.2396
-    },
-    {
-      "note_id": "pmc-4010031-1",
-      "split": "train",
-      "systolic": 130.0,
-      "diastolic": 70.0,
-      "question": "What is patient's mean arterial pressure in mm Hg?",
-      "published_answer": "90.0",
-      "separation": 0.1818
-    },
-    {
-      "note_id": "usmle-5360",
-      "split": "train",
-      "systolic": 117.0,
-      "diastolic": 61.0,
-      "question": "What is patient's mean arterial pressure in mm Hg?",
-      "published_answer": "79.667",
-      "separation": 0.1898
-    },
-    {
-      "note_id": "usmle-1644",
-      "split": "train",
-      "systolic": 140.0,
-      "diastolic": 85.0,
-      "question": "What is patient's mean arterial pressure in mm Hg?",
-      "published_answer": "103.333",
-      "separation": 0.1507
-    },
-    {
-      "note_id": "pmc-2775877-1",
-      "split": "train",
-      "systolic": 162.0,
-      "diastolic": 86.0,
-      "question": "What is patient's mean arterial pressure in mm Hg?",
-      "published_answer": "111.333",
-      "separation": 0.1854
-    },
-    {
-      "note_id": "pmc-8543969-1",
-      "split": "train",
-      "systolic": 119.0,
-      "diastolic": 72.0,
-      "question": "What is patient's mean arterial pressure in mm Hg?",
-      "published_answer": "87.667",
-      "separation": 0.1516
-    },
-    {
-      "note_id": "usmle-358",
-      "split": "train",
-      "systolic": 128.0,
-      "diastolic": 65.0,
-      "question": "What is patient's mean arterial pressure in mm Hg?",
-      "published_answer": "86.0",
-      "separation": 0.1963
-    },
-    {
-      "note_id": "usmle-9892",
-      "split": "train",
-      "systolic": 135.0,
-      "diastolic": 80.0,
-      "question": "What is patient's mean arterial pressure in mm Hg?",
-      "published_answer": "98.333",
-      "separation": 0.1571
-    },
-    {
-      "note_id": "usmle-8559",
-      "split": "train",
-      "systolic": 111.0,
-      "diastolic": 67.0,
-      "question": "What is patient's mean arterial pressure in mm Hg?",
-      "published_answer": "81.667",
-      "separation": 0.1522
-    },
-    {
-      "note_id": "pmc-4624913-1",
-      "split": "train",
-      "systolic": 135.0,
-      "diastolic": 80.0,
-      "question": "What is patient's mean arterial pressure in mm Hg?",
-      "published_answer": "98.333",
-      "separation": 0.1571
-    },
-    {
-      "note_id": "usmle-622",
-      "split": "train",
-      "systolic": 154.0,
-      "diastolic": 92.0,
-      "question": "What is patient's mean arterial pressure in mm Hg?",
-      "published_answer": "112.667",
-      "separation": 0.155
-    },
-    {
-      "note_id": "usmle-969",
-      "split": "train",
-      "systolic": 115.0,
-      "diastolic": 58.0,
-      "question": "What is patient's mean arterial pressure in mm Hg?",
-      "published_answer": "77.0",
-      "separation": 0.1979
-    },
-    {
-      "note_id": "pmc-3874924-1",
-      "split": "train",
-      "systolic": 120.0,
-      "diastolic": 70.0,
-      "question": "What is patient's mean arterial pressure in mm Hg?",
-      "published_answer": "86.667",
-      "separation": 0.1613
-    },
-    {
-      "note_id": "usmle-11909",
-      "split": "train",
-      "systolic": 127.0,
-      "diastolic": 68.0,
-      "question": "What is patient's mean arterial pressure in mm Hg?",
-      "published_answer": "87.667",
-      "separation": 0.1832
-    },
-    {
-      "note_id": "pmc-8335880-1",
-      "split": "train",
-      "systolic": 132.0,
-      "diastolic": 78.0,
-      "question": "What is patient's mean arterial pressure in mm Hg?",
-      "published_answer": "96.0",
-      "separation": 0.1579
-    },
-    {
-      "note_id": "trec-cds-2015-4",
-      "split": "train",
-      "systolic": 199.0,
-      "diastolic": 108.0,
-      "question": "What is patient's mean arterial pressure in mm Hg?",
-      "published_answer": "138.333",
-      "separation": 0.1798
-    },
-    {
-      "note_id": "usmle-7378",
-      "split": "train",
-      "systolic": 130.0,
-      "diastolic": 76.0,
-      "question": "What is patient's mean arterial pressure in mm Hg?",
-      "published_answer": "94.0",
-      "separation": 0.1607
-    },
-    {
-      "note_id": "pmc-3862585-2",
-      "split": "train",
-      "systolic": 125.0,
-      "diastolic": 55.0,
-      "question": "What is patient's mean arterial pressure in mm Hg?",
-      "published_answer": "78.333",
-      "separation": 0.2295
-    }
-  ]
+ "calculator": "Mean Arterial Pressure (MAP)",
+ "calculator_id": "5",
+ "family": "B",
+ "n_screened": 948,
+ "n_eligible": 251,
+ "n_selected": 30,
+ "rejections": {
+ "lowered systolic would be implausible on its own": 42,
+ "pressure carries no unit": 70,
+ "transposition separable by <= 15%": 436,
+ "clinical framing 'normal' sits in the same sentence": 13,
+ "entities disagree with the note's own text": 59,
+ "note states more than one blood pressure": 60,
+ "clinical framing 'stable' sits in the same sentence": 11,
+ "more than one span matches the consumed pair": 3,
+ "clinical framing 'normotensive' sits in the same sentence": 1,
+ "clinical framing 'within normal limits' sits in the same sentence": 1,
+ "clinical framing 'unremarkable' sits in the same sentence": 1
+ },
+ "gates": {
+ "one pressure in the note": true,
+ "entities agree with the note's text": true,
+ "published pair is possible": true,
+ "pressure carries a unit": true,
+ "transposition separable by more than": 0.15,
+ "lowered systolic at least": 40
+ },
+ "seeds_digest": "60de65e8e1d264f749d9980e827d577a35c7221f1b37df7ea92b5d9d289077cf",
+ "seeds": [
+ {
+ "note_id": "pmc-2567296-1",
+ "split": "test",
+ "systolic": 140.0,
+ "diastolic": 80.0,
+ "question": "What is patient's mean arterial pressure in mm Hg?",
+ "published_answer": "100",
+ "separation": 0.1667
+ },
+ {
+ "note_id": "pmc-6996699-1",
+ "split": "test",
+ "systolic": 150.0,
+ "diastolic": 75.0,
+ "question": "What is patient's mean arterial pressure in mm Hg?",
+ "published_answer": "100",
+ "separation": 0.2
+ },
+ {
+ "note_id": "pmc-4641864-2",
+ "split": "test",
+ "systolic": 132.0,
+ "diastolic": 78.0,
+ "question": "What is patient's mean arterial pressure in mm Hg?",
+ "published_answer": "96",
+ "separation": 0.1579
+ },
+ {
+ "note_id": "usmle-9720",
+ "split": "test",
+ "systolic": 178.0,
+ "diastolic": 100.0,
+ "question": "What is patient's mean arterial pressure in mm Hg?",
+ "published_answer": "126",
+ "separation": 0.1711
+ },
+ {
+ "note_id": "usmle-976",
+ "split": "test",
+ "systolic": 120.0,
+ "diastolic": 70.0,
+ "question": "What is patient's mean arterial pressure in mm Hg?",
+ "published_answer": "86.667",
+ "separation": 0.1613
+ },
+ {
+ "note_id": "trec-ct-2021-46",
+ "split": "test",
+ "systolic": 125.0,
+ "diastolic": 75.0,
+ "question": "What is patient's mean arterial pressure in mm Hg?",
+ "published_answer": "91.667",
+ "separation": 0.1538
+ },
+ {
+ "note_id": "pmc-7793211-1",
+ "split": "test",
+ "systolic": 115.0,
+ "diastolic": 67.0,
+ "question": "What is patient's mean arterial pressure in mm Hg?",
+ "published_answer": "83",
+ "separation": 0.1616
+ },
+ {
+ "note_id": "pmc-5634588-1",
+ "split": "train",
+ "systolic": 133.0,
+ "diastolic": 68.0,
+ "question": "What is patient's mean arterial pressure in mm Hg?",
+ "published_answer": "89.667",
+ "separation": 0.1946
+ },
+ {
+ "note_id": "usmle-568",
+ "split": "train",
+ "systolic": 135.0,
+ "diastolic": 82.0,
+ "question": "What is patient's mean arterial pressure in mm Hg?",
+ "published_answer": "99.667",
+ "separation": 0.1506
+ },
+ {
+ "note_id": "usmle-5877",
+ "split": "train",
+ "systolic": 140.0,
+ "diastolic": 85.0,
+ "question": "What is patient's mean arterial pressure in mm Hg?",
+ "published_answer": "103.333",
+ "separation": 0.1507
+ },
+ {
+ "note_id": "pmc-5633098-1",
+ "split": "train",
+ "systolic": 187.0,
+ "diastolic": 79.0,
+ "question": "What is patient's mean arterial pressure in mm Hg?",
+ "published_answer": "115.0",
+ "separation": 0.2384
+ },
+ {
+ "note_id": "pmc-6205061-1",
+ "split": "train",
+ "systolic": 110.0,
+ "diastolic": 65.0,
+ "question": "What is patient's mean arterial pressure in mm Hg?",
+ "published_answer": "80.0",
+ "separation": 0.1579
+ },
+ {
+ "note_id": "pmc-7769789-1",
+ "split": "train",
+ "systolic": 188.0,
+ "diastolic": 79.0,
+ "question": "What is patient's mean arterial pressure in mm Hg?",
+ "published_answer": "115.333",
+ "separation": 0.2396
+ },
+ {
+ "note_id": "pmc-4010031-1",
+ "split": "train",
+ "systolic": 130.0,
+ "diastolic": 70.0,
+ "question": "What is patient's mean arterial pressure in mm Hg?",
+ "published_answer": "90.0",
+ "separation": 0.1818
+ },
+ {
+ "note_id": "usmle-5360",
+ "split": "train",
+ "systolic": 117.0,
+ "diastolic": 61.0,
+ "question": "What is patient's mean arterial pressure in mm Hg?",
+ "published_answer": "79.667",
+ "separation": 0.1898
+ },
+ {
+ "note_id": "usmle-1644",
+ "split": "train",
+ "systolic": 140.0,
+ "diastolic": 85.0,
+ "question": "What is patient's mean arterial pressure in mm Hg?",
+ "published_answer": "103.333",
+ "separation": 0.1507
+ },
+ {
+ "note_id": "pmc-2775877-1",
+ "split": "train",
+ "systolic": 162.0,
+ "diastolic": 86.0,
+ "question": "What is patient's mean arterial pressure in mm Hg?",
+ "published_answer": "111.333",
+ "separation": 0.1854
+ },
+ {
+ "note_id": "pmc-8543969-1",
+ "split": "train",
+ "systolic": 119.0,
+ "diastolic": 72.0,
+ "question": "What is patient's mean arterial pressure in mm Hg?",
+ "published_answer": "87.667",
+ "separation": 0.1516
+ },
+ {
+ "note_id": "usmle-358",
+ "split": "train",
+ "systolic": 128.0,
+ "diastolic": 65.0,
+ "question": "What is patient's mean arterial pressure in mm Hg?",
+ "published_answer": "86.0",
+ "separation": 0.1963
+ },
+ {
+ "note_id": "usmle-9892",
+ "split": "train",
+ "systolic": 135.0,
+ "diastolic": 80.0,
+ "question": "What is patient's mean arterial pressure in mm Hg?",
+ "published_answer": "98.333",
+ "separation": 0.1571
+ },
+ {
+ "note_id": "usmle-8559",
+ "split": "train",
+ "systolic": 111.0,
+ "diastolic": 67.0,
+ "question": "What is patient's mean arterial pressure in mm Hg?",
+ "published_answer": "81.667",
+ "separation": 0.1522
+ },
+ {
+ "note_id": "pmc-4624913-1",
+ "split": "train",
+ "systolic": 135.0,
+ "diastolic": 80.0,
+ "question": "What is patient's mean arterial pressure in mm Hg?",
+ "published_answer": "98.333",
+ "separation": 0.1571
+ },
+ {
+ "note_id": "usmle-622",
+ "split": "train",
+ "systolic": 154.0,
+ "diastolic": 92.0,
+ "question": "What is patient's mean arterial pressure in mm Hg?",
+ "published_answer": "112.667",
+ "separation": 0.155
+ },
+ {
+ "note_id": "usmle-969",
+ "split": "train",
+ "systolic": 115.0,
+ "diastolic": 58.0,
+ "question": "What is patient's mean arterial pressure in mm Hg?",
+ "published_answer": "77.0",
+ "separation": 0.1979
+ },
+ {
+ "note_id": "pmc-3874924-1",
+ "split": "train",
+ "systolic": 120.0,
+ "diastolic": 70.0,
+ "question": "What is patient's mean arterial pressure in mm Hg?",
+ "published_answer": "86.667",
+ "separation": 0.1613
+ },
+ {
+ "note_id": "usmle-11909",
+ "split": "train",
+ "systolic": 127.0,
+ "diastolic": 68.0,
+ "question": "What is patient's mean arterial pressure in mm Hg?",
+ "published_answer": "87.667",
+ "separation": 0.1832
+ },
+ {
+ "note_id": "pmc-8335880-1",
+ "split": "train",
+ "systolic": 132.0,
+ "diastolic": 78.0,
+ "question": "What is patient's mean arterial pressure in mm Hg?",
+ "published_answer": "96.0",
+ "separation": 0.1579
+ },
+ {
+ "note_id": "trec-cds-2015-4",
+ "split": "train",
+ "systolic": 199.0,
+ "diastolic": 108.0,
+ "question": "What is patient's mean arterial pressure in mm Hg?",
+ "published_answer": "138.333",
+ "separation": 0.1798
+ },
+ {
+ "note_id": "usmle-7378",
+ "split": "train",
+ "systolic": 130.0,
+ "diastolic": 76.0,
+ "question": "What is patient's mean arterial pressure in mm Hg?",
+ "published_answer": "94.0",
+ "separation": 0.1607
+ },
+ {
+ "note_id": "pmc-3862585-2",
+ "split": "train",
+ "systolic": 125.0,
+ "diastolic": 55.0,
+ "question": "What is patient's mean arterial pressure in mm Hg?",
+ "published_answer": "78.333",
+ "separation": 0.2295
+ }
+ ]
 }

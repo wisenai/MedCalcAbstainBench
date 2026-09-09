@@ -1,8 +1,6 @@
 #!/usr/bin/env python3
 """Build Family B: a physically impossible blood pressure on the note's only reading.
 
-Task owner: Annotator D -- Week 3.
-Completed by Annotator D.
 
 Two injection shapes on the same base notes, so the comparison is within-note:
 

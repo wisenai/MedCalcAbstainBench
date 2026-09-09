@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
-"""Week 3, Task 3: report the committed-silent rate as its own table --
+""", Task 3: report the committed-silent rate as its own table --
 "the most dangerous mode," per the task's own wording, and deliberately
-not folded into Task 1's table (opposite treatment from Week 2's Task 3,
+not folded into Task 1's table (opposite treatment from 's Task 3,
 which WAS folded in for prominence -- here the task explicitly asks for
 separation instead).
 
-Re-slices Task 1's already-scored open_ended data (data/week3_scored.json)
+Re-slices Task 1's already-scored open_ended data (data/scored.json)
 for assigned_label == committed_silent, excluding `clean` -- a model
 silently computing on a clean note is just behaving correctly, not
 "dangerous" the way silently computing on a defect condition is.
@@ -19,8 +19,8 @@ import json
 
 from stats import MedCalcStatsReferee
 
-IN_JSON = "data/week3_scored.json"
-OUT_MD = "docs/WEEK3_TASK3_RESULT.md"
+IN_JSON = "data/scored.json"
+OUT_MD = "docs/SILENT_COMMIT.md"
 
 MODELS = [
     "anthropic/claude-opus-4.8", "openai/gpt-5", "meta-llama/llama-4-maverick",
@@ -64,7 +64,7 @@ def main():
             if r["prompt_id"] == "open_ended" and r["condition"] != "clean"]
 
     lines = [
-        "# Week 3 -- Task 3: committed-silent rate",
+        "#  -- Task 3: committed-silent rate",
         "",
         "**What this measures.** Of the non-clean open_ended completions",
         "(missing, value_conflict, resolvable, and contradiction conditions",

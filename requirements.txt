@@ -1,6 +1,5 @@
 # Dependencies of the harness and the analysis code.
 #
-# Task owner: Annotator A -- Week 1. Written by Annotator D because the file was missing and
 # nothing on main recorded what the repo needs to run. `pilot/requirements.txt`
 # says "no third-party packages required", which is true of the pilot's
 # standard-library-only code and false of run.py, score.py and stats.py.
@@ -10,27 +9,27 @@
 # actually run. I have not run the harness -- none of these are installed on my
 # machine -- so pinning an exact version here would be recording a guess as a
 # fact. Each floor below is the release that introduced the API the code calls,
-# which is verifiable; Annotator A should replace this file with `pip freeze` output
+# which is verifiable; a contributor should replace this file with `pip freeze` output
 # from the environment that produced the pilot, and that is a two-minute job for
 # whoever has it.
 #
-# Everything Annotator D's construction code uses is standard library, so nothing
+# Everything a contributor's construction code uses is standard library, so nothing
 # here is needed to build items, run the regression suite, or verify anchoring.
 # These are required only to call models and to score.
 
 # --- harness (run.py, full_grid.py, smoke_test.py) ---
-openai>=1.40.0          # client.beta.chat.completions.parse, used by score.py
-tenacity>=8.0.0         # retry, stop_after_attempt, wait_exponential
-PyYAML>=6.0             # prompts/prompts.yaml
+openai>=1.40.0 # client.beta.chat.completions.parse, used by score.py
+tenacity>=8.0.0 # retry, stop_after_attempt, wait_exponential
+PyYAML>=6.0 # prompts/prompts.yaml
 
 # --- scoring (score.py) ---
-pydantic>=2.0.0         # BaseModel with Literal fields, for the judge schema
+pydantic>=2.0.0 # BaseModel with Literal fields, for the judge schema
 
 # --- statistics (stats.py) ---
 pandas>=2.0.0
 numpy>=1.24.0
-scipy>=1.7.0            # binomtest, added in 1.7
-statsmodels>=0.13.0     # proportion_confint with method="wilson"
+scipy>=1.7.0 # binomtest, added in 1.7
+statsmodels>=0.13.0 # proportion_confint with method="wilson"
 
 # NOT LISTED, DELIBERATELY: google.colab. It is importable only inside Colab and
 # cannot be installed. run.py imports it unguarded at line 1, so `import run`

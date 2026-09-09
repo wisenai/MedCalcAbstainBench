@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 """Build the order-flipped twin of every dissociation value_conflict item.
 
-Task owner: Annotator D. Requested by the mentor in revision 2:
 "on dissociation value conflict notes, flip order (40 notes)".
 
 Why this exists. In the shipped corpus the resolvable cue always names the

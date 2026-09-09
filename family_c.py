@@ -1,8 +1,6 @@
 #!/usr/bin/env python3
 """Build Family C: a scored criterion asserted and later explicitly denied.
 
-Task owner: Annotator D -- Week 3.
-Completed by Annotator D.
 
 The note states a criterion the score reads -- `a past medical history of
 hypertension` -- and a later sentence denies it. Nothing in the note says which
@@ -307,7 +305,7 @@ def round_robin(candidates, target):
     Straight corpus order gave 15 hypertension items out of 30, because
     hypertension is simply the commonest criterion in the substrate. A family
     half made of one criterion measures that criterion, not the family. This is
-    the same mistake as the Week 1 worked ten, which came out all Cockcroft-Gault
+    the same mistake as the  worked ten, which came out all Cockcroft-Gault
     until they were drawn in rotation, and it gets the same fix.
 
     Within each criterion the order is untouched -- test split first, then corpus

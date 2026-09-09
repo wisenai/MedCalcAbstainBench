@@ -1,11 +1,11 @@
 # Checker input: height and weight it cannot read
 
-**For:** Maia, who runs the deterministic checker and reports its catch rate.
-**From:** Annotator D. This is a finding, not a change — `checker.py` is untouched.
+**For:** a contributor, who runs the deterministic checker and reports its catch rate.
+**From:** a contributor. This is a finding, not a change — `checker.py` is untouched.
 
 Building Family A meant screening notes on whether `checker.py` can read the
 components out of the note text. It measured the checker's extraction as a side
-effect, and the number is worth having before Week 3's sweep.
+effect, and the number is worth having before 's sweep.
 
 ## The number
 
@@ -25,7 +25,7 @@ fix the measurement problem, which is yours.
 
 ## Why it matters to your clause
 
-Your Week 3 clause is to run the checker across the whole contradiction set and
+Your clause is to run the checker across the whole contradiction set and
 *"expect near-perfect on A and B and structurally zero on C, and state that
 boundary as our own limit rather than letting a reviewer find it."*
 
@@ -42,8 +42,8 @@ The patterns require the label before the number, or the number followed by
 `tall`:
 
 ```
-weight_kg      (?:body )?weigh(?:t|ed|s|ing)\b[^.\n\d]{0,25}?NUM\s{0,3}kg\b(?!\s*/)
-height_cm      (?:height|stature)\b[^.\n\d]{0,25}?NUM\s{0,3}cm\b
+weight_kg (?:body )?weigh(?:t|ed|s|ing)\b[^.\n\d]{0,25}?NUM\s{0,3}kg\b(?!\s*/)
+height_cm (?:height|stature)\b[^.\n\d]{0,25}?NUM\s{0,3}cm\b
 height_cm_tall NUM\s{0,3}cm[^.\n]{0,20}?\btall\b
 ```
 
@@ -56,8 +56,8 @@ Real notes it reads correctly:
 Real note it does not:
 
 - **`He weighs 106 kg and is 168 cm in height`** — weight yes, height no. The
-  number precedes the label (`168 cm in height`), which neither height pattern
-  allows: the first wants `height … 168 cm`, the second wants `168 cm … tall`.
+ number precedes the label (`168 cm in height`), which neither height pattern
+ allows: the first wants `height … 168 cm`, the second wants `168 cm … tall`.
 
 That single shape — measurement first, label second — is the bulk of the gap.
 
@@ -68,7 +68,7 @@ That single shape — measurement first, label second — is the bulk of the gap
 The breadth clause needed serum osmolality, and `checker.py` had no rule for it.
 Rather than assume the instrument was untouchable, I measured what adding one
 would do **before committing it**, over all **454 distinct notes** in the corpus
-your Week 2 figures come from.
+your figures come from.
 
 **Three notes change, each from no finding to one.** All three are the same item:
 
@@ -101,25 +101,25 @@ already measured.
 
 ## What I did not do, and why
 
-I did not widen the patterns. **Your Week 2 catch-rate figures (A 46%, B 90%,
+I did not widen the patterns. **Your catch-rate figures (A 46%, B 90%,
 C 0%, FP 0) were measured with the checker as it stands**, and changing the
-instrument now would make those non-comparable to the Week 3 numbers without
+instrument now would make those non-comparable to the numbers without
 anyone noticing which run used which version. Moving a measuring instrument
 mid-study is worse than a known gap in it.
 
 ## Suggested options, in the order I would consider them
 
 1. **Report the gap and leave the code alone.** One sentence in the limitations:
-   the checker's catch rate is a lower bound on what arithmetic can reach, with
-   the 169/480 measurement behind it. Costs nothing, and it is honest.
-2. **Widen the height pattern and re-run everything**, Week 2 included, so both
-   weeks are measured with the same instrument. A `NUM cm ... in height` variant
-   mirroring the existing `tall` one is a small change; re-running is the real
-   cost. Worth it if the A-family catch rate is going in a headline table.
+ the checker's catch rate is a lower bound on what arithmetic can reach, with
+ the 169/480 measurement behind it. Costs nothing, and it is honest.
+2. **Widen the height pattern and re-run everything**, included, so both
+ weeks are measured with the same instrument. A `NUM cm ... in height` variant
+ mirroring the existing `tall` one is a small change; re-running is the real
+ cost. Worth it if the A-family catch rate is going in a headline table.
 3. **Report both**, as caught/parseable and caught/all — the same shape as your
-   existing `caught/runnable` and `caught/all` columns, which already make exactly
-   this distinction for a different reason. This is probably the best fit: your
-   table is already built to carry it.
+ existing `caught/runnable` and `caught/all` columns, which already make exactly
+ this distinction for a different reason. This is probably the best fit: your
+ table is already built to carry it.
 
 Whichever you choose, Family A's 30 items all trip the checker today, so nothing
 in my build depends on the outcome.

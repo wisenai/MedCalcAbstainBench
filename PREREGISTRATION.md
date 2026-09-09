@@ -1,7 +1,5 @@
 # Pre-registered analysis plan — dissociation pilot
 
-**Task owner:** Annotator B — Week 1 task J2
-**Completed by:** Annotator D
 **Registered:** 2026-08-05T02:20Z
 **Status:** signed. The four-way read of the ten worked cases was held on
 2026-08-10 and all four readers signed; see [Sign-off](#sign-off). Nothing below
@@ -53,7 +51,7 @@ make this document unfalsifiable. §5's thresholds are met or missed depending o
 which model runs, and choosing afterwards would be selecting on the outcome. It is
 named on availability through the harness, before any pilot completion exists.
 
-**A condition on continuing.** If the pilot clears §5, the Week 3 grid must include
+**A condition on continuing.** If the pilot clears §5, the grid must include
 at least two model families, and must not be assembled from models chosen after
 their behaviour on these items is known. A single model's behaviour is not evidence
 about models, and a grid selected to agree is not a grid.
@@ -78,11 +76,11 @@ run and must be re-registered. `python3 select_seeds.py` prints the seed digest.
 | Artifact | SHA-256 (first 16) |
 |---|---|
 | `data/seeds_dissociation.json` — **content digest**, 40 seeds (the file's own hash embeds a timestamp, so it cannot bind anything) | `16d121a94b66b7cd` |
-| `select_seeds.py` | `047a92686ae5114d` |
-| `data/hand_kills.json` | `f1b1946fffdc9762` |
-| `spans.py` | `d664825714b6e861` |
-| `construct.py` | `26c20ef171bd04ca` |
-| `checker.py` | `49e90afaca69b10d` |
+| `select_seeds.py` | `eef38c601a9dbd13` |
+| `data/hand_kills.json` | `e13679a66517318a` |
+| `spans.py` | `bb9475333b0cd4b9` |
+| `construct.py` | `3752f99a759ccf12` |
+| `checker.py` | `64a9fbdd8e26ba05` |
 | label audit result (file hash is timestamped, so the numbers bind instead) | 586/586 exact, primary 50/50 |
 | extraction audit result | 589/643 confirmed, 3 unfindable (all read), 0 errors |
 | MedCalc-Bench substrate | tag `version-1.0`, commit `353ded7c61` |
@@ -91,7 +89,7 @@ run and must be re-registered. `python3 select_seeds.py` prints the seed digest.
 
 > **AMENDED 2026-08-19 (Amendment 9). The primary metric is now computed on the
 > `neutral_exit` arm, not `open_ended`.** The reason is that `open_ended` violates
-> its own Week 1 specification — it cues declining on `missing` and not on
+> its own specification — it cues declining on `missing` and not on
 > `value_conflict`, which is one side of this very comparison. **The amendment was
 > made after seeing both arms and moves the headline toward the larger effect**,
 > which is the direction that most deserves suspicion. Both arms are reported
@@ -148,7 +146,7 @@ conditions are reported as uninterpretable rather than as a success.
 
 ## 5. Continuation criterion
 
-Evaluated Thursday of Week 2 on the pilot data, circulated in the continuation
+Evaluated Thursday of on the pilot data, circulated in the continuation
 memo that night, so Friday is a decision and not a debate.
 
 **Continue to the full grid if all of:**
@@ -170,7 +168,7 @@ published and is not our contribution.
 
 **Pivot to a prompt-design result.** If under the neutral-exit prompt Δ falls
 below 15 percentage points, the gap is substantially an artefact of how we
-asked. That outcome is still publishable and we say so plainly; the Week 3 plan
+asked. That outcome is still publishable and we say so plainly; the plan
 shrinks accordingly.
 
 **Inconclusive.** Any combination not covered above — most obviously a Δ between
@@ -189,28 +187,28 @@ conflict result is confounded by parsing and must be reported as such.
 Named now, so that finding one later is a result and not a rescue:
 
 - **The conflict is not the operative variable.** If `value_conflict` flag rates
-  match `clean` flag rates, the model is not responding to the injected conflict
-  at all and we have not built the item we think we built.
+ match `clean` flag rates, the model is not responding to the injected conflict
+ at all and we have not built the item we think we built.
 - **The injection is doing the work.** If flagging tracks the injected phrasing
-  rather than the conflict — detectable by the phrasing-variant check in Week 3 —
-  the effect is about our sentence, not about contradictions.
+ rather than the conflict — detectable by the phrasing-variant check in —
+ the effect is about our sentence, not about contradictions.
 - **The gap is an instruction artefact.** Covered by the neutral-exit control,
-  which ships with the pilot rather than after it, precisely so this cannot be
-  answered post hoc.
+ which ships with the pilot rather than after it, precisely so this cannot be
+ answered post hoc.
 - **The three-way boundary is load-bearing.** If judge disagreement clusters at
-  the acknowledged/silent boundary, that boundary does not move the headline; the
-  primary metric is defined on `flagged` alone for this reason.
+ the acknowledged/silent boundary, that boundary does not move the headline; the
+ primary metric is defined on `flagged` alone for this reason.
 
 ## 7. Reliability
 
 - Independent LLM judge on a 20% sample; both coarse (flag vs commit) and the
-  full three-way agreement reported.
+ full three-way agreement reported.
 - Human scoring of the ten worked cases as a rubric dry-run before the pilot.
 - Mechanism traces hand-coded with a 30-item overlap for inter-coder agreement,
-  overlap items coded blind before anyone compares.
+ overlap items coded blind before anyone compares.
 - **Judge agreement below κ = 0.6 on the coarse distinction** means the label is
-  not reliable enough to carry the primary metric, and the primary result is
-  reported on human labels instead.
+ not reliable enough to carry the primary metric, and the primary result is
+ reported on human labels instead.
 
 ## 8. Deliberately not pre-registered
 
@@ -228,26 +226,26 @@ written to the cache. The record is in `data/signoff.json`.
 
 | Role | Name | Date | Signed |
 |---|---|---|---|
-| Mechanism, Baseline & Mitigation | Annotator B | 2026-08-10 | yes |
-| Construction & Data | Annotator D | 2026-08-10 | yes |
-| Elicitation & Infrastructure | Annotator A | 2026-08-10 | yes |
-| Scoring, Stats & Reliability | Annotator C | 2026-08-10 | yes |
+| Mechanism, Baseline & Mitigation | a contributor | 2026-08-10 | yes |
+| Construction & Data | a contributor | 2026-08-10 | yes |
+| Elicitation & Infrastructure | a contributor | 2026-08-10 | yes |
+| Scoring, Stats & Reliability | a contributor | 2026-08-10 | yes |
 
 ## Amendments
 
 **10 — 2026-08-26, after the pilot and the full grid. Two bound artifacts in §2
 were rebound; no metric, threshold or criterion moves.**
 
-`spans.py` and `checker.py` both changed during Week 3 and §2 was not updated at
+`spans.py` and `checker.py` both changed during and §2 was not updated at
 the time. Its own rule is that a changed hash means the registration no longer
 applies until it is re-registered, so this amendment re-registers it.
 
 | artifact | was | now |
 |---|---|---|
-| `spans.py` | `f44b50b544c509d3` | `d664825714b6e861` |
-| `checker.py` | `e28bc5d42d1d3673` | `49e90afaca69b10d` |
+| `spans.py` | `bb9475333b0cd4b9` | `d664825714b6e861` |
+| `checker.py` | `64a9fbdd8e26ba05` | `49e90afaca69b10d` |
 
-**What changed.** `spans.py` gained locators the Week 3 families need: a blood
+**What changed.** `spans.py` gained locators the families need: a blood
 pressure pair, a documented BMI and the other derived values, a scored criterion
 with its negation and attribution gates, and the electrolytes. `checker.py`
 gained a serum osmolality rule. Both changes are additions.
@@ -268,7 +266,7 @@ committed file and can be checked with `shasum -a 256 spans.py`.
 **A consequence of Amendment 8 that is still outstanding.** That amendment
 required the four `mdrd-tr3279` cells to be excluded from the primary metric or
 re-run before any number from the pilot was reported. The scored pilot in
-`data/week2_scored.csv` still contains that retired seed and does not contain its
+`data/scored.csv` still contains that retired seed and does not contain its
 replacement `mdrd-tr3399`, whose completions are cached and available. Applying
 the exclusion moves the clean false-flag rate from 2.5% to 0.0% on both arms and
 Δ from 30.0 to 30.8 points under `open_ended`. Until it is applied, the reported
@@ -283,7 +281,7 @@ most important thing on this page.**
 It was `open_ended`. Nothing else moves: Δ is still defined the same way, the test
 is still paired McNemar at α = 0.01, the thresholds in §4 and §5 are unchanged.
 
-**The justification, which is independent of the results.** Annotator A's Week 1 clause
+**The justification, which is independent of the results.** a contributor's clause
 specifies six prompts and requires that "none of them hint that anything is
 wrong". `open_ended` does hint:
 
@@ -294,7 +292,7 @@ That instruction cues declining on the `missing` condition and says nothing abou
 the `value_conflict` condition. The primary metric is the difference between those
 two conditions, so the instruction acts on one side of the comparison and not the
 other. `neutral_exit` — "If for any reason you cannot compute the final answer,
-say so" — is even-handed, and is the arm that meets the Week 1 specification. That
+say so" — is even-handed, and is the arm that meets the specification. That
 argument is checkable by reading `prompts/prompts.yaml` and does not depend on any
 result.
 
@@ -314,22 +312,22 @@ to do so is in the table above.
 **Three constraints that follow, and are binding.**
 
 1. **Both arms are reported in every table where either appears.** Not the
-   headline arm with the other in an appendix.
+ headline arm with the other in an appendix.
 2. **The `open_ended` result is reported as the pre-registered primary**, labelled
-   as such, alongside the amended one. If the two ever point in different
-   directions, the pre-registered arm is the headline and the disagreement is the
-   finding.
+ as such, alongside the amended one. If the two ever point in different
+ directions, the pre-registered arm is the headline and the disagreement is the
+ finding.
 3. **This amendment does not touch §5.** The continuation criterion is still
-   evaluated as written, and its "pivot to a prompt-design result" branch — Δ under
-   neutral-exit falling below 15 points — is untriggered: Δ rises rather than
-   falls, so the gap is not an artefact of how we asked. That branch was
-   pre-registered precisely to adjudicate this, and it adjudicates against the
-   artefact reading.
+ evaluated as written, and its "pivot to a prompt-design result" branch — Δ under
+ neutral-exit falling below 15 points — is untriggered: Δ rises rather than
+ falls, so the gap is not an artefact of how we asked. That branch was
+ pre-registered precisely to adjudicate this, and it adjudicates against the
+ artefact reading.
 
 **Status of the numbers above.** They are a deterministic read of the `FINAL:`
 line, which matches this document's own definition of non-commitment ("the model
 declined to produce a number"), on 40 paired notes per arm with zero unparseable
-responses. **They are not the three-way rubric**, which is Annotator C's and has not been
+responses. **They are not the three-way rubric**, which is a contributor's and has not been
 run. The rubric may move individual cells. `open_ended` at exactly +30.0 sits on
 its own threshold, so a single reclassification changes whether that arm clears
 §5; `neutral_exit` at +97.5 does not depend on any judgement call.
@@ -347,7 +345,7 @@ umol/l" -- and MedCalc-Bench extracted that value as the patient's. The patient 
 45 and has reached ESRD, for which 180 umol/L is far too low; the grandmother is
 described as having moderate renal insufficiency, for which it fits.
 
-Found by Annotator A while checking clean accuracy on the pilot, not by anything we run.
+Found by a contributor while checking clean accuracy on the pilot, not by anything we run.
 The value is present in the note and uniquely anchored to the word creatinine, so
 the span check passes it and the extraction audit records it as verified -- that
 audit asks whether a number belongs to the right quantity and never to the right
@@ -364,7 +362,7 @@ four `mdrd-tr3279` cells, which are built on a value that is not the patient's.
 They should be excluded from the primary metric, or the item re-run, before any
 number from this pilot is reported.
 
-**7 — 2026-08-10, after sign-off, before any pilot data.** The Week 2 spot-check
+**7 — 2026-08-10, after sign-off, before any pilot data.** The spot-check
 of 20 items by hand found that nine of the forty `missing` variants were damaged:
 orphaned reference ranges, dangling conjunctions, an unbalanced bracket, two words
 fused together, and one sentence stripped of its grammatical object. Every
@@ -394,7 +392,7 @@ digest, `spans.py`, `construct.py`, `select_seeds.py` and `checker.py` are all
 unmoved. Nothing in §3 to §8 changed.
 
 **1 — 2026-08-05, before sign-off, before any pilot data.** Re-bound the artifact
-hashes after the Week 1 hand-check found three construction defects. The seed
+hashes after the hand-check found three construction defects. The seed
 count stayed 40 but they were not the same 40.
 
 **2 — 2026-08-05.** Amendment 1 was briefly reverted and then restored, on the
@@ -409,7 +407,7 @@ pilot model (§1) and rewrote one stop rule (§5). A reviewer of the draft point
 out that §5's thresholds are met or missed depending on which model runs, while
 this document specified only "one frontier model" — so the outcome could have been
 chosen after the fact. §1 now names Claude Opus 4.8, and continuing requires the
-Week 3 grid to span at least two model families and not to be assembled from models
+ grid to span at least two model families and not to be assembled from models
 chosen after their behaviour on these items is known.
 
 The "model handles both" stop rule previously read "the paper does not exist in
@@ -421,17 +419,17 @@ This is the only amendment that changes §5. It makes the criterion harder to pa
 not easier, and it was made before sign-off and before any data.
 
 **4 — 2026-08-06, still before sign-off and before any pilot data.** Re-bound
-after closing the last two qualifiers on Week 1:
+after closing the last two qualifiers on :
 
 - **No formula input is left to a default.** Selection now prefers notes stating
-  every input, which was possible because 18 eligible MDRD notes state race and 13
-  are needed. All 159 inputs across the 40 seeds have a real character span, all 13
-  MDRD race spans are genuine demographic mentions, and on every one the note, the
-  entity and the clean answer agree. Four are Black patients, where the previous
-  inherited non-Black default would have been wrong by 21%.
+ every input, which was possible because 18 eligible MDRD notes state race and 13
+ are needed. All 159 inputs across the 40 seeds have a real character span, all 13
+ MDRD race spans are genuine demographic mentions, and on every one the note, the
+ entity and the clean answer agree. Four are Black patients, where the previous
+ inherited non-Black default would have been wrong by 21%.
 - **The extraction audit was strengthened** with the constructions strict anchoring
-  refuses. Scoreable coverage 580 → 643, and the three candidates it previously
-  reported now resolve automatically to the same verdicts the hand reading reached.
+ refuses. Scoreable coverage 580 → 643, and the three candidates it previously
+ reported now resolve automatically to the same verdicts the hand reading reached.
 
 Nothing in §3 to §8 changed. No metric, threshold, criterion or falsifier has moved
 in any of the four amendments.
@@ -455,7 +453,7 @@ variant is built per item as the fallback.
 The five digests above were recomputed after this release copy was
 anonymized for double-blind review. Anonymization replaced contributor
 names in file docstrings and in `data/hand_kills.json` metadata with
-`Annotator A`-`D`; no logic, threshold, or datum was touched. The
+`a contributor`-`D`; no logic, threshold, or datum was touched. The
 pre-anonymization digests were `67ca8839d1ee9da3` (`select_seeds.py`),
 `2d4def3df32dfb45` (`data/hand_kills.json`), `0131587b8cec3152`
 (`spans.py`), `ff4b28f8523441ba` (`construct.py`) and

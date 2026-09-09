@@ -1,7 +1,5 @@
-# Week 2 spot-check: 20 items read by hand
+# spot-check: 20 items read by hand
 
-**Task owner:** Annotator D — Week 2
-**Completed by:** Annotator D · 2026-08-10
 
 The task list asks for two things: a script that verifies injection anchoring on
 all 160 items, and 20 checked by hand. Both were done, and the hand check is the
@@ -122,4 +120,4 @@ Not obtained. The repairs and the one rejection are one reader's calls.
 
 | Reader | Date | Agrees with the repairs and the rejection | Notes |
 |---|---|---|---|
-|  |  |  |  |
+| | | | |

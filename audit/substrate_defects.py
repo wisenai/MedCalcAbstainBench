@@ -1,10 +1,8 @@
 #!/usr/bin/env python3
 """Defects in the released substrate that our own machinery surfaced.
 
-Task owner: Annotator D.
-Completed by Annotator D.
 
-The Week 1 label audit asks whether the shipped labels agree with the shipped
+The  label audit asks whether the shipped labels agree with the shipped
 code, and finds 0% mismatch on 586 scorable rows. That agreement is close to
 guaranteed, because the labels were produced by that code, and it is silent about
 two failures it structurally cannot see:

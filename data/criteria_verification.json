@@ -1,230 +1,230 @@
 {
-  "4": {
-    "name": "CHA2DS2-VASc",
-    "rows": 517,
-    "reproduces_shipped": {
-      "agree": 517,
-      "disagree": 0,
-      "skipped": 0,
-      "examples": []
-    },
-    "criteria": {
-      "Congestive Heart Faliure": {
-        "internal": "chf",
-        "cases_tested": 40,
-        "score_moved": 15,
-        "score_unmoved": 25,
-        "load_bearing": true,
-        "example": {
-          "note_id": "pmc-8136881-1",
-          "with": 8.0,
-          "without": 7.0
-        }
-      },
-      "Hypertension history": {
-        "internal": "hypertension",
-        "cases_tested": 40,
-        "score_moved": 36,
-        "score_unmoved": 4,
-        "load_bearing": true,
-        "example": {
-          "note_id": "pmc-7099753-3",
-          "with": 3.0,
-          "without": 2.0
-        }
-      },
-      "Stroke": {
-        "internal": "stroke",
-        "cases_tested": 40,
-        "score_moved": 4,
-        "score_unmoved": 36,
-        "load_bearing": true,
-        "example": {
-          "note_id": "pmc-7294161-1",
-          "with": 4.0,
-          "without": 2.0
-        }
-      },
-      "Transient Ischemic Attacks History": {
-        "internal": "tia",
-        "cases_tested": 40,
-        "score_moved": 1,
-        "score_unmoved": 39,
-        "load_bearing": true,
-        "example": {
-          "note_id": "pmc-3658340-1",
-          "with": 5.0,
-          "without": 3.0
-        }
-      },
-      "Thromboembolism history": {
-        "internal": "thromboembolism",
-        "cases_tested": 40,
-        "score_moved": 8,
-        "score_unmoved": 32,
-        "load_bearing": true,
-        "example": {
-          "note_id": "pmc-7196137-1",
-          "with": 4.0,
-          "without": 2.0
-        }
-      },
-      "Vascular disease history": {
-        "internal": "vascular_disease",
-        "cases_tested": 40,
-        "score_moved": 16,
-        "score_unmoved": 24,
-        "load_bearing": true,
-        "example": {
-          "note_id": "pmc-8136881-1",
-          "with": 8.0,
-          "without": 7.0
-        }
-      },
-      "Diabetes history": {
-        "internal": "diabetes",
-        "cases_tested": 40,
-        "score_moved": 21,
-        "score_unmoved": 19,
-        "load_bearing": true,
-        "example": {
-          "note_id": "pmc-7196137-1",
-          "with": 4.0,
-          "without": 3.0
-        }
-      }
-    }
-  },
-  "8": {
-    "name": "Wells' PE",
-    "rows": 445,
-    "reproduces_shipped": {
-      "agree": 445,
-      "disagree": 0,
-      "skipped": 0,
-      "examples": []
-    },
-    "criteria": {
-      "Clinical signs and symptoms of Deep Vein Thrombosis": {
-        "internal": "clinical_dvt",
-        "cases_tested": 40,
-        "score_moved": 9,
-        "score_unmoved": 31,
-        "load_bearing": true,
-        "example": {
-          "note_id": "pmc-8647083-1",
-          "with": 6.0,
-          "without": 3.0
-        }
-      },
-      "Pulmonary Embolism is #1 diagnosis OR equally likely": {
-        "internal": "pe_number_one",
-        "cases_tested": 40,
-        "score_moved": 8,
-        "score_unmoved": 32,
-        "load_bearing": true,
-        "example": {
-          "note_id": "pmc-8494530-1",
-          "with": 6.0,
-          "without": 3.0
-        }
-      },
-      "Immobilization for at least 3 days": {
-        "internal": "immobilization_for_3days",
-        "cases_tested": 40,
-        "score_moved": 1,
-        "score_unmoved": 39,
-        "load_bearing": true,
-        "example": {
-          "note_id": "pmc-8101672-1",
-          "with": 3.0,
-          "without": 1.5
-        }
-      },
-      "Surgery in the previous 4 weeks": {
-        "internal": "surgery_in_past4weeks",
-        "cases_tested": 40,
-        "score_moved": 7,
-        "score_unmoved": 33,
-        "load_bearing": true,
-        "example": {
-          "note_id": "usmle-9051",
-          "with": 1.5,
-          "without": 0.0
-        }
-      },
-      "Previously documented Deep Vein Thrombosis": {
-        "internal": "previous_dvt",
-        "cases_tested": 40,
-        "score_moved": 1,
-        "score_unmoved": 39,
-        "load_bearing": true,
-        "example": {
-          "note_id": "pmc-8647083-1",
-          "with": 6.0,
-          "without": 4.5
-        }
-      },
-      "Previously Documented Pulmonary Embolism": {
-        "internal": "previous_pe",
-        "cases_tested": 40,
-        "score_moved": 3,
-        "score_unmoved": 37,
-        "load_bearing": true,
-        "example": {
-          "note_id": "pmc-8494530-1",
-          "with": 6.0,
-          "without": 4.5
-        }
-      },
-      "Malignancy with treatment within 6 months or palliative": {
-        "internal": "malignancy_with_treatment",
-        "cases_tested": 40,
-        "score_moved": 9,
-        "score_unmoved": 31,
-        "load_bearing": true,
-        "example": {
-          "note_id": "pmc-3250605-1",
-          "with": 2.5,
-          "without": 1.5
-        }
-      },
-      "Hemoptysis": {
-        "internal": "hemoptysis",
-        "cases_tested": 40,
-        "score_moved": 1,
-        "score_unmoved": 39,
-        "load_bearing": true,
-        "example": {
-          "note_id": "pmc-6243302-1",
-          "with": 5.0,
-          "without": 4.0
-        }
-      }
-    }
-  },
-  "45": {
-    "name": "CURB-65",
-    "rows": 125,
-    "reproduces_shipped": {
-      "agree": 125,
-      "disagree": 0,
-      "skipped": 0,
-      "examples": []
-    },
-    "criteria": {
-      "Confusion": {
-        "internal": "confusion",
-        "cases_tested": 40,
-        "score_moved": 11,
-        "score_unmoved": 29,
-        "load_bearing": true,
-        "example": {
-          "note_id": "pmc-7425612-1",
-          "with": 5.0,
-          "without": 4.0
-        }
-      }
-    }
-  }
+ "4": {
+ "name": "CHA2DS2-VASc",
+ "rows": 517,
+ "reproduces_shipped": {
+ "agree": 517,
+ "disagree": 0,
+ "skipped": 0,
+ "examples": []
+ },
+ "criteria": {
+ "Congestive Heart Faliure": {
+ "internal": "chf",
+ "cases_tested": 40,
+ "score_moved": 15,
+ "score_unmoved": 25,
+ "load_bearing": true,
+ "example": {
+ "note_id": "pmc-8136881-1",
+ "with": 8.0,
+ "without": 7.0
+ }
+ },
+ "Hypertension history": {
+ "internal": "hypertension",
+ "cases_tested": 40,
+ "score_moved": 36,
+ "score_unmoved": 4,
+ "load_bearing": true,
+ "example": {
+ "note_id": "pmc-7099753-3",
+ "with": 3.0,
+ "without": 2.0
+ }
+ },
+ "Stroke": {
+ "internal": "stroke",
+ "cases_tested": 40,
+ "score_moved": 4,
+ "score_unmoved": 36,
+ "load_bearing": true,
+ "example": {
+ "note_id": "pmc-7294161-1",
+ "with": 4.0,
+ "without": 2.0
+ }
+ },
+ "Transient Ischemic Attacks History": {
+ "internal": "tia",
+ "cases_tested": 40,
+ "score_moved": 1,
+ "score_unmoved": 39,
+ "load_bearing": true,
+ "example": {
+ "note_id": "pmc-3658340-1",
+ "with": 5.0,
+ "without": 3.0
+ }
+ },
+ "Thromboembolism history": {
+ "internal": "thromboembolism",
+ "cases_tested": 40,
+ "score_moved": 8,
+ "score_unmoved": 32,
+ "load_bearing": true,
+ "example": {
+ "note_id": "pmc-7196137-1",
+ "with": 4.0,
+ "without": 2.0
+ }
+ },
+ "Vascular disease history": {
+ "internal": "vascular_disease",
+ "cases_tested": 40,
+ "score_moved": 16,
+ "score_unmoved": 24,
+ "load_bearing": true,
+ "example": {
+ "note_id": "pmc-8136881-1",
+ "with": 8.0,
+ "without": 7.0
+ }
+ },
+ "Diabetes history": {
+ "internal": "diabetes",
+ "cases_tested": 40,
+ "score_moved": 21,
+ "score_unmoved": 19,
+ "load_bearing": true,
+ "example": {
+ "note_id": "pmc-7196137-1",
+ "with": 4.0,
+ "without": 3.0
+ }
+ }
+ }
+ },
+ "8": {
+ "name": "Wells' PE",
+ "rows": 445,
+ "reproduces_shipped": {
+ "agree": 445,
+ "disagree": 0,
+ "skipped": 0,
+ "examples": []
+ },
+ "criteria": {
+ "Clinical signs and symptoms of Deep Vein Thrombosis": {
+ "internal": "clinical_dvt",
+ "cases_tested": 40,
+ "score_moved": 9,
+ "score_unmoved": 31,
+ "load_bearing": true,
+ "example": {
+ "note_id": "pmc-8647083-1",
+ "with": 6.0,
+ "without": 3.0
+ }
+ },
+ "Pulmonary Embolism is #1 diagnosis OR equally likely": {
+ "internal": "pe_number_one",
+ "cases_tested": 40,
+ "score_moved": 8,
+ "score_unmoved": 32,
+ "load_bearing": true,
+ "example": {
+ "note_id": "pmc-8494530-1",
+ "with": 6.0,
+ "without": 3.0
+ }
+ },
+ "Immobilization for at least 3 days": {
+ "internal": "immobilization_for_3days",
+ "cases_tested": 40,
+ "score_moved": 1,
+ "score_unmoved": 39,
+ "load_bearing": true,
+ "example": {
+ "note_id": "pmc-8101672-1",
+ "with": 3.0,
+ "without": 1.5
+ }
+ },
+ "Surgery in the previous 4 weeks": {
+ "internal": "surgery_in_past4weeks",
+ "cases_tested": 40,
+ "score_moved": 7,
+ "score_unmoved": 33,
+ "load_bearing": true,
+ "example": {
+ "note_id": "usmle-9051",
+ "with": 1.5,
+ "without": 0.0
+ }
+ },
+ "Previously documented Deep Vein Thrombosis": {
+ "internal": "previous_dvt",
+ "cases_tested": 40,
+ "score_moved": 1,
+ "score_unmoved": 39,
+ "load_bearing": true,
+ "example": {
+ "note_id": "pmc-8647083-1",
+ "with": 6.0,
+ "without": 4.5
+ }
+ },
+ "Previously Documented Pulmonary Embolism": {
+ "internal": "previous_pe",
+ "cases_tested": 40,
+ "score_moved": 3,
+ "score_unmoved": 37,
+ "load_bearing": true,
+ "example": {
+ "note_id": "pmc-8494530-1",
+ "with": 6.0,
+ "without": 4.5
+ }
+ },
+ "Malignancy with treatment within 6 months or palliative": {
+ "internal": "malignancy_with_treatment",
+ "cases_tested": 40,
+ "score_moved": 9,
+ "score_unmoved": 31,
+ "load_bearing": true,
+ "example": {
+ "note_id": "pmc-3250605-1",
+ "with": 2.5,
+ "without": 1.5
+ }
+ },
+ "Hemoptysis": {
+ "internal": "hemoptysis",
+ "cases_tested": 40,
+ "score_moved": 1,
+ "score_unmoved": 39,
+ "load_bearing": true,
+ "example": {
+ "note_id": "pmc-6243302-1",
+ "with": 5.0,
+ "without": 4.0
+ }
+ }
+ }
+ },
+ "45": {
+ "name": "CURB-65",
+ "rows": 125,
+ "reproduces_shipped": {
+ "agree": 125,
+ "disagree": 0,
+ "skipped": 0,
+ "examples": []
+ },
+ "criteria": {
+ "Confusion": {
+ "internal": "confusion",
+ "cases_tested": 40,
+ "score_moved": 11,
+ "score_unmoved": 29,
+ "load_bearing": true,
+ "example": {
+ "note_id": "pmc-7425612-1",
+ "with": 5.0,
+ "without": 4.0
+ }
+ }
+ }
+ }
 }

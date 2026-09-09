@@ -1,8 +1,6 @@
 #!/usr/bin/env python3
 """Locate the exact character span in a note that carries a given formula input.
 
-Task owner: Annotator D -- Week 1 task S2.
-Completed by Annotator D.
 
 This is the anchoring layer both the seed freeze and the injection engine depend
 on. The rule it implements: a span counts only when a label word for the quantity,
@@ -89,7 +87,7 @@ def _patterns(units):
             NUM + r"[-\s]?(?P<unit>years?)[-\s]?(?P<label>old)\b",
             r"(?P<label>aged?)\b" + GAP % 12 + NUM + r"\s{0,3}" + u,
         ],
-        # Week 3 breadth: LDL is computed from the lipid panel, and HDL is the
+        #  breadth: LDL is computed from the lipid panel, and HDL is the
         # component a conflict is injected into. `LDL` and `HDL` differ by one
         # letter, so the label is anchored rather than matched loosely.
         "hdl": [
@@ -172,7 +170,7 @@ BMI_UNIT = r"(?P<unit>kg\s*/\s*m\s*(?:\^\s*2|²|2)?|kilograms?\s+per\s+met(?:er|
 BMI_PATTERN = BMI_LABEL + r"[:,]?" + GAP % 30 + NUM + r"(?:\s{0,3}" + BMI_UNIT + r")?"
 
 
-# --- Week 3, Family C: scored yes/no criteria -------------------------------
+# --- , Family C: scored yes/no criteria -------------------------------
 #
 # A criterion is a claim, not a number, so locating one is a different problem
 # from every locator above. Three things go wrong, and all three were found by

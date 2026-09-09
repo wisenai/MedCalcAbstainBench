@@ -1,14 +1,13 @@
 #!/usr/bin/env python3
 """Join the cached completions to the items they were generated from.
 
-Task owner: nobody. This is the seam between two owned pieces, and the seam was
-what nothing owned. `run.py` and the cache are Annotator A's; `score.py` and `stats.py`
-are Annotator C's. Neither clause covers the step in between -- walking the cache,
+what nothing owned. `run.py` and the cache are a contributor's; `score.py` and `stats.py`
+are a contributor's. Neither clause covers the step in between -- walking the cache,
 working out which item and condition each completion belongs to, and handing the
 result over as one table -- so scoring could not start even though both halves
 had been built. This file is only that step.
 
-What it deliberately does NOT do, because those are Annotator C's Week 2 clauses:
+What it deliberately does NOT do, because those are a contributor's  clauses:
 assign the three-way label, call the judge, decide whether a numeric answer is
 correct, or compute any statistic. The two columns those produce are emitted
 empty, with the ground truth alongside them so `score.py` can be pointed at this
@@ -56,7 +55,7 @@ CONDITIONS = ("clean", "missing", "value_conflict", "resolvable")
 # say which cells it owns cannot tell those two apart.
 #
 # `format` reads "open_ended" for both open-ended arms rather than "open". That
-# is how Annotator A ran it, and the key is only a cache address -- the string is never
+# is how a contributor ran it, and the key is only a cache address -- the string is never
 # sent to the model -- so the two arms remain comparable. It is recorded here as
 # observed rather than as it perhaps should have been, because the cache is the
 # artefact and guessing a tidier value would simply miss every file.
@@ -72,8 +71,8 @@ ARMS = [
 # Arms whose coverage is measured against all 40 seeds. The smoke test ran on 5.
 FULL_SCALE = ("open_ended", "neutral_exit", "reasoning")
 
-# The arms that carry the primary comparison. The smoke-test arms are Annotator A's
-# Week 1 harness check on 5 seeds, not pilot data, and must not be pooled with it.
+# The arms that carry the primary comparison. The smoke-test arms are a contributor's
+#  harness check on 5 seeds, not pilot data, and must not be pooled with it.
 PILOT_ARMS = ("open_ended", "neutral_exit")
 
 

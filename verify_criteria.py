@@ -1,13 +1,11 @@
 #!/usr/bin/env python3
 """Prove that every mapped criterion of the rule-based scores is actually read.
 
-Task owner: Annotator D -- Week 3, prerequisite for Family C.
-Completed by Annotator D.
 
 The rule-based scores read their criteria as `params.get(key)` or `'key' in
 params`, so a key we map wrongly does not raise. It reads as "criterion absent",
 the score comes out plausible and wrong, and nothing anywhere says so. That is
-the exact failure that produced a 41.2% apparent label-mismatch rate in Week 1,
+the exact failure that produced a 41.2% apparent label-mismatch rate in ,
 which turned out to be our own unmapped keys rather than anything wrong with
 MedCalc.
 

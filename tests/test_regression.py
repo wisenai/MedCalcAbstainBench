@@ -1,8 +1,6 @@
 #!/usr/bin/env python3
-"""Regression suite: every extraction failure Week 1 actually hit.
+"""Regression suite: every extraction failure  actually hit.
 
-Task owner: Annotator D -- Week 2.
-Completed by Annotator D.
 
 Each test below is a real failure, not a hypothetical one. The note text in each
 case is the text that caused it, quoted from the corpus, and the docstring says
@@ -115,7 +113,7 @@ class TestOtherInputAnchoring(unittest.TestCase):
 
 
 class TestRaceLocator(unittest.TestCase):
-    """MDRD's race coefficient. The costliest false positive of Week 1."""
+    """MDRD's race coefficient. The costliest false positive of ."""
 
     def test_white_blood_cell_is_not_a_race(self):
         """`a white blood cell (WBC) count of 13,900/mm2` (mdrd-145).
@@ -218,7 +216,7 @@ class TestFramingGates(unittest.TestCase):
 
 
 class TestThirdPartyAttribution(unittest.TestCase):
-    """Whose measurement is it? Found in the Week 2 pilot, not by any check we ran."""
+    """Whose measurement is it? Found in the  pilot, not by any check we ran."""
 
     def test_a_relatives_measurement_is_rejected(self):
         """`The paternal grandmother developed renal failure at 77 years ... Kidney
@@ -308,7 +306,7 @@ class TestExcision(unittest.TestCase):
 
 
 class TestExcisionSeams(unittest.TestCase):
-    """The nine damaged excisions the Week 2 spot-check found.
+    """The nine damaged excisions the  spot-check found.
 
     Every automated check passed these: the excision was contiguous, it removed
     the creatinine, and the rest of the note was byte-identical. None of them
@@ -482,7 +480,7 @@ class TestChecker(unittest.TestCase):
 
 
 class TestBloodPressureLocator(unittest.TestCase):
-    """Week 3, Family B. Every case here is a real form from the MAP rows.
+    """, Family B. Every case here is a real form from the MAP rows.
 
     The locator was measured against all 948 before these were written: 826
     notes locate uniquely and pass the one-pressure gate. The cases that did not
@@ -568,7 +566,7 @@ class TestBloodPressureLocator(unittest.TestCase):
 
 
 class TestBmiLocator(unittest.TestCase):
-    """Week 3, Family A. Every phrasing here is a real one from the corpus."""
+    """, Family A. Every phrasing here is a real one from the corpus."""
 
     def test_the_common_phrasings(self):
         for text, want in (
@@ -617,7 +615,7 @@ class TestBmiLocator(unittest.TestCase):
 
 
 class TestCriterionLocator(unittest.TestCase):
-    """Week 3, Family C. Every case is a real sentence from the CHA2DS2-VASc rows."""
+    """, Family C. Every case is a real sentence from the CHA2DS2-VASc rows."""
 
     def test_a_plain_assertion_is_found(self):
         note = ("An 85-year-old woman with a past medical history of hypertension, "
@@ -715,7 +713,7 @@ class TestCriterionLocator(unittest.TestCase):
 
 
 class TestAttachedFraming(unittest.TestCase):
-    """Week 3. Framing written for the published value, contradicting our injection.
+    """. Framing written for the published value, contradicting our injection.
 
     Every case here was found by reading built items, not by a check. The pattern
     is the same in both families: a clinical judgement sits beside the value, our
@@ -752,7 +750,7 @@ class TestAttachedFraming(unittest.TestCase):
 
 
 class TestBreadthArms(unittest.TestCase):
-    """Week 3 breadth: osmolality's checker rule and the LDL conflict arm."""
+    """ breadth: osmolality's checker rule and the LDL conflict arm."""
 
     def test_osmolality_fires_on_a_real_contradiction(self):
         note = ("Sodium 140 mEq/L, BUN 20 mg/dL, glucose 90 mg/dL. The calculated "
@@ -828,7 +826,7 @@ class TestBreadthArms(unittest.TestCase):
 
 
 class TestFamilyCSelection(unittest.TestCase):
-    """Week 3. The round-robin that stops one criterion dominating the family."""
+    """. The round-robin that stops one criterion dominating the family."""
 
     @classmethod
     def setUpClass(cls):
@@ -882,7 +880,7 @@ class TestFamilyCSelection(unittest.TestCase):
 
 
 class TestRuleBasedCriteriaMapping(unittest.TestCase):
-    """Week 3, Family C. The mapping table itself, checked without the substrate.
+    """, Family C. The mapping table itself, checked without the substrate.
 
     Whether each criterion actually moves the score is a behavioural question and
     is answered by `verify_criteria.py`, which needs MedCalc downloaded and runs in
@@ -930,7 +928,7 @@ class TestRuleBasedCriteriaMapping(unittest.TestCase):
         self.assertEqual(set(self.entities.RULE_BASED_REQUIRED), {4, 45, 8})
 
     def test_rule_based_scores_stay_out_of_the_audit_population(self):
-        """REQUIRED defines the Week 1 label audit; widening it changes a reported number."""
+        """REQUIRED defines the  label audit; widening it changes a reported number."""
         for calc_id in self.entities.CRITERIA:
             self.assertNotIn(calc_id, self.entities.REQUIRED)
 

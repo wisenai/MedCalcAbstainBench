@@ -1,255 +1,255 @@
 {
-  "n_seeds": 40,
-  "n_items": 160,
-  "n_seeds_failing": 0,
-  "checks": [
-    "clean answer recomputes",
-    "recorded span holds the consumed value",
-    "missing is one contiguous excision leaving no creatinine",
-    "value_conflict is one contiguous insertion keeping both values",
-    "both values drive the calculator to the recorded answers",
-    "resolvable note is byte-identical to value_conflict"
-  ],
-  "results": [
-    {
-      "seed_id": "ckd_epi-21",
-      "case_id": "pmc-6426590-1",
-      "ok": true,
-      "failures": []
-    },
-    {
-      "seed_id": "cockcroft_gault-1",
-      "case_id": "pmc-7671985-1",
-      "ok": true,
-      "failures": []
-    },
-    {
-      "seed_id": "mdrd-tr3204",
-      "case_id": "pmc-6902272-1",
-      "ok": true,
-      "failures": []
-    },
-    {
-      "seed_id": "ckd_epi-26",
-      "case_id": "pmc-8712236-1",
-      "ok": true,
-      "failures": []
-    },
-    {
-      "seed_id": "cockcroft_gault-4",
-      "case_id": "usmle-1002",
-      "ok": true,
-      "failures": []
-    },
-    {
-      "seed_id": "mdrd-tr3225",
-      "case_id": "usmle-379",
-      "ok": true,
-      "failures": []
-    },
-    {
-      "seed_id": "ckd_epi-28",
-      "case_id": "pmc-6892572-1",
-      "ok": true,
-      "failures": []
-    },
-    {
-      "seed_id": "cockcroft_gault-7",
-      "case_id": "pmc-3830277-1",
-      "ok": true,
-      "failures": []
-    },
-    {
-      "seed_id": "mdrd-tr3249",
-      "case_id": "pmc-3420770-1",
-      "ok": true,
-      "failures": []
-    },
-    {
-      "seed_id": "ckd_epi-29",
-      "case_id": "pmc-6988719-1",
-      "ok": true,
-      "failures": []
-    },
-    {
-      "seed_id": "cockcroft_gault-10",
-      "case_id": "pmc-8062170-1",
-      "ok": true,
-      "failures": []
-    },
-    {
-      "seed_id": "mdrd-tr3257",
-      "case_id": "pmc-4164317-1",
-      "ok": true,
-      "failures": []
-    },
-    {
-      "seed_id": "ckd_epi-30",
-      "case_id": "pmc-7405101-3",
-      "ok": true,
-      "failures": []
-    },
-    {
-      "seed_id": "cockcroft_gault-12",
-      "case_id": "pmc-6787834-1",
-      "ok": true,
-      "failures": []
-    },
-    {
-      "seed_id": "mdrd-tr3259",
-      "case_id": "pmc-5472366-1",
-      "ok": true,
-      "failures": []
-    },
-    {
-      "seed_id": "ckd_epi-34",
-      "case_id": "usmle-4906",
-      "ok": true,
-      "failures": []
-    },
-    {
-      "seed_id": "cockcroft_gault-14",
-      "case_id": "pmc-5411626-1",
-      "ok": true,
-      "failures": []
-    },
-    {
-      "seed_id": "mdrd-tr3262",
-      "case_id": "pmc-4779822-1",
-      "ok": true,
-      "failures": []
-    },
-    {
-      "seed_id": "ckd_epi-35",
-      "case_id": "usmle-5468",
-      "ok": true,
-      "failures": []
-    },
-    {
-      "seed_id": "cockcroft_gault-16",
-      "case_id": "pmc-8474094-1",
-      "ok": true,
-      "failures": []
-    },
-    {
-      "seed_id": "mdrd-tr3281",
-      "case_id": "pmc-6682238-1",
-      "ok": true,
-      "failures": []
-    },
-    {
-      "seed_id": "ckd_epi-36",
-      "case_id": "pmc-6919406-1",
-      "ok": true,
-      "failures": []
-    },
-    {
-      "seed_id": "cockcroft_gault-17",
-      "case_id": "usmle-1896",
-      "ok": true,
-      "failures": []
-    },
-    {
-      "seed_id": "mdrd-tr3282",
-      "case_id": "pmc-6688890-1",
-      "ok": true,
-      "failures": []
-    },
-    {
-      "seed_id": "ckd_epi-40",
-      "case_id": "pmc-7523830-1",
-      "ok": true,
-      "failures": []
-    },
-    {
-      "seed_id": "cockcroft_gault-20",
-      "case_id": "pmc-6713257-1",
-      "ok": true,
-      "failures": []
-    },
-    {
-      "seed_id": "mdrd-tr3320",
-      "case_id": "pmc-4274443-1",
-      "ok": true,
-      "failures": []
-    },
-    {
-      "seed_id": "ckd_epi-tr138",
-      "case_id": "pmc-3101734-1",
-      "ok": true,
-      "failures": []
-    },
-    {
-      "seed_id": "cockcroft_gault-tr1",
-      "case_id": "pmc-6477550-1",
-      "ok": true,
-      "failures": []
-    },
-    {
-      "seed_id": "mdrd-tr3359",
-      "case_id": "usmle-10845",
-      "ok": true,
-      "failures": []
-    },
-    {
-      "seed_id": "ckd_epi-tr139",
-      "case_id": "pmc-3914169-1",
-      "ok": true,
-      "failures": []
-    },
-    {
-      "seed_id": "cockcroft_gault-tr4",
-      "case_id": "pmc-2813128-1",
-      "ok": true,
-      "failures": []
-    },
-    {
-      "seed_id": "mdrd-tr3378",
-      "case_id": "pmc-4421438-2",
-      "ok": true,
-      "failures": []
-    },
-    {
-      "seed_id": "ckd_epi-tr141",
-      "case_id": "pmc-8173432-1",
-      "ok": true,
-      "failures": []
-    },
-    {
-      "seed_id": "cockcroft_gault-tr5",
-      "case_id": "pmc-5544981-1",
-      "ok": true,
-      "failures": []
-    },
-    {
-      "seed_id": "mdrd-tr3384",
-      "case_id": "pmc-8038922-1",
-      "ok": true,
-      "failures": []
-    },
-    {
-      "seed_id": "ckd_epi-tr143",
-      "case_id": "pmc-3696308-1",
-      "ok": true,
-      "failures": []
-    },
-    {
-      "seed_id": "cockcroft_gault-tr9",
-      "case_id": "pmc-2547098-1",
-      "ok": true,
-      "failures": []
-    },
-    {
-      "seed_id": "mdrd-tr3399",
-      "case_id": "pmc-5295522-1",
-      "ok": true,
-      "failures": []
-    },
-    {
-      "seed_id": "ckd_epi-tr144",
-      "case_id": "pmc-8267016-1",
-      "ok": true,
-      "failures": []
-    }
-  ]
+ "n_seeds": 40,
+ "n_items": 160,
+ "n_seeds_failing": 0,
+ "checks": [
+ "clean answer recomputes",
+ "recorded span holds the consumed value",
+ "missing is one contiguous excision leaving no creatinine",
+ "value_conflict is one contiguous insertion keeping both values",
+ "both values drive the calculator to the recorded answers",
+ "resolvable note is byte-identical to value_conflict"
+ ],
+ "results": [
+ {
+ "seed_id": "ckd_epi-21",
+ "case_id": "pmc-6426590-1",
+ "ok": true,
+ "failures": []
+ },
+ {
+ "seed_id": "cockcroft_gault-1",
+ "case_id": "pmc-7671985-1",
+ "ok": true,
+ "failures": []
+ },
+ {
+ "seed_id": "mdrd-tr3204",
+ "case_id": "pmc-6902272-1",
+ "ok": true,
+ "failures": []
+ },
+ {
+ "seed_id": "ckd_epi-26",
+ "case_id": "pmc-8712236-1",
+ "ok": true,
+ "failures": []
+ },
+ {
+ "seed_id": "cockcroft_gault-4",
+ "case_id": "usmle-1002",
+ "ok": true,
+ "failures": []
+ },
+ {
+ "seed_id": "mdrd-tr3225",
+ "case_id": "usmle-379",
+ "ok": true,
+ "failures": []
+ },
+ {
+ "seed_id": "ckd_epi-28",
+ "case_id": "pmc-6892572-1",
+ "ok": true,
+ "failures": []
+ },
+ {
+ "seed_id": "cockcroft_gault-7",
+ "case_id": "pmc-3830277-1",
+ "ok": true,
+ "failures": []
+ },
+ {
+ "seed_id": "mdrd-tr3249",
+ "case_id": "pmc-3420770-1",
+ "ok": true,
+ "failures": []
+ },
+ {
+ "seed_id": "ckd_epi-29",
+ "case_id": "pmc-6988719-1",
+ "ok": true,
+ "failures": []
+ },
+ {
+ "seed_id": "cockcroft_gault-10",
+ "case_id": "pmc-8062170-1",
+ "ok": true,
+ "failures": []
+ },
+ {
+ "seed_id": "mdrd-tr3257",
+ "case_id": "pmc-4164317-1",
+ "ok": true,
+ "failures": []
+ },
+ {
+ "seed_id": "ckd_epi-30",
+ "case_id": "pmc-7405101-3",
+ "ok": true,
+ "failures": []
+ },
+ {
+ "seed_id": "cockcroft_gault-12",
+ "case_id": "pmc-6787834-1",
+ "ok": true,
+ "failures": []
+ },
+ {
+ "seed_id": "mdrd-tr3259",
+ "case_id": "pmc-5472366-1",
+ "ok": true,
+ "failures": []
+ },
+ {
+ "seed_id": "ckd_epi-34",
+ "case_id": "usmle-4906",
+ "ok": true,
+ "failures": []
+ },
+ {
+ "seed_id": "cockcroft_gault-14",
+ "case_id": "pmc-5411626-1",
+ "ok": true,
+ "failures": []
+ },
+ {
+ "seed_id": "mdrd-tr3262",
+ "case_id": "pmc-4779822-1",
+ "ok": true,
+ "failures": []
+ },
+ {
+ "seed_id": "ckd_epi-35",
+ "case_id": "usmle-5468",
+ "ok": true,
+ "failures": []
+ },
+ {
+ "seed_id": "cockcroft_gault-16",
+ "case_id": "pmc-8474094-1",
+ "ok": true,
+ "failures": []
+ },
+ {
+ "seed_id": "mdrd-tr3281",
+ "case_id": "pmc-6682238-1",
+ "ok": true,
+ "failures": []
+ },
+ {
+ "seed_id": "ckd_epi-36",
+ "case_id": "pmc-6919406-1",
+ "ok": true,
+ "failures": []
+ },
+ {
+ "seed_id": "cockcroft_gault-17",
+ "case_id": "usmle-1896",
+ "ok": true,
+ "failures": []
+ },
+ {
+ "seed_id": "mdrd-tr3282",
+ "case_id": "pmc-6688890-1",
+ "ok": true,
+ "failures": []
+ },
+ {
+ "seed_id": "ckd_epi-40",
+ "case_id": "pmc-7523830-1",
+ "ok": true,
+ "failures": []
+ },
+ {
+ "seed_id": "cockcroft_gault-20",
+ "case_id": "pmc-6713257-1",
+ "ok": true,
+ "failures": []
+ },
+ {
+ "seed_id": "mdrd-tr3320",
+ "case_id": "pmc-4274443-1",
+ "ok": true,
+ "failures": []
+ },
+ {
+ "seed_id": "ckd_epi-tr138",
+ "case_id": "pmc-3101734-1",
+ "ok": true,
+ "failures": []
+ },
+ {
+ "seed_id": "cockcroft_gault-tr1",
+ "case_id": "pmc-6477550-1",
+ "ok": true,
+ "failures": []
+ },
+ {
+ "seed_id": "mdrd-tr3359",
+ "case_id": "usmle-10845",
+ "ok": true,
+ "failures": []
+ },
+ {
+ "seed_id": "ckd_epi-tr139",
+ "case_id": "pmc-3914169-1",
+ "ok": true,
+ "failures": []
+ },
+ {
+ "seed_id": "cockcroft_gault-tr4",
+ "case_id": "pmc-2813128-1",
+ "ok": true,
+ "failures": []
+ },
+ {
+ "seed_id": "mdrd-tr3378",
+ "case_id": "pmc-4421438-2",
+ "ok": true,
+ "failures": []
+ },
+ {
+ "seed_id": "ckd_epi-tr141",
+ "case_id": "pmc-8173432-1",
+ "ok": true,
+ "failures": []
+ },
+ {
+ "seed_id": "cockcroft_gault-tr5",
+ "case_id": "pmc-5544981-1",
+ "ok": true,
+ "failures": []
+ },
+ {
+ "seed_id": "mdrd-tr3384",
+ "case_id": "pmc-8038922-1",
+ "ok": true,
+ "failures": []
+ },
+ {
+ "seed_id": "ckd_epi-tr143",
+ "case_id": "pmc-3696308-1",
+ "ok": true,
+ "failures": []
+ },
+ {
+ "seed_id": "cockcroft_gault-tr9",
+ "case_id": "pmc-2547098-1",
+ "ok": true,
+ "failures": []
+ },
+ {
+ "seed_id": "mdrd-tr3399",
+ "case_id": "pmc-5295522-1",
+ "ok": true,
+ "failures": []
+ },
+ {
+ "seed_id": "ckd_epi-tr144",
+ "case_id": "pmc-8267016-1",
+ "ok": true,
+ "failures": []
+ }
+ ]
 }

@@ -1,225 +1,225 @@
 {
-  "arm": "ldl",
-  "calculator": "LDL Calculated",
-  "calculator_id": "44",
-  "family": "breadth",
-  "shape": "value_conflict",
-  "conflict_on": "hdl",
-  "n_screened": 66,
-  "n_eligible": 17,
-  "n_selected": 17,
-  "rejections": {
-    "hdl is not stated as the calculator consumes it": 19,
-    "the note's own stated LDL Calculated disagrees with its components": 21,
-    "no second value clears divergence, band and plausibility together": 5,
-    "note states more than one hdl": 3,
-    "triglycerides above the Friedewald ceiling": 1
-  },
-  "seeds_digest": "257656d8547880392685ae29b64d2addfef6083fb0203cdeab76be719f791d1a",
-  "seeds": [
-    {
-      "note_id": "pmc-3651988-1",
-      "split": "test",
-      "arm": "ldl",
-      "components": {
-        "total": 349.4,
-        "hdl": 111.0,
-        "trig": 120.1
-      },
-      "clean_answer": 214.38,
-      "published_answer": "214.38"
-    },
-    {
-      "note_id": "pmc-3386769-1",
-      "split": "test",
-      "arm": "ldl",
-      "components": {
-        "total": 207.0,
-        "hdl": 45.0,
-        "trig": 142.0
-      },
-      "clean_answer": 133.6,
-      "published_answer": "133.6"
-    },
-    {
-      "note_id": "pmc-3472613-1",
-      "split": "test",
-      "arm": "ldl",
-      "components": {
-        "total": 145.0,
-        "hdl": 51.0,
-        "trig": 175.0
-      },
-      "clean_answer": 59.0,
-      "published_answer": "59"
-    },
-    {
-      "note_id": "pmc-6728653-1",
-      "split": "test",
-      "arm": "ldl",
-      "components": {
-        "total": 125.0,
-        "hdl": 49.0,
-        "trig": 68.0
-      },
-      "clean_answer": 62.4,
-      "published_answer": "62.4"
-    },
-    {
-      "note_id": "pmc-2767135-1",
-      "split": "test",
-      "arm": "ldl",
-      "components": {
-        "total": 177.0,
-        "hdl": 35.0,
-        "trig": 296.0
-      },
-      "clean_answer": 82.8,
-      "published_answer": "82.8"
-    },
-    {
-      "note_id": "pmc-6150762-1",
-      "split": "test",
-      "arm": "ldl",
-      "components": {
-        "total": 161.0,
-        "hdl": 58.0,
-        "trig": 52.0
-      },
-      "clean_answer": 92.6,
-      "published_answer": "92.6"
-    },
-    {
-      "note_id": "pmc-2770547-1",
-      "split": "test",
-      "arm": "ldl",
-      "components": {
-        "total": 128.0,
-        "hdl": 30.0,
-        "trig": 75.0
-      },
-      "clean_answer": 83.0,
-      "published_answer": "83"
-    },
-    {
-      "note_id": "pmc-7038555-2",
-      "split": "train",
-      "arm": "ldl",
-      "components": {
-        "total": 211.0,
-        "hdl": 66.0,
-        "trig": 133.0
-      },
-      "clean_answer": 118.4,
-      "published_answer": "118.4"
-    },
-    {
-      "note_id": "pmc-4532003-1",
-      "split": "train",
-      "arm": "ldl",
-      "components": {
-        "total": 170.0,
-        "hdl": 51.0,
-        "trig": 98.0
-      },
-      "clean_answer": 99.4,
-      "published_answer": "99.4"
-    },
-    {
-      "note_id": "pmc-4722418-1",
-      "split": "train",
-      "arm": "ldl",
-      "components": {
-        "total": 210.0,
-        "hdl": 50.0,
-        "trig": 104.0
-      },
-      "clean_answer": 139.2,
-      "published_answer": "139.2"
-    },
-    {
-      "note_id": "pmc-3890740-1",
-      "split": "train",
-      "arm": "ldl",
-      "components": {
-        "total": 161.0,
-        "hdl": 39.0,
-        "trig": 95.0
-      },
-      "clean_answer": 103.0,
-      "published_answer": "103.0"
-    },
-    {
-      "note_id": "pmc-4974739-1",
-      "split": "train",
-      "arm": "ldl",
-      "components": {
-        "total": 335.0,
-        "hdl": 45.0,
-        "trig": 211.0
-      },
-      "clean_answer": 247.8,
-      "published_answer": "247.8"
-    },
-    {
-      "note_id": "pmc-5256339-1",
-      "split": "train",
-      "arm": "ldl",
-      "components": {
-        "total": 213.0,
-        "hdl": 26.0,
-        "trig": 284.0
-      },
-      "clean_answer": 130.2,
-      "published_answer": "130.2"
-    },
-    {
-      "note_id": "pmc-6188040-1",
-      "split": "train",
-      "arm": "ldl",
-      "components": {
-        "total": 221.0,
-        "hdl": 46.0,
-        "trig": 110.0
-      },
-      "clean_answer": 153.0,
-      "published_answer": "153.0"
-    },
-    {
-      "note_id": "pmc-4532117-1",
-      "split": "train",
-      "arm": "ldl",
-      "components": {
-        "total": 149.0,
-        "hdl": 24.0,
-        "trig": 114.0
-      },
-      "clean_answer": 102.2,
-      "published_answer": "102.2"
-    },
-    {
-      "note_id": "pmc-3830285-1",
-      "split": "train",
-      "arm": "ldl",
-      "components": {
-        "total": 208.0,
-        "hdl": 46.0,
-        "trig": 207.0
-      },
-      "clean_answer": 120.6,
-      "published_answer": "120.6"
-    },
-    {
-      "note_id": "pmc-6439373-1",
-      "split": "train",
-      "arm": "ldl",
-      "components": {
-        "total": 191.0,
-        "hdl": 65.0,
-        "trig": 72.0
-      },
-      "clean_answer": 111.6,
-      "published_answer": "111.6"
-    }
-  ]
+ "arm": "ldl",
+ "calculator": "LDL Calculated",
+ "calculator_id": "44",
+ "family": "breadth",
+ "shape": "value_conflict",
+ "conflict_on": "hdl",
+ "n_screened": 66,
+ "n_eligible": 17,
+ "n_selected": 17,
+ "rejections": {
+ "hdl is not stated as the calculator consumes it": 19,
+ "the note's own stated LDL Calculated disagrees with its components": 21,
+ "no second value clears divergence, band and plausibility together": 5,
+ "note states more than one hdl": 3,
+ "triglycerides above the Friedewald ceiling": 1
+ },
+ "seeds_digest": "257656d8547880392685ae29b64d2addfef6083fb0203cdeab76be719f791d1a",
+ "seeds": [
+ {
+ "note_id": "pmc-3651988-1",
+ "split": "test",
+ "arm": "ldl",
+ "components": {
+ "total": 349.4,
+ "hdl": 111.0,
+ "trig": 120.1
+ },
+ "clean_answer": 214.38,
+ "published_answer": "214.38"
+ },
+ {
+ "note_id": "pmc-3386769-1",
+ "split": "test",
+ "arm": "ldl",
+ "components": {
+ "total": 207.0,
+ "hdl": 45.0,
+ "trig": 142.0
+ },
+ "clean_answer": 133.6,
+ "published_answer": "133.6"
+ },
+ {
+ "note_id": "pmc-3472613-1",
+ "split": "test",
+ "arm": "ldl",
+ "components": {
+ "total": 145.0,
+ "hdl": 51.0,
+ "trig": 175.0
+ },
+ "clean_answer": 59.0,
+ "published_answer": "59"
+ },
+ {
+ "note_id": "pmc-6728653-1",
+ "split": "test",
+ "arm": "ldl",
+ "components": {
+ "total": 125.0,
+ "hdl": 49.0,
+ "trig": 68.0
+ },
+ "clean_answer": 62.4,
+ "published_answer": "62.4"
+ },
+ {
+ "note_id": "pmc-2767135-1",
+ "split": "test",
+ "arm": "ldl",
+ "components": {
+ "total": 177.0,
+ "hdl": 35.0,
+ "trig": 296.0
+ },
+ "clean_answer": 82.8,
+ "published_answer": "82.8"
+ },
+ {
+ "note_id": "pmc-6150762-1",
+ "split": "test",
+ "arm": "ldl",
+ "components": {
+ "total": 161.0,
+ "hdl": 58.0,
+ "trig": 52.0
+ },
+ "clean_answer": 92.6,
+ "published_answer": "92.6"
+ },
+ {
+ "note_id": "pmc-2770547-1",
+ "split": "test",
+ "arm": "ldl",
+ "components": {
+ "total": 128.0,
+ "hdl": 30.0,
+ "trig": 75.0
+ },
+ "clean_answer": 83.0,
+ "published_answer": "83"
+ },
+ {
+ "note_id": "pmc-7038555-2",
+ "split": "train",
+ "arm": "ldl",
+ "components": {
+ "total": 211.0,
+ "hdl": 66.0,
+ "trig": 133.0
+ },
+ "clean_answer": 118.4,
+ "published_answer": "118.4"
+ },
+ {
+ "note_id": "pmc-4532003-1",
+ "split": "train",
+ "arm": "ldl",
+ "components": {
+ "total": 170.0,
+ "hdl": 51.0,
+ "trig": 98.0
+ },
+ "clean_answer": 99.4,
+ "published_answer": "99.4"
+ },
+ {
+ "note_id": "pmc-4722418-1",
+ "split": "train",
+ "arm": "ldl",
+ "components": {
+ "total": 210.0,
+ "hdl": 50.0,
+ "trig": 104.0
+ },
+ "clean_answer": 139.2,
+ "published_answer": "139.2"
+ },
+ {
+ "note_id": "pmc-3890740-1",
+ "split": "train",
+ "arm": "ldl",
+ "components": {
+ "total": 161.0,
+ "hdl": 39.0,
+ "trig": 95.0
+ },
+ "clean_answer": 103.0,
+ "published_answer": "103.0"
+ },
+ {
+ "note_id": "pmc-4974739-1",
+ "split": "train",
+ "arm": "ldl",
+ "components": {
+ "total": 335.0,
+ "hdl": 45.0,
+ "trig": 211.0
+ },
+ "clean_answer": 247.8,
+ "published_answer": "247.8"
+ },
+ {
+ "note_id": "pmc-5256339-1",
+ "split": "train",
+ "arm": "ldl",
+ "components": {
+ "total": 213.0,
+ "hdl": 26.0,
+ "trig": 284.0
+ },
+ "clean_answer": 130.2,
+ "published_answer": "130.2"
+ },
+ {
+ "note_id": "pmc-6188040-1",
+ "split": "train",
+ "arm": "ldl",
+ "components": {
+ "total": 221.0,
+ "hdl": 46.0,
+ "trig": 110.0
+ },
+ "clean_answer": 153.0,
+ "published_answer": "153.0"
+ },
+ {
+ "note_id": "pmc-4532117-1",
+ "split": "train",
+ "arm": "ldl",
+ "components": {
+ "total": 149.0,
+ "hdl": 24.0,
+ "trig": 114.0
+ },
+ "clean_answer": 102.2,
+ "published_answer": "102.2"
+ },
+ {
+ "note_id": "pmc-3830285-1",
+ "split": "train",
+ "arm": "ldl",
+ "components": {
+ "total": 208.0,
+ "hdl": 46.0,
+ "trig": 207.0
+ },
+ "clean_answer": 120.6,
+ "published_answer": "120.6"
+ },
+ {
+ "note_id": "pmc-6439373-1",
+ "split": "train",
+ "arm": "ldl",
+ "components": {
+ "total": 191.0,
+ "hdl": 65.0,
+ "trig": 72.0
+ },
+ "clean_answer": 111.6,
+ "published_answer": "111.6"
+ }
+ ]
 }

@@ -1,8 +1,6 @@
 #!/usr/bin/env python3
 """Confirm, for every built item, that the edited span is the one the calculator consumes.
 
-Task owner: Annotator D -- Week 2.
-Completed by Annotator D.
 
 `construct.py` already asserts anchoring while it builds. That is not the same
 check as this one, and it cannot be: a builder that is wrong about which span the

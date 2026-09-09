@@ -1,20 +1,20 @@
 #!/usr/bin/env python3
-"""Week 3, Task 1: score the full grid (10,140 completions across
+""", Task 1: score the full grid (10,140 completions across
 open_ended/mcq/program_aided) and build the three core tables -- flag rate
 by condition, by family, and by model -- reported on the open_ended
-scoring specifically (see docs/WEEK3_TASK1_RESULT.md's own framing text
+scoring specifically (see docs/FLAG_RATES.md's own framing text
 for why: PREREGISTRATION.md's validity/reliability machinery was only ever
 built for open_ended/neutral_exit, so keeping these three tables
 open_ended-only is what makes Task 2's "mark the low-validity open-ended
 cells" meaningful at all).
 
-Reads data/week3_grid_rows.json (written by join_grid.py). Scores
+Reads data/grid_rows.json (written by join_grid.py). Scores
 open_ended with score.py's existing functions (unchanged), mcq with
 scoring_mcq.py, program_aided with scoring_program_aided.py --
 all 10,140 rows, satisfying "score the full grid" even though only the
 open_ended subset feeds these three tables.
 
-Writes docs/WEEK3_TASK1_RESULT.md directly, with a reserved validity
+Writes docs/FLAG_RATES.md directly, with a reserved validity
 placeholder in each table for analyze_validity.py to fill in later --
 this script never edits it again after writing it once.
 
@@ -29,10 +29,10 @@ from stats import MedCalcStatsReferee
 from scoring_mcq import classify_mcq
 from scoring_program_aided import classify_program_aided
 
-IN_JSON = "data/week3_grid_rows.json"
-OUT_JSON = "data/week3_scored.json"
-OUT_CSV = "data/week3_scored.csv"
-OUT_MD = "docs/WEEK3_TASK1_RESULT.md"
+IN_JSON = "data/grid_rows.json"
+OUT_JSON = "data/scored.json"
+OUT_CSV = "data/scored.csv"
+OUT_MD = "docs/FLAG_RATES.md"
 
 MODELS = [
     "anthropic/claude-opus-4.8", "openai/gpt-5", "meta-llama/llama-4-maverick",
@@ -111,7 +111,7 @@ def main():
     open_ended_rows = [r for r in rows if r["prompt_id"] == "open_ended"]
 
     lines = [
-        "# Week 3 -- Task 1: flag rate by condition, by family, and by model",
+        "#  -- Task 1: flag rate by condition, by family, and by model",
         "",
         "**What this measures.** Every open_ended completion in the full grid",
         "(Family A, B, C, the breadth calculators, and the dissociation arm --",
@@ -151,7 +151,7 @@ def main():
     lines.append(
         "**Interpretation.** [Fill in once real numbers are available: which "
         "condition(s) show the highest flag rate, whether that's concentrated "
-        "in a particular family or model, and how it compares to the Week 2 "
+        "in a particular family or model, and how it compares to the  "
         "dissociation-only headline.]"
     )
     lines.append("")

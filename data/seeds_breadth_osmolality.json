@@ -1,321 +1,321 @@
 {
-  "arm": "osmolality",
-  "calculator": "Serum Osmolality",
-  "calculator_id": "30",
-  "family": "breadth",
-  "shape": "value_conflict",
-  "conflict_on": "sodium",
-  "n_screened": 370,
-  "n_eligible": 29,
-  "n_selected": 25,
-  "rejections": {
-    "no second value clears divergence, band and plausibility together": 272,
-    "sodium is not stated as the calculator consumes it": 40,
-    "note states more than one sodium": 23,
-    "the note's own stated Serum Osmolality disagrees with its components": 5,
-    "more than one span carries the consumed sodium": 1
-  },
-  "seeds_digest": "c4774405248cf38a6c07ab40c6ca9bcff7323f986171bef3004d9d14562dd1f4",
-  "seeds": [
-    {
-      "note_id": "pmc-6549199-1",
-      "split": "test",
-      "arm": "osmolality",
-      "components": {
-        "sodium": 125.0,
-        "bun": 45.0,
-        "glucose": 400.0
-      },
-      "clean_answer": 288.294,
-      "published_answer": "288.294"
-    },
-    {
-      "note_id": "pmc-2760916-1",
-      "split": "train",
-      "arm": "osmolality",
-      "components": {
-        "sodium": 119.0,
-        "bun": 88.0,
-        "glucose": 493.0
-      },
-      "clean_answer": 296.817,
-      "published_answer": "296.817"
-    },
-    {
-      "note_id": "pmc-6590859-2",
-      "split": "train",
-      "arm": "osmolality",
-      "components": {
-        "sodium": 165.0,
-        "bun": 86.0,
-        "glucose": 182.0
-      },
-      "clean_answer": 370.825,
-      "published_answer": "370.825"
-    },
-    {
-      "note_id": "usmle-8509",
-      "split": "train",
-      "arm": "osmolality",
-      "components": {
-        "sodium": 110.0,
-        "bun": 18.0,
-        "glucose": 93.0
-      },
-      "clean_answer": 231.595,
-      "published_answer": "231.595"
-    },
-    {
-      "note_id": "pmc-3481032-1",
-      "split": "train",
-      "arm": "osmolality",
-      "components": {
-        "sodium": 150.0,
-        "bun": 11.8,
-        "glucose": 71.0
-      },
-      "clean_answer": 308.159,
-      "published_answer": "308.159"
-    },
-    {
-      "note_id": "pmc-8383553-1",
-      "split": "train",
-      "arm": "osmolality",
-      "components": {
-        "sodium": 121.0,
-        "bun": 25.0,
-        "glucose": 533.0
-      },
-      "clean_answer": 280.54,
-      "published_answer": "280.54"
-    },
-    {
-      "note_id": "pmc-4877837-1",
-      "split": "train",
-      "arm": "osmolality",
-      "components": {
-        "sodium": 111.0,
-        "bun": 80.0,
-        "glucose": 340.0
-      },
-      "clean_answer": 269.46,
-      "published_answer": "269.46"
-    },
-    {
-      "note_id": "pmc-3593508-1",
-      "split": "train",
-      "arm": "osmolality",
-      "components": {
-        "sodium": 123.0,
-        "bun": 44.0,
-        "glucose": 85.0
-      },
-      "clean_answer": 266.437,
-      "published_answer": "266.437"
-    },
-    {
-      "note_id": "pmc-6781379-1",
-      "split": "train",
-      "arm": "osmolality",
-      "components": {
-        "sodium": 152.0,
-        "bun": 1.23,
-        "glucose": 0.91
-      },
-      "clean_answer": 304.49,
-      "published_answer": "352.984"
-    },
-    {
-      "note_id": "pmc-7580480-1",
-      "split": "train",
-      "arm": "osmolality",
-      "components": {
-        "sodium": 116.0,
-        "bun": 33.0,
-        "glucose": 75.0
-      },
-      "clean_answer": 247.952,
-      "published_answer": "247.952"
-    },
-    {
-      "note_id": "pmc-6541993-1",
-      "split": "train",
-      "arm": "osmolality",
-      "components": {
-        "sodium": 161.0,
-        "bun": 80.0,
-        "glucose": 386.0
-      },
-      "clean_answer": 372.016,
-      "published_answer": "372.016"
-    },
-    {
-      "note_id": "pmc-6990560-1",
-      "split": "train",
-      "arm": "osmolality",
-      "components": {
-        "sodium": 122.1,
-        "bun": 10.54,
-        "glucose": 35.95
-      },
-      "clean_answer": 249.962,
-      "published_answer": "291.233"
-    },
-    {
-      "note_id": "pmc-5292295-1",
-      "split": "train",
-      "arm": "osmolality",
-      "components": {
-        "sodium": 120.0,
-        "bun": 17.0,
-        "glucose": 607.0
-      },
-      "clean_answer": 279.794,
-      "published_answer": "279.794"
-    },
-    {
-      "note_id": "pmc-7034958-1",
-      "split": "train",
-      "arm": "osmolality",
-      "components": {
-        "sodium": 119.0,
-        "bun": 7.2,
-        "glucose": 40.62
-      },
-      "clean_answer": 242.828,
-      "published_answer": "286.039"
-    },
-    {
-      "note_id": "pmc-3470992-1",
-      "split": "train",
-      "arm": "osmolality",
-      "components": {
-        "sodium": 124.0,
-        "bun": 34.0,
-        "glucose": 105.0
-      },
-      "clean_answer": 265.976,
-      "published_answer": "265.976"
-    },
-    {
-      "note_id": "pmc-5464381-1",
-      "split": "train",
-      "arm": "osmolality",
-      "components": {
-        "sodium": 120.0,
-        "bun": 30.0,
-        "glucose": 612.0
-      },
-      "clean_answer": 284.714,
-      "published_answer": "284.714"
-    },
-    {
-      "note_id": "pmc-6641835-1",
-      "split": "train",
-      "arm": "osmolality",
-      "components": {
-        "sodium": 125.0,
-        "bun": 38.8,
-        "glucose": 765.0
-      },
-      "clean_answer": 306.357,
-      "published_answer": "306.357"
-    },
-    {
-      "note_id": "usmle-10",
-      "split": "train",
-      "arm": "osmolality",
-      "components": {
-        "sodium": 150.0,
-        "bun": 19.0,
-        "glucose": 136.0
-      },
-      "clean_answer": 314.341,
-      "published_answer": "314.341"
-    },
-    {
-      "note_id": "pmc-3475921-1",
-      "split": "train",
-      "arm": "osmolality",
-      "components": {
-        "sodium": 154.0,
-        "bun": 22.0,
-        "glucose": 92.0
-      },
-      "clean_answer": 320.968,
-      "published_answer": "320.968"
-    },
-    {
-      "note_id": "pmc-3656526-1",
-      "split": "train",
-      "arm": "osmolality",
-      "components": {
-        "sodium": 114.0,
-        "bun": 42.0,
-        "glucose": 106.0
-      },
-      "clean_answer": 248.889,
-      "published_answer": "248.889"
-    },
-    {
-      "note_id": "pmc-4531545-1",
-      "split": "train",
-      "arm": "osmolality",
-      "components": {
-        "sodium": 125.0,
-        "bun": 113.0,
-        "glucose": 102.0
-      },
-      "clean_answer": 296.024,
-      "published_answer": "296.024"
-    },
-    {
-      "note_id": "pmc-6068752-1",
-      "split": "train",
-      "arm": "osmolality",
-      "components": {
-        "sodium": 124.0,
-        "bun": 51.0,
-        "glucose": 790.0
-      },
-      "clean_answer": 310.103,
-      "published_answer": "310.103"
-    },
-    {
-      "note_id": "pmc-6988660-1",
-      "split": "train",
-      "arm": "osmolality",
-      "components": {
-        "sodium": 123.0,
-        "bun": 27.0,
-        "glucose": 102.0
-      },
-      "clean_answer": 261.31,
-      "published_answer": "261.31"
-    },
-    {
-      "note_id": "pmc-8700017-1",
-      "split": "train",
-      "arm": "osmolality",
-      "components": {
-        "sodium": 113.3,
-        "bun": 55.1,
-        "glucose": 83.0
-      },
-      "clean_answer": 250.89,
-      "published_answer": "250.89"
-    },
-    {
-      "note_id": "usmle-5892",
-      "split": "train",
-      "arm": "osmolality",
-      "components": {
-        "sodium": 125.0,
-        "bun": 51.0,
-        "glucose": 89.0
-      },
-      "clean_answer": 273.159,
-      "published_answer": "273.159"
-    }
-  ]
+ "arm": "osmolality",
+ "calculator": "Serum Osmolality",
+ "calculator_id": "30",
+ "family": "breadth",
+ "shape": "value_conflict",
+ "conflict_on": "sodium",
+ "n_screened": 370,
+ "n_eligible": 29,
+ "n_selected": 25,
+ "rejections": {
+ "no second value clears divergence, band and plausibility together": 272,
+ "sodium is not stated as the calculator consumes it": 40,
+ "note states more than one sodium": 23,
+ "the note's own stated Serum Osmolality disagrees with its components": 5,
+ "more than one span carries the consumed sodium": 1
+ },
+ "seeds_digest": "c4774405248cf38a6c07ab40c6ca9bcff7323f986171bef3004d9d14562dd1f4",
+ "seeds": [
+ {
+ "note_id": "pmc-6549199-1",
+ "split": "test",
+ "arm": "osmolality",
+ "components": {
+ "sodium": 125.0,
+ "bun": 45.0,
+ "glucose": 400.0
+ },
+ "clean_answer": 288.294,
+ "published_answer": "288.294"
+ },
+ {
+ "note_id": "pmc-2760916-1",
+ "split": "train",
+ "arm": "osmolality",
+ "components": {
+ "sodium": 119.0,
+ "bun": 88.0,
+ "glucose": 493.0
+ },
+ "clean_answer": 296.817,
+ "published_answer": "296.817"
+ },
+ {
+ "note_id": "pmc-6590859-2",
+ "split": "train",
+ "arm": "osmolality",
+ "components": {
+ "sodium": 165.0,
+ "bun": 86.0,
+ "glucose": 182.0
+ },
+ "clean_answer": 370.825,
+ "published_answer": "370.825"
+ },
+ {
+ "note_id": "usmle-8509",
+ "split": "train",
+ "arm": "osmolality",
+ "components": {
+ "sodium": 110.0,
+ "bun": 18.0,
+ "glucose": 93.0
+ },
+ "clean_answer": 231.595,
+ "published_answer": "231.595"
+ },
+ {
+ "note_id": "pmc-3481032-1",
+ "split": "train",
+ "arm": "osmolality",
+ "components": {
+ "sodium": 150.0,
+ "bun": 11.8,
+ "glucose": 71.0
+ },
+ "clean_answer": 308.159,
+ "published_answer": "308.159"
+ },
+ {
+ "note_id": "pmc-8383553-1",
+ "split": "train",
+ "arm": "osmolality",
+ "components": {
+ "sodium": 121.0,
+ "bun": 25.0,
+ "glucose": 533.0
+ },
+ "clean_answer": 280.54,
+ "published_answer": "280.54"
+ },
+ {
+ "note_id": "pmc-4877837-1",
+ "split": "train",
+ "arm": "osmolality",
+ "components": {
+ "sodium": 111.0,
+ "bun": 80.0,
+ "glucose": 340.0
+ },
+ "clean_answer": 269.46,
+ "published_answer": "269.46"
+ },
+ {
+ "note_id": "pmc-3593508-1",
+ "split": "train",
+ "arm": "osmolality",
+ "components": {
+ "sodium": 123.0,
+ "bun": 44.0,
+ "glucose": 85.0
+ },
+ "clean_answer": 266.437,
+ "published_answer": "266.437"
+ },
+ {
+ "note_id": "pmc-6781379-1",
+ "split": "train",
+ "arm": "osmolality",
+ "components": {
+ "sodium": 152.0,
+ "bun": 1.23,
+ "glucose": 0.91
+ },
+ "clean_answer": 304.49,
+ "published_answer": "352.984"
+ },
+ {
+ "note_id": "pmc-7580480-1",
+ "split": "train",
+ "arm": "osmolality",
+ "components": {
+ "sodium": 116.0,
+ "bun": 33.0,
+ "glucose": 75.0
+ },
+ "clean_answer": 247.952,
+ "published_answer": "247.952"
+ },
+ {
+ "note_id": "pmc-6541993-1",
+ "split": "train",
+ "arm": "osmolality",
+ "components": {
+ "sodium": 161.0,
+ "bun": 80.0,
+ "glucose": 386.0
+ },
+ "clean_answer": 372.016,
+ "published_answer": "372.016"
+ },
+ {
+ "note_id": "pmc-6990560-1",
+ "split": "train",
+ "arm": "osmolality",
+ "components": {
+ "sodium": 122.1,
+ "bun": 10.54,
+ "glucose": 35.95
+ },
+ "clean_answer": 249.962,
+ "published_answer": "291.233"
+ },
+ {
+ "note_id": "pmc-5292295-1",
+ "split": "train",
+ "arm": "osmolality",
+ "components": {
+ "sodium": 120.0,
+ "bun": 17.0,
+ "glucose": 607.0
+ },
+ "clean_answer": 279.794,
+ "published_answer": "279.794"
+ },
+ {
+ "note_id": "pmc-7034958-1",
+ "split": "train",
+ "arm": "osmolality",
+ "components": {
+ "sodium": 119.0,
+ "bun": 7.2,
+ "glucose": 40.62
+ },
+ "clean_answer": 242.828,
+ "published_answer": "286.039"
+ },
+ {
+ "note_id": "pmc-3470992-1",
+ "split": "train",
+ "arm": "osmolality",
+ "components": {
+ "sodium": 124.0,
+ "bun": 34.0,
+ "glucose": 105.0
+ },
+ "clean_answer": 265.976,
+ "published_answer": "265.976"
+ },
+ {
+ "note_id": "pmc-5464381-1",
+ "split": "train",
+ "arm": "osmolality",
+ "components": {
+ "sodium": 120.0,
+ "bun": 30.0,
+ "glucose": 612.0
+ },
+ "clean_answer": 284.714,
+ "published_answer": "284.714"
+ },
+ {
+ "note_id": "pmc-6641835-1",
+ "split": "train",
+ "arm": "osmolality",
+ "components": {
+ "sodium": 125.0,
+ "bun": 38.8,
+ "glucose": 765.0
+ },
+ "clean_answer": 306.357,
+ "published_answer": "306.357"
+ },
+ {
+ "note_id": "usmle-10",
+ "split": "train",
+ "arm": "osmolality",
+ "components": {
+ "sodium": 150.0,
+ "bun": 19.0,
+ "glucose": 136.0
+ },
+ "clean_answer": 314.341,
+ "published_answer": "314.341"
+ },
+ {
+ "note_id": "pmc-3475921-1",
+ "split": "train",
+ "arm": "osmolality",
+ "components": {
+ "sodium": 154.0,
+ "bun": 22.0,
+ "glucose": 92.0
+ },
+ "clean_answer": 320.968,
+ "published_answer": "320.968"
+ },
+ {
+ "note_id": "pmc-3656526-1",
+ "split": "train",
+ "arm": "osmolality",
+ "components": {
+ "sodium": 114.0,
+ "bun": 42.0,
+ "glucose": 106.0
+ },
+ "clean_answer": 248.889,
+ "published_answer": "248.889"
+ },
+ {
+ "note_id": "pmc-4531545-1",
+ "split": "train",
+ "arm": "osmolality",
+ "components": {
+ "sodium": 125.0,
+ "bun": 113.0,
+ "glucose": 102.0
+ },
+ "clean_answer": 296.024,
+ "published_answer": "296.024"
+ },
+ {
+ "note_id": "pmc-6068752-1",
+ "split": "train",
+ "arm": "osmolality",
+ "components": {
+ "sodium": 124.0,
+ "bun": 51.0,
+ "glucose": 790.0
+ },
+ "clean_answer": 310.103,
+ "published_answer": "310.103"
+ },
+ {
+ "note_id": "pmc-6988660-1",
+ "split": "train",
+ "arm": "osmolality",
+ "components": {
+ "sodium": 123.0,
+ "bun": 27.0,
+ "glucose": 102.0
+ },
+ "clean_answer": 261.31,
+ "published_answer": "261.31"
+ },
+ {
+ "note_id": "pmc-8700017-1",
+ "split": "train",
+ "arm": "osmolality",
+ "components": {
+ "sodium": 113.3,
+ "bun": 55.1,
+ "glucose": 83.0
+ },
+ "clean_answer": 250.89,
+ "published_answer": "250.89"
+ },
+ {
+ "note_id": "usmle-5892",
+ "split": "train",
+ "arm": "osmolality",
+ "components": {
+ "sodium": 125.0,
+ "bun": 51.0,
+ "glucose": 89.0
+ },
+ "clean_answer": 273.159,
+ "published_answer": "273.159"
+ }
+ ]
 }

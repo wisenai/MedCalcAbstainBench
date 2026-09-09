@@ -1,44 +1,43 @@
 {
-  "_task": "Week 1 task J3. Task owner: Annotator B. Completed by Annotator D.",
-  "_what_this_is": "Seeds killed by human reading, not by any automatic gate. select_seeds.py applies this as its last gate, so a decision made in a review is enforced by the build rather than living in a document nobody re-reads. Adding an entry requires a reason someone else can check against the note.",
-  "_how_to_add": "seed_id -> {reason, killed_by, date, second_signature}. Leave second_signature empty until someone else has read the same note and agreed.",
-  "kills": {
-    "cockcroft_gault-6": {
-      "reason": "The sentence carrying the creatinine opens 'The patient's other blood test results were within the normal ranges, as follows:' and then lists the creatinine among them. The framing covers every value in the list, so a reader told there are two creatinines picks the one inside the quoted normal range and the conflict dissolves. The automatic gate missed it because the framing is attached to the list, not to the word creatinine.",
-      "killed_by": "Annotator B",
-      "date": "2026-08-05",
-      "second_signature": "Confirmed at the four-way read, 2026-08-10 (recorded by Annotator D)"
-    },
-    "ckd_epi-32": {
-      "reason": "'In kidney panel, serum urea (155.8 mg/dL) and serum creatinine levels (8.9 mg/dL) were highly increased suggesting severe form of disease.' The note states the creatinine is high and draws a clinical conclusion from it. Any injected second value that is not also high contradicts the note's own reading, which tells the reader which value to keep.",
-      "killed_by": "Annotator B",
-      "date": "2026-08-05",
-      "second_signature": "Confirmed at the four-way read, 2026-08-10 (recorded by Annotator D)"
-    },
-    "ckd_epi-37": {
-      "reason": "'Initial laboratory findings revealed elevated PR3-ANCA, blood urea nitrogen, and serum creatinine (1.62 mg/dl) levels.' The adjective distributes over the whole list including the creatinine, so the note has characterised the value even though the word is not adjacent to it.",
-      "killed_by": "Annotator B",
-      "date": "2026-08-05",
-      "second_signature": "Confirmed at the four-way read, 2026-08-10 (recorded by Annotator D)"
-    },
-    "mdrd-144": {
-      "reason": "'Laboratory tests revealed an elevation of blood urea nitrogen 23.8 mg/dl, creatinine 1.14 mg/dl and C-reactive protein 1.93 mg/dl.' Same shape as ckd_epi-37: 'an elevation of' governs the list the creatinine sits in. An injected normal creatinine would contradict the framing rather than the other value.",
-      "killed_by": "Annotator B",
-      "date": "2026-08-05",
-      "second_signature": "Confirmed at the four-way read, 2026-08-10 (recorded by Annotator D)"
-    },
-    "ckd_epi-38": {
-      "reason": "The creatinine carries a trailing qualifier that belongs to it: 'revealed creatinine of 2.31 mg/dL from normal baseline (Normal 0.6-1.3 mg/dL) and blood urea nitrogen of 28 mg/dL'. Excising the measurement alone strands the qualifier and leaves 'panel revealed from normal baseline', which is not a sentence. Absorbing 'from normal baseline (...)' would need a rule for an arbitrary prose qualifier between value and reference range, which is bespoke to this note. Found in the Week 2 spot-check of 20 items; eight sibling cases were repaired mechanically and this one was not.",
-      "killed_by": "Annotator D",
-      "date": "2026-08-10",
-      "second_signature": ""
-    }
-  },
-  "reviewed_and_kept": {
-    "cockcroft_gault-4": "The 'within normal limits' in this sentence describes the urinalysis at the end of the lab block, not the creatinine. Kept.",
-    "cockcroft_gault-14": "'high' and 'low' come from 'high-density lipoprotein' and 'low-density lipoprotein', which are analyte names. Kept, and the automatic gate was narrowed so it no longer flags this.",
-    "cockcroft_gault-20": "'her acetone was elevated' describes the acetone. The creatinine is stated flatly. Kept.",
-    "ckd_epi-28": "The note attaches a reference range to each value, including '(normal range 0.6-1.2 mg/dL)' to the creatinine. A reference range says what is typical, not which of two measurements is the real one, so it does not resolve the conflict. Kept, with the caveat that it does make one injected value look abnormal and the other not; worth watching in the phrasing-variant check.",
-    "mdrd-154": "'normal range' appears later in the same lab block, attached to a different analyte. Kept."
-  }
+ "_what_this_is": "Seeds killed by human reading, not by any automatic gate. select_seeds.py applies this as its last gate, so a decision made in a review is enforced by the build rather than living in a document nobody re-reads. Adding an entry requires a reason someone else can check against the note.",
+ "_how_to_add": "seed_id -> {reason, killed_by, date, second_signature}. Leave second_signature empty until someone else has read the same note and agreed.",
+ "kills": {
+ "cockcroft_gault-6": {
+ "reason": "The sentence carrying the creatinine opens 'The patient's other blood test results were within the normal ranges, as follows:' and then lists the creatinine among them. The framing covers every value in the list, so a reader told there are two creatinines picks the one inside the quoted normal range and the conflict dissolves. The automatic gate missed it because the framing is attached to the list, not to the word creatinine.",
+ "killed_by": "a contributor",
+ "date": "2026-08-05",
+ "second_signature": "Confirmed at the four-way read, 2026-08-10 (recorded by a contributor)"
+ },
+ "ckd_epi-32": {
+ "reason": "'In kidney panel, serum urea (155.8 mg/dL) and serum creatinine levels (8.9 mg/dL) were highly increased suggesting severe form of disease.' The note states the creatinine is high and draws a clinical conclusion from it. Any injected second value that is not also high contradicts the note's own reading, which tells the reader which value to keep.",
+ "killed_by": "a contributor",
+ "date": "2026-08-05",
+ "second_signature": "Confirmed at the four-way read, 2026-08-10 (recorded by a contributor)"
+ },
+ "ckd_epi-37": {
+ "reason": "'Initial laboratory findings revealed elevated PR3-ANCA, blood urea nitrogen, and serum creatinine (1.62 mg/dl) levels.' The adjective distributes over the whole list including the creatinine, so the note has characterised the value even though the word is not adjacent to it.",
+ "killed_by": "a contributor",
+ "date": "2026-08-05",
+ "second_signature": "Confirmed at the four-way read, 2026-08-10 (recorded by a contributor)"
+ },
+ "mdrd-144": {
+ "reason": "'Laboratory tests revealed an elevation of blood urea nitrogen 23.8 mg/dl, creatinine 1.14 mg/dl and C-reactive protein 1.93 mg/dl.' Same shape as ckd_epi-37: 'an elevation of' governs the list the creatinine sits in. An injected normal creatinine would contradict the framing rather than the other value.",
+ "killed_by": "a contributor",
+ "date": "2026-08-05",
+ "second_signature": "Confirmed at the four-way read, 2026-08-10 (recorded by a contributor)"
+ },
+ "ckd_epi-38": {
+ "reason": "The creatinine carries a trailing qualifier that belongs to it: 'revealed creatinine of 2.31 mg/dL from normal baseline (Normal 0.6-1.3 mg/dL) and blood urea nitrogen of 28 mg/dL'. Excising the measurement alone strands the qualifier and leaves 'panel revealed from normal baseline', which is not a sentence. Absorbing 'from normal baseline (...)' would need a rule for an arbitrary prose qualifier between value and reference range, which is bespoke to this note. Found in the spot-check of 20 items; eight sibling cases were repaired mechanically and this one was not.",
+ "killed_by": "a contributor",
+ "date": "2026-08-10",
+ "second_signature": ""
+ }
+ },
+ "reviewed_and_kept": {
+ "cockcroft_gault-4": "The 'within normal limits' in this sentence describes the urinalysis at the end of the lab block, not the creatinine. Kept.",
+ "cockcroft_gault-14": "'high' and 'low' come from 'high-density lipoprotein' and 'low-density lipoprotein', which are analyte names. Kept, and the automatic gate was narrowed so it no longer flags this.",
+ "cockcroft_gault-20": "'her acetone was elevated' describes the acetone. The creatinine is stated flatly. Kept.",
+ "ckd_epi-28": "The note attaches a reference range to each value, including '(normal range 0.6-1.2 mg/dL)' to the creatinine. A reference range says what is typical, not which of two measurements is the real one, so it does not resolve the conflict. Kept, with the caveat that it does make one injected value look abnormal and the other not; worth watching in the phrasing-variant check.",
+ "mdrd-154": "'normal range' appears later in the same lab block, attached to a different analyte. Kept."
+ }
 }

@@ -1,8 +1,6 @@
 #!/usr/bin/env python3
 """Breadth arms built by conflicting one component the calculator consumes.
 
-Task owner: Annotator D -- Week 3, breadth clause.
-Completed by Annotator D.
 
 The breadth clause asks for coverage across eight calculators and says nothing
 about which family; what it requires is that `clean` and `resolvable` stay matched

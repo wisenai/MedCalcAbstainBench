@@ -51,21 +51,21 @@ seed file and its item file share one, so a mismatch means the items are stale.
 | File | Rows | Written by | Contains |
 |---|---|---|---|
 | `pilot_completions.json` / `.csv` | 423 | `assemble_pilot.py` | cached completions joined to their items, labels left empty |
-| `week2_pilot_rows.json` / `.csv` | 360 | `week2_join.py` | the pilot arms, prepared for scoring |
-| `week2_scored.json` / `.csv` | 360 | `week2_task1_labels.py` | **authoritative Week 2 labels** |
-| `week3_grid_rows.json` / `.csv` | 13,520 | `join_grid.py` | the full grid, prepared for scoring |
-| `week3_scored.json` / `.csv` | 13,520 | `analyze_flag_rates.py` | **authoritative Week 3 labels** |
+| `pilot_rows.json` / `.csv` | 360 | `join.py` | the pilot arms, prepared for scoring |
+| `scored.json` / `.csv` | 360 | `task1_labels.py` | **authoritative labels** |
+| `grid_rows.json` / `.csv` | 13,520 | `join_grid.py` | the full grid, prepared for scoring |
+| `scored.json` / `.csv` | 13,520 | `analyze_flag_rates.py` | **authoritative labels** |
 
 `pilot_completions.json` predates the scoring pipeline and deliberately leaves
-`assigned_label` empty. **For any question about labels, read `week2_scored` or
-`week3_scored`**, not this file.
+`assigned_label` empty. **For any question about labels, read `scored` or
+`scored`**, not this file.
 
-`week3_scored` has 13,520 rows against a 10,140-cell grid. The surplus is the
+`scored` has 13,520 rows against a 10,140-cell grid. The surplus is the
 extended-thinking arm, which is not scored: those rows carry an empty
 `assigned_label`. Filter on it before computing any rate.
 
-`week2_judge_sample.csv` and `week3_judge_sample.csv` are the stratified samples
-behind the judge-agreement figures. `week2_judge_cache/` and `week3_judge_cache/`
+`judge_sample.csv` and `judge_sample.csv` are the stratified samples
+behind the judge-agreement figures. `judge_cache/` and `judge_cache/`
 hold judge responses so re-scoring never re-bills.
 
 ## Everything else
@@ -87,9 +87,9 @@ hold judge responses so re-scoring never re-bills.
 Order matters, because each step reads the previous one's output:
 
 ```
-python3 fetch_medcalc.py            # substrate, ~44MB, not committed
-python3 select_seeds.py             # freezes seeds_dissociation.json
-python3 construct.py --all          # items_dissociation.json
+python3 fetch_medcalc.py # substrate, ~44MB, not committed
+python3 select_seeds.py # freezes seeds_dissociation.json
+python3 construct.py --all # items_dissociation.json
 python3 family_a.py --build --quantity all
 python3 family_b.py --build
 python3 family_c.py --build

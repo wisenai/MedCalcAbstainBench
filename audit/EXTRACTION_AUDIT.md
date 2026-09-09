@@ -1,7 +1,5 @@
 # Extraction audit: are MedCalc-Bench's extracted values in the notes?
 
-**Task owner:** Annotator D — Week 1 task S1  
-**Completed by:** Annotator D
 
 _Generated 2026-08-16T23:27:29Z over 1047 published notes. Regenerate with `python3 audit/extraction_audit.py`._
 

@@ -1,8 +1,6 @@
 #!/usr/bin/env python3
 """Pull the MedCalc-Bench v1.0 substrate: the dataset and the released calculator code.
 
-Task owner: Annotator D -- Week 1 task S1.
-Completed by Annotator D.
 
 We do not redistribute MedCalc-Bench. This downloads it from the official GitHub
 release, pinned to the `version-1.0` tag and verified against that tag's commit

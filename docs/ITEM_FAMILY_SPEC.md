@@ -1,8 +1,6 @@
-# Week 3 item families — build spec
+# item families — build spec
 
-**Task owner:** Annotator B — Week 1 task J4 · 2026-08-05
-**Completed by:** Annotator D
-**For:** Annotator D to build from on Monday
+**For:** a contributor to build from on Monday
 **Status:** draft. Sections marked **DECIDE** need a call before building.
 
 Three families of flat self-contradiction, distinguished by what kind of thing the
@@ -78,12 +76,12 @@ height and weight corrupts an actual formula input.
 > calculator it names has the substrate:**
 >
 > - **calc 6 (BMI): 519 rows, and not one of their notes states a BMI.** There is
->   nothing to contradict. The example this spec cites, `pmc-7540180-1`, is a
->   calc 5 row.
+> nothing to contradict. The example this spec cites, `pmc-7540180-1`, is a
+> calc 5 row.
 > - **calc 61 (Target Weight): 100 rows, every note a synthetic 67-character
->   one-liner** — *"Patient has a height of 196 cm and their target BMI is 19.2
->   kg/m^2."* No current weight, so nothing for the index to disagree with, and
->   the BMI is a **target** rather than a claim about the patient.
+> one-liner** — *"Patient has a height of 196 cm and their target BMI is 19.2
+> kg/m^2."* No current weight, so nothing for the index to disagree with, and
+> the BMI is a **target** rather than a claim about the patient.
 >
 > The other derived quantities are no better on their own rows: MAP has 1 note
 > stating a MAP (a treatment goal, *"maintain above 65"*), anion gap 0, LDL 0, and
@@ -166,12 +164,12 @@ found by us.
 ### Choosing the contradicting value
 
 - It must be physiologically possible on its own. A BMI of 3 is a typo, not a
-  contradiction, and a model is right to reject it for a different reason.
+ contradiction, and a model is right to reject it for a different reason.
 - It should cross a category boundary — the WHO BMI classes (18.5, 25, 30, 35, 40)
-  are the natural ladder here, the same way the KDIGO stages are for the
-  dissociation arm. 36.1 → 24.8 moves obese class II to normal.
+ are the natural ladder here, the same way the KDIGO stages are for the
+ dissociation arm. 36.1 → 24.8 moves obese class II to normal.
 - Keep the relative discrepancy comparable across items so "how wrong" is not a
-  hidden variable. Target 25–60%, as in `construct.py`.
+ hidden variable. Target 25–60%, as in `construct.py`.
 
 ### What the checker should do
 
@@ -206,16 +204,16 @@ the pair the note states — seeding from them would mean editing a number the
 calculator never reads. Both are worth reporting in their own right.
 
 - **`pmc-6637642-1` states `blood pressure 85/140 mmHg`** — its only pressure, and
-  physiologically impossible. MedCalc's shipped entities record systolic **140**,
-  diastolic **85**, and the shipped answer 103.333 is computed from the flipped
-  pair. **The benchmark's own extraction silently put an impossible reading back
-  into plausible order** — which is the behaviour this family exists to measure,
-  performed by the annotation pipeline rather than by a model. It is a naturally
-  occurring Family B case, and it belongs in the paper next to the near-zero
-  natural-conflict rate in `docs/NATURAL_CONFLICTS.md`.
+ physiologically impossible. MedCalc's shipped entities record systolic **140**,
+ diastolic **85**, and the shipped answer 103.333 is computed from the flipped
+ pair. **The benchmark's own extraction silently put an impossible reading back
+ into plausible order** — which is the behaviour this family exists to measure,
+ performed by the annotation pipeline rather than by a model. It is a naturally
+ occurring Family B case, and it belongs in the paper next to the near-zero
+ natural-conflict rate in `docs/NATURAL_CONFLICTS.md`.
 - **`pmc-5676363-1` states `142/74`**, but MedCalc ships systolic **70**,
-  diastolic 74, and the shipped answer 72.667 is computed from that pair. The
-  shipped ground truth is itself an impossible blood pressure.
+ diastolic 74, and the shipped answer 72.667 is computed from that pair. The
+ shipped ground truth is itself an impossible blood pressure.
 
 Twenty of the 948 MAP rows have entities disagreeing with the note's own text.
 That disagreement is what `spans.find_blood_pressure` raises `NotFound` on, and it
@@ -248,7 +246,7 @@ resolvable from the note — nothing in the text says which of the two numbers i
 the error — so computing a number, from either the stated or the repaired pair, is
 never the correct action.
 
-**The label mapping is Annotator C's**, and this file does not set it. What it does is
+**The label mapping is a contributor's**, and this file does not set it. What it does is
 name the case his rubric currently has no answer for: `docs/RUBRIC_INPUT_FAMILY_B.md`
 sets out the three behaviours Family B produces, with the argument for each and
 worked examples in the format §5 of the rubric already uses. It is written as an
@@ -329,7 +327,7 @@ and they are the whole of the work here:
 **1. The control that injection 2 exists to provide does not exist.** Every
 impossible item in the set is a transposition, so nothing currently separates
 *noticing that a pair is impossible* from *recognising the transposition pattern*.
-Maia's detection-only run scored 20/20 on this set — a strong result that, as
+a contributor's detection-only run scored 20/20 on this set — a strong result that, as
 built, cannot distinguish those two abilities. Adding injection 2 on the same 20
 base notes is the single highest-value addition to Family B, and it is cheap: the
 notes, the locator and the pairing already exist.
@@ -343,7 +341,7 @@ exception in it.
 
 Order: add injection 2 across the existing 20 first — it is the scientific gap and
 costs no new note selection — then extend to 30 base notes. Do not re-cut the 20
-that exist; they already carry Maia's completions, and re-cutting them would strand
+that exist; they already carry a contributor's completions, and re-cutting them would strand
 that run.
 
 ### What the checker should do
@@ -406,18 +404,18 @@ Earlier automated searches for this family produced false positives on text like
 criterion, not of the criterion. The rules that follow are not optional:
 
 1. **The denial must be of the criterion the calculator scores**, in the sense the
-   calculator scores it. "No stroke *in the last month*" does not deny a stroke
-   history.
+ calculator scores it. "No stroke *in the last month*" does not deny a stroke
+ history.
 2. **Neither statement may be hedged.** No "unlikely", "probably", "cannot be
-   excluded", "possible". A hedge makes the note uncertain, which is a different
-   defect and belongs in a different arm.
+ excluded", "possible". A hedge makes the note uncertain, which is a different
+ defect and belongs in a different arm.
 3. **Neither statement may be about family history, risk, or medication** unless
-   that is what the criterion is.
+ that is what the criterion is.
 4. **The two statements must refer to the same episode.** A denial about a prior
-   admission is a temporal fact, not a contradiction.
+ admission is a temporal fact, not a contradiction.
 5. **Every item is read by a human before it ships.** For A and B the automatic
-   gates are nearly sufficient. For C they are a shortlist, and the human gate is
-   the filter. Budget for that.
+ gates are nearly sufficient. For C they are a shortlist, and the human gate is
+ the filter. Budget for that.
 
 ### What the checker should do
 
@@ -453,7 +451,7 @@ single-contiguous-edit assertion, the seam repair for the six mechanical excisio
 defects, the regression-suite gate that refuses to build, and the invariant that
 `resolvable` is byte-identical to the conflict note with the cue in the question.
 Three builders means three copies of that, and the copies drift — the nine damaged
-`missing` variants found by hand in Week 2 were produced by code that already
+`missing` variants found by hand in were produced by code that already
 believed it was checking its own output.
 
 What a family descriptor has to supply, and nothing else:
@@ -487,21 +485,21 @@ where the family claims it should is a build failure, not a curiosity.
 ## Build order for Monday
 
 1. **Family B first.** The locator is the simplest, the checker already covers it,
-   it is the family with a volume target attached, and it is the one that forces
-   the builder's parameters into the open.
+ it is the family with a volume target attached, and it is the one that forces
+ the builder's parameters into the open.
 2. **Family A second.** Reuses the BMI check that already exists in `checker.py`;
-   most of the work is finding notes stating height, weight and a BMI.
+ most of the work is finding notes stating height, weight and a BMI.
 3. **Family C last and slowest.** Generate candidates automatically, then read
-   every one. The bottleneck is reading, not generation, so start the reading
-   rota when the candidates exist rather than when the set is final.
+ every one. The bottleneck is reading, not generation, so start the reading
+ rota when the candidates exist rather than when the set is final.
 
 **All four open decisions are now closed** — Family A's calculators, Family B's
 rubric treatment, Family B's deepening, and the builder's shape. Two of them leave
 something for someone else to accept rather than something to implement: the
-mentor should be told that A is moving off the three risk scores and why, and Annotator C
+mentor should be told that A is moving off the three risk scores and why, and a contributor
 should be handed `docs/RUBRIC_INPUT_FAMILY_B.md`. Neither blocks building.
 
-What does block building is the Week 2 gate. The task list's own framing of Week 3
-is *"the expensive week — everything it runs was validated in Week 2,"* and the
+What does block building is the gate. The task list's own framing of 
+is *"the expensive week — everything it runs was validated in ,"* and the
 Go/No-Go cannot be held until the pilot is scored. Build against these decisions;
 do not launch a grid against them.

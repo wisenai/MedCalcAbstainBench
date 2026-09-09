@@ -1,6 +1,5 @@
 # Order flip: does the cue's position explain resolvable accuracy?
 
-**Task owner:** Annotator D. Companion to `docs/WEEK3_FLIPPED_ORDER_RESULT.md`, which reports flag
 rates on the same run. This file reports the number that motivated building the flipped set.
 
 ## The problem this tests
@@ -43,7 +42,7 @@ The comprehension control therefore holds across the whole dissociation arm, not
 
 ## Reading vs. reporting come apart
 
-Set against the flag rates in `docs/WEEK3_FLIPPED_ORDER_RESULT.md`, the two measures behave
+Set against the flag rates in `docs/REVERSED_ORDER.md`, the two measures behave
 differently under the same manipulation:
 
 | measure | original | flipped | change |

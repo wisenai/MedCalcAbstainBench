@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Week 3, Task 2: apply the validity threshold mechanically -- mark
+""", Task 2: apply the validity threshold mechanically -- mark
 low-validity open-ended cells in every table where they appear, including
 models that pass in one arm and fail in the other.
 
@@ -11,9 +11,9 @@ under both prompts only makes sense under that reading.
 
 Computes clean-condition accuracy per (model, arm), scoring neutral_exit
 itself here (Task 1 only scored open_ended/mcq/program_aided). Writes its
-own docs/WEEK3_TASK2_VALIDITY.md with the accuracy numbers behind every
+own docs/VALIDITY_THRESHOLD.md with the accuracy numbers behind every
 determination, then makes ONE targeted string-replacement edit per file to
-WEEK3_TASK1_RESULT.md, WEEK3_TASK3_RESULT.md, and WEEK3_TASK4_RESULT.md --
+TASK1_RESULT.md, TASK3_RESULT.md, and TASK4_RESULT.md --
 filling in the `<!--VALIDITY:...-->` placeholders those scripts reserved.
 Never touches any other part of those files.
 
@@ -27,14 +27,14 @@ import json
 from score import classify_response, extract_and_verify_score
 from stats import MedCalcStatsReferee
 
-GRID_JSON = "data/week3_grid_rows.json"
-SCORED_JSON = "data/week3_scored.json"
-OUT_MD = "docs/WEEK3_TASK2_VALIDITY.md"
+GRID_JSON = "data/grid_rows.json"
+SCORED_JSON = "data/scored.json"
+OUT_MD = "docs/VALIDITY_THRESHOLD.md"
 
 TARGET_FILES = [
-    "docs/WEEK3_TASK1_RESULT.md",
-    "docs/WEEK3_TASK3_RESULT.md",
-    "docs/WEEK3_TASK4_RESULT.md",
+    "docs/FLAG_RATES.md",
+    "docs/SILENT_COMMIT.md",
+    "docs/JUDGE_AGREEMENT_AND_MCQ.md",
 ]
 
 MODELS = [
@@ -85,7 +85,7 @@ def main():
 
     # ---- Write the standalone validity report ----
     lines = [
-        "# Week 3 -- Task 2: validity threshold",
+        "#  -- Task 2: validity threshold",
         "",
         "**What this measures.** Per PREREGISTRATION.md sect4, a model whose",
         "clean-condition accuracy falls below 50% cannot have its flag rate",
@@ -142,7 +142,7 @@ def main():
         if not any_low:
             return ("*Validity: all 5 models clear the 50% clean-accuracy "
                      "threshold in both the open_ended and neutral_exit arms "
-                     "(PREREGISTRATION.md sect4). See docs/WEEK3_TASK2_VALIDITY.md.*")
+                     "(PREREGISTRATION.md sect4). See docs/VALIDITY_THRESHOLD.md.*")
         parts = []
         for arm in ARMS:
             if low_validity_by_arm[arm]:
@@ -150,7 +150,7 @@ def main():
                 parts.append(f"{names} low-validity in `{arm}`")
         return ("*Validity: " + "; ".join(parts) +
                 " -- their data is pooled into the numbers above. "
-                "See docs/WEEK3_TASK2_VALIDITY.md.*")
+                "See docs/VALIDITY_THRESHOLD.md.*")
 
     def model_cell_text(model):
         d = determinations[(model, "open_ended")]

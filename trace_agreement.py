@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 """Agreement and category distribution for the mechanism trace coding.
 
-Task owner: Maia -- Week 3, "report that agreement alongside the category
 distribution."
 
 Sheets come from make_trace_sheets.py: 30 traces coded by all four people, 35
@@ -15,7 +14,7 @@ Reports
 -------
 1. progress per coder
 2. Fleiss' kappa on the overlap block, plus pairwise Cohen's kappa
-3. the same, excluding items one coder had already coded solo in Week 2
+3. the same, excluding items one coder had already coded solo in 
 4. category distribution by group (A / B / C / value conflict)
 5. every overlap disagreement, with the trace, to adjudicate from
 6. what the keyword pass in analysis/mechanism.py would have said, and how far
@@ -237,7 +236,7 @@ def main():
 
     if tainted:
         clean = [i for i in overlap if i not in tainted]
-        print(f"\n  {len(tainted)} overlap items were hand-coded solo in Week 2")
+        print(f"\n  {len(tainted)} overlap items were hand-coded solo in ")
         print("  (docs/mechanism_traces_value_conflict_labels.csv). That "
               "coder's")
         print("  judgement on them is not independent of the earlier pass.")

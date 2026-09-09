@@ -1,8 +1,6 @@
 #!/usr/bin/env python3
 """One command that checks whether the construction still holds.
 
-Task owner: Annotator D.
-Completed by Annotator D.
 
 The construction side of this project makes a handful of claims: that the item
 sets on disk were built from the seed lists that sit beside them, that every edit
@@ -129,7 +127,7 @@ def check_no_retired_seeds():
     ok = True
     import csv
     csv.field_size_limit(10 ** 7)
-    for f in ("week2_scored.csv", "week3_scored.csv"):
+    for f in ("scored.csv", "scored.csv"):
         p = os.path.join(ROOT, "data", f)
         if not os.path.exists(p):
             continue

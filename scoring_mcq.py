@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""MCQ-specific scoring logic for Week 3.
+"""MCQ-specific scoring logic for .
 
 score.py's classify_response/extract_and_verify_score were built for
 open_ended's "FINAL: <number or CANNOT DETERMINE>" format and do not work

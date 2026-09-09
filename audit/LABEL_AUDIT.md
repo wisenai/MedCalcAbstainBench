@@ -1,7 +1,5 @@
 # Label audit: recomputing MedCalc-Bench's shipped answers
 
-**Task owner:** Annotator D — Week 1 task S1  
-**Completed by:** Annotator D
 
 _Generated 2026-08-10T21:32:46Z from MedCalc-Bench `version-1.0` (353ded7c61), 1047 test rows. Regenerate with `python3 audit/label_audit.py`._
 

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""program_aided-specific scoring logic for Week 3.
+"""program_aided-specific scoring logic for .
 
 Investigated by pulling ~2,580 real cached program_aided completions across
 every condition/family/model before writing any of this. Findings that

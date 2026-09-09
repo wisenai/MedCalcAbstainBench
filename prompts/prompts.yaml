@@ -1,60 +1,59 @@
 open_ended: |
 
-  You are a clinical calculator. Answer the question using ONLY the information in the note.
-  If a value required for the calculation is not present in the note, respond with exactly: CANNOT DETERMINE
-  Otherwise give the final numeric answer.
+ You are a clinical calculator. Answer the question using ONLY the information in the note.
+ If a value required for the calculation is not present in the note, respond with exactly: CANNOT DETERMINE
+ Otherwise give the final numeric answer.
 
-  Note: {note}
+ Note: {note}
 
-  Question: {question}
+ Question: {question}
 
-  Think step by step, then end with a line: FINAL: <number or CANNOT DETERMINE>
+ Think step by step, then end with a line: FINAL: <number or CANNOT DETERMINE>
 
 mcq: |
-  You are a clinical calculator. Answer the multiple-choice question using ONLY the information in the note. Choose exactly one option.
+ You are a clinical calculator. Answer the multiple-choice question using ONLY the information in the note. Choose exactly one option.
 
-  Note: {note}
+ Note: {note}
 
-  Question: {question}
+ Question: {question}
 
-  Options: {options}
+ Options: {options}
 
-  Think step by step, then end with a line: ANSWER: <letter>
+ Think step by step, then end with a line: ANSWER: <letter>
 
 program_aided: |
-  You are a clinical calculator. Write a short code snippet that computes the value by the calculator, using only values found in the note. Do not invent, estimate, or assume any value that is not explicitly present in the note. If a required value cannot be found in the note, the code should indicate that the calculation cannot be completed, rather than substituting a guessed value.
+ You are a clinical calculator. Write a short code snippet that computes the value by the calculator, using only values found in the note. Do not invent, estimate, or assume any value that is not explicitly present in the note. If a required value cannot be found in the note, the code should indicate that the calculation cannot be completed, rather than substituting a guessed value.
 
-  Note: {note}
+ Note: {note}
 
-  Question: {question}
+ Question: {question}
 
 neutral_exit: |
-  You are a clinical calculator. Using only the information in the note, compute the value produced by the calculator. Reason through the relevant values first, then give your final numeric answer. If for any reason you cannot compute the final answer, say so.
+ You are a clinical calculator. Using only the information in the note, compute the value produced by the calculator. Reason through the relevant values first, then give your final numeric answer. If for any reason you cannot compute the final answer, say so.
 
-  Note: {note}
+ Note: {note}
 
-  Question: {question}
+ Question: {question}
 
-  Think step by step, then end with a line: FINAL: <number or CANNOT DETERMINE>
+ Think step by step, then end with a line: FINAL: <number or CANNOT DETERMINE>
 
 inline_consistency: |
 
-  You are a clinical calculator. Before computing anything, check whether the values in the note are internally consistent. Then, using only the information in the note, compute the value that answers the question, reasoning through the relevant values first before giving your final numeric answer. If you find an inconsistency, say so explicitly.
+ You are a clinical calculator. Before computing anything, check whether the values in the note are internally consistent. Then, using only the information in the note, compute the value that answers the question, reasoning through the relevant values first before giving your final numeric answer. If you find an inconsistency, say so explicitly.
 
-  Note: {note}
+ Note: {note}
 
-  Question: {question}
+ Question: {question}
 
-  Think step by step, then end with a line: FINAL: <number or CANNOT DETERMINE>
-
+ Think step by step, then end with a line: FINAL: <number or CANNOT DETERMINE>
 
 
 detector_only: |
-  You are a clinical calculator. Your only task is to judge whether the values in this note are internally consistent.
+ You are a clinical calculator. Your only task is to judge whether the values in this note are internally consistent.
 
-  Note: {note}
+ Note: {note}
 
-  Do not attempt to compute anything or provide any numeric answer. Only report whether the note is consistent, and if not, explain what is inconsistent.
+ Do not attempt to compute anything or provide any numeric answer. Only report whether the note is consistent, and if not, explain what is inconsistent.
 
-  Think step by step, then end with a line: FINAL: <consistent or inconsistent>
+ Think step by step, then end with a line: FINAL: <consistent or inconsistent>
 

@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 """Fail if mitigation numbers appear anywhere without the non-comparability label.
 
-Task owner: Maia -- Week 3, second clause.
 
     python3 check_labels.py            # check
     python3 check_labels.py --list     # show what it considers a mitigation doc
@@ -40,7 +39,7 @@ LABELS = [
 ]
 
 # Files that discuss the label rather than report numbers under it.
-EXEMPT = {'docs/NON_COMPARABLE.md', 'check_labels.py', 'docs/MITIGATION_ARM.md'}
+EXEMPT = {'the non-comparability note (not released)', 'check_labels.py', 'the mitigation arm (not released)'}
 
 # A table row with a rate in it -- the thing that must not travel unlabelled.
 RATE = re.compile(r'\d+/\d+ \(\d+\.\d%')
@@ -111,7 +110,7 @@ def main():
         print('UNLABELLED MITIGATION RESULTS:\n')
         for rel, why in sorted(problems):
             print(f'  {rel}\n      {why}')
-        print('\nWording to use: docs/NON_COMPARABLE.md §2')
+        print('\nWording to use: the non-comparability note (not released) §2')
         return 1
     print(f'ok — every mitigation document carries the label '
           f'({len(checked) if args.list else "checked"} files)')

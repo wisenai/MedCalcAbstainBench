@@ -1,432 +1,432 @@
 {
-  "family": "A",
-  "calculator": "Anion Gap",
-  "quantity": "anion_gap",
-  "seeds_digest": "9874c44bd83068c704a508cfdec8f4c8d321ed1fd5c11cf349da46dfeb5ea062",
-  "regression_suite": {
-    "passed": true,
-    "n_tests": 95,
-    "detail": "OK"
-  },
-  "n_seeds_attempted": 5,
-  "n_seeds_built": 5,
-  "n_items": 15,
-  "conditions": [
-    "clean",
-    "contradiction",
-    "resolvable"
-  ],
-  "construction_rules": {
-    "minimal_edit": "only the documented Anion Gap's digits are rewritten",
-    "second_value": "must diverge by more than 25% and cross a anion gap band boundary [8.0, 12.0, 20.0]",
-    "resolvable_note": "byte-identical to the contradiction; the cue is appended to the question so the note is held fixed"
-  },
-  "failures": [],
-  "items": [
-    {
-      "seed_id": "anion_gap-pmc-7357312-1",
-      "case_id": "pmc-7357312-1",
-      "split": "test",
-      "calculator": "Anion Gap",
-      "calculator_short": "anion_gap",
-      "calculator_id": "39",
-      "family": "A",
-      "provenance": {
-        "note": "published MedCalc-Bench note, unedited outside the injection",
-        "question": "MedCalc-Bench's own anion gap question",
-        "pairing": "ours -- this note is not a calc 39 row; no shipped label is used, the clean answer is recomputed from the components"
-      },
-      "components": {
-        "sodium": 137.0,
-        "chloride": 98.0,
-        "bicarbonate": 9.0,
-        "as_recorded": {
-          "Sodium": [
-            137.0,
-            "mmol/L"
-          ],
-          "Chloride": [
-            98.0,
-            "mmol/L"
-          ],
-          "Bicarbonate": [
-            9.0,
-            "mmol/L"
-          ]
-        }
-      },
-      "documented_value": {
-        "quantity": "anion_gap",
-        "published": 30.0,
-        "injected": 16.5,
-        "recomputed_from_components": 30.0,
-        "divergence": 0.45,
-        "boundaries_crossed": [
-          20.0
-        ],
-        "boundary_name": "anion gap band",
-        "value_span_in_clean_note": [
-          3081,
-          3083
-        ],
-        "phrase": "anion gap of 30 mmol/L"
-      },
-      "conditions": [
-        {
-          "item_id": "anion_gap-pmc-7357312-1_clean",
-          "condition": "clean",
-          "note": "A 27-year-old Hispanic male with a past medical history of obesity (BMI: 28.59 kg/m\u00b2), long-standing uncontrolled HTN, stage 3 CKD, and obstructive sleep apnea presented to the hospital with complaints of fatigue, generalized weakness, and bleeding from the upper lip. Approximately a week ago, he got a cut on his lip while drinking from an open can and since then was suffering from slow oozing of blood from the wound site. He also reported 25-30 pounds unintentional weight loss over the past two months. He denied dysuria, hematuria, urgency, cloudy urine, abdominal pain, diaphoresis, fever, chills, syncopal attacks, palpitations, headache, blurry vision, dyspnea, or lower extremity swelling.\nThe patient was diagnosed with HTN at the age of 13. Three years ago, he was evaluated for exertional chest pain and uncontrolled HTN, which led to the diagnosis of CKD stage III/IV with a baseline creatinine of 2.9 mg/dL. Cortisol level was normal, aldosterone level was less than 1 ng/dL, and renin activity level was elevated at 24.40 ng/mL/hour, but the patient was on lisinopril and repeat testing after discontinuing lisinopril was normal at 1.4 ng/mL/hour. Vasculitis work-up including antinuclear antibody (ANA), anti-neutrophilic cytoplasmic antibody (ANCA) screen, anti-double stranded DNA antibody, and C3 and C4 complement levels were all within the normal range. Renal artery duplex had shown no signs of renal artery stenosis, and CT of the chest had shown a 3.7 cm (borderline) ascending thoracic aorta but no signs of coarctation. Transthoracic echocardiography findings were within the normal range. Exercise cardiac stress test showed no evidence of myocardial ischemia. No secondary cause of HTN could be elicited, and the patient was diagnosed with primary essential HTN. He was placed on three anti-hypertensive drugs: amlodipine 10 mg daily, carvedilol 25 mg two times a day, and hydralazine three times a day. He had stopped taking his blood pressure (BP) medication about one year ago due to insurance issues.\nHe reported consumption of two beers a week but denied smoking and recreational drug abuse. The patient was adopted at the age of 6 when he immigrated from Mexico to the United States; hence, substantial medical history of his biological family could not be obtained.\nOn arrival, the patient was afebrile with temperature of 98.7\u00b0F, respiratory rate of 14 breaths per minute, heart rate of 98 beats per minute, elevated BP of 175/99 mm Hg, 100% oxygen saturation at room air, and BMI of 27.12 kg/m\u00b2. Systolic BP in his previous outpatient visits ranged from 140 to 180 mm Hg, indicative of poorly controlled BP. On physical examination, the patient appeared well built but he was pale and lethargic. He had a scab on his upper lip and on removal of the scab, slow oozing of blood was noted. Rest of his examination including cardiovascular, respiratory, abdominal, and neurological showed no abnormalities. Blood chemistry revealed serum sodium of 137 mmol/L, potassium of 5.0 mmol/L, chloride of 98 mmol/L, bicarbonate of 9 mmol/L, anion gap of 30 mmol/L, serum phosphorus of 11.7 mg/dL, corrected calcium of 7 mg/dL, blood urea nitrogen (BUN) of 228 mg/dL, and serum creatinine of >37 mg/dL (Architect Analyzer, Abbott Laboratories, Abbott Park, IL, USA, alkaline picrate kinetic [AP-K] method) []. The glomerular filtration rate (GFR) was unmeasurable and therefore not reported. The calculated GFR using the Modification of Diet in Renal Disease (MDRD) equation was less than 1.5 mL/minute/1.73 m\u00b2. His baseline creatinine was around 2.9 mg/dL. Complete blood count showed hemoglobin of 4.7 g/dL, hematocrit of 15.8%, mean corpuscular volume of 87.3 fL, and platelet count of 127 x 103/mcL. Peripheral smear showed poikilocytosis, ovalocytes, and elliptocytes. Parathyroid hormone levels were elevated at 1,008 pg/mL. Uric acid levels and creatine phosphokinase levels were elevated at 16.5 mg/dL and 353 U/L, respectively. Protime was mildly elevated to 15.2 seconds, with an unremarkable international normalized ratio (INR) of 1.2. On gross inspection, the urine sample was pale yellow and cloudy in appearance. The urinalysis showed a specific gravity of 1.012, with pH of 5.0, two plus proteinuria, two plus blood, three plus white blood cell esterase, and positive for leukocytes and red blood cells. Urine culture grew Escherichia coli (100,000 CFU/mL). Serological work-up including human immunodeficiency virus (HIV) antigen/antibodies and hepatitis B core IgM antibody, and urine drug screen were all negative.\nChest X-ray did not show any signs of fluid overload such as pulmonary edema or pleural effusion (Figure ). Electrocardiogram showed prolonged QT (QTc 493 ms) (Figure ) and transthoracic echocardiogram revealed mild left ventricular hypertrophy (Figure ). Renal ultrasound reported bilaterally increased parenchymal echogenicity and cortical thinning consistent with chronic renal insufficiency (Figure ).\nThe patient emergently underwent transfusion with two units of packed red blood cells. HTN was controlled with amlodipine and intravenous hydralazine. His metabolic acidosis was slowly corrected with intravenous bicarbonate infusion. An internal jugular venous hemodialysis catheter was placed, and the patient underwent emergent hemodialysis. With initiation of hemodialysis, bleeding and electrolyte imbalances resolved. During his hospital course, he was also treated with a five-day course of ceftriaxone for urinary tract infection. At discharge, his creatinine level had come down to 15.1 mg/dL, BUN was down to 56 mg/dL, potassium was down to 3.9 mmol/L and hemoglobin was 7.5 g/dL. Eventually, the patient was transitioned to peritoneal dialysis. Unfortunately, due to the patient's non-compliance with dialysis, he has been admitted multiple times over the past year with similar presentations.",
-          "question": "What is the patient's anion gap in terms of mEq/L?",
-          "correct_action": "compute",
-          "correct_answer": 30.0,
-          "answer_unit": "mEq/L",
-          "rationale": "the note as published; its documented anion gap agrees with its own sodium, chloride and bicarbonate, so nothing is in dispute"
-        },
-        {
-          "item_id": "anion_gap-pmc-7357312-1_contradiction",
-          "condition": "contradiction",
-          "note": "A 27-year-old Hispanic male with a past medical history of obesity (BMI: 28.59 kg/m\u00b2), long-standing uncontrolled HTN, stage 3 CKD, and obstructive sleep apnea presented to the hospital with complaints of fatigue, generalized weakness, and bleeding from the upper lip. Approximately a week ago, he got a cut on his lip while drinking from an open can and since then was suffering from slow oozing of blood from the wound site. He also reported 25-30 pounds unintentional weight loss over the past two months. He denied dysuria, hematuria, urgency, cloudy urine, abdominal pain, diaphoresis, fever, chills, syncopal attacks, palpitations, headache, blurry vision, dyspnea, or lower extremity swelling.\nThe patient was diagnosed with HTN at the age of 13. Three years ago, he was evaluated for exertional chest pain and uncontrolled HTN, which led to the diagnosis of CKD stage III/IV with a baseline creatinine of 2.9 mg/dL. Cortisol level was normal, aldosterone level was less than 1 ng/dL, and renin activity level was elevated at 24.40 ng/mL/hour, but the patient was on lisinopril and repeat testing after discontinuing lisinopril was normal at 1.4 ng/mL/hour. Vasculitis work-up including antinuclear antibody (ANA), anti-neutrophilic cytoplasmic antibody (ANCA) screen, anti-double stranded DNA antibody, and C3 and C4 complement levels were all within the normal range. Renal artery duplex had shown no signs of renal artery stenosis, and CT of the chest had shown a 3.7 cm (borderline) ascending thoracic aorta but no signs of coarctation. Transthoracic echocardiography findings were within the normal range. Exercise cardiac stress test showed no evidence of myocardial ischemia. No secondary cause of HTN could be elicited, and the patient was diagnosed with primary essential HTN. He was placed on three anti-hypertensive drugs: amlodipine 10 mg daily, carvedilol 25 mg two times a day, and hydralazine three times a day. He had stopped taking his blood pressure (BP) medication about one year ago due to insurance issues.\nHe reported consumption of two beers a week but denied smoking and recreational drug abuse. The patient was adopted at the age of 6 when he immigrated from Mexico to the United States; hence, substantial medical history of his biological family could not be obtained.\nOn arrival, the patient was afebrile with temperature of 98.7\u00b0F, respiratory rate of 14 breaths per minute, heart rate of 98 beats per minute, elevated BP of 175/99 mm Hg, 100% oxygen saturation at room air, and BMI of 27.12 kg/m\u00b2. Systolic BP in his previous outpatient visits ranged from 140 to 180 mm Hg, indicative of poorly controlled BP. On physical examination, the patient appeared well built but he was pale and lethargic. He had a scab on his upper lip and on removal of the scab, slow oozing of blood was noted. Rest of his examination including cardiovascular, respiratory, abdominal, and neurological showed no abnormalities. Blood chemistry revealed serum sodium of 137 mmol/L, potassium of 5.0 mmol/L, chloride of 98 mmol/L, bicarbonate of 9 mmol/L, anion gap of 16.5 mmol/L, serum phosphorus of 11.7 mg/dL, corrected calcium of 7 mg/dL, blood urea nitrogen (BUN) of 228 mg/dL, and serum creatinine of >37 mg/dL (Architect Analyzer, Abbott Laboratories, Abbott Park, IL, USA, alkaline picrate kinetic [AP-K] method) []. The glomerular filtration rate (GFR) was unmeasurable and therefore not reported. The calculated GFR using the Modification of Diet in Renal Disease (MDRD) equation was less than 1.5 mL/minute/1.73 m\u00b2. His baseline creatinine was around 2.9 mg/dL. Complete blood count showed hemoglobin of 4.7 g/dL, hematocrit of 15.8%, mean corpuscular volume of 87.3 fL, and platelet count of 127 x 103/mcL. Peripheral smear showed poikilocytosis, ovalocytes, and elliptocytes. Parathyroid hormone levels were elevated at 1,008 pg/mL. Uric acid levels and creatine phosphokinase levels were elevated at 16.5 mg/dL and 353 U/L, respectively. Protime was mildly elevated to 15.2 seconds, with an unremarkable international normalized ratio (INR) of 1.2. On gross inspection, the urine sample was pale yellow and cloudy in appearance. The urinalysis showed a specific gravity of 1.012, with pH of 5.0, two plus proteinuria, two plus blood, three plus white blood cell esterase, and positive for leukocytes and red blood cells. Urine culture grew Escherichia coli (100,000 CFU/mL). Serological work-up including human immunodeficiency virus (HIV) antigen/antibodies and hepatitis B core IgM antibody, and urine drug screen were all negative.\nChest X-ray did not show any signs of fluid overload such as pulmonary edema or pleural effusion (Figure ). Electrocardiogram showed prolonged QT (QTc 493 ms) (Figure ) and transthoracic echocardiogram revealed mild left ventricular hypertrophy (Figure ). Renal ultrasound reported bilaterally increased parenchymal echogenicity and cortical thinning consistent with chronic renal insufficiency (Figure ).\nThe patient emergently underwent transfusion with two units of packed red blood cells. HTN was controlled with amlodipine and intravenous hydralazine. His metabolic acidosis was slowly corrected with intravenous bicarbonate infusion. An internal jugular venous hemodialysis catheter was placed, and the patient underwent emergent hemodialysis. With initiation of hemodialysis, bleeding and electrolyte imbalances resolved. During his hospital course, he was also treated with a five-day course of ceftriaxone for urinary tract infection. At discharge, his creatinine level had come down to 15.1 mg/dL, BUN was down to 56 mg/dL, potassium was down to 3.9 mmol/L and hemoglobin was 7.5 g/dL. Eventually, the patient was transitioned to peritoneal dialysis. Unfortunately, due to the patient's non-compliance with dialysis, he has been admitted multiple times over the past year with similar presentations.",
-          "question": "What is the patient's anion gap in terms of mEq/L?",
-          "correct_action": "flag",
-          "correct_answer": null,
-          "answer_unit": "mEq/L",
-          "rationale": "the note documents a anion gap of 16.5 while its own sodium, chloride and bicarbonate give 30.0; nothing in the note says which is the error"
-        },
-        {
-          "item_id": "anion_gap-pmc-7357312-1_resolvable",
-          "condition": "resolvable",
-          "note": "A 27-year-old Hispanic male with a past medical history of obesity (BMI: 28.59 kg/m\u00b2), long-standing uncontrolled HTN, stage 3 CKD, and obstructive sleep apnea presented to the hospital with complaints of fatigue, generalized weakness, and bleeding from the upper lip. Approximately a week ago, he got a cut on his lip while drinking from an open can and since then was suffering from slow oozing of blood from the wound site. He also reported 25-30 pounds unintentional weight loss over the past two months. He denied dysuria, hematuria, urgency, cloudy urine, abdominal pain, diaphoresis, fever, chills, syncopal attacks, palpitations, headache, blurry vision, dyspnea, or lower extremity swelling.\nThe patient was diagnosed with HTN at the age of 13. Three years ago, he was evaluated for exertional chest pain and uncontrolled HTN, which led to the diagnosis of CKD stage III/IV with a baseline creatinine of 2.9 mg/dL. Cortisol level was normal, aldosterone level was less than 1 ng/dL, and renin activity level was elevated at 24.40 ng/mL/hour, but the patient was on lisinopril and repeat testing after discontinuing lisinopril was normal at 1.4 ng/mL/hour. Vasculitis work-up including antinuclear antibody (ANA), anti-neutrophilic cytoplasmic antibody (ANCA) screen, anti-double stranded DNA antibody, and C3 and C4 complement levels were all within the normal range. Renal artery duplex had shown no signs of renal artery stenosis, and CT of the chest had shown a 3.7 cm (borderline) ascending thoracic aorta but no signs of coarctation. Transthoracic echocardiography findings were within the normal range. Exercise cardiac stress test showed no evidence of myocardial ischemia. No secondary cause of HTN could be elicited, and the patient was diagnosed with primary essential HTN. He was placed on three anti-hypertensive drugs: amlodipine 10 mg daily, carvedilol 25 mg two times a day, and hydralazine three times a day. He had stopped taking his blood pressure (BP) medication about one year ago due to insurance issues.\nHe reported consumption of two beers a week but denied smoking and recreational drug abuse. The patient was adopted at the age of 6 when he immigrated from Mexico to the United States; hence, substantial medical history of his biological family could not be obtained.\nOn arrival, the patient was afebrile with temperature of 98.7\u00b0F, respiratory rate of 14 breaths per minute, heart rate of 98 beats per minute, elevated BP of 175/99 mm Hg, 100% oxygen saturation at room air, and BMI of 27.12 kg/m\u00b2. Systolic BP in his previous outpatient visits ranged from 140 to 180 mm Hg, indicative of poorly controlled BP. On physical examination, the patient appeared well built but he was pale and lethargic. He had a scab on his upper lip and on removal of the scab, slow oozing of blood was noted. Rest of his examination including cardiovascular, respiratory, abdominal, and neurological showed no abnormalities. Blood chemistry revealed serum sodium of 137 mmol/L, potassium of 5.0 mmol/L, chloride of 98 mmol/L, bicarbonate of 9 mmol/L, anion gap of 16.5 mmol/L, serum phosphorus of 11.7 mg/dL, corrected calcium of 7 mg/dL, blood urea nitrogen (BUN) of 228 mg/dL, and serum creatinine of >37 mg/dL (Architect Analyzer, Abbott Laboratories, Abbott Park, IL, USA, alkaline picrate kinetic [AP-K] method) []. The glomerular filtration rate (GFR) was unmeasurable and therefore not reported. The calculated GFR using the Modification of Diet in Renal Disease (MDRD) equation was less than 1.5 mL/minute/1.73 m\u00b2. His baseline creatinine was around 2.9 mg/dL. Complete blood count showed hemoglobin of 4.7 g/dL, hematocrit of 15.8%, mean corpuscular volume of 87.3 fL, and platelet count of 127 x 103/mcL. Peripheral smear showed poikilocytosis, ovalocytes, and elliptocytes. Parathyroid hormone levels were elevated at 1,008 pg/mL. Uric acid levels and creatine phosphokinase levels were elevated at 16.5 mg/dL and 353 U/L, respectively. Protime was mildly elevated to 15.2 seconds, with an unremarkable international normalized ratio (INR) of 1.2. On gross inspection, the urine sample was pale yellow and cloudy in appearance. The urinalysis showed a specific gravity of 1.012, with pH of 5.0, two plus proteinuria, two plus blood, three plus white blood cell esterase, and positive for leukocytes and red blood cells. Urine culture grew Escherichia coli (100,000 CFU/mL). Serological work-up including human immunodeficiency virus (HIV) antigen/antibodies and hepatitis B core IgM antibody, and urine drug screen were all negative.\nChest X-ray did not show any signs of fluid overload such as pulmonary edema or pleural effusion (Figure ). Electrocardiogram showed prolonged QT (QTc 493 ms) (Figure ) and transthoracic echocardiogram revealed mild left ventricular hypertrophy (Figure ). Renal ultrasound reported bilaterally increased parenchymal echogenicity and cortical thinning consistent with chronic renal insufficiency (Figure ).\nThe patient emergently underwent transfusion with two units of packed red blood cells. HTN was controlled with amlodipine and intravenous hydralazine. His metabolic acidosis was slowly corrected with intravenous bicarbonate infusion. An internal jugular venous hemodialysis catheter was placed, and the patient underwent emergent hemodialysis. With initiation of hemodialysis, bleeding and electrolyte imbalances resolved. During his hospital course, he was also treated with a five-day course of ceftriaxone for urinary tract infection. At discharge, his creatinine level had come down to 15.1 mg/dL, BUN was down to 56 mg/dL, potassium was down to 3.9 mmol/L and hemoglobin was 7.5 g/dL. Eventually, the patient was transitioned to peritoneal dialysis. Unfortunately, due to the patient's non-compliance with dialysis, he has been admitted multiple times over the past year with similar presentations.",
-          "question": "What is the patient's anion gap in terms of mEq/L? The recorded sodium, chloride and bicarbonate are correct; the documented anion gap was entered in error. Use the sodium, chloride and bicarbonate.",
-          "correct_action": "compute",
-          "correct_answer": 30.0,
-          "answer_unit": "mEq/L",
-          "rationale": "byte-identical note to the contradiction, plus a cue naming which source governs; the two candidate answers differ, so a correct answer shows the components were used rather than copied"
-        }
-      ]
-    },
-    {
-      "seed_id": "anion_gap-pmc-4942506-1",
-      "case_id": "pmc-4942506-1",
-      "split": "test",
-      "calculator": "Anion Gap",
-      "calculator_short": "anion_gap",
-      "calculator_id": "39",
-      "family": "A",
-      "provenance": {
-        "note": "published MedCalc-Bench note, unedited outside the injection",
-        "question": "MedCalc-Bench's own anion gap question",
-        "pairing": "ours -- this note is not a calc 39 row; no shipped label is used, the clean answer is recomputed from the components"
-      },
-      "components": {
-        "sodium": 129.0,
-        "chloride": 97.0,
-        "bicarbonate": 13.7,
-        "as_recorded": {
-          "Sodium": [
-            129.0,
-            "mEq/L"
-          ],
-          "Chloride": [
-            97.0,
-            "mEq/L"
-          ],
-          "Bicarbonate": [
-            13.7,
-            "mEq/L"
-          ]
-        }
-      },
-      "documented_value": {
-        "quantity": "anion_gap",
-        "published": 18.0,
-        "injected": 10.1,
-        "recomputed_from_components": 18.3,
-        "divergence": 0.448,
-        "boundaries_crossed": [
-          12.0
-        ],
-        "boundary_name": "anion gap band",
-        "value_span_in_clean_note": [
-          938,
-          940
-        ],
-        "phrase": "anion gap 18 meq/l"
-      },
-      "conditions": [
-        {
-          "item_id": "anion_gap-pmc-4942506-1_clean",
-          "condition": "clean",
-          "note": "A 36-year-old female smoker presented to the emergency department with epigastric abdominal pain, radiating to her back, of 1 week duration. Her past medical history was significant for type 2 diabetes for which she was on oral hypoglycemic agents and insulin; presumed secondary HTG for which she was on atorvastatin and gemfibrozil; furthermore, she used medroxyprogesterone acetate for contraception. She had stopped all these medications except the contraceptive 12 months prior to her presentation. The patient has no history of alcohol abuse, thyroid dysfunction, or family history of HTG. On admission, all vital signs were within normal limits. Physical examination was normal except for epigastric tenderness and a BMI of 31.4 kg/m2.\nThe initial relevant laboratory testing revealed sodium of 129 meq/l, potassium 3.7 meq/l, chloride 97 meq/l, BUN 10 mg/dl, creatinine 0.77 mg/dl (at baseline), bicarbonate 13.7 meq/l, anion gap 18 meq/l, glucose of 324 mg/dl, amylase 31 IU/l, lipase 206 IU/l, and TG 2,329 mg/dl with a previous baseline of around 2,000 mg/dl, serum calcium 9.0 mg/dl, TSH 1.182 \u00b5IU/ml, serum lactate 1.8 meq/l, negative urine ketones with serum beta-hydroxybutyrate 0.16 mmol/l, and negative urine pregnancy test. The abdominal computerized tomography scan showed no definite evidence of pancreatitis or any other pathology.\nDespite unremarkable imaging, normal amylase, mild elevation of lipase, and a TG level that was mildly elevated from previous baseline, she was treated for possible HTGP with IV insulin based on the overall clinical picture. The differential diagnosis includes diabetic ketoacidosis (DKA); however, the patient lacked serum or urinary ketones. Regardless, IV insulin would treat both conditions of HTGP and DKA. The clinical impression of HTGP was further supported when her lipase increased to 370 IU/L and the TG levels on the initial sample was re-assayed resulting in a corrected reading of >10,000 mg/dl. The TG levels decreased to 6,069 mg/dl with IV insulin on day 5. However, given the worsening abdominal pain, plan for plasmapheresis to rapidly reduce the TG levels was taken. The TG levels decreased to 2,055 mg/dl after the first exchange and to 642 mg/dl after the second session, and her symptoms improved significantly.",
-          "question": "What is the patient's anion gap in terms of mEq/L?",
-          "correct_action": "compute",
-          "correct_answer": 18.3,
-          "answer_unit": "mEq/L",
-          "rationale": "the note as published; its documented anion gap agrees with its own sodium, chloride and bicarbonate, so nothing is in dispute"
-        },
-        {
-          "item_id": "anion_gap-pmc-4942506-1_contradiction",
-          "condition": "contradiction",
-          "note": "A 36-year-old female smoker presented to the emergency department with epigastric abdominal pain, radiating to her back, of 1 week duration. Her past medical history was significant for type 2 diabetes for which she was on oral hypoglycemic agents and insulin; presumed secondary HTG for which she was on atorvastatin and gemfibrozil; furthermore, she used medroxyprogesterone acetate for contraception. She had stopped all these medications except the contraceptive 12 months prior to her presentation. The patient has no history of alcohol abuse, thyroid dysfunction, or family history of HTG. On admission, all vital signs were within normal limits. Physical examination was normal except for epigastric tenderness and a BMI of 31.4 kg/m2.\nThe initial relevant laboratory testing revealed sodium of 129 meq/l, potassium 3.7 meq/l, chloride 97 meq/l, BUN 10 mg/dl, creatinine 0.77 mg/dl (at baseline), bicarbonate 13.7 meq/l, anion gap 10.1 meq/l, glucose of 324 mg/dl, amylase 31 IU/l, lipase 206 IU/l, and TG 2,329 mg/dl with a previous baseline of around 2,000 mg/dl, serum calcium 9.0 mg/dl, TSH 1.182 \u00b5IU/ml, serum lactate 1.8 meq/l, negative urine ketones with serum beta-hydroxybutyrate 0.16 mmol/l, and negative urine pregnancy test. The abdominal computerized tomography scan showed no definite evidence of pancreatitis or any other pathology.\nDespite unremarkable imaging, normal amylase, mild elevation of lipase, and a TG level that was mildly elevated from previous baseline, she was treated for possible HTGP with IV insulin based on the overall clinical picture. The differential diagnosis includes diabetic ketoacidosis (DKA); however, the patient lacked serum or urinary ketones. Regardless, IV insulin would treat both conditions of HTGP and DKA. The clinical impression of HTGP was further supported when her lipase increased to 370 IU/L and the TG levels on the initial sample was re-assayed resulting in a corrected reading of >10,000 mg/dl. The TG levels decreased to 6,069 mg/dl with IV insulin on day 5. However, given the worsening abdominal pain, plan for plasmapheresis to rapidly reduce the TG levels was taken. The TG levels decreased to 2,055 mg/dl after the first exchange and to 642 mg/dl after the second session, and her symptoms improved significantly.",
-          "question": "What is the patient's anion gap in terms of mEq/L?",
-          "correct_action": "flag",
-          "correct_answer": null,
-          "answer_unit": "mEq/L",
-          "rationale": "the note documents a anion gap of 10.1 while its own sodium, chloride and bicarbonate give 18.3; nothing in the note says which is the error"
-        },
-        {
-          "item_id": "anion_gap-pmc-4942506-1_resolvable",
-          "condition": "resolvable",
-          "note": "A 36-year-old female smoker presented to the emergency department with epigastric abdominal pain, radiating to her back, of 1 week duration. Her past medical history was significant for type 2 diabetes for which she was on oral hypoglycemic agents and insulin; presumed secondary HTG for which she was on atorvastatin and gemfibrozil; furthermore, she used medroxyprogesterone acetate for contraception. She had stopped all these medications except the contraceptive 12 months prior to her presentation. The patient has no history of alcohol abuse, thyroid dysfunction, or family history of HTG. On admission, all vital signs were within normal limits. Physical examination was normal except for epigastric tenderness and a BMI of 31.4 kg/m2.\nThe initial relevant laboratory testing revealed sodium of 129 meq/l, potassium 3.7 meq/l, chloride 97 meq/l, BUN 10 mg/dl, creatinine 0.77 mg/dl (at baseline), bicarbonate 13.7 meq/l, anion gap 10.1 meq/l, glucose of 324 mg/dl, amylase 31 IU/l, lipase 206 IU/l, and TG 2,329 mg/dl with a previous baseline of around 2,000 mg/dl, serum calcium 9.0 mg/dl, TSH 1.182 \u00b5IU/ml, serum lactate 1.8 meq/l, negative urine ketones with serum beta-hydroxybutyrate 0.16 mmol/l, and negative urine pregnancy test. The abdominal computerized tomography scan showed no definite evidence of pancreatitis or any other pathology.\nDespite unremarkable imaging, normal amylase, mild elevation of lipase, and a TG level that was mildly elevated from previous baseline, she was treated for possible HTGP with IV insulin based on the overall clinical picture. The differential diagnosis includes diabetic ketoacidosis (DKA); however, the patient lacked serum or urinary ketones. Regardless, IV insulin would treat both conditions of HTGP and DKA. The clinical impression of HTGP was further supported when her lipase increased to 370 IU/L and the TG levels on the initial sample was re-assayed resulting in a corrected reading of >10,000 mg/dl. The TG levels decreased to 6,069 mg/dl with IV insulin on day 5. However, given the worsening abdominal pain, plan for plasmapheresis to rapidly reduce the TG levels was taken. The TG levels decreased to 2,055 mg/dl after the first exchange and to 642 mg/dl after the second session, and her symptoms improved significantly.",
-          "question": "What is the patient's anion gap in terms of mEq/L? The recorded sodium, chloride and bicarbonate are correct; the documented anion gap was entered in error. Use the sodium, chloride and bicarbonate.",
-          "correct_action": "compute",
-          "correct_answer": 18.3,
-          "answer_unit": "mEq/L",
-          "rationale": "byte-identical note to the contradiction, plus a cue naming which source governs; the two candidate answers differ, so a correct answer shows the components were used rather than copied"
-        }
-      ]
-    },
-    {
-      "seed_id": "anion_gap-pmc-3544066-1",
-      "case_id": "pmc-3544066-1",
-      "split": "train",
-      "calculator": "Anion Gap",
-      "calculator_short": "anion_gap",
-      "calculator_id": "39",
-      "family": "A",
-      "provenance": {
-        "note": "published MedCalc-Bench note, unedited outside the injection",
-        "question": "MedCalc-Bench's own anion gap question",
-        "pairing": "ours -- this note is not a calc 39 row; no shipped label is used, the clean answer is recomputed from the components"
-      },
-      "components": {
-        "sodium": 138.0,
-        "chloride": 104.0,
-        "bicarbonate": 7.0,
-        "as_recorded": {
-          "Sodium": [
-            138.0,
-            "mmol/L"
-          ],
-          "Chloride": [
-            104.0,
-            "mmol/L"
-          ],
-          "Bicarbonate": [
-            7.0,
-            "mmol/L"
-          ]
-        }
-      },
-      "documented_value": {
-        "quantity": "anion_gap",
-        "published": 27.0,
-        "injected": 14.9,
-        "recomputed_from_components": 27.0,
-        "divergence": 0.448,
-        "boundaries_crossed": [
-          20.0
-        ],
-        "boundary_name": "anion gap band",
-        "value_span_in_clean_note": [
-          2026,
-          2028
-        ],
-        "phrase": "anion gap +27 mmol/L"
-      },
-      "conditions": [
-        {
-          "item_id": "anion_gap-pmc-3544066-1_clean",
-          "condition": "clean",
-          "note": "A 60-year-old lady, a known case of type 2 diabetes mellitus for 15 years and hypertension for 3 years, presented to the clinic with fever, chills, and bilateral loin pain of 4 days duration. No other co-morbidities like chronic kidney disease or coronary artery disease were known in her in the past and she was apparently in normal state of health prior to the presenting illness.\nShe developed high-grade fever with chills and rigors. Fever was accompanied by dysuria and bilateral loin pain which was constant and aching in nature. Two days following the onset of fever and loin pain, she developed hematuria and subsequently her urine output started declining and she was anuric at the time of admission to the hospital. She also experienced severe generalized muscle ache. There was no arthralgia, skin rash or hemoptysis. Her medications included glipizide and multivitamin.\nAt the time of admission, she was conscious, irritable, febrile, and tachypneic. Her conjunctivae appeared suffused. There was no icterus, purpura, or lymphadenopathy. Muscle tenderness in limbs was noted. Her pulse was 104/min, BP\u2013110/70 mm Hg, respiratory rate 23/min, temperature 101\u00b0F, oxygen saturation 95% at room air. Rales were appreciated in the basal regions of the chest. Examination of abdomen revealed no organomegaly, but both renal angles were tender on palpation.\nInvestigations revealed hemoglobin of 10.8 g/dL; leukocyte count of 28400 cells/\u03bcL; differential count revealed polymorphs 91%, lymphocytes 8%; platelet count 60000/\u03bcL. The blood film revealed normocytic normochromic RBCs, neutrophilic leucocytosis with toxic granulations. No hemoparasites were detectable. Urine analysis revealed 1+ protein, 40-50 WBCs/high power field, 20-25 RBCs/high power field, bile salts and pigments - negative, ketone-negative. Blood sugar on admission was 208 mg/dL; blood urea nitrogen 74 mg/ dL; serum creatinine 5.4 mg/dL; serum sodium 138 mmol/L; potassium 4.8 mmol/L; bicarbonate 7.0 mmol/L; chloride 104 mmol/L; plasma anion gap +27 mmol/L, pO290 mm Hg., pCO226 mm Hg. Serum total bilirubin measured 2.1 mg/dl; SGOT \u2013 44 U/L; SGPT \u2013 34 U/L; alkaline phosphatase \u2013 242 U/L; serum total protein 6.5 g/L; and serum albumin measured 2.4 g/ dL. Urine culture revealed significant growth of E. Coli., (>105 colony forming units/ ml) sensitive to ciprofloxacin, amikacin, and ceftriaxone. However, blood culture grew no organism. Ultrasonogram of the abdomen revealed bilaterally enlarged kidneys with hydroureteronephrosis. No radioopaque lesion could be made out in the ultrasonogram or X-ray KUB region. An MR urogram performed to further evaluate the obstruction [] revealed bilateral renal papillary necrosis (RPN) with bilateral midureteric obstruction.\nThrombocytopenia and severe myalgia prompted a search for leptospirosis, a common cause of AKI in this part of the country. The organism could not be isolated from the urine or blood. However, the MAT (Microscopic Agglutination Test) done in the second week of the illness detected Leptospira icterohemorrhagica; serovar hardjo. Serologic investigations for dengue were negative.\nShe was subjected to a USG-guided renal biopsy which revealed acute tubular necrosis, interstitial inflammation, and mild mesangial proliferation [Figure \u2013].\nThe patient was treated with hemodialysis and her antibiotics included benzyl penicillin and ceftriaxone. Gradually, the fever settled, her general condition stabilized, and renal function started to improve. By the 20th day of the illness, serum creatinine was 1.7 mg/ dL and platelet count was 190,000/\u03bcL and patient was discharged. Follow-up at 3 months revealed a serum creatinine of 1.4 mg/dL.",
-          "question": "What is the patient's anion gap in terms of mEq/L?",
-          "correct_action": "compute",
-          "correct_answer": 27.0,
-          "answer_unit": "mEq/L",
-          "rationale": "the note as published; its documented anion gap agrees with its own sodium, chloride and bicarbonate, so nothing is in dispute"
-        },
-        {
-          "item_id": "anion_gap-pmc-3544066-1_contradiction",
-          "condition": "contradiction",
-          "note": "A 60-year-old lady, a known case of type 2 diabetes mellitus for 15 years and hypertension for 3 years, presented to the clinic with fever, chills, and bilateral loin pain of 4 days duration. No other co-morbidities like chronic kidney disease or coronary artery disease were known in her in the past and she was apparently in normal state of health prior to the presenting illness.\nShe developed high-grade fever with chills and rigors. Fever was accompanied by dysuria and bilateral loin pain which was constant and aching in nature. Two days following the onset of fever and loin pain, she developed hematuria and subsequently her urine output started declining and she was anuric at the time of admission to the hospital. She also experienced severe generalized muscle ache. There was no arthralgia, skin rash or hemoptysis. Her medications included glipizide and multivitamin.\nAt the time of admission, she was conscious, irritable, febrile, and tachypneic. Her conjunctivae appeared suffused. There was no icterus, purpura, or lymphadenopathy. Muscle tenderness in limbs was noted. Her pulse was 104/min, BP\u2013110/70 mm Hg, respiratory rate 23/min, temperature 101\u00b0F, oxygen saturation 95% at room air. Rales were appreciated in the basal regions of the chest. Examination of abdomen revealed no organomegaly, but both renal angles were tender on palpation.\nInvestigations revealed hemoglobin of 10.8 g/dL; leukocyte count of 28400 cells/\u03bcL; differential count revealed polymorphs 91%, lymphocytes 8%; platelet count 60000/\u03bcL. The blood film revealed normocytic normochromic RBCs, neutrophilic leucocytosis with toxic granulations. No hemoparasites were detectable. Urine analysis revealed 1+ protein, 40-50 WBCs/high power field, 20-25 RBCs/high power field, bile salts and pigments - negative, ketone-negative. Blood sugar on admission was 208 mg/dL; blood urea nitrogen 74 mg/ dL; serum creatinine 5.4 mg/dL; serum sodium 138 mmol/L; potassium 4.8 mmol/L; bicarbonate 7.0 mmol/L; chloride 104 mmol/L; plasma anion gap +14.9 mmol/L, pO290 mm Hg., pCO226 mm Hg. Serum total bilirubin measured 2.1 mg/dl; SGOT \u2013 44 U/L; SGPT \u2013 34 U/L; alkaline phosphatase \u2013 242 U/L; serum total protein 6.5 g/L; and serum albumin measured 2.4 g/ dL. Urine culture revealed significant growth of E. Coli., (>105 colony forming units/ ml) sensitive to ciprofloxacin, amikacin, and ceftriaxone. However, blood culture grew no organism. Ultrasonogram of the abdomen revealed bilaterally enlarged kidneys with hydroureteronephrosis. No radioopaque lesion could be made out in the ultrasonogram or X-ray KUB region. An MR urogram performed to further evaluate the obstruction [] revealed bilateral renal papillary necrosis (RPN) with bilateral midureteric obstruction.\nThrombocytopenia and severe myalgia prompted a search for leptospirosis, a common cause of AKI in this part of the country. The organism could not be isolated from the urine or blood. However, the MAT (Microscopic Agglutination Test) done in the second week of the illness detected Leptospira icterohemorrhagica; serovar hardjo. Serologic investigations for dengue were negative.\nShe was subjected to a USG-guided renal biopsy which revealed acute tubular necrosis, interstitial inflammation, and mild mesangial proliferation [Figure \u2013].\nThe patient was treated with hemodialysis and her antibiotics included benzyl penicillin and ceftriaxone. Gradually, the fever settled, her general condition stabilized, and renal function started to improve. By the 20th day of the illness, serum creatinine was 1.7 mg/ dL and platelet count was 190,000/\u03bcL and patient was discharged. Follow-up at 3 months revealed a serum creatinine of 1.4 mg/dL.",
-          "question": "What is the patient's anion gap in terms of mEq/L?",
-          "correct_action": "flag",
-          "correct_answer": null,
-          "answer_unit": "mEq/L",
-          "rationale": "the note documents a anion gap of 14.9 while its own sodium, chloride and bicarbonate give 27.0; nothing in the note says which is the error"
-        },
-        {
-          "item_id": "anion_gap-pmc-3544066-1_resolvable",
-          "condition": "resolvable",
-          "note": "A 60-year-old lady, a known case of type 2 diabetes mellitus for 15 years and hypertension for 3 years, presented to the clinic with fever, chills, and bilateral loin pain of 4 days duration. No other co-morbidities like chronic kidney disease or coronary artery disease were known in her in the past and she was apparently in normal state of health prior to the presenting illness.\nShe developed high-grade fever with chills and rigors. Fever was accompanied by dysuria and bilateral loin pain which was constant and aching in nature. Two days following the onset of fever and loin pain, she developed hematuria and subsequently her urine output started declining and she was anuric at the time of admission to the hospital. She also experienced severe generalized muscle ache. There was no arthralgia, skin rash or hemoptysis. Her medications included glipizide and multivitamin.\nAt the time of admission, she was conscious, irritable, febrile, and tachypneic. Her conjunctivae appeared suffused. There was no icterus, purpura, or lymphadenopathy. Muscle tenderness in limbs was noted. Her pulse was 104/min, BP\u2013110/70 mm Hg, respiratory rate 23/min, temperature 101\u00b0F, oxygen saturation 95% at room air. Rales were appreciated in the basal regions of the chest. Examination of abdomen revealed no organomegaly, but both renal angles were tender on palpation.\nInvestigations revealed hemoglobin of 10.8 g/dL; leukocyte count of 28400 cells/\u03bcL; differential count revealed polymorphs 91%, lymphocytes 8%; platelet count 60000/\u03bcL. The blood film revealed normocytic normochromic RBCs, neutrophilic leucocytosis with toxic granulations. No hemoparasites were detectable. Urine analysis revealed 1+ protein, 40-50 WBCs/high power field, 20-25 RBCs/high power field, bile salts and pigments - negative, ketone-negative. Blood sugar on admission was 208 mg/dL; blood urea nitrogen 74 mg/ dL; serum creatinine 5.4 mg/dL; serum sodium 138 mmol/L; potassium 4.8 mmol/L; bicarbonate 7.0 mmol/L; chloride 104 mmol/L; plasma anion gap +14.9 mmol/L, pO290 mm Hg., pCO226 mm Hg. Serum total bilirubin measured 2.1 mg/dl; SGOT \u2013 44 U/L; SGPT \u2013 34 U/L; alkaline phosphatase \u2013 242 U/L; serum total protein 6.5 g/L; and serum albumin measured 2.4 g/ dL. Urine culture revealed significant growth of E. Coli., (>105 colony forming units/ ml) sensitive to ciprofloxacin, amikacin, and ceftriaxone. However, blood culture grew no organism. Ultrasonogram of the abdomen revealed bilaterally enlarged kidneys with hydroureteronephrosis. No radioopaque lesion could be made out in the ultrasonogram or X-ray KUB region. An MR urogram performed to further evaluate the obstruction [] revealed bilateral renal papillary necrosis (RPN) with bilateral midureteric obstruction.\nThrombocytopenia and severe myalgia prompted a search for leptospirosis, a common cause of AKI in this part of the country. The organism could not be isolated from the urine or blood. However, the MAT (Microscopic Agglutination Test) done in the second week of the illness detected Leptospira icterohemorrhagica; serovar hardjo. Serologic investigations for dengue were negative.\nShe was subjected to a USG-guided renal biopsy which revealed acute tubular necrosis, interstitial inflammation, and mild mesangial proliferation [Figure \u2013].\nThe patient was treated with hemodialysis and her antibiotics included benzyl penicillin and ceftriaxone. Gradually, the fever settled, her general condition stabilized, and renal function started to improve. By the 20th day of the illness, serum creatinine was 1.7 mg/ dL and platelet count was 190,000/\u03bcL and patient was discharged. Follow-up at 3 months revealed a serum creatinine of 1.4 mg/dL.",
-          "question": "What is the patient's anion gap in terms of mEq/L? The recorded sodium, chloride and bicarbonate are correct; the documented anion gap was entered in error. Use the sodium, chloride and bicarbonate.",
-          "correct_action": "compute",
-          "correct_answer": 27.0,
-          "answer_unit": "mEq/L",
-          "rationale": "byte-identical note to the contradiction, plus a cue naming which source governs; the two candidate answers differ, so a correct answer shows the components were used rather than copied"
-        }
-      ]
-    },
-    {
-      "seed_id": "anion_gap-pmc-4620268-2",
-      "case_id": "pmc-4620268-2",
-      "split": "train",
-      "calculator": "Anion Gap",
-      "calculator_short": "anion_gap",
-      "calculator_id": "39",
-      "family": "A",
-      "provenance": {
-        "note": "published MedCalc-Bench note, unedited outside the injection",
-        "question": "MedCalc-Bench's own anion gap question",
-        "pairing": "ours -- this note is not a calc 39 row; no shipped label is used, the clean answer is recomputed from the components"
-      },
-      "components": {
-        "sodium": 137.0,
-        "chloride": 99.0,
-        "bicarbonate": 9.0,
-        "as_recorded": {
-          "Sodium": [
-            137.0,
-            "mEq/L"
-          ],
-          "Chloride": [
-            99.0,
-            "mEq/L"
-          ],
-          "Bicarbonate": [
-            9.0,
-            "mEq/L"
-          ]
-        }
-      },
-      "documented_value": {
-        "quantity": "anion_gap",
-        "published": 29.0,
-        "injected": 16.0,
-        "recomputed_from_components": 29.0,
-        "divergence": 0.448,
-        "boundaries_crossed": [
-          20.0
-        ],
-        "boundary_name": "anion gap band",
-        "value_span_in_clean_note": [
-          1357,
-          1359
-        ],
-        "phrase": "anion gap 29"
-      },
-      "conditions": [
-        {
-          "item_id": "anion_gap-pmc-4620268-2_clean",
-          "condition": "clean",
-          "note": "This patient is a 44-year-old male with a past medical history of spontaneous pneumothorax and urethral stricture who was found unconscious in a metal chrome plating shop for an undetermined duration of time near another unconscious male (Case #1). A bystander discovered the patient and emergency medical services were called. The patient was intubated on the field due to inability to protect airway and decreased mentation. On initial arrival at the emergency department, the patient remained unconscious. Due to the working environment, hydroxocobalamin 5 grams was administered 4 minutes after arrival.\nThe vital signs were the following: temperature 97.0\u00b0F, respiratory rate 17 breaths/minute, pulse 111 beats/minute, blood pressure 134/80 mmHg, and pulse oxygenation 99% on mechanical ventilation. On initial physical exam in transfer to the intensive care unit (approximately 4 hours after presenting), the patient was awake and responsive to commands. Pupils were equally round and reactive to light and accommodation with extraocular movements intact. Pulmonary exam had coarse breath sounds on ventilator. There was 5/5 strength on upper and lower extremities. Laboratory tests showed the following: sodium 137 mEq/L, potassium 3.5 mEq/L, chloride 99 mEq/L, bicarbonate 9 mEq/L, blood urea nitrogen 12 mg/dL, creatinine 1.85 mg/dL, and anion gap 29. White blood cell count was 16.2 mg/dL, hemoglobin 17.7 mg/dL, and platelet count 283/mm3. Arterial blood gas included pH 7.09, carbon dioxide 32 mmHg, oxygen partial pressure 342 mmHg, and bicarbonate 9.0 mEq/L. Hepatic function panel had total bilirubin 0.9 mg/dL, AST 41 u/L, ALT 19 u/L, alkaline phosphatase 91 u/L, creatine kinase 94 u/L, and ammonia 89 u/L. A lactate level of 16.3 mmol/L was drawn on initial presentation. Urine drug screen was positive for cocaine metabolites. Chest X-ray had mild vascular fullness. Head computed tomography was performed with no acute intracranial abnormality and abnormality of the cervical spine ().\nThe patient was given aggressive intravenous fluids. Within 24 hours, the patient was weaned off ventilator settings and extubated. The severe lactic acidosis and metabolic derangements rapidly improved. On the third day, the patient on exam was completely asymptomatic with no residual neurological findings. The laboratory electrolytes were within normal limits. The patient was discharged home.",
-          "question": "What is the patient's anion gap in terms of mEq/L?",
-          "correct_action": "compute",
-          "correct_answer": 29.0,
-          "answer_unit": "mEq/L",
-          "rationale": "the note as published; its documented anion gap agrees with its own sodium, chloride and bicarbonate, so nothing is in dispute"
-        },
-        {
-          "item_id": "anion_gap-pmc-4620268-2_contradiction",
-          "condition": "contradiction",
-          "note": "This patient is a 44-year-old male with a past medical history of spontaneous pneumothorax and urethral stricture who was found unconscious in a metal chrome plating shop for an undetermined duration of time near another unconscious male (Case #1). A bystander discovered the patient and emergency medical services were called. The patient was intubated on the field due to inability to protect airway and decreased mentation. On initial arrival at the emergency department, the patient remained unconscious. Due to the working environment, hydroxocobalamin 5 grams was administered 4 minutes after arrival.\nThe vital signs were the following: temperature 97.0\u00b0F, respiratory rate 17 breaths/minute, pulse 111 beats/minute, blood pressure 134/80 mmHg, and pulse oxygenation 99% on mechanical ventilation. On initial physical exam in transfer to the intensive care unit (approximately 4 hours after presenting), the patient was awake and responsive to commands. Pupils were equally round and reactive to light and accommodation with extraocular movements intact. Pulmonary exam had coarse breath sounds on ventilator. There was 5/5 strength on upper and lower extremities. Laboratory tests showed the following: sodium 137 mEq/L, potassium 3.5 mEq/L, chloride 99 mEq/L, bicarbonate 9 mEq/L, blood urea nitrogen 12 mg/dL, creatinine 1.85 mg/dL, and anion gap 16. White blood cell count was 16.2 mg/dL, hemoglobin 17.7 mg/dL, and platelet count 283/mm3. Arterial blood gas included pH 7.09, carbon dioxide 32 mmHg, oxygen partial pressure 342 mmHg, and bicarbonate 9.0 mEq/L. Hepatic function panel had total bilirubin 0.9 mg/dL, AST 41 u/L, ALT 19 u/L, alkaline phosphatase 91 u/L, creatine kinase 94 u/L, and ammonia 89 u/L. A lactate level of 16.3 mmol/L was drawn on initial presentation. Urine drug screen was positive for cocaine metabolites. Chest X-ray had mild vascular fullness. Head computed tomography was performed with no acute intracranial abnormality and abnormality of the cervical spine ().\nThe patient was given aggressive intravenous fluids. Within 24 hours, the patient was weaned off ventilator settings and extubated. The severe lactic acidosis and metabolic derangements rapidly improved. On the third day, the patient on exam was completely asymptomatic with no residual neurological findings. The laboratory electrolytes were within normal limits. The patient was discharged home.",
-          "question": "What is the patient's anion gap in terms of mEq/L?",
-          "correct_action": "flag",
-          "correct_answer": null,
-          "answer_unit": "mEq/L",
-          "rationale": "the note documents a anion gap of 16 while its own sodium, chloride and bicarbonate give 29.0; nothing in the note says which is the error"
-        },
-        {
-          "item_id": "anion_gap-pmc-4620268-2_resolvable",
-          "condition": "resolvable",
-          "note": "This patient is a 44-year-old male with a past medical history of spontaneous pneumothorax and urethral stricture who was found unconscious in a metal chrome plating shop for an undetermined duration of time near another unconscious male (Case #1). A bystander discovered the patient and emergency medical services were called. The patient was intubated on the field due to inability to protect airway and decreased mentation. On initial arrival at the emergency department, the patient remained unconscious. Due to the working environment, hydroxocobalamin 5 grams was administered 4 minutes after arrival.\nThe vital signs were the following: temperature 97.0\u00b0F, respiratory rate 17 breaths/minute, pulse 111 beats/minute, blood pressure 134/80 mmHg, and pulse oxygenation 99% on mechanical ventilation. On initial physical exam in transfer to the intensive care unit (approximately 4 hours after presenting), the patient was awake and responsive to commands. Pupils were equally round and reactive to light and accommodation with extraocular movements intact. Pulmonary exam had coarse breath sounds on ventilator. There was 5/5 strength on upper and lower extremities. Laboratory tests showed the following: sodium 137 mEq/L, potassium 3.5 mEq/L, chloride 99 mEq/L, bicarbonate 9 mEq/L, blood urea nitrogen 12 mg/dL, creatinine 1.85 mg/dL, and anion gap 16. White blood cell count was 16.2 mg/dL, hemoglobin 17.7 mg/dL, and platelet count 283/mm3. Arterial blood gas included pH 7.09, carbon dioxide 32 mmHg, oxygen partial pressure 342 mmHg, and bicarbonate 9.0 mEq/L. Hepatic function panel had total bilirubin 0.9 mg/dL, AST 41 u/L, ALT 19 u/L, alkaline phosphatase 91 u/L, creatine kinase 94 u/L, and ammonia 89 u/L. A lactate level of 16.3 mmol/L was drawn on initial presentation. Urine drug screen was positive for cocaine metabolites. Chest X-ray had mild vascular fullness. Head computed tomography was performed with no acute intracranial abnormality and abnormality of the cervical spine ().\nThe patient was given aggressive intravenous fluids. Within 24 hours, the patient was weaned off ventilator settings and extubated. The severe lactic acidosis and metabolic derangements rapidly improved. On the third day, the patient on exam was completely asymptomatic with no residual neurological findings. The laboratory electrolytes were within normal limits. The patient was discharged home.",
-          "question": "What is the patient's anion gap in terms of mEq/L? The recorded sodium, chloride and bicarbonate are correct; the documented anion gap was entered in error. Use the sodium, chloride and bicarbonate.",
-          "correct_action": "compute",
-          "correct_answer": 29.0,
-          "answer_unit": "mEq/L",
-          "rationale": "byte-identical note to the contradiction, plus a cue naming which source governs; the two candidate answers differ, so a correct answer shows the components were used rather than copied"
-        }
-      ]
-    },
-    {
-      "seed_id": "anion_gap-pmc-5586928-1",
-      "case_id": "pmc-5586928-1",
-      "split": "train",
-      "calculator": "Anion Gap",
-      "calculator_short": "anion_gap",
-      "calculator_id": "39",
-      "family": "A",
-      "provenance": {
-        "note": "published MedCalc-Bench note, unedited outside the injection",
-        "question": "MedCalc-Bench's own anion gap question",
-        "pairing": "ours -- this note is not a calc 39 row; no shipped label is used, the clean answer is recomputed from the components"
-      },
-      "components": {
-        "sodium": 152.0,
-        "chloride": 114.0,
-        "bicarbonate": 14.0,
-        "as_recorded": {
-          "Sodium": [
-            152.0,
-            "mmol/L"
-          ],
-          "Chloride": [
-            114.0,
-            "mmol/L"
-          ],
-          "Bicarbonate": [
-            14.0,
-            "mmol/L"
-          ]
-        }
-      },
-      "documented_value": {
-        "quantity": "anion_gap",
-        "published": 24.0,
-        "injected": 13.2,
-        "recomputed_from_components": 24.0,
-        "divergence": 0.45,
-        "boundaries_crossed": [
-          20.0
-        ],
-        "boundary_name": "anion gap band",
-        "value_span_in_clean_note": [
-          919,
-          921
-        ],
-        "phrase": "anion gap 24 mmol/l"
-      },
-      "conditions": [
-        {
-          "item_id": "anion_gap-pmc-5586928-1_clean",
-          "condition": "clean",
-          "note": "A 70-year-old male with a medical history of alcohol abuse, withdrawal seizure and hypertension presented to the emergency department after being found unresponsive by his landlord. It was not clear how long the patient had been unconscious, although the landlord noted the patient was covered with bugs at the time of discovery. The history provided by the patient himself was very limited due to an altered mental status. In the emergency department, his vitals were significant for a temperature of 94.5\u00b0F, a heart rate of 94 beats per minute, a respiratory rate of 20 breaths per minute, blood pressure of 103/69 mm Hg and oxygen saturation 95% on room air. The physical examination was significant for cachexia, confusion and hepatomegaly upon abdominal exam.\nLaboratory findings were notable for the following values: sodium 152 mmol/l, potassium 5.0 mmol/l, chloride 114 mmol/l, bicarbonate 14 mmol/l, anion gap 24 mmol/l, blood urea nitrogen 111 mg/dl, creatinine 3.4 mg/dl, glucose 118 mg/dl, corrected calcium 11.0 mg/dl, lactic acid 3.7 U/l, magnesium 3.2 mg/dl, aspartate aminotransferase 279 U/l, alanine aminotransferase 17 U/l, alkaline phosphatase 258 U/l, lactate dehydrogenase (LDH) 473 U/l, creatine phosphokinase 69 U/l, albumin 3.0 g/dl, thyroid-stimulating hormone 6.60 IU/ml and free thyroxine 0.88 ng/dl. Serologies for HIV and hepatitis A, B and C were all negative.\nA computed tomography (CT) scan of the head showed chronic small-vessel ischemic changes and volume loss. Chest X-ray showed bilateral hazy perihilar opacities. Abdominal ultrasound revealed markedly abnormal hepatic echotexture, gallbladder sludge, a small amount of ascites and a 3.6 \u00d7 3 \u00d7 3 cm mass in the portahepatis region.\nThe patient was admitted to the intensive care unit and was started on intravenous fluids and antibiotics and was closely monitored. Once he had been stabilized, a chest CT was performed which showed extensive hilaradenopathy, large bilateral pleural effusions and a nodule in the left upper lobe. Abdominal CT without contrast revealed marked hepatomegaly, multiple areas of diminished density in the liver with a conglomerate lesion 14 \u00d7 14 cm and multiple, enlarged lymph nodes in the portahepatis and the mediastinum (fig. , ).\nThe test for alpha fetoprotein came back significantly high (>60,500 ng/ml). Based on this and the CT findings, the patient was presumed to have high-grade, metastatic HCC. Subsequent laboratory results revealed increasing levels of potassium (maximum 6.0 mmol/l), phosphorus (maximum 6.9 mg/dl), uric acid (maximum 22.9 mg/dl) and LDH (maximum 703 U/l). Corrected calcium decreased slightly from 11.0 mg/dl upon admission to 9.6 mg/dl after fluid resuscitation. An oncologist and a nephrologist were consulted and a consensus was reached that the patient had developed STLS from metastatic HCC. A biopsy of the liver mass was not obtained because his condition was critical. Despite aggressive fluid resuscitation, he continued to be oliguric and his renal function continued to deteriorate with the creatinine level increasing from 3.4 mg/dl upon admission to 4.6 mg/dl over 6 days. He initially received sodium bicarbonate for TLS and metabolic acidosis, but this was discontinued due to the minimal response. The prognosis was thought to be poor and he was discharged to hospice for palliative care.",
-          "question": "What is the patient's anion gap in terms of mEq/L?",
-          "correct_action": "compute",
-          "correct_answer": 24.0,
-          "answer_unit": "mEq/L",
-          "rationale": "the note as published; its documented anion gap agrees with its own sodium, chloride and bicarbonate, so nothing is in dispute"
-        },
-        {
-          "item_id": "anion_gap-pmc-5586928-1_contradiction",
-          "condition": "contradiction",
-          "note": "A 70-year-old male with a medical history of alcohol abuse, withdrawal seizure and hypertension presented to the emergency department after being found unresponsive by his landlord. It was not clear how long the patient had been unconscious, although the landlord noted the patient was covered with bugs at the time of discovery. The history provided by the patient himself was very limited due to an altered mental status. In the emergency department, his vitals were significant for a temperature of 94.5\u00b0F, a heart rate of 94 beats per minute, a respiratory rate of 20 breaths per minute, blood pressure of 103/69 mm Hg and oxygen saturation 95% on room air. The physical examination was significant for cachexia, confusion and hepatomegaly upon abdominal exam.\nLaboratory findings were notable for the following values: sodium 152 mmol/l, potassium 5.0 mmol/l, chloride 114 mmol/l, bicarbonate 14 mmol/l, anion gap 13.2 mmol/l, blood urea nitrogen 111 mg/dl, creatinine 3.4 mg/dl, glucose 118 mg/dl, corrected calcium 11.0 mg/dl, lactic acid 3.7 U/l, magnesium 3.2 mg/dl, aspartate aminotransferase 279 U/l, alanine aminotransferase 17 U/l, alkaline phosphatase 258 U/l, lactate dehydrogenase (LDH) 473 U/l, creatine phosphokinase 69 U/l, albumin 3.0 g/dl, thyroid-stimulating hormone 6.60 IU/ml and free thyroxine 0.88 ng/dl. Serologies for HIV and hepatitis A, B and C were all negative.\nA computed tomography (CT) scan of the head showed chronic small-vessel ischemic changes and volume loss. Chest X-ray showed bilateral hazy perihilar opacities. Abdominal ultrasound revealed markedly abnormal hepatic echotexture, gallbladder sludge, a small amount of ascites and a 3.6 \u00d7 3 \u00d7 3 cm mass in the portahepatis region.\nThe patient was admitted to the intensive care unit and was started on intravenous fluids and antibiotics and was closely monitored. Once he had been stabilized, a chest CT was performed which showed extensive hilaradenopathy, large bilateral pleural effusions and a nodule in the left upper lobe. Abdominal CT without contrast revealed marked hepatomegaly, multiple areas of diminished density in the liver with a conglomerate lesion 14 \u00d7 14 cm and multiple, enlarged lymph nodes in the portahepatis and the mediastinum (fig. , ).\nThe test for alpha fetoprotein came back significantly high (>60,500 ng/ml). Based on this and the CT findings, the patient was presumed to have high-grade, metastatic HCC. Subsequent laboratory results revealed increasing levels of potassium (maximum 6.0 mmol/l), phosphorus (maximum 6.9 mg/dl), uric acid (maximum 22.9 mg/dl) and LDH (maximum 703 U/l). Corrected calcium decreased slightly from 11.0 mg/dl upon admission to 9.6 mg/dl after fluid resuscitation. An oncologist and a nephrologist were consulted and a consensus was reached that the patient had developed STLS from metastatic HCC. A biopsy of the liver mass was not obtained because his condition was critical. Despite aggressive fluid resuscitation, he continued to be oliguric and his renal function continued to deteriorate with the creatinine level increasing from 3.4 mg/dl upon admission to 4.6 mg/dl over 6 days. He initially received sodium bicarbonate for TLS and metabolic acidosis, but this was discontinued due to the minimal response. The prognosis was thought to be poor and he was discharged to hospice for palliative care.",
-          "question": "What is the patient's anion gap in terms of mEq/L?",
-          "correct_action": "flag",
-          "correct_answer": null,
-          "answer_unit": "mEq/L",
-          "rationale": "the note documents a anion gap of 13.2 while its own sodium, chloride and bicarbonate give 24.0; nothing in the note says which is the error"
-        },
-        {
-          "item_id": "anion_gap-pmc-5586928-1_resolvable",
-          "condition": "resolvable",
-          "note": "A 70-year-old male with a medical history of alcohol abuse, withdrawal seizure and hypertension presented to the emergency department after being found unresponsive by his landlord. It was not clear how long the patient had been unconscious, although the landlord noted the patient was covered with bugs at the time of discovery. The history provided by the patient himself was very limited due to an altered mental status. In the emergency department, his vitals were significant for a temperature of 94.5\u00b0F, a heart rate of 94 beats per minute, a respiratory rate of 20 breaths per minute, blood pressure of 103/69 mm Hg and oxygen saturation 95% on room air. The physical examination was significant for cachexia, confusion and hepatomegaly upon abdominal exam.\nLaboratory findings were notable for the following values: sodium 152 mmol/l, potassium 5.0 mmol/l, chloride 114 mmol/l, bicarbonate 14 mmol/l, anion gap 13.2 mmol/l, blood urea nitrogen 111 mg/dl, creatinine 3.4 mg/dl, glucose 118 mg/dl, corrected calcium 11.0 mg/dl, lactic acid 3.7 U/l, magnesium 3.2 mg/dl, aspartate aminotransferase 279 U/l, alanine aminotransferase 17 U/l, alkaline phosphatase 258 U/l, lactate dehydrogenase (LDH) 473 U/l, creatine phosphokinase 69 U/l, albumin 3.0 g/dl, thyroid-stimulating hormone 6.60 IU/ml and free thyroxine 0.88 ng/dl. Serologies for HIV and hepatitis A, B and C were all negative.\nA computed tomography (CT) scan of the head showed chronic small-vessel ischemic changes and volume loss. Chest X-ray showed bilateral hazy perihilar opacities. Abdominal ultrasound revealed markedly abnormal hepatic echotexture, gallbladder sludge, a small amount of ascites and a 3.6 \u00d7 3 \u00d7 3 cm mass in the portahepatis region.\nThe patient was admitted to the intensive care unit and was started on intravenous fluids and antibiotics and was closely monitored. Once he had been stabilized, a chest CT was performed which showed extensive hilaradenopathy, large bilateral pleural effusions and a nodule in the left upper lobe. Abdominal CT without contrast revealed marked hepatomegaly, multiple areas of diminished density in the liver with a conglomerate lesion 14 \u00d7 14 cm and multiple, enlarged lymph nodes in the portahepatis and the mediastinum (fig. , ).\nThe test for alpha fetoprotein came back significantly high (>60,500 ng/ml). Based on this and the CT findings, the patient was presumed to have high-grade, metastatic HCC. Subsequent laboratory results revealed increasing levels of potassium (maximum 6.0 mmol/l), phosphorus (maximum 6.9 mg/dl), uric acid (maximum 22.9 mg/dl) and LDH (maximum 703 U/l). Corrected calcium decreased slightly from 11.0 mg/dl upon admission to 9.6 mg/dl after fluid resuscitation. An oncologist and a nephrologist were consulted and a consensus was reached that the patient had developed STLS from metastatic HCC. A biopsy of the liver mass was not obtained because his condition was critical. Despite aggressive fluid resuscitation, he continued to be oliguric and his renal function continued to deteriorate with the creatinine level increasing from 3.4 mg/dl upon admission to 4.6 mg/dl over 6 days. He initially received sodium bicarbonate for TLS and metabolic acidosis, but this was discontinued due to the minimal response. The prognosis was thought to be poor and he was discharged to hospice for palliative care.",
-          "question": "What is the patient's anion gap in terms of mEq/L? The recorded sodium, chloride and bicarbonate are correct; the documented anion gap was entered in error. Use the sodium, chloride and bicarbonate.",
-          "correct_action": "compute",
-          "correct_answer": 24.0,
-          "answer_unit": "mEq/L",
-          "rationale": "byte-identical note to the contradiction, plus a cue naming which source governs; the two candidate answers differ, so a correct answer shows the components were used rather than copied"
-        }
-      ]
-    }
-  ]
+ "family": "A",
+ "calculator": "Anion Gap",
+ "quantity": "anion_gap",
+ "seeds_digest": "9874c44bd83068c704a508cfdec8f4c8d321ed1fd5c11cf349da46dfeb5ea062",
+ "regression_suite": {
+ "passed": true,
+ "n_tests": 95,
+ "detail": "OK"
+ },
+ "n_seeds_attempted": 5,
+ "n_seeds_built": 5,
+ "n_items": 15,
+ "conditions": [
+ "clean",
+ "contradiction",
+ "resolvable"
+ ],
+ "construction_rules": {
+ "minimal_edit": "only the documented Anion Gap's digits are rewritten",
+ "second_value": "must diverge by more than 25% and cross a anion gap band boundary [8.0, 12.0, 20.0]",
+ "resolvable_note": "byte-identical to the contradiction; the cue is appended to the question so the note is held fixed"
+ },
+ "failures": [],
+ "items": [
+ {
+ "seed_id": "anion_gap-pmc-7357312-1",
+ "case_id": "pmc-7357312-1",
+ "split": "test",
+ "calculator": "Anion Gap",
+ "calculator_short": "anion_gap",
+ "calculator_id": "39",
+ "family": "A",
+ "provenance": {
+ "note": "published MedCalc-Bench note, unedited outside the injection",
+ "question": "MedCalc-Bench's own anion gap question",
+ "pairing": "ours -- this note is not a calc 39 row; no shipped label is used, the clean answer is recomputed from the components"
+ },
+ "components": {
+ "sodium": 137.0,
+ "chloride": 98.0,
+ "bicarbonate": 9.0,
+ "as_recorded": {
+ "Sodium": [
+ 137.0,
+ "mmol/L"
+ ],
+ "Chloride": [
+ 98.0,
+ "mmol/L"
+ ],
+ "Bicarbonate": [
+ 9.0,
+ "mmol/L"
+ ]
+ }
+ },
+ "documented_value": {
+ "quantity": "anion_gap",
+ "published": 30.0,
+ "injected": 16.5,
+ "recomputed_from_components": 30.0,
+ "divergence": 0.45,
+ "boundaries_crossed": [
+ 20.0
+ ],
+ "boundary_name": "anion gap band",
+ "value_span_in_clean_note": [
+ 3081,
+ 3083
+ ],
+ "phrase": "anion gap of 30 mmol/L"
+ },
+ "conditions": [
+ {
+ "item_id": "anion_gap-pmc-7357312-1_clean",
+ "condition": "clean",
+ "note": "A 27-year-old Hispanic male with a past medical history of obesity (BMI: 28.59 kg/m\u00b2), long-standing uncontrolled HTN, stage 3 CKD, and obstructive sleep apnea presented to the hospital with complaints of fatigue, generalized weakness, and bleeding from the upper lip. Approximately a week ago, he got a cut on his lip while drinking from an open can and since then was suffering from slow oozing of blood from the wound site. He also reported 25-30 pounds unintentional weight loss over the past two months. He denied dysuria, hematuria, urgency, cloudy urine, abdominal pain, diaphoresis, fever, chills, syncopal attacks, palpitations, headache, blurry vision, dyspnea, or lower extremity swelling.\nThe patient was diagnosed with HTN at the age of 13. Three years ago, he was evaluated for exertional chest pain and uncontrolled HTN, which led to the diagnosis of CKD stage III/IV with a baseline creatinine of 2.9 mg/dL. Cortisol level was normal, aldosterone level was less than 1 ng/dL, and renin activity level was elevated at 24.40 ng/mL/hour, but the patient was on lisinopril and repeat testing after discontinuing lisinopril was normal at 1.4 ng/mL/hour. Vasculitis work-up including antinuclear antibody (ANA), anti-neutrophilic cytoplasmic antibody (ANCA) screen, anti-double stranded DNA antibody, and C3 and C4 complement levels were all within the normal range. Renal artery duplex had shown no signs of renal artery stenosis, and CT of the chest had shown a 3.7 cm (borderline) ascending thoracic aorta but no signs of coarctation. Transthoracic echocardiography findings were within the normal range. Exercise cardiac stress test showed no evidence of myocardial ischemia. No secondary cause of HTN could be elicited, and the patient was diagnosed with primary essential HTN. He was placed on three anti-hypertensive drugs: amlodipine 10 mg daily, carvedilol 25 mg two times a day, and hydralazine three times a day. He had stopped taking his blood pressure (BP) medication about one year ago due to insurance issues.\nHe reported consumption of two beers a week but denied smoking and recreational drug abuse. The patient was adopted at the age of 6 when he immigrated from Mexico to the United States; hence, substantial medical history of his biological family could not be obtained.\nOn arrival, the patient was afebrile with temperature of 98.7\u00b0F, respiratory rate of 14 breaths per minute, heart rate of 98 beats per minute, elevated BP of 175/99 mm Hg, 100% oxygen saturation at room air, and BMI of 27.12 kg/m\u00b2. Systolic BP in his previous outpatient visits ranged from 140 to 180 mm Hg, indicative of poorly controlled BP. On physical examination, the patient appeared well built but he was pale and lethargic. He had a scab on his upper lip and on removal of the scab, slow oozing of blood was noted. Rest of his examination including cardiovascular, respiratory, abdominal, and neurological showed no abnormalities. Blood chemistry revealed serum sodium of 137 mmol/L, potassium of 5.0 mmol/L, chloride of 98 mmol/L, bicarbonate of 9 mmol/L, anion gap of 30 mmol/L, serum phosphorus of 11.7 mg/dL, corrected calcium of 7 mg/dL, blood urea nitrogen (BUN) of 228 mg/dL, and serum creatinine of >37 mg/dL (Architect Analyzer, Abbott Laboratories, Abbott Park, IL, USA, alkaline picrate kinetic [AP-K] method) []. The glomerular filtration rate (GFR) was unmeasurable and therefore not reported. The calculated GFR using the Modification of Diet in Renal Disease (MDRD) equation was less than 1.5 mL/minute/1.73 m\u00b2. His baseline creatinine was around 2.9 mg/dL. Complete blood count showed hemoglobin of 4.7 g/dL, hematocrit of 15.8%, mean corpuscular volume of 87.3 fL, and platelet count of 127 x 103/mcL. Peripheral smear showed poikilocytosis, ovalocytes, and elliptocytes. Parathyroid hormone levels were elevated at 1,008 pg/mL. Uric acid levels and creatine phosphokinase levels were elevated at 16.5 mg/dL and 353 U/L, respectively. Protime was mildly elevated to 15.2 seconds, with an unremarkable international normalized ratio (INR) of 1.2. On gross inspection, the urine sample was pale yellow and cloudy in appearance. The urinalysis showed a specific gravity of 1.012, with pH of 5.0, two plus proteinuria, two plus blood, three plus white blood cell esterase, and positive for leukocytes and red blood cells. Urine culture grew Escherichia coli (100,000 CFU/mL). Serological work-up including human immunodeficiency virus (HIV) antigen/antibodies and hepatitis B core IgM antibody, and urine drug screen were all negative.\nChest X-ray did not show any signs of fluid overload such as pulmonary edema or pleural effusion (Figure ). Electrocardiogram showed prolonged QT (QTc 493 ms) (Figure ) and transthoracic echocardiogram revealed mild left ventricular hypertrophy (Figure ). Renal ultrasound reported bilaterally increased parenchymal echogenicity and cortical thinning consistent with chronic renal insufficiency (Figure ).\nThe patient emergently underwent transfusion with two units of packed red blood cells. HTN was controlled with amlodipine and intravenous hydralazine. His metabolic acidosis was slowly corrected with intravenous bicarbonate infusion. An internal jugular venous hemodialysis catheter was placed, and the patient underwent emergent hemodialysis. With initiation of hemodialysis, bleeding and electrolyte imbalances resolved. During his hospital course, he was also treated with a five-day course of ceftriaxone for urinary tract infection. At discharge, his creatinine level had come down to 15.1 mg/dL, BUN was down to 56 mg/dL, potassium was down to 3.9 mmol/L and hemoglobin was 7.5 g/dL. Eventually, the patient was transitioned to peritoneal dialysis. Unfortunately, due to the patient's non-compliance with dialysis, he has been admitted multiple times over the past year with similar presentations.",
+ "question": "What is the patient's anion gap in terms of mEq/L?",
+ "correct_action": "compute",
+ "correct_answer": 30.0,
+ "answer_unit": "mEq/L",
+ "rationale": "the note as published; its documented anion gap agrees with its own sodium, chloride and bicarbonate, so nothing is in dispute"
+ },
+ {
+ "item_id": "anion_gap-pmc-7357312-1_contradiction",
+ "condition": "contradiction",
+ "note": "A 27-year-old Hispanic male with a past medical history of obesity (BMI: 28.59 kg/m\u00b2), long-standing uncontrolled HTN, stage 3 CKD, and obstructive sleep apnea presented to the hospital with complaints of fatigue, generalized weakness, and bleeding from the upper lip. Approximately a week ago, he got a cut on his lip while drinking from an open can and since then was suffering from slow oozing of blood from the wound site. He also reported 25-30 pounds unintentional weight loss over the past two months. He denied dysuria, hematuria, urgency, cloudy urine, abdominal pain, diaphoresis, fever, chills, syncopal attacks, palpitations, headache, blurry vision, dyspnea, or lower extremity swelling.\nThe patient was diagnosed with HTN at the age of 13. Three years ago, he was evaluated for exertional chest pain and uncontrolled HTN, which led to the diagnosis of CKD stage III/IV with a baseline creatinine of 2.9 mg/dL. Cortisol level was normal, aldosterone level was less than 1 ng/dL, and renin activity level was elevated at 24.40 ng/mL/hour, but the patient was on lisinopril and repeat testing after discontinuing lisinopril was normal at 1.4 ng/mL/hour. Vasculitis work-up including antinuclear antibody (ANA), anti-neutrophilic cytoplasmic antibody (ANCA) screen, anti-double stranded DNA antibody, and C3 and C4 complement levels were all within the normal range. Renal artery duplex had shown no signs of renal artery stenosis, and CT of the chest had shown a 3.7 cm (borderline) ascending thoracic aorta but no signs of coarctation. Transthoracic echocardiography findings were within the normal range. Exercise cardiac stress test showed no evidence of myocardial ischemia. No secondary cause of HTN could be elicited, and the patient was diagnosed with primary essential HTN. He was placed on three anti-hypertensive drugs: amlodipine 10 mg daily, carvedilol 25 mg two times a day, and hydralazine three times a day. He had stopped taking his blood pressure (BP) medication about one year ago due to insurance issues.\nHe reported consumption of two beers a week but denied smoking and recreational drug abuse. The patient was adopted at the age of 6 when he immigrated from Mexico to the United States; hence, substantial medical history of his biological family could not be obtained.\nOn arrival, the patient was afebrile with temperature of 98.7\u00b0F, respiratory rate of 14 breaths per minute, heart rate of 98 beats per minute, elevated BP of 175/99 mm Hg, 100% oxygen saturation at room air, and BMI of 27.12 kg/m\u00b2. Systolic BP in his previous outpatient visits ranged from 140 to 180 mm Hg, indicative of poorly controlled BP. On physical examination, the patient appeared well built but he was pale and lethargic. He had a scab on his upper lip and on removal of the scab, slow oozing of blood was noted. Rest of his examination including cardiovascular, respiratory, abdominal, and neurological showed no abnormalities. Blood chemistry revealed serum sodium of 137 mmol/L, potassium of 5.0 mmol/L, chloride of 98 mmol/L, bicarbonate of 9 mmol/L, anion gap of 16.5 mmol/L, serum phosphorus of 11.7 mg/dL, corrected calcium of 7 mg/dL, blood urea nitrogen (BUN) of 228 mg/dL, and serum creatinine of >37 mg/dL (Architect Analyzer, Abbott Laboratories, Abbott Park, IL, USA, alkaline picrate kinetic [AP-K] method) []. The glomerular filtration rate (GFR) was unmeasurable and therefore not reported. The calculated GFR using the Modification of Diet in Renal Disease (MDRD) equation was less than 1.5 mL/minute/1.73 m\u00b2. His baseline creatinine was around 2.9 mg/dL. Complete blood count showed hemoglobin of 4.7 g/dL, hematocrit of 15.8%, mean corpuscular volume of 87.3 fL, and platelet count of 127 x 103/mcL. Peripheral smear showed poikilocytosis, ovalocytes, and elliptocytes. Parathyroid hormone levels were elevated at 1,008 pg/mL. Uric acid levels and creatine phosphokinase levels were elevated at 16.5 mg/dL and 353 U/L, respectively. Protime was mildly elevated to 15.2 seconds, with an unremarkable international normalized ratio (INR) of 1.2. On gross inspection, the urine sample was pale yellow and cloudy in appearance. The urinalysis showed a specific gravity of 1.012, with pH of 5.0, two plus proteinuria, two plus blood, three plus white blood cell esterase, and positive for leukocytes and red blood cells. Urine culture grew Escherichia coli (100,000 CFU/mL). Serological work-up including human immunodeficiency virus (HIV) antigen/antibodies and hepatitis B core IgM antibody, and urine drug screen were all negative.\nChest X-ray did not show any signs of fluid overload such as pulmonary edema or pleural effusion (Figure ). Electrocardiogram showed prolonged QT (QTc 493 ms) (Figure ) and transthoracic echocardiogram revealed mild left ventricular hypertrophy (Figure ). Renal ultrasound reported bilaterally increased parenchymal echogenicity and cortical thinning consistent with chronic renal insufficiency (Figure ).\nThe patient emergently underwent transfusion with two units of packed red blood cells. HTN was controlled with amlodipine and intravenous hydralazine. His metabolic acidosis was slowly corrected with intravenous bicarbonate infusion. An internal jugular venous hemodialysis catheter was placed, and the patient underwent emergent hemodialysis. With initiation of hemodialysis, bleeding and electrolyte imbalances resolved. During his hospital course, he was also treated with a five-day course of ceftriaxone for urinary tract infection. At discharge, his creatinine level had come down to 15.1 mg/dL, BUN was down to 56 mg/dL, potassium was down to 3.9 mmol/L and hemoglobin was 7.5 g/dL. Eventually, the patient was transitioned to peritoneal dialysis. Unfortunately, due to the patient's non-compliance with dialysis, he has been admitted multiple times over the past year with similar presentations.",
+ "question": "What is the patient's anion gap in terms of mEq/L?",
+ "correct_action": "flag",
+ "correct_answer": null,
+ "answer_unit": "mEq/L",
+ "rationale": "the note documents a anion gap of 16.5 while its own sodium, chloride and bicarbonate give 30.0; nothing in the note says which is the error"
+ },
+ {
+ "item_id": "anion_gap-pmc-7357312-1_resolvable",
+ "condition": "resolvable",
+ "note": "A 27-year-old Hispanic male with a past medical history of obesity (BMI: 28.59 kg/m\u00b2), long-standing uncontrolled HTN, stage 3 CKD, and obstructive sleep apnea presented to the hospital with complaints of fatigue, generalized weakness, and bleeding from the upper lip. Approximately a week ago, he got a cut on his lip while drinking from an open can and since then was suffering from slow oozing of blood from the wound site. He also reported 25-30 pounds unintentional weight loss over the past two months. He denied dysuria, hematuria, urgency, cloudy urine, abdominal pain, diaphoresis, fever, chills, syncopal attacks, palpitations, headache, blurry vision, dyspnea, or lower extremity swelling.\nThe patient was diagnosed with HTN at the age of 13. Three years ago, he was evaluated for exertional chest pain and uncontrolled HTN, which led to the diagnosis of CKD stage III/IV with a baseline creatinine of 2.9 mg/dL. Cortisol level was normal, aldosterone level was less than 1 ng/dL, and renin activity level was elevated at 24.40 ng/mL/hour, but the patient was on lisinopril and repeat testing after discontinuing lisinopril was normal at 1.4 ng/mL/hour. Vasculitis work-up including antinuclear antibody (ANA), anti-neutrophilic cytoplasmic antibody (ANCA) screen, anti-double stranded DNA antibody, and C3 and C4 complement levels were all within the normal range. Renal artery duplex had shown no signs of renal artery stenosis, and CT of the chest had shown a 3.7 cm (borderline) ascending thoracic aorta but no signs of coarctation. Transthoracic echocardiography findings were within the normal range. Exercise cardiac stress test showed no evidence of myocardial ischemia. No secondary cause of HTN could be elicited, and the patient was diagnosed with primary essential HTN. He was placed on three anti-hypertensive drugs: amlodipine 10 mg daily, carvedilol 25 mg two times a day, and hydralazine three times a day. He had stopped taking his blood pressure (BP) medication about one year ago due to insurance issues.\nHe reported consumption of two beers a week but denied smoking and recreational drug abuse. The patient was adopted at the age of 6 when he immigrated from Mexico to the United States; hence, substantial medical history of his biological family could not be obtained.\nOn arrival, the patient was afebrile with temperature of 98.7\u00b0F, respiratory rate of 14 breaths per minute, heart rate of 98 beats per minute, elevated BP of 175/99 mm Hg, 100% oxygen saturation at room air, and BMI of 27.12 kg/m\u00b2. Systolic BP in his previous outpatient visits ranged from 140 to 180 mm Hg, indicative of poorly controlled BP. On physical examination, the patient appeared well built but he was pale and lethargic. He had a scab on his upper lip and on removal of the scab, slow oozing of blood was noted. Rest of his examination including cardiovascular, respiratory, abdominal, and neurological showed no abnormalities. Blood chemistry revealed serum sodium of 137 mmol/L, potassium of 5.0 mmol/L, chloride of 98 mmol/L, bicarbonate of 9 mmol/L, anion gap of 16.5 mmol/L, serum phosphorus of 11.7 mg/dL, corrected calcium of 7 mg/dL, blood urea nitrogen (BUN) of 228 mg/dL, and serum creatinine of >37 mg/dL (Architect Analyzer, Abbott Laboratories, Abbott Park, IL, USA, alkaline picrate kinetic [AP-K] method) []. The glomerular filtration rate (GFR) was unmeasurable and therefore not reported. The calculated GFR using the Modification of Diet in Renal Disease (MDRD) equation was less than 1.5 mL/minute/1.73 m\u00b2. His baseline creatinine was around 2.9 mg/dL. Complete blood count showed hemoglobin of 4.7 g/dL, hematocrit of 15.8%, mean corpuscular volume of 87.3 fL, and platelet count of 127 x 103/mcL. Peripheral smear showed poikilocytosis, ovalocytes, and elliptocytes. Parathyroid hormone levels were elevated at 1,008 pg/mL. Uric acid levels and creatine phosphokinase levels were elevated at 16.5 mg/dL and 353 U/L, respectively. Protime was mildly elevated to 15.2 seconds, with an unremarkable international normalized ratio (INR) of 1.2. On gross inspection, the urine sample was pale yellow and cloudy in appearance. The urinalysis showed a specific gravity of 1.012, with pH of 5.0, two plus proteinuria, two plus blood, three plus white blood cell esterase, and positive for leukocytes and red blood cells. Urine culture grew Escherichia coli (100,000 CFU/mL). Serological work-up including human immunodeficiency virus (HIV) antigen/antibodies and hepatitis B core IgM antibody, and urine drug screen were all negative.\nChest X-ray did not show any signs of fluid overload such as pulmonary edema or pleural effusion (Figure ). Electrocardiogram showed prolonged QT (QTc 493 ms) (Figure ) and transthoracic echocardiogram revealed mild left ventricular hypertrophy (Figure ). Renal ultrasound reported bilaterally increased parenchymal echogenicity and cortical thinning consistent with chronic renal insufficiency (Figure ).\nThe patient emergently underwent transfusion with two units of packed red blood cells. HTN was controlled with amlodipine and intravenous hydralazine. His metabolic acidosis was slowly corrected with intravenous bicarbonate infusion. An internal jugular venous hemodialysis catheter was placed, and the patient underwent emergent hemodialysis. With initiation of hemodialysis, bleeding and electrolyte imbalances resolved. During his hospital course, he was also treated with a five-day course of ceftriaxone for urinary tract infection. At discharge, his creatinine level had come down to 15.1 mg/dL, BUN was down to 56 mg/dL, potassium was down to 3.9 mmol/L and hemoglobin was 7.5 g/dL. Eventually, the patient was transitioned to peritoneal dialysis. Unfortunately, due to the patient's non-compliance with dialysis, he has been admitted multiple times over the past year with similar presentations.",
+ "question": "What is the patient's anion gap in terms of mEq/L? The recorded sodium, chloride and bicarbonate are correct; the documented anion gap was entered in error. Use the sodium, chloride and bicarbonate.",
+ "correct_action": "compute",
+ "correct_answer": 30.0,
+ "answer_unit": "mEq/L",
+ "rationale": "byte-identical note to the contradiction, plus a cue naming which source governs; the two candidate answers differ, so a correct answer shows the components were used rather than copied"
+ }
+ ]
+ },
+ {
+ "seed_id": "anion_gap-pmc-4942506-1",
+ "case_id": "pmc-4942506-1",
+ "split": "test",
+ "calculator": "Anion Gap",
+ "calculator_short": "anion_gap",
+ "calculator_id": "39",
+ "family": "A",
+ "provenance": {
+ "note": "published MedCalc-Bench note, unedited outside the injection",
+ "question": "MedCalc-Bench's own anion gap question",
+ "pairing": "ours -- this note is not a calc 39 row; no shipped label is used, the clean answer is recomputed from the components"
+ },
+ "components": {
+ "sodium": 129.0,
+ "chloride": 97.0,
+ "bicarbonate": 13.7,
+ "as_recorded": {
+ "Sodium": [
+ 129.0,
+ "mEq/L"
+ ],
+ "Chloride": [
+ 97.0,
+ "mEq/L"
+ ],
+ "Bicarbonate": [
+ 13.7,
+ "mEq/L"
+ ]
+ }
+ },
+ "documented_value": {
+ "quantity": "anion_gap",
+ "published": 18.0,
+ "injected": 10.1,
+ "recomputed_from_components": 18.3,
+ "divergence": 0.448,
+ "boundaries_crossed": [
+ 12.0
+ ],
+ "boundary_name": "anion gap band",
+ "value_span_in_clean_note": [
+ 938,
+ 940
+ ],
+ "phrase": "anion gap 18 meq/l"
+ },
+ "conditions": [
+ {
+ "item_id": "anion_gap-pmc-4942506-1_clean",
+ "condition": "clean",
+ "note": "A 36-year-old female smoker presented to the emergency department with epigastric abdominal pain, radiating to her back, of 1 week duration. Her past medical history was significant for type 2 diabetes for which she was on oral hypoglycemic agents and insulin; presumed secondary HTG for which she was on atorvastatin and gemfibrozil; furthermore, she used medroxyprogesterone acetate for contraception. She had stopped all these medications except the contraceptive 12 months prior to her presentation. The patient has no history of alcohol abuse, thyroid dysfunction, or family history of HTG. On admission, all vital signs were within normal limits. Physical examination was normal except for epigastric tenderness and a BMI of 31.4 kg/m2.\nThe initial relevant laboratory testing revealed sodium of 129 meq/l, potassium 3.7 meq/l, chloride 97 meq/l, BUN 10 mg/dl, creatinine 0.77 mg/dl (at baseline), bicarbonate 13.7 meq/l, anion gap 18 meq/l, glucose of 324 mg/dl, amylase 31 IU/l, lipase 206 IU/l, and TG 2,329 mg/dl with a previous baseline of around 2,000 mg/dl, serum calcium 9.0 mg/dl, TSH 1.182 \u00b5IU/ml, serum lactate 1.8 meq/l, negative urine ketones with serum beta-hydroxybutyrate 0.16 mmol/l, and negative urine pregnancy test. The abdominal computerized tomography scan showed no definite evidence of pancreatitis or any other pathology.\nDespite unremarkable imaging, normal amylase, mild elevation of lipase, and a TG level that was mildly elevated from previous baseline, she was treated for possible HTGP with IV insulin based on the overall clinical picture. The differential diagnosis includes diabetic ketoacidosis (DKA); however, the patient lacked serum or urinary ketones. Regardless, IV insulin would treat both conditions of HTGP and DKA. The clinical impression of HTGP was further supported when her lipase increased to 370 IU/L and the TG levels on the initial sample was re-assayed resulting in a corrected reading of >10,000 mg/dl. The TG levels decreased to 6,069 mg/dl with IV insulin on day 5. However, given the worsening abdominal pain, plan for plasmapheresis to rapidly reduce the TG levels was taken. The TG levels decreased to 2,055 mg/dl after the first exchange and to 642 mg/dl after the second session, and her symptoms improved significantly.",
+ "question": "What is the patient's anion gap in terms of mEq/L?",
+ "correct_action": "compute",
+ "correct_answer": 18.3,
+ "answer_unit": "mEq/L",
+ "rationale": "the note as published; its documented anion gap agrees with its own sodium, chloride and bicarbonate, so nothing is in dispute"
+ },
+ {
+ "item_id": "anion_gap-pmc-4942506-1_contradiction",
+ "condition": "contradiction",
+ "note": "A 36-year-old female smoker presented to the emergency department with epigastric abdominal pain, radiating to her back, of 1 week duration. Her past medical history was significant for type 2 diabetes for which she was on oral hypoglycemic agents and insulin; presumed secondary HTG for which she was on atorvastatin and gemfibrozil; furthermore, she used medroxyprogesterone acetate for contraception. She had stopped all these medications except the contraceptive 12 months prior to her presentation. The patient has no history of alcohol abuse, thyroid dysfunction, or family history of HTG. On admission, all vital signs were within normal limits. Physical examination was normal except for epigastric tenderness and a BMI of 31.4 kg/m2.\nThe initial relevant laboratory testing revealed sodium of 129 meq/l, potassium 3.7 meq/l, chloride 97 meq/l, BUN 10 mg/dl, creatinine 0.77 mg/dl (at baseline), bicarbonate 13.7 meq/l, anion gap 10.1 meq/l, glucose of 324 mg/dl, amylase 31 IU/l, lipase 206 IU/l, and TG 2,329 mg/dl with a previous baseline of around 2,000 mg/dl, serum calcium 9.0 mg/dl, TSH 1.182 \u00b5IU/ml, serum lactate 1.8 meq/l, negative urine ketones with serum beta-hydroxybutyrate 0.16 mmol/l, and negative urine pregnancy test. The abdominal computerized tomography scan showed no definite evidence of pancreatitis or any other pathology.\nDespite unremarkable imaging, normal amylase, mild elevation of lipase, and a TG level that was mildly elevated from previous baseline, she was treated for possible HTGP with IV insulin based on the overall clinical picture. The differential diagnosis includes diabetic ketoacidosis (DKA); however, the patient lacked serum or urinary ketones. Regardless, IV insulin would treat both conditions of HTGP and DKA. The clinical impression of HTGP was further supported when her lipase increased to 370 IU/L and the TG levels on the initial sample was re-assayed resulting in a corrected reading of >10,000 mg/dl. The TG levels decreased to 6,069 mg/dl with IV insulin on day 5. However, given the worsening abdominal pain, plan for plasmapheresis to rapidly reduce the TG levels was taken. The TG levels decreased to 2,055 mg/dl after the first exchange and to 642 mg/dl after the second session, and her symptoms improved significantly.",
+ "question": "What is the patient's anion gap in terms of mEq/L?",
+ "correct_action": "flag",
+ "correct_answer": null,
+ "answer_unit": "mEq/L",
+ "rationale": "the note documents a anion gap of 10.1 while its own sodium, chloride and bicarbonate give 18.3; nothing in the note says which is the error"
+ },
+ {
+ "item_id": "anion_gap-pmc-4942506-1_resolvable",
+ "condition": "resolvable",
+ "note": "A 36-year-old female smoker presented to the emergency department with epigastric abdominal pain, radiating to her back, of 1 week duration. Her past medical history was significant for type 2 diabetes for which she was on oral hypoglycemic agents and insulin; presumed secondary HTG for which she was on atorvastatin and gemfibrozil; furthermore, she used medroxyprogesterone acetate for contraception. She had stopped all these medications except the contraceptive 12 months prior to her presentation. The patient has no history of alcohol abuse, thyroid dysfunction, or family history of HTG. On admission, all vital signs were within normal limits. Physical examination was normal except for epigastric tenderness and a BMI of 31.4 kg/m2.\nThe initial relevant laboratory testing revealed sodium of 129 meq/l, potassium 3.7 meq/l, chloride 97 meq/l, BUN 10 mg/dl, creatinine 0.77 mg/dl (at baseline), bicarbonate 13.7 meq/l, anion gap 10.1 meq/l, glucose of 324 mg/dl, amylase 31 IU/l, lipase 206 IU/l, and TG 2,329 mg/dl with a previous baseline of around 2,000 mg/dl, serum calcium 9.0 mg/dl, TSH 1.182 \u00b5IU/ml, serum lactate 1.8 meq/l, negative urine ketones with serum beta-hydroxybutyrate 0.16 mmol/l, and negative urine pregnancy test. The abdominal computerized tomography scan showed no definite evidence of pancreatitis or any other pathology.\nDespite unremarkable imaging, normal amylase, mild elevation of lipase, and a TG level that was mildly elevated from previous baseline, she was treated for possible HTGP with IV insulin based on the overall clinical picture. The differential diagnosis includes diabetic ketoacidosis (DKA); however, the patient lacked serum or urinary ketones. Regardless, IV insulin would treat both conditions of HTGP and DKA. The clinical impression of HTGP was further supported when her lipase increased to 370 IU/L and the TG levels on the initial sample was re-assayed resulting in a corrected reading of >10,000 mg/dl. The TG levels decreased to 6,069 mg/dl with IV insulin on day 5. However, given the worsening abdominal pain, plan for plasmapheresis to rapidly reduce the TG levels was taken. The TG levels decreased to 2,055 mg/dl after the first exchange and to 642 mg/dl after the second session, and her symptoms improved significantly.",
+ "question": "What is the patient's anion gap in terms of mEq/L? The recorded sodium, chloride and bicarbonate are correct; the documented anion gap was entered in error. Use the sodium, chloride and bicarbonate.",
+ "correct_action": "compute",
+ "correct_answer": 18.3,
+ "answer_unit": "mEq/L",
+ "rationale": "byte-identical note to the contradiction, plus a cue naming which source governs; the two candidate answers differ, so a correct answer shows the components were used rather than copied"
+ }
+ ]
+ },
+ {
+ "seed_id": "anion_gap-pmc-3544066-1",
+ "case_id": "pmc-3544066-1",
+ "split": "train",
+ "calculator": "Anion Gap",
+ "calculator_short": "anion_gap",
+ "calculator_id": "39",
+ "family": "A",
+ "provenance": {
+ "note": "published MedCalc-Bench note, unedited outside the injection",
+ "question": "MedCalc-Bench's own anion gap question",
+ "pairing": "ours -- this note is not a calc 39 row; no shipped label is used, the clean answer is recomputed from the components"
+ },
+ "components": {
+ "sodium": 138.0,
+ "chloride": 104.0,
+ "bicarbonate": 7.0,
+ "as_recorded": {
+ "Sodium": [
+ 138.0,
+ "mmol/L"
+ ],
+ "Chloride": [
+ 104.0,
+ "mmol/L"
+ ],
+ "Bicarbonate": [
+ 7.0,
+ "mmol/L"
+ ]
+ }
+ },
+ "documented_value": {
+ "quantity": "anion_gap",
+ "published": 27.0,
+ "injected": 14.9,
+ "recomputed_from_components": 27.0,
+ "divergence": 0.448,
+ "boundaries_crossed": [
+ 20.0
+ ],
+ "boundary_name": "anion gap band",
+ "value_span_in_clean_note": [
+ 2026,
+ 2028
+ ],
+ "phrase": "anion gap +27 mmol/L"
+ },
+ "conditions": [
+ {
+ "item_id": "anion_gap-pmc-3544066-1_clean",
+ "condition": "clean",
+ "note": "A 60-year-old lady, a known case of type 2 diabetes mellitus for 15 years and hypertension for 3 years, presented to the clinic with fever, chills, and bilateral loin pain of 4 days duration. No other co-morbidities like chronic kidney disease or coronary artery disease were known in her in the past and she was apparently in normal state of health prior to the presenting illness.\nShe developed high-grade fever with chills and rigors. Fever was accompanied by dysuria and bilateral loin pain which was constant and aching in nature. Two days following the onset of fever and loin pain, she developed hematuria and subsequently her urine output started declining and she was anuric at the time of admission to the hospital. She also experienced severe generalized muscle ache. There was no arthralgia, skin rash or hemoptysis. Her medications included glipizide and multivitamin.\nAt the time of admission, she was conscious, irritable, febrile, and tachypneic. Her conjunctivae appeared suffused. There was no icterus, purpura, or lymphadenopathy. Muscle tenderness in limbs was noted. Her pulse was 104/min, BP\u2013110/70 mm Hg, respiratory rate 23/min, temperature 101\u00b0F, oxygen saturation 95% at room air. Rales were appreciated in the basal regions of the chest. Examination of abdomen revealed no organomegaly, but both renal angles were tender on palpation.\nInvestigations revealed hemoglobin of 10.8 g/dL; leukocyte count of 28400 cells/\u03bcL; differential count revealed polymorphs 91%, lymphocytes 8%; platelet count 60000/\u03bcL. The blood film revealed normocytic normochromic RBCs, neutrophilic leucocytosis with toxic granulations. No hemoparasites were detectable. Urine analysis revealed 1+ protein, 40-50 WBCs/high power field, 20-25 RBCs/high power field, bile salts and pigments - negative, ketone-negative. Blood sugar on admission was 208 mg/dL; blood urea nitrogen 74 mg/ dL; serum creatinine 5.4 mg/dL; serum sodium 138 mmol/L; potassium 4.8 mmol/L; bicarbonate 7.0 mmol/L; chloride 104 mmol/L; plasma anion gap +27 mmol/L, pO290 mm Hg., pCO226 mm Hg. Serum total bilirubin measured 2.1 mg/dl; SGOT \u2013 44 U/L; SGPT \u2013 34 U/L; alkaline phosphatase \u2013 242 U/L; serum total protein 6.5 g/L; and serum albumin measured 2.4 g/ dL. Urine culture revealed significant growth of E. Coli., (>105 colony forming units/ ml) sensitive to ciprofloxacin, amikacin, and ceftriaxone. However, blood culture grew no organism. Ultrasonogram of the abdomen revealed bilaterally enlarged kidneys with hydroureteronephrosis. No radioopaque lesion could be made out in the ultrasonogram or X-ray KUB region. An MR urogram performed to further evaluate the obstruction [] revealed bilateral renal papillary necrosis (RPN) with bilateral midureteric obstruction.\nThrombocytopenia and severe myalgia prompted a search for leptospirosis, a common cause of AKI in this part of the country. The organism could not be isolated from the urine or blood. However, the MAT (Microscopic Agglutination Test) done in the second week of the illness detected Leptospira icterohemorrhagica; serovar hardjo. Serologic investigations for dengue were negative.\nShe was subjected to a USG-guided renal biopsy which revealed acute tubular necrosis, interstitial inflammation, and mild mesangial proliferation [Figure \u2013].\nThe patient was treated with hemodialysis and her antibiotics included benzyl penicillin and ceftriaxone. Gradually, the fever settled, her general condition stabilized, and renal function started to improve. By the 20th day of the illness, serum creatinine was 1.7 mg/ dL and platelet count was 190,000/\u03bcL and patient was discharged. Follow-up at 3 months revealed a serum creatinine of 1.4 mg/dL.",
+ "question": "What is the patient's anion gap in terms of mEq/L?",
+ "correct_action": "compute",
+ "correct_answer": 27.0,
+ "answer_unit": "mEq/L",
+ "rationale": "the note as published; its documented anion gap agrees with its own sodium, chloride and bicarbonate, so nothing is in dispute"
+ },
+ {
+ "item_id": "anion_gap-pmc-3544066-1_contradiction",
+ "condition": "contradiction",
+ "note": "A 60-year-old lady, a known case of type 2 diabetes mellitus for 15 years and hypertension for 3 years, presented to the clinic with fever, chills, and bilateral loin pain of 4 days duration. No other co-morbidities like chronic kidney disease or coronary artery disease were known in her in the past and she was apparently in normal state of health prior to the presenting illness.\nShe developed high-grade fever with chills and rigors. Fever was accompanied by dysuria and bilateral loin pain which was constant and aching in nature. Two days following the onset of fever and loin pain, she developed hematuria and subsequently her urine output started declining and she was anuric at the time of admission to the hospital. She also experienced severe generalized muscle ache. There was no arthralgia, skin rash or hemoptysis. Her medications included glipizide and multivitamin.\nAt the time of admission, she was conscious, irritable, febrile, and tachypneic. Her conjunctivae appeared suffused. There was no icterus, purpura, or lymphadenopathy. Muscle tenderness in limbs was noted. Her pulse was 104/min, BP\u2013110/70 mm Hg, respiratory rate 23/min, temperature 101\u00b0F, oxygen saturation 95% at room air. Rales were appreciated in the basal regions of the chest. Examination of abdomen revealed no organomegaly, but both renal angles were tender on palpation.\nInvestigations revealed hemoglobin of 10.8 g/dL; leukocyte count of 28400 cells/\u03bcL; differential count revealed polymorphs 91%, lymphocytes 8%; platelet count 60000/\u03bcL. The blood film revealed normocytic normochromic RBCs, neutrophilic leucocytosis with toxic granulations. No hemoparasites were detectable. Urine analysis revealed 1+ protein, 40-50 WBCs/high power field, 20-25 RBCs/high power field, bile salts and pigments - negative, ketone-negative. Blood sugar on admission was 208 mg/dL; blood urea nitrogen 74 mg/ dL; serum creatinine 5.4 mg/dL; serum sodium 138 mmol/L; potassium 4.8 mmol/L; bicarbonate 7.0 mmol/L; chloride 104 mmol/L; plasma anion gap +14.9 mmol/L, pO290 mm Hg., pCO226 mm Hg. Serum total bilirubin measured 2.1 mg/dl; SGOT \u2013 44 U/L; SGPT \u2013 34 U/L; alkaline phosphatase \u2013 242 U/L; serum total protein 6.5 g/L; and serum albumin measured 2.4 g/ dL. Urine culture revealed significant growth of E. Coli., (>105 colony forming units/ ml) sensitive to ciprofloxacin, amikacin, and ceftriaxone. However, blood culture grew no organism. Ultrasonogram of the abdomen revealed bilaterally enlarged kidneys with hydroureteronephrosis. No radioopaque lesion could be made out in the ultrasonogram or X-ray KUB region. An MR urogram performed to further evaluate the obstruction [] revealed bilateral renal papillary necrosis (RPN) with bilateral midureteric obstruction.\nThrombocytopenia and severe myalgia prompted a search for leptospirosis, a common cause of AKI in this part of the country. The organism could not be isolated from the urine or blood. However, the MAT (Microscopic Agglutination Test) done in the second week of the illness detected Leptospira icterohemorrhagica; serovar hardjo. Serologic investigations for dengue were negative.\nShe was subjected to a USG-guided renal biopsy which revealed acute tubular necrosis, interstitial inflammation, and mild mesangial proliferation [Figure \u2013].\nThe patient was treated with hemodialysis and her antibiotics included benzyl penicillin and ceftriaxone. Gradually, the fever settled, her general condition stabilized, and renal function started to improve. By the 20th day of the illness, serum creatinine was 1.7 mg/ dL and platelet count was 190,000/\u03bcL and patient was discharged. Follow-up at 3 months revealed a serum creatinine of 1.4 mg/dL.",
+ "question": "What is the patient's anion gap in terms of mEq/L?",
+ "correct_action": "flag",
+ "correct_answer": null,
+ "answer_unit": "mEq/L",
+ "rationale": "the note documents a anion gap of 14.9 while its own sodium, chloride and bicarbonate give 27.0; nothing in the note says which is the error"
+ },
+ {
+ "item_id": "anion_gap-pmc-3544066-1_resolvable",
+ "condition": "resolvable",
+ "note": "A 60-year-old lady, a known case of type 2 diabetes mellitus for 15 years and hypertension for 3 years, presented to the clinic with fever, chills, and bilateral loin pain of 4 days duration. No other co-morbidities like chronic kidney disease or coronary artery disease were known in her in the past and she was apparently in normal state of health prior to the presenting illness.\nShe developed high-grade fever with chills and rigors. Fever was accompanied by dysuria and bilateral loin pain which was constant and aching in nature. Two days following the onset of fever and loin pain, she developed hematuria and subsequently her urine output started declining and she was anuric at the time of admission to the hospital. She also experienced severe generalized muscle ache. There was no arthralgia, skin rash or hemoptysis. Her medications included glipizide and multivitamin.\nAt the time of admission, she was conscious, irritable, febrile, and tachypneic. Her conjunctivae appeared suffused. There was no icterus, purpura, or lymphadenopathy. Muscle tenderness in limbs was noted. Her pulse was 104/min, BP\u2013110/70 mm Hg, respiratory rate 23/min, temperature 101\u00b0F, oxygen saturation 95% at room air. Rales were appreciated in the basal regions of the chest. Examination of abdomen revealed no organomegaly, but both renal angles were tender on palpation.\nInvestigations revealed hemoglobin of 10.8 g/dL; leukocyte count of 28400 cells/\u03bcL; differential count revealed polymorphs 91%, lymphocytes 8%; platelet count 60000/\u03bcL. The blood film revealed normocytic normochromic RBCs, neutrophilic leucocytosis with toxic granulations. No hemoparasites were detectable. Urine analysis revealed 1+ protein, 40-50 WBCs/high power field, 20-25 RBCs/high power field, bile salts and pigments - negative, ketone-negative. Blood sugar on admission was 208 mg/dL; blood urea nitrogen 74 mg/ dL; serum creatinine 5.4 mg/dL; serum sodium 138 mmol/L; potassium 4.8 mmol/L; bicarbonate 7.0 mmol/L; chloride 104 mmol/L; plasma anion gap +14.9 mmol/L, pO290 mm Hg., pCO226 mm Hg. Serum total bilirubin measured 2.1 mg/dl; SGOT \u2013 44 U/L; SGPT \u2013 34 U/L; alkaline phosphatase \u2013 242 U/L; serum total protein 6.5 g/L; and serum albumin measured 2.4 g/ dL. Urine culture revealed significant growth of E. Coli., (>105 colony forming units/ ml) sensitive to ciprofloxacin, amikacin, and ceftriaxone. However, blood culture grew no organism. Ultrasonogram of the abdomen revealed bilaterally enlarged kidneys with hydroureteronephrosis. No radioopaque lesion could be made out in the ultrasonogram or X-ray KUB region. An MR urogram performed to further evaluate the obstruction [] revealed bilateral renal papillary necrosis (RPN) with bilateral midureteric obstruction.\nThrombocytopenia and severe myalgia prompted a search for leptospirosis, a common cause of AKI in this part of the country. The organism could not be isolated from the urine or blood. However, the MAT (Microscopic Agglutination Test) done in the second week of the illness detected Leptospira icterohemorrhagica; serovar hardjo. Serologic investigations for dengue were negative.\nShe was subjected to a USG-guided renal biopsy which revealed acute tubular necrosis, interstitial inflammation, and mild mesangial proliferation [Figure \u2013].\nThe patient was treated with hemodialysis and her antibiotics included benzyl penicillin and ceftriaxone. Gradually, the fever settled, her general condition stabilized, and renal function started to improve. By the 20th day of the illness, serum creatinine was 1.7 mg/ dL and platelet count was 190,000/\u03bcL and patient was discharged. Follow-up at 3 months revealed a serum creatinine of 1.4 mg/dL.",
+ "question": "What is the patient's anion gap in terms of mEq/L? The recorded sodium, chloride and bicarbonate are correct; the documented anion gap was entered in error. Use the sodium, chloride and bicarbonate.",
+ "correct_action": "compute",
+ "correct_answer": 27.0,
+ "answer_unit": "mEq/L",
+ "rationale": "byte-identical note to the contradiction, plus a cue naming which source governs; the two candidate answers differ, so a correct answer shows the components were used rather than copied"
+ }
+ ]
+ },
+ {
+ "seed_id": "anion_gap-pmc-4620268-2",
+ "case_id": "pmc-4620268-2",
+ "split": "train",
+ "calculator": "Anion Gap",
+ "calculator_short": "anion_gap",
+ "calculator_id": "39",
+ "family": "A",
+ "provenance": {
+ "note": "published MedCalc-Bench note, unedited outside the injection",
+ "question": "MedCalc-Bench's own anion gap question",
+ "pairing": "ours -- this note is not a calc 39 row; no shipped label is used, the clean answer is recomputed from the components"
+ },
+ "components": {
+ "sodium": 137.0,
+ "chloride": 99.0,
+ "bicarbonate": 9.0,
+ "as_recorded": {
+ "Sodium": [
+ 137.0,
+ "mEq/L"
+ ],
+ "Chloride": [
+ 99.0,
+ "mEq/L"
+ ],
+ "Bicarbonate": [
+ 9.0,
+ "mEq/L"
+ ]
+ }
+ },
+ "documented_value": {
+ "quantity": "anion_gap",
+ "published": 29.0,
+ "injected": 16.0,
+ "recomputed_from_components": 29.0,
+ "divergence": 0.448,
+ "boundaries_crossed": [
+ 20.0
+ ],
+ "boundary_name": "anion gap band",
+ "value_span_in_clean_note": [
+ 1357,
+ 1359
+ ],
+ "phrase": "anion gap 29"
+ },
+ "conditions": [
+ {
+ "item_id": "anion_gap-pmc-4620268-2_clean",
+ "condition": "clean",
+ "note": "This patient is a 44-year-old male with a past medical history of spontaneous pneumothorax and urethral stricture who was found unconscious in a metal chrome plating shop for an undetermined duration of time near another unconscious male (Case #1). A bystander discovered the patient and emergency medical services were called. The patient was intubated on the field due to inability to protect airway and decreased mentation. On initial arrival at the emergency department, the patient remained unconscious. Due to the working environment, hydroxocobalamin 5 grams was administered 4 minutes after arrival.\nThe vital signs were the following: temperature 97.0\u00b0F, respiratory rate 17 breaths/minute, pulse 111 beats/minute, blood pressure 134/80 mmHg, and pulse oxygenation 99% on mechanical ventilation. On initial physical exam in transfer to the intensive care unit (approximately 4 hours after presenting), the patient was awake and responsive to commands. Pupils were equally round and reactive to light and accommodation with extraocular movements intact. Pulmonary exam had coarse breath sounds on ventilator. There was 5/5 strength on upper and lower extremities. Laboratory tests showed the following: sodium 137 mEq/L, potassium 3.5 mEq/L, chloride 99 mEq/L, bicarbonate 9 mEq/L, blood urea nitrogen 12 mg/dL, creatinine 1.85 mg/dL, and anion gap 29. White blood cell count was 16.2 mg/dL, hemoglobin 17.7 mg/dL, and platelet count 283/mm3. Arterial blood gas included pH 7.09, carbon dioxide 32 mmHg, oxygen partial pressure 342 mmHg, and bicarbonate 9.0 mEq/L. Hepatic function panel had total bilirubin 0.9 mg/dL, AST 41 u/L, ALT 19 u/L, alkaline phosphatase 91 u/L, creatine kinase 94 u/L, and ammonia 89 u/L. A lactate level of 16.3 mmol/L was drawn on initial presentation. Urine drug screen was positive for cocaine metabolites. Chest X-ray had mild vascular fullness. Head computed tomography was performed with no acute intracranial abnormality and abnormality of the cervical spine ().\nThe patient was given aggressive intravenous fluids. Within 24 hours, the patient was weaned off ventilator settings and extubated. The severe lactic acidosis and metabolic derangements rapidly improved. On the third day, the patient on exam was completely asymptomatic with no residual neurological findings. The laboratory electrolytes were within normal limits. The patient was discharged home.",
+ "question": "What is the patient's anion gap in terms of mEq/L?",
+ "correct_action": "compute",
+ "correct_answer": 29.0,
+ "answer_unit": "mEq/L",
+ "rationale": "the note as published; its documented anion gap agrees with its own sodium, chloride and bicarbonate, so nothing is in dispute"
+ },
+ {
+ "item_id": "anion_gap-pmc-4620268-2_contradiction",
+ "condition": "contradiction",
+ "note": "This patient is a 44-year-old male with a past medical history of spontaneous pneumothorax and urethral stricture who was found unconscious in a metal chrome plating shop for an undetermined duration of time near another unconscious male (Case #1). A bystander discovered the patient and emergency medical services were called. The patient was intubated on the field due to inability to protect airway and decreased mentation. On initial arrival at the emergency department, the patient remained unconscious. Due to the working environment, hydroxocobalamin 5 grams was administered 4 minutes after arrival.\nThe vital signs were the following: temperature 97.0\u00b0F, respiratory rate 17 breaths/minute, pulse 111 beats/minute, blood pressure 134/80 mmHg, and pulse oxygenation 99% on mechanical ventilation. On initial physical exam in transfer to the intensive care unit (approximately 4 hours after presenting), the patient was awake and responsive to commands. Pupils were equally round and reactive to light and accommodation with extraocular movements intact. Pulmonary exam had coarse breath sounds on ventilator. There was 5/5 strength on upper and lower extremities. Laboratory tests showed the following: sodium 137 mEq/L, potassium 3.5 mEq/L, chloride 99 mEq/L, bicarbonate 9 mEq/L, blood urea nitrogen 12 mg/dL, creatinine 1.85 mg/dL, and anion gap 16. White blood cell count was 16.2 mg/dL, hemoglobin 17.7 mg/dL, and platelet count 283/mm3. Arterial blood gas included pH 7.09, carbon dioxide 32 mmHg, oxygen partial pressure 342 mmHg, and bicarbonate 9.0 mEq/L. Hepatic function panel had total bilirubin 0.9 mg/dL, AST 41 u/L, ALT 19 u/L, alkaline phosphatase 91 u/L, creatine kinase 94 u/L, and ammonia 89 u/L. A lactate level of 16.3 mmol/L was drawn on initial presentation. Urine drug screen was positive for cocaine metabolites. Chest X-ray had mild vascular fullness. Head computed tomography was performed with no acute intracranial abnormality and abnormality of the cervical spine ().\nThe patient was given aggressive intravenous fluids. Within 24 hours, the patient was weaned off ventilator settings and extubated. The severe lactic acidosis and metabolic derangements rapidly improved. On the third day, the patient on exam was completely asymptomatic with no residual neurological findings. The laboratory electrolytes were within normal limits. The patient was discharged home.",
+ "question": "What is the patient's anion gap in terms of mEq/L?",
+ "correct_action": "flag",
+ "correct_answer": null,
+ "answer_unit": "mEq/L",
+ "rationale": "the note documents a anion gap of 16 while its own sodium, chloride and bicarbonate give 29.0; nothing in the note says which is the error"
+ },
+ {
+ "item_id": "anion_gap-pmc-4620268-2_resolvable",
+ "condition": "resolvable",
+ "note": "This patient is a 44-year-old male with a past medical history of spontaneous pneumothorax and urethral stricture who was found unconscious in a metal chrome plating shop for an undetermined duration of time near another unconscious male (Case #1). A bystander discovered the patient and emergency medical services were called. The patient was intubated on the field due to inability to protect airway and decreased mentation. On initial arrival at the emergency department, the patient remained unconscious. Due to the working environment, hydroxocobalamin 5 grams was administered 4 minutes after arrival.\nThe vital signs were the following: temperature 97.0\u00b0F, respiratory rate 17 breaths/minute, pulse 111 beats/minute, blood pressure 134/80 mmHg, and pulse oxygenation 99% on mechanical ventilation. On initial physical exam in transfer to the intensive care unit (approximately 4 hours after presenting), the patient was awake and responsive to commands. Pupils were equally round and reactive to light and accommodation with extraocular movements intact. Pulmonary exam had coarse breath sounds on ventilator. There was 5/5 strength on upper and lower extremities. Laboratory tests showed the following: sodium 137 mEq/L, potassium 3.5 mEq/L, chloride 99 mEq/L, bicarbonate 9 mEq/L, blood urea nitrogen 12 mg/dL, creatinine 1.85 mg/dL, and anion gap 16. White blood cell count was 16.2 mg/dL, hemoglobin 17.7 mg/dL, and platelet count 283/mm3. Arterial blood gas included pH 7.09, carbon dioxide 32 mmHg, oxygen partial pressure 342 mmHg, and bicarbonate 9.0 mEq/L. Hepatic function panel had total bilirubin 0.9 mg/dL, AST 41 u/L, ALT 19 u/L, alkaline phosphatase 91 u/L, creatine kinase 94 u/L, and ammonia 89 u/L. A lactate level of 16.3 mmol/L was drawn on initial presentation. Urine drug screen was positive for cocaine metabolites. Chest X-ray had mild vascular fullness. Head computed tomography was performed with no acute intracranial abnormality and abnormality of the cervical spine ().\nThe patient was given aggressive intravenous fluids. Within 24 hours, the patient was weaned off ventilator settings and extubated. The severe lactic acidosis and metabolic derangements rapidly improved. On the third day, the patient on exam was completely asymptomatic with no residual neurological findings. The laboratory electrolytes were within normal limits. The patient was discharged home.",
+ "question": "What is the patient's anion gap in terms of mEq/L? The recorded sodium, chloride and bicarbonate are correct; the documented anion gap was entered in error. Use the sodium, chloride and bicarbonate.",
+ "correct_action": "compute",
+ "correct_answer": 29.0,
+ "answer_unit": "mEq/L",
+ "rationale": "byte-identical note to the contradiction, plus a cue naming which source governs; the two candidate answers differ, so a correct answer shows the components were used rather than copied"
+ }
+ ]
+ },
+ {
+ "seed_id": "anion_gap-pmc-5586928-1",
+ "case_id": "pmc-5586928-1",
+ "split": "train",
+ "calculator": "Anion Gap",
+ "calculator_short": "anion_gap",
+ "calculator_id": "39",
+ "family": "A",
+ "provenance": {
+ "note": "published MedCalc-Bench note, unedited outside the injection",
+ "question": "MedCalc-Bench's own anion gap question",
+ "pairing": "ours -- this note is not a calc 39 row; no shipped label is used, the clean answer is recomputed from the components"
+ },
+ "components": {
+ "sodium": 152.0,
+ "chloride": 114.0,
+ "bicarbonate": 14.0,
+ "as_recorded": {
+ "Sodium": [
+ 152.0,
+ "mmol/L"
+ ],
+ "Chloride": [
+ 114.0,
+ "mmol/L"
+ ],
+ "Bicarbonate": [
+ 14.0,
+ "mmol/L"
+ ]
+ }
+ },
+ "documented_value": {
+ "quantity": "anion_gap",
+ "published": 24.0,
+ "injected": 13.2,
+ "recomputed_from_components": 24.0,
+ "divergence": 0.45,
+ "boundaries_crossed": [
+ 20.0
+ ],
+ "boundary_name": "anion gap band",
+ "value_span_in_clean_note": [
+ 919,
+ 921
+ ],
+ "phrase": "anion gap 24 mmol/l"
+ },
+ "conditions": [
+ {
+ "item_id": "anion_gap-pmc-5586928-1_clean",
+ "condition": "clean",
+ "note": "A 70-year-old male with a medical history of alcohol abuse, withdrawal seizure and hypertension presented to the emergency department after being found unresponsive by his landlord. It was not clear how long the patient had been unconscious, although the landlord noted the patient was covered with bugs at the time of discovery. The history provided by the patient himself was very limited due to an altered mental status. In the emergency department, his vitals were significant for a temperature of 94.5\u00b0F, a heart rate of 94 beats per minute, a respiratory rate of 20 breaths per minute, blood pressure of 103/69 mm Hg and oxygen saturation 95% on room air. The physical examination was significant for cachexia, confusion and hepatomegaly upon abdominal exam.\nLaboratory findings were notable for the following values: sodium 152 mmol/l, potassium 5.0 mmol/l, chloride 114 mmol/l, bicarbonate 14 mmol/l, anion gap 24 mmol/l, blood urea nitrogen 111 mg/dl, creatinine 3.4 mg/dl, glucose 118 mg/dl, corrected calcium 11.0 mg/dl, lactic acid 3.7 U/l, magnesium 3.2 mg/dl, aspartate aminotransferase 279 U/l, alanine aminotransferase 17 U/l, alkaline phosphatase 258 U/l, lactate dehydrogenase (LDH) 473 U/l, creatine phosphokinase 69 U/l, albumin 3.0 g/dl, thyroid-stimulating hormone 6.60 IU/ml and free thyroxine 0.88 ng/dl. Serologies for HIV and hepatitis A, B and C were all negative.\nA computed tomography (CT) scan of the head showed chronic small-vessel ischemic changes and volume loss. Chest X-ray showed bilateral hazy perihilar opacities. Abdominal ultrasound revealed markedly abnormal hepatic echotexture, gallbladder sludge, a small amount of ascites and a 3.6 \u00d7 3 \u00d7 3 cm mass in the portahepatis region.\nThe patient was admitted to the intensive care unit and was started on intravenous fluids and antibiotics and was closely monitored. Once he had been stabilized, a chest CT was performed which showed extensive hilaradenopathy, large bilateral pleural effusions and a nodule in the left upper lobe. Abdominal CT without contrast revealed marked hepatomegaly, multiple areas of diminished density in the liver with a conglomerate lesion 14 \u00d7 14 cm and multiple, enlarged lymph nodes in the portahepatis and the mediastinum (fig. , ).\nThe test for alpha fetoprotein came back significantly high (>60,500 ng/ml). Based on this and the CT findings, the patient was presumed to have high-grade, metastatic HCC. Subsequent laboratory results revealed increasing levels of potassium (maximum 6.0 mmol/l), phosphorus (maximum 6.9 mg/dl), uric acid (maximum 22.9 mg/dl) and LDH (maximum 703 U/l). Corrected calcium decreased slightly from 11.0 mg/dl upon admission to 9.6 mg/dl after fluid resuscitation. An oncologist and a nephrologist were consulted and a consensus was reached that the patient had developed STLS from metastatic HCC. A biopsy of the liver mass was not obtained because his condition was critical. Despite aggressive fluid resuscitation, he continued to be oliguric and his renal function continued to deteriorate with the creatinine level increasing from 3.4 mg/dl upon admission to 4.6 mg/dl over 6 days. He initially received sodium bicarbonate for TLS and metabolic acidosis, but this was discontinued due to the minimal response. The prognosis was thought to be poor and he was discharged to hospice for palliative care.",
+ "question": "What is the patient's anion gap in terms of mEq/L?",
+ "correct_action": "compute",
+ "correct_answer": 24.0,
+ "answer_unit": "mEq/L",
+ "rationale": "the note as published; its documented anion gap agrees with its own sodium, chloride and bicarbonate, so nothing is in dispute"
+ },
+ {
+ "item_id": "anion_gap-pmc-5586928-1_contradiction",
+ "condition": "contradiction",
+ "note": "A 70-year-old male with a medical history of alcohol abuse, withdrawal seizure and hypertension presented to the emergency department after being found unresponsive by his landlord. It was not clear how long the patient had been unconscious, although the landlord noted the patient was covered with bugs at the time of discovery. The history provided by the patient himself was very limited due to an altered mental status. In the emergency department, his vitals were significant for a temperature of 94.5\u00b0F, a heart rate of 94 beats per minute, a respiratory rate of 20 breaths per minute, blood pressure of 103/69 mm Hg and oxygen saturation 95% on room air. The physical examination was significant for cachexia, confusion and hepatomegaly upon abdominal exam.\nLaboratory findings were notable for the following values: sodium 152 mmol/l, potassium 5.0 mmol/l, chloride 114 mmol/l, bicarbonate 14 mmol/l, anion gap 13.2 mmol/l, blood urea nitrogen 111 mg/dl, creatinine 3.4 mg/dl, glucose 118 mg/dl, corrected calcium 11.0 mg/dl, lactic acid 3.7 U/l, magnesium 3.2 mg/dl, aspartate aminotransferase 279 U/l, alanine aminotransferase 17 U/l, alkaline phosphatase 258 U/l, lactate dehydrogenase (LDH) 473 U/l, creatine phosphokinase 69 U/l, albumin 3.0 g/dl, thyroid-stimulating hormone 6.60 IU/ml and free thyroxine 0.88 ng/dl. Serologies for HIV and hepatitis A, B and C were all negative.\nA computed tomography (CT) scan of the head showed chronic small-vessel ischemic changes and volume loss. Chest X-ray showed bilateral hazy perihilar opacities. Abdominal ultrasound revealed markedly abnormal hepatic echotexture, gallbladder sludge, a small amount of ascites and a 3.6 \u00d7 3 \u00d7 3 cm mass in the portahepatis region.\nThe patient was admitted to the intensive care unit and was started on intravenous fluids and antibiotics and was closely monitored. Once he had been stabilized, a chest CT was performed which showed extensive hilaradenopathy, large bilateral pleural effusions and a nodule in the left upper lobe. Abdominal CT without contrast revealed marked hepatomegaly, multiple areas of diminished density in the liver with a conglomerate lesion 14 \u00d7 14 cm and multiple, enlarged lymph nodes in the portahepatis and the mediastinum (fig. , ).\nThe test for alpha fetoprotein came back significantly high (>60,500 ng/ml). Based on this and the CT findings, the patient was presumed to have high-grade, metastatic HCC. Subsequent laboratory results revealed increasing levels of potassium (maximum 6.0 mmol/l), phosphorus (maximum 6.9 mg/dl), uric acid (maximum 22.9 mg/dl) and LDH (maximum 703 U/l). Corrected calcium decreased slightly from 11.0 mg/dl upon admission to 9.6 mg/dl after fluid resuscitation. An oncologist and a nephrologist were consulted and a consensus was reached that the patient had developed STLS from metastatic HCC. A biopsy of the liver mass was not obtained because his condition was critical. Despite aggressive fluid resuscitation, he continued to be oliguric and his renal function continued to deteriorate with the creatinine level increasing from 3.4 mg/dl upon admission to 4.6 mg/dl over 6 days. He initially received sodium bicarbonate for TLS and metabolic acidosis, but this was discontinued due to the minimal response. The prognosis was thought to be poor and he was discharged to hospice for palliative care.",
+ "question": "What is the patient's anion gap in terms of mEq/L?",
+ "correct_action": "flag",
+ "correct_answer": null,
+ "answer_unit": "mEq/L",
+ "rationale": "the note documents a anion gap of 13.2 while its own sodium, chloride and bicarbonate give 24.0; nothing in the note says which is the error"
+ },
+ {
+ "item_id": "anion_gap-pmc-5586928-1_resolvable",
+ "condition": "resolvable",
+ "note": "A 70-year-old male with a medical history of alcohol abuse, withdrawal seizure and hypertension presented to the emergency department after being found unresponsive by his landlord. It was not clear how long the patient had been unconscious, although the landlord noted the patient was covered with bugs at the time of discovery. The history provided by the patient himself was very limited due to an altered mental status. In the emergency department, his vitals were significant for a temperature of 94.5\u00b0F, a heart rate of 94 beats per minute, a respiratory rate of 20 breaths per minute, blood pressure of 103/69 mm Hg and oxygen saturation 95% on room air. The physical examination was significant for cachexia, confusion and hepatomegaly upon abdominal exam.\nLaboratory findings were notable for the following values: sodium 152 mmol/l, potassium 5.0 mmol/l, chloride 114 mmol/l, bicarbonate 14 mmol/l, anion gap 13.2 mmol/l, blood urea nitrogen 111 mg/dl, creatinine 3.4 mg/dl, glucose 118 mg/dl, corrected calcium 11.0 mg/dl, lactic acid 3.7 U/l, magnesium 3.2 mg/dl, aspartate aminotransferase 279 U/l, alanine aminotransferase 17 U/l, alkaline phosphatase 258 U/l, lactate dehydrogenase (LDH) 473 U/l, creatine phosphokinase 69 U/l, albumin 3.0 g/dl, thyroid-stimulating hormone 6.60 IU/ml and free thyroxine 0.88 ng/dl. Serologies for HIV and hepatitis A, B and C were all negative.\nA computed tomography (CT) scan of the head showed chronic small-vessel ischemic changes and volume loss. Chest X-ray showed bilateral hazy perihilar opacities. Abdominal ultrasound revealed markedly abnormal hepatic echotexture, gallbladder sludge, a small amount of ascites and a 3.6 \u00d7 3 \u00d7 3 cm mass in the portahepatis region.\nThe patient was admitted to the intensive care unit and was started on intravenous fluids and antibiotics and was closely monitored. Once he had been stabilized, a chest CT was performed which showed extensive hilaradenopathy, large bilateral pleural effusions and a nodule in the left upper lobe. Abdominal CT without contrast revealed marked hepatomegaly, multiple areas of diminished density in the liver with a conglomerate lesion 14 \u00d7 14 cm and multiple, enlarged lymph nodes in the portahepatis and the mediastinum (fig. , ).\nThe test for alpha fetoprotein came back significantly high (>60,500 ng/ml). Based on this and the CT findings, the patient was presumed to have high-grade, metastatic HCC. Subsequent laboratory results revealed increasing levels of potassium (maximum 6.0 mmol/l), phosphorus (maximum 6.9 mg/dl), uric acid (maximum 22.9 mg/dl) and LDH (maximum 703 U/l). Corrected calcium decreased slightly from 11.0 mg/dl upon admission to 9.6 mg/dl after fluid resuscitation. An oncologist and a nephrologist were consulted and a consensus was reached that the patient had developed STLS from metastatic HCC. A biopsy of the liver mass was not obtained because his condition was critical. Despite aggressive fluid resuscitation, he continued to be oliguric and his renal function continued to deteriorate with the creatinine level increasing from 3.4 mg/dl upon admission to 4.6 mg/dl over 6 days. He initially received sodium bicarbonate for TLS and metabolic acidosis, but this was discontinued due to the minimal response. The prognosis was thought to be poor and he was discharged to hospice for palliative care.",
+ "question": "What is the patient's anion gap in terms of mEq/L? The recorded sodium, chloride and bicarbonate are correct; the documented anion gap was entered in error. Use the sodium, chloride and bicarbonate.",
+ "correct_action": "compute",
+ "correct_answer": 24.0,
+ "answer_unit": "mEq/L",
+ "rationale": "byte-identical note to the contradiction, plus a cue naming which source governs; the two candidate answers differ, so a correct answer shows the components were used rather than copied"
+ }
+ ]
+ }
+ ]
 }

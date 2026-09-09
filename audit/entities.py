@@ -1,8 +1,6 @@
 #!/usr/bin/env python3
 """Translate MedCalc-Bench's `Relevant Entities` keys into the names its own code reads.
 
-Task owner: Annotator D -- Week 1 task S1.
-Completed by Annotator D.
 
 MedCalc-Bench ships each case's extracted inputs under human-readable keys
 ("Systolic Blood Pressure"), while its calculator implementations index internal
@@ -62,12 +60,12 @@ ALIASES = {
     "creatinine": "creatinine",
     "input steroid": "input steroid",
     "target steroid": "target steroid",
-    # Week 3, Family C. Continuous inputs of the rule-based scores; the boolean
+    # , Family C. Continuous inputs of the rule-based scores; the boolean
     # criteria are mapped separately in CRITERIA below.
     "respiratory rate": "respiratory_rate",
 }
 
-# --- Week 3: the rule-based scores, mapped criterion by criterion ------------
+# --- : the rule-based scores, mapped criterion by criterion ------------
 #
 # These three are what the exclusion note above is about, and Family C needs them:
 # a criterion asserted and later denied is only a contradiction if the criterion
@@ -114,7 +112,7 @@ RULE_BASED_REQUIRED = {
 }
 
 # Deliberately NOT added to REQUIRED below. REQUIRED defines the population of
-# the Week 1 label audit, whose result (0% mismatch on 50 scored, 586/586 census)
+# the  label audit, whose result (0% mismatch on 50 scored, 586/586 census)
 # is already reported and pre-registered. Widening that population now would
 # change a published number for reasons unrelated to the question it answers, and
 # nobody reading the two versions could tell which instrument produced which.

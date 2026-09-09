@@ -1,7 +1,5 @@
 # Ten worked cases
 
-**Task owner:** Annotator D — Week 1 task S4 (deliver ten worked cases). The hand-check of these same ten is Week 1 task J3, in [HANDCHECK_WEEK1.md](HANDCHECK_WEEK1.md).  
-**Completed by:** Annotator D
 
 _Generated 2026-08-16T23:27:29Z from `data/items_dissociation.json` (all seeds). Substrate: MedCalc-Bench `version-1.0` (353ded7c61). Regenerate with `python3 make_worked_cases.py`._
 
@@ -16,7 +14,7 @@ _Generated 2026-08-16T23:27:29Z from `data/items_dissociation.json` (all seeds).
 | `value_conflict` | the value phrase is rewritten to carry a second creatinine | flag |
 | `resolvable` | same note; a cue naming which value to use is appended to the question | compute the cued value |
 
-The value-conflict rewrite averages **18 characters**, against 77 for the prose form kept as the Week 3 phrasing variant.
+The value-conflict rewrite averages **18 characters**, against 77 for the prose form kept as the phrasing variant.
 
 Every edit is anchored on the located label-value-unit phrase, so the text that changes is the text the calculator reads. Outside the edit, each variant is byte-identical to the published note — including its own typography, which is left alone on purpose so that the difference between conditions is only the defect.
 
@@ -24,7 +22,7 @@ Every edit is anchored on the located label-value-unit phrase, so the text that 
 
 **The conflict is injected by rewriting the value phrase, nothing else.** `creatinine, 1.4 mg/dL` becomes `creatinine, 1.4 and 3.64 mg/dL`. The label, the punctuation and every character around it are byte-identical to the published note, so the clean and conflict conditions differ by the words carrying the value and by nothing else. It also closes the temporal reading without having to argue: one laboratory entry listing two values for one analyte offers no "use the later one", because there is no earlier and later.
 
-An earlier form appended a prose clause — *with the same specimen also reported as creatinine X mg/dL* — which was four times longer and read as a narrative sentence dropped into a lab list. That form is still built for every item and stored alongside, because Week 3 has to test whether flagging tracks the conflict or our phrasing. If the two forms give different flag rates, part of the effect is ours. Say now if you think the shorter form reads as a range rather than as two values.
+An earlier form appended a prose clause — *with the same specimen also reported as creatinine X mg/dL* — which was four times longer and read as a narrative sentence dropped into a lab list. That form is still built for every item and stored alongside, because has to test whether flagging tracks the conflict or our phrasing. If the two forms give different flag rates, part of the effect is ours. Say now if you think the shorter form reads as a range rather than as two values.
 
 **The resolving cue lives in the question, not the note.** That keeps the `value_conflict` and `resolvable` notes byte-identical, so a correct answer under `resolvable` proves both values were parsed and silence under `value_conflict` cannot be explained as a parsing failure. The cost is that the question is no longer constant across all four conditions. The alternative — cue in the note — makes the question constant but the note variable, and then any difference between the two conditions is confounded with the text. We took the trade that protects the measurement we care about.
 
@@ -53,25 +51,25 @@ The answers differ by 60%, and they fall either side of the 60, 90 mL/min/1.73m�
 
 **The four conditions, at the edit**
 
-`clean` → **compute** `127.718 mL/min/1.73m^2`  
+`clean` → **compute** `127.718 mL/min/1.73m^2` 
 > …blood cell count 10.04 × 10 9/L, blood platelet count 180 × 10 12/L), liver enzymes (ALT 10.0 U/L, AST 17.0 U/L, GGT 16.0 U/L, ALP 86.0 U/L, TBIL 12.7 μmol/L) and renal function (BUN 5.65 mmol/L, SCr 42.0 μmol/L). Serum tumor markers AFP, CA19-9, CEA, and CA125 were all within normal limits. Her past medical history included hemangioma for 20 years, and asthma for 30 years, and she underwent hysteromyomectomy 8 years ago. She did not smoke or drink. The sp…
 
 *Why:* the note as published; the control that shows the model can do this calculation on this note at all.
 
-`missing` → **decline**  
+`missing` → **decline** 
 > …blood cell count 10.04 × 10 9/L, blood platelet count 180 × 10 12/L), liver enzymes (ALT 10.0 U/L, AST 17.0 U/L, GGT 16.0 U/L, ALP 86.0 U/L, TBIL 12.7 μmol/L) and renal function (BUN 5.65 mmol/L). Serum tumor markers AFP, CA19-9, CEA, and CA125 were all within normal limits. Her past medical history included hemangioma for 20 years, and asthma for 30 years, and she underwent hysteromyomectomy 8 years ago. She did not smoke or drink. The splenic ultrasound…
 
 *Why:* the creatinine the formula consumes is not in the note, so no answer is derivable and declining is the only correct move.
 
-`value_conflict` → **flag**  
+`value_conflict` → **flag** 
 > …blood cell count 10.04 × 10 9/L, blood platelet count 180 × 10 12/L), liver enzymes (ALT 10.0 U/L, AST 17.0 U/L, GGT 16.0 U/L, ALP 86.0 U/L, TBIL 12.7 μmol/L) and renal function (BUN 5.65 mmol/L, SCr 42.0 and 126 μmol/L). Serum tumor markers AFP, CA19-9, CEA, and CA125 were all within normal limits. Her past medical history included hemangioma for 20 years, and asthma for 30 years, and she underwent hysteromyomectomy 8 years ago. She did not smoke or drink…
 
 *Why:* two creatinines from the same draw give 127.7 and 51.3 mL/min/1.73m^2; nothing in the note says which is the input, so committing to either is committing to an untrustworthy value.
 
-`resolvable` → **compute** `127.718 mL/min/1.73m^2`  
+`resolvable` → **compute** `127.718 mL/min/1.73m^2` 
 > …blood cell count 10.04 × 10 9/L, blood platelet count 180 × 10 12/L), liver enzymes (ALT 10.0 U/L, AST 17.0 U/L, GGT 16.0 U/L, ALP 86.0 U/L, TBIL 12.7 μmol/L) and renal function (BUN 5.65 mmol/L, SCr 42.0 and 126 μmol/L). Serum tumor markers AFP, CA19-9, CEA, and CA125 were all within normal limits. Her past medical history included hemangioma for 20 years, and asthma for 30 years, and she underwent hysteromyomectomy 8 years ago. She did not smoke or drink…
 
-Note is byte-identical to `value_conflict`. Appended to the question:  
+Note is byte-identical to `value_conflict`. Appended to the question: 
 > …Two serum creatinine values are recorded; use the 42.0 μmol/L value for this calculation.
 
 *Why:* byte-identical note to value_conflict, plus a cue naming the input; a correct answer here proves both values were parsed, so silence under value_conflict is not a parsing failure.
@@ -113,13 +111,13 @@ According to the histology and immunohistochemistry findings, the diagnosis of L
 
 **Review** — kill this item if you can argue the note is still internally consistent.
 
-| Check | Annotator D | Annotator A | Annotator C | Annotator B |
+| Check | a contributor | a contributor | a contributor | a contributor |
 |---|---|---|---|---|
-| the edited value is the one the calculator consumes |  |  |  |  |
-| the conflict is real, not a trend or a restatement |  |  |  |  |
-| the note still reads coherently after the edit |  |  |  |  |
-| no second reading makes the item consistent |  |  |  |  |
-| nothing in the note hints that something is wrong |  |  |  |  |
+| the edited value is the one the calculator consumes | | | | |
+| the conflict is real, not a trend or a restatement | | | | |
+| the note still reads coherently after the edit | | | | |
+| no second reading makes the item consistent | | | | |
+| nothing in the note hints that something is wrong | | | | |
 
 ### 2. `cockcroft_gault-1` — Creatinine Clearance (Cockcroft-Gault Equation)
 
@@ -144,25 +142,25 @@ The answers differ by 62%, and they fall either side of the 15 mL/min/1.73m² CK
 
 **The four conditions, at the edit**
 
-`clean` → **compute** `25.238 mL/min`  
+`clean` → **compute** `25.238 mL/min` 
 > …lutamyl transpeptidase (γ-GTP), 130 IU/L; total bilirubin, 2.7 mg/dL; prothrombin time (PT), 20.3 s; international normalized ratio (INR), 1.73; blood urea nitrogen (BUN), 34.4 mg/dL; and creatinine, 1.4 mg/dL. Serologic tests were all negative for hepatitis A, B, C, and E. Computed tomography (CT) performed at admission revealed no distinct nodules or masses in the liver, but mild splenomegaly, multiple hypodense splenic lesions, and para-aortic lymph nod…
 
 *Why:* the note as published; the control that shows the model can do this calculation on this note at all.
 
-`missing` → **decline**  
+`missing` → **decline** 
 > …lutamyl transpeptidase (γ-GTP), 130 IU/L; total bilirubin, 2.7 mg/dL; prothrombin time (PT), 20.3 s; international normalized ratio (INR), 1.73; blood urea nitrogen (BUN), 34.4 mg/dL. Serologic tests were all negative for hepatitis A, B, C, and E. Computed tomography (CT) performed at admission revealed no distinct nodules or masses in the liver, but mild splenomegaly, multiple hypodense splenic lesions, and para-aortic lymph node swelling (Fig. a–c). Anti…
 
 *Why:* the creatinine the formula consumes is not in the note, so no answer is derivable and declining is the only correct move.
 
-`value_conflict` → **flag**  
+`value_conflict` → **flag** 
 > …lutamyl transpeptidase (γ-GTP), 130 IU/L; total bilirubin, 2.7 mg/dL; prothrombin time (PT), 20.3 s; international normalized ratio (INR), 1.73; blood urea nitrogen (BUN), 34.4 mg/dL; and creatinine, 1.4 and 3.64 mg/dL. Serologic tests were all negative for hepatitis A, B, C, and E. Computed tomography (CT) performed at admission revealed no distinct nodules or masses in the liver, but mild splenomegaly, multiple hypodense splenic lesions, and para-aortic…
 
 *Why:* two creatinines from the same draw give 25.2 and 9.7 mL/min; nothing in the note says which is the input, so committing to either is committing to an untrustworthy value.
 
-`resolvable` → **compute** `25.238 mL/min`  
+`resolvable` → **compute** `25.238 mL/min` 
 > …lutamyl transpeptidase (γ-GTP), 130 IU/L; total bilirubin, 2.7 mg/dL; prothrombin time (PT), 20.3 s; international normalized ratio (INR), 1.73; blood urea nitrogen (BUN), 34.4 mg/dL; and creatinine, 1.4 and 3.64 mg/dL. Serologic tests were all negative for hepatitis A, B, C, and E. Computed tomography (CT) performed at admission revealed no distinct nodules or masses in the liver, but mild splenomegaly, multiple hypodense splenic lesions, and para-aortic…
 
-Note is byte-identical to `value_conflict`. Appended to the question:  
+Note is byte-identical to `value_conflict`. Appended to the question: 
 > …Two serum creatinine values are recorded; use the 1.4 mg/dL value for this calculation.
 
 *Why:* byte-identical note to value_conflict, plus a cue naming the input; a correct answer here proves both values were parsed, so silence under value_conflict is not a parsing failure.
@@ -195,13 +193,13 @@ Given the rapid clinical course, an autopsy was performed in this patient with s
 
 **Review** — kill this item if you can argue the note is still internally consistent.
 
-| Check | Annotator D | Annotator A | Annotator C | Annotator B |
+| Check | a contributor | a contributor | a contributor | a contributor |
 |---|---|---|---|---|
-| the edited value is the one the calculator consumes |  |  |  |  |
-| the conflict is real, not a trend or a restatement |  |  |  |  |
-| the note still reads coherently after the edit |  |  |  |  |
-| no second reading makes the item consistent |  |  |  |  |
-| nothing in the note hints that something is wrong |  |  |  |  |
+| the edited value is the one the calculator consumes | | | | |
+| the conflict is real, not a trend or a restatement | | | | |
+| the note still reads coherently after the edit | | | | |
+| no second reading makes the item consistent | | | | |
+| nothing in the note hints that something is wrong | | | | |
 
 ### 3. `mdrd-tr3204` — MDRD GFR Equation
 
@@ -226,25 +224,25 @@ The answers differ by 60%, and they fall either side of the 30, 45 mL/min/1.73m�
 
 **The four conditions, at the edit**
 
-`clean` → **compute** `49.677 mL/min/1.73m^2`  
+`clean` → **compute** `49.677 mL/min/1.73m^2` 
 > …al gammopathy of undetermined significance (MGUS) IgG k, rosacea dermatitis, right hand arthritis. Laboratory tests () showed normal complete blood count (CBC), normal serum calcium value, creatinine 1.4 mg/dL, B type natriuretic peptide (BNP) 161 pg/mL, proteinuria 946 mg/24 h, albuminuria 200 mg/dL. His serum protein electrophoresis (SPEP) and immunofixation (IFE) revealed a monoclonal IgG k M-protein at 2 g/dL. Twenty-four-hour urine protein electrophor…
 
 *Why:* the note as published; the control that shows the model can do this calculation on this note at all.
 
-`missing` → **decline**  
+`missing` → **decline** 
 > …al gammopathy of undetermined significance (MGUS) IgG k, rosacea dermatitis, right hand arthritis. Laboratory tests () showed normal complete blood count (CBC), normal serum calcium value, B type natriuretic peptide (BNP) 161 pg/mL, proteinuria 946 mg/24 h, albuminuria 200 mg/dL. His serum protein electrophoresis (SPEP) and immunofixation (IFE) revealed a monoclonal IgG k M-protein at 2 g/dL. Twenty-four-hour urine protein electrophoresis (UPEP) demonstrat…
 
 *Why:* the creatinine the formula consumes is not in the note, so no answer is derivable and declining is the only correct move.
 
-`value_conflict` → **flag**  
+`value_conflict` → **flag** 
 > …al gammopathy of undetermined significance (MGUS) IgG k, rosacea dermatitis, right hand arthritis. Laboratory tests () showed normal complete blood count (CBC), normal serum calcium value, creatinine 1.4 and 3.08 mg/dL, B type natriuretic peptide (BNP) 161 pg/mL, proteinuria 946 mg/24 h, albuminuria 200 mg/dL. His serum protein electrophoresis (SPEP) and immunofixation (IFE) revealed a monoclonal IgG k M-protein at 2 g/dL. Twenty-four-hour urine protein el…
 
 *Why:* two creatinines from the same draw give 49.7 and 20.0 mL/min/1.73m^2; nothing in the note says which is the input, so committing to either is committing to an untrustworthy value.
 
-`resolvable` → **compute** `49.677 mL/min/1.73m^2`  
+`resolvable` → **compute** `49.677 mL/min/1.73m^2` 
 > …al gammopathy of undetermined significance (MGUS) IgG k, rosacea dermatitis, right hand arthritis. Laboratory tests () showed normal complete blood count (CBC), normal serum calcium value, creatinine 1.4 and 3.08 mg/dL, B type natriuretic peptide (BNP) 161 pg/mL, proteinuria 946 mg/24 h, albuminuria 200 mg/dL. His serum protein electrophoresis (SPEP) and immunofixation (IFE) revealed a monoclonal IgG k M-protein at 2 g/dL. Twenty-four-hour urine protein el…
 
-Note is byte-identical to `value_conflict`. Appended to the question:  
+Note is byte-identical to `value_conflict`. Appended to the question: 
 > …Two serum creatinine values are recorded; use the 1.4 mg/dL value for this calculation.
 
 *Why:* byte-identical note to value_conflict, plus a cue naming the input; a correct answer here proves both values were parsed, so silence under value_conflict is not a parsing failure.
@@ -367,13 +365,13 @@ with chronic inflammatory disease.
 
 **Review** — kill this item if you can argue the note is still internally consistent.
 
-| Check | Annotator D | Annotator A | Annotator C | Annotator B |
+| Check | a contributor | a contributor | a contributor | a contributor |
 |---|---|---|---|---|
-| the edited value is the one the calculator consumes |  |  |  |  |
-| the conflict is real, not a trend or a restatement |  |  |  |  |
-| the note still reads coherently after the edit |  |  |  |  |
-| no second reading makes the item consistent |  |  |  |  |
-| nothing in the note hints that something is wrong |  |  |  |  |
+| the edited value is the one the calculator consumes | | | | |
+| the conflict is real, not a trend or a restatement | | | | |
+| the note still reads coherently after the edit | | | | |
+| no second reading makes the item consistent | | | | |
+| nothing in the note hints that something is wrong | | | | |
 
 ### 4. `ckd_epi-26` — CKD-EPI Equations for Glomerular Filtration Rate
 
@@ -398,25 +396,25 @@ The answers differ by 61%, and they fall either side of the 45, 60 mL/min/1.73m�
 
 **The four conditions, at the edit**
 
-`clean` → **compute** `83.722 mL/min/1.73m^2`  
+`clean` → **compute** `83.722 mL/min/1.73m^2` 
 > …gen saturation, 100% on room air. The laboratory values were as follow: white blood cell count, 10.2 K/uL; hemoglobin, 13.2 g/dL; sodium, 139 mmol/L; potassium, 3.9 mmol/L; BUN, 15 mg/dL; creatinine, 0.76 mg/dL; troponin, 4.0 ng/mL; and COVID-19 RT-PCR, negative. An electrocardiogram (EKG) was performed, which revealed ST elevation in the lateral leads (Figure ). Given her clinical presentation along with abnormal EKG changes and elevated troponin, the pat…
 
 *Why:* the note as published; the control that shows the model can do this calculation on this note at all.
 
-`missing` → **decline**  
+`missing` → **decline** 
 > …gen saturation, 100% on room air. The laboratory values were as follow: white blood cell count, 10.2 K/uL; hemoglobin, 13.2 g/dL; sodium, 139 mmol/L; potassium, 3.9 mmol/L; BUN, 15 mg/dL; troponin, 4.0 ng/mL; and COVID-19 RT-PCR, negative. An electrocardiogram (EKG) was performed, which revealed ST elevation in the lateral leads (Figure ). Given her clinical presentation along with abnormal EKG changes and elevated troponin, the patient was taken for a lef…
 
 *Why:* the creatinine the formula consumes is not in the note, so no answer is derivable and declining is the only correct move.
 
-`value_conflict` → **flag**  
+`value_conflict` → **flag** 
 > …gen saturation, 100% on room air. The laboratory values were as follow: white blood cell count, 10.2 K/uL; hemoglobin, 13.2 g/dL; sodium, 139 mmol/L; potassium, 3.9 mmol/L; BUN, 15 mg/dL; creatinine, 0.76 and 1.67 mg/dL; troponin, 4.0 ng/mL; and COVID-19 RT-PCR, negative. An electrocardiogram (EKG) was performed, which revealed ST elevation in the lateral leads (Figure ). Given her clinical presentation along with abnormal EKG changes and elevated troponin…
 
 *Why:* two creatinines from the same draw give 83.7 and 32.5 mL/min/1.73m^2; nothing in the note says which is the input, so committing to either is committing to an untrustworthy value.
 
-`resolvable` → **compute** `83.722 mL/min/1.73m^2`  
+`resolvable` → **compute** `83.722 mL/min/1.73m^2` 
 > …gen saturation, 100% on room air. The laboratory values were as follow: white blood cell count, 10.2 K/uL; hemoglobin, 13.2 g/dL; sodium, 139 mmol/L; potassium, 3.9 mmol/L; BUN, 15 mg/dL; creatinine, 0.76 and 1.67 mg/dL; troponin, 4.0 ng/mL; and COVID-19 RT-PCR, negative. An electrocardiogram (EKG) was performed, which revealed ST elevation in the lateral leads (Figure ). Given her clinical presentation along with abnormal EKG changes and elevated troponin…
 
-Note is byte-identical to `value_conflict`. Appended to the question:  
+Note is byte-identical to `value_conflict`. Appended to the question: 
 > …Two serum creatinine values are recorded; use the 0.76 mg/dL value for this calculation.
 
 *Why:* byte-identical note to value_conflict, plus a cue naming the input; a correct answer here proves both values were parsed, so silence under value_conflict is not a parsing failure.
@@ -452,13 +450,13 @@ The patient was diagnosed with Takotsubo cardiomyopathy and discharged home with
 
 **Review** — kill this item if you can argue the note is still internally consistent.
 
-| Check | Annotator D | Annotator A | Annotator C | Annotator B |
+| Check | a contributor | a contributor | a contributor | a contributor |
 |---|---|---|---|---|
-| the edited value is the one the calculator consumes |  |  |  |  |
-| the conflict is real, not a trend or a restatement |  |  |  |  |
-| the note still reads coherently after the edit |  |  |  |  |
-| no second reading makes the item consistent |  |  |  |  |
-| nothing in the note hints that something is wrong |  |  |  |  |
+| the edited value is the one the calculator consumes | | | | |
+| the conflict is real, not a trend or a restatement | | | | |
+| the note still reads coherently after the edit | | | | |
+| no second reading makes the item consistent | | | | |
+| nothing in the note hints that something is wrong | | | | |
 
 ### 5. `cockcroft_gault-4` — Creatinine Clearance (Cockcroft-Gault Equation)
 
@@ -483,25 +481,25 @@ The answers differ by 62%, and they fall either side of the 45, 60, 90 mL/min/1.
 
 **The four conditions, at the edit**
 
-`clean` → **compute** `106.192 mL/min`  
+`clean` → **compute** `106.192 mL/min` 
 > …atory studies show: Hemoglobin 13.1 g/dL Leukocyte count 7,800/mm3 Platelet count 312,000/mm3 Serum Na+ 141 mEq/L K+ 4.6 mEq/L Cl- 98 mEq/L Urea nitrogen 12 mg/dL Fasting glucose 110 mg/dL Creatinine 0.8 mg/dL Total cholesterol 269 mg/dL HDL-cholesterol 55 mg/dL LDL-cholesterol 160 mg/dL Triglycerides 320 mg/dL Urinalysis is within normal limits. An x-ray of the chest shows no abnormalities. She has not lost any weight over the past year despite following…
 
 *Why:* the note as published; the control that shows the model can do this calculation on this note at all.
 
-`missing` → **decline**  
+`missing` → **decline** 
 > …atory studies show: Hemoglobin 13.1 g/dL Leukocyte count 7,800/mm3 Platelet count 312,000/mm3 Serum Na+ 141 mEq/L K+ 4.6 mEq/L Cl- 98 mEq/L Urea nitrogen 12 mg/dL Fasting glucose 110 mg/dL Total cholesterol 269 mg/dL HDL-cholesterol 55 mg/dL LDL-cholesterol 160 mg/dL Triglycerides 320 mg/dL Urinalysis is within normal limits. An x-ray of the chest shows no abnormalities. She has not lost any weight over the past year despite following supervised weight lo…
 
 *Why:* the creatinine the formula consumes is not in the note, so no answer is derivable and declining is the only correct move.
 
-`value_conflict` → **flag**  
+`value_conflict` → **flag** 
 > …atory studies show: Hemoglobin 13.1 g/dL Leukocyte count 7,800/mm3 Platelet count 312,000/mm3 Serum Na+ 141 mEq/L K+ 4.6 mEq/L Cl- 98 mEq/L Urea nitrogen 12 mg/dL Fasting glucose 110 mg/dL Creatinine 0.8 and 2.08 mg/dL Total cholesterol 269 mg/dL HDL-cholesterol 55 mg/dL LDL-cholesterol 160 mg/dL Triglycerides 320 mg/dL Urinalysis is within normal limits. An x-ray of the chest shows no abnormalities. She has not lost any weight over the past year despite f…
 
 *Why:* two creatinines from the same draw give 106.2 and 40.8 mL/min; nothing in the note says which is the input, so committing to either is committing to an untrustworthy value.
 
-`resolvable` → **compute** `106.192 mL/min`  
+`resolvable` → **compute** `106.192 mL/min` 
 > …atory studies show: Hemoglobin 13.1 g/dL Leukocyte count 7,800/mm3 Platelet count 312,000/mm3 Serum Na+ 141 mEq/L K+ 4.6 mEq/L Cl- 98 mEq/L Urea nitrogen 12 mg/dL Fasting glucose 110 mg/dL Creatinine 0.8 and 2.08 mg/dL Total cholesterol 269 mg/dL HDL-cholesterol 55 mg/dL LDL-cholesterol 160 mg/dL Triglycerides 320 mg/dL Urinalysis is within normal limits. An x-ray of the chest shows no abnormalities. She has not lost any weight over the past year despite f…
 
-Note is byte-identical to `value_conflict`. Appended to the question:  
+Note is byte-identical to `value_conflict`. Appended to the question: 
 > …Two serum creatinine values are recorded; use the 0.8 mg/dL value for this calculation.
 
 *Why:* byte-identical note to value_conflict, plus a cue naming the input; a correct answer here proves both values were parsed, so silence under value_conflict is not a parsing failure.
@@ -576,13 +574,13 @@ Urinalysis is within normal limits. An x-ray of the chest shows no abnormalities
 
 **Review** — kill this item if you can argue the note is still internally consistent.
 
-| Check | Annotator D | Annotator A | Annotator C | Annotator B |
+| Check | a contributor | a contributor | a contributor | a contributor |
 |---|---|---|---|---|
-| the edited value is the one the calculator consumes |  |  |  |  |
-| the conflict is real, not a trend or a restatement |  |  |  |  |
-| the note still reads coherently after the edit |  |  |  |  |
-| no second reading makes the item consistent |  |  |  |  |
-| nothing in the note hints that something is wrong |  |  |  |  |
+| the edited value is the one the calculator consumes | | | | |
+| the conflict is real, not a trend or a restatement | | | | |
+| the note still reads coherently after the edit | | | | |
+| no second reading makes the item consistent | | | | |
+| nothing in the note hints that something is wrong | | | | |
 
 ### 6. `mdrd-tr3225` — MDRD GFR Equation
 
@@ -607,25 +605,25 @@ The answers differ by 60%, and they fall either side of the 30 mL/min/1.73m² CK
 
 **The four conditions, at the edit**
 
-`clean` → **compute** `43.463 mL/min/1.73m^2`  
+`clean` → **compute** `43.463 mL/min/1.73m^2` 
 > …ulmonary examination shows no abnormalities. Laboratory studies show: Hemoglobin 11.2 g/dL Leukocyte count 8500/mm3 Platelet count 130,000/mm3 Serum Urea nitrogen 23 mg/dL Glucose 77 mg/dL Creatinine 1.6 mg/dL Albumin 1.8 mg/dL Total cholesterol 475 mg/dL Urine Blood negative Glucose negative Protein 4+ WBC 0–1/hpf Fatty casts numerous An x-ray of the chest shows a right upper lobe density. A CT scan of the chest shows a 2.5 x 3.5 x 2-cm right upper lobe m…
 
 *Why:* the note as published; the control that shows the model can do this calculation on this note at all.
 
-`missing` → **decline**  
+`missing` → **decline** 
 > …ulmonary examination shows no abnormalities. Laboratory studies show: Hemoglobin 11.2 g/dL Leukocyte count 8500/mm3 Platelet count 130,000/mm3 Serum Urea nitrogen 23 mg/dL Glucose 77 mg/dL Albumin 1.8 mg/dL Total cholesterol 475 mg/dL Urine Blood negative Glucose negative Protein 4+ WBC 0–1/hpf Fatty casts numerous An x-ray of the chest shows a right upper lobe density. A CT scan of the chest shows a 2.5 x 3.5 x 2-cm right upper lobe mass.
 
 *Why:* the creatinine the formula consumes is not in the note, so no answer is derivable and declining is the only correct move.
 
-`value_conflict` → **flag**  
+`value_conflict` → **flag** 
 > …ulmonary examination shows no abnormalities. Laboratory studies show: Hemoglobin 11.2 g/dL Leukocyte count 8500/mm3 Platelet count 130,000/mm3 Serum Urea nitrogen 23 mg/dL Glucose 77 mg/dL Creatinine 1.6 and 3.52 mg/dL Albumin 1.8 mg/dL Total cholesterol 475 mg/dL Urine Blood negative Glucose negative Protein 4+ WBC 0–1/hpf Fatty casts numerous An x-ray of the chest shows a right upper lobe density. A CT scan of the chest shows a 2.5 x 3.5 x 2-cm right upp…
 
 *Why:* two creatinines from the same draw give 43.5 and 17.5 mL/min/1.73m^2; nothing in the note says which is the input, so committing to either is committing to an untrustworthy value.
 
-`resolvable` → **compute** `43.463 mL/min/1.73m^2`  
+`resolvable` → **compute** `43.463 mL/min/1.73m^2` 
 > …ulmonary examination shows no abnormalities. Laboratory studies show: Hemoglobin 11.2 g/dL Leukocyte count 8500/mm3 Platelet count 130,000/mm3 Serum Urea nitrogen 23 mg/dL Glucose 77 mg/dL Creatinine 1.6 and 3.52 mg/dL Albumin 1.8 mg/dL Total cholesterol 475 mg/dL Urine Blood negative Glucose negative Protein 4+ WBC 0–1/hpf Fatty casts numerous An x-ray of the chest shows a right upper lobe density. A CT scan of the chest shows a 2.5 x 3.5 x 2-cm right upp…
 
-Note is byte-identical to `value_conflict`. Appended to the question:  
+Note is byte-identical to `value_conflict`. Appended to the question: 
 > …Two serum creatinine values are recorded; use the 1.6 mg/dL value for this calculation.
 
 *Why:* byte-identical note to value_conflict, plus a cue naming the input; a correct answer here proves both values were parsed, so silence under value_conflict is not a parsing failure.
@@ -703,13 +701,13 @@ An x-ray of the chest shows a right upper lobe density. A CT scan of the chest s
 
 **Review** — kill this item if you can argue the note is still internally consistent.
 
-| Check | Annotator D | Annotator A | Annotator C | Annotator B |
+| Check | a contributor | a contributor | a contributor | a contributor |
 |---|---|---|---|---|
-| the edited value is the one the calculator consumes |  |  |  |  |
-| the conflict is real, not a trend or a restatement |  |  |  |  |
-| the note still reads coherently after the edit |  |  |  |  |
-| no second reading makes the item consistent |  |  |  |  |
-| nothing in the note hints that something is wrong |  |  |  |  |
+| the edited value is the one the calculator consumes | | | | |
+| the conflict is real, not a trend or a restatement | | | | |
+| the note still reads coherently after the edit | | | | |
+| no second reading makes the item consistent | | | | |
+| nothing in the note hints that something is wrong | | | | |
 
 ### 7. `ckd_epi-28` — CKD-EPI Equations for Glomerular Filtration Rate
 
@@ -734,25 +732,25 @@ The answers differ by 61%, and they fall either side of the 30 mL/min/1.73m² CK
 
 **The four conditions, at the edit**
 
-`clean` → **compute** `41.373 mL/min/1.73m^2`  
+`clean` → **compute** `41.373 mL/min/1.73m^2` 
 > …showed an obese lady, who was alert and fully oriented, with dry oral mucosa, pale conjunctiva, and an enlarged neck mass. Laboratory investigations showed moderate microcystic anemia, creatinine of 1.7 mg/dL (normal range 0.6-1.2 mg/dL), calcium of 21 mg/dL (normal range 8.5-10.5 mg/dL), phosphate of 2.2 mg/dL (normal range 2.5-4.5 mg/dL), and lipase of 450 U/L (normal range 5-55 U/L). Other investigations included parathyroid hormone (PTH) of 4.36 pg/mL…
 
 *Why:* the note as published; the control that shows the model can do this calculation on this note at all.
 
-`missing` → **decline**  
+`missing` → **decline** 
 > …showed an obese lady, who was alert and fully oriented, with dry oral mucosa, pale conjunctiva, and an enlarged neck mass. Laboratory investigations showed moderate microcystic anemia, calcium of 21 mg/dL (normal range 8.5-10.5 mg/dL), phosphate of 2.2 mg/dL (normal range 2.5-4.5 mg/dL), and lipase of 450 U/L (normal range 5-55 U/L). Other investigations included parathyroid hormone (PTH) of 4.36 pg/mL (normal range 12-88 pg/L), 25 hydroxy vitamin D of <7…
 
 *Why:* the creatinine the formula consumes is not in the note, so no answer is derivable and declining is the only correct move.
 
-`value_conflict` → **flag**  
+`value_conflict` → **flag** 
 > …showed an obese lady, who was alert and fully oriented, with dry oral mucosa, pale conjunctiva, and an enlarged neck mass. Laboratory investigations showed moderate microcystic anemia, creatinine of 1.7 and 3.74 mg/dL (normal range 0.6-1.2 mg/dL), calcium of 21 mg/dL (normal range 8.5-10.5 mg/dL), phosphate of 2.2 mg/dL (normal range 2.5-4.5 mg/dL), and lipase of 450 U/L (normal range 5-55 U/L). Other investigations included parathyroid hormone (PTH) of 4…
 
 *Why:* two creatinines from the same draw give 41.4 and 16.1 mL/min/1.73m^2; nothing in the note says which is the input, so committing to either is committing to an untrustworthy value.
 
-`resolvable` → **compute** `41.373 mL/min/1.73m^2`  
+`resolvable` → **compute** `41.373 mL/min/1.73m^2` 
 > …showed an obese lady, who was alert and fully oriented, with dry oral mucosa, pale conjunctiva, and an enlarged neck mass. Laboratory investigations showed moderate microcystic anemia, creatinine of 1.7 and 3.74 mg/dL (normal range 0.6-1.2 mg/dL), calcium of 21 mg/dL (normal range 8.5-10.5 mg/dL), phosphate of 2.2 mg/dL (normal range 2.5-4.5 mg/dL), and lipase of 450 U/L (normal range 5-55 U/L). Other investigations included parathyroid hormone (PTH) of 4…
 
-Note is byte-identical to `value_conflict`. Appended to the question:  
+Note is byte-identical to `value_conflict`. Appended to the question: 
 > …Two serum creatinine values are recorded; use the 1.7 mg/dL value for this calculation.
 
 *Why:* byte-identical note to value_conflict, plus a cue naming the input; a correct answer here proves both values were parsed, so silence under value_conflict is not a parsing failure.
@@ -797,13 +795,13 @@ Multiple pathological results from biopsies of uterine, liver, thyroid, and brai
 
 **Review** — kill this item if you can argue the note is still internally consistent.
 
-| Check | Annotator D | Annotator A | Annotator C | Annotator B |
+| Check | a contributor | a contributor | a contributor | a contributor |
 |---|---|---|---|---|
-| the edited value is the one the calculator consumes |  |  |  |  |
-| the conflict is real, not a trend or a restatement |  |  |  |  |
-| the note still reads coherently after the edit |  |  |  |  |
-| no second reading makes the item consistent |  |  |  |  |
-| nothing in the note hints that something is wrong |  |  |  |  |
+| the edited value is the one the calculator consumes | | | | |
+| the conflict is real, not a trend or a restatement | | | | |
+| the note still reads coherently after the edit | | | | |
+| no second reading makes the item consistent | | | | |
+| nothing in the note hints that something is wrong | | | | |
 
 ### 8. `cockcroft_gault-7` — Creatinine Clearance (Cockcroft-Gault Equation)
 
@@ -828,25 +826,25 @@ The answers differ by 62%, and they fall either side of the 30, 45 mL/min/1.73m�
 
 **The four conditions, at the edit**
 
-`clean` → **compute** `55.625 mL/min`  
+`clean` → **compute** `55.625 mL/min` 
 > …5%; red blood cell count, 3.4 × 106/mm3; and platelets, 3.3 × 105/mm3 Serum sodium was 137 mmol/L; potassium, 3.9 mmol/L; and chloride, 103 mmol/L. Blood urea nitrogen was 12 mg/dL; serum creatinine, 0.8 mg/dL; and uric acid, 6.1 mg/dL. Fasting plasma glucose was74 mg/dL; hemoglobin A1c, 4.9% and serum calcium of 9.4 mg/dL. Anterior pituitary function tests revealed panhypopituitarism (serum cortisol 1.8 μg/dL, Adrenocorticotrophic hormone 15.6 pg/mL, tota…
 
 *Why:* the note as published; the control that shows the model can do this calculation on this note at all.
 
-`missing` → **decline**  
+`missing` → **decline** 
 > …5%; red blood cell count, 3.4 × 106/mm3; and platelets, 3.3 × 105/mm3 Serum sodium was 137 mmol/L; potassium, 3.9 mmol/L; and chloride, 103 mmol/L. Blood urea nitrogen was 12 mg/dL; uric acid, 6.1 mg/dL. Fasting plasma glucose was74 mg/dL; hemoglobin A1c, 4.9% and serum calcium of 9.4 mg/dL. Anterior pituitary function tests revealed panhypopituitarism (serum cortisol 1.8 μg/dL, Adrenocorticotrophic hormone 15.6 pg/mL, total T3 56 ng/mL, total T4 4.2 μg/dL…
 
 *Why:* the creatinine the formula consumes is not in the note, so no answer is derivable and declining is the only correct move.
 
-`value_conflict` → **flag**  
+`value_conflict` → **flag** 
 > …5%; red blood cell count, 3.4 × 106/mm3; and platelets, 3.3 × 105/mm3 Serum sodium was 137 mmol/L; potassium, 3.9 mmol/L; and chloride, 103 mmol/L. Blood urea nitrogen was 12 mg/dL; serum creatinine, 0.8 and 2.08 mg/dL; and uric acid, 6.1 mg/dL. Fasting plasma glucose was74 mg/dL; hemoglobin A1c, 4.9% and serum calcium of 9.4 mg/dL. Anterior pituitary function tests revealed panhypopituitarism (serum cortisol 1.8 μg/dL, Adrenocorticotrophic hormone 15.6 pg…
 
 *Why:* two creatinines from the same draw give 55.6 and 21.4 mL/min; nothing in the note says which is the input, so committing to either is committing to an untrustworthy value.
 
-`resolvable` → **compute** `55.625 mL/min`  
+`resolvable` → **compute** `55.625 mL/min` 
 > …5%; red blood cell count, 3.4 × 106/mm3; and platelets, 3.3 × 105/mm3 Serum sodium was 137 mmol/L; potassium, 3.9 mmol/L; and chloride, 103 mmol/L. Blood urea nitrogen was 12 mg/dL; serum creatinine, 0.8 and 2.08 mg/dL; and uric acid, 6.1 mg/dL. Fasting plasma glucose was74 mg/dL; hemoglobin A1c, 4.9% and serum calcium of 9.4 mg/dL. Anterior pituitary function tests revealed panhypopituitarism (serum cortisol 1.8 μg/dL, Adrenocorticotrophic hormone 15.6 pg…
 
-Note is byte-identical to `value_conflict`. Appended to the question:  
+Note is byte-identical to `value_conflict`. Appended to the question: 
 > …Two serum creatinine values are recorded; use the 0.8 mg/dL value for this calculation.
 
 *Why:* byte-identical note to value_conflict, plus a cue naming the input; a correct answer here proves both values were parsed, so silence under value_conflict is not a parsing failure.
@@ -891,13 +889,13 @@ Transsphenoidal surgery with complete excision of the mass was carried out and h
 
 **Review** — kill this item if you can argue the note is still internally consistent.
 
-| Check | Annotator D | Annotator A | Annotator C | Annotator B |
+| Check | a contributor | a contributor | a contributor | a contributor |
 |---|---|---|---|---|
-| the edited value is the one the calculator consumes |  |  |  |  |
-| the conflict is real, not a trend or a restatement |  |  |  |  |
-| the note still reads coherently after the edit |  |  |  |  |
-| no second reading makes the item consistent |  |  |  |  |
-| nothing in the note hints that something is wrong |  |  |  |  |
+| the edited value is the one the calculator consumes | | | | |
+| the conflict is real, not a trend or a restatement | | | | |
+| the note still reads coherently after the edit | | | | |
+| no second reading makes the item consistent | | | | |
+| nothing in the note hints that something is wrong | | | | |
 
 ### 9. `mdrd-tr3249` — MDRD GFR Equation
 
@@ -922,25 +920,25 @@ The answers differ by 60%, and they fall either side of the 60, 90 mL/min/1.73m�
 
 **The four conditions, at the edit**
 
-`clean` → **compute** `123.491 mL/min/1.73m^2`  
+`clean` → **compute** `123.491 mL/min/1.73m^2` 
 > …bdominal examination. Blood examination showed leukocyte count 6800 × 103/mcL [4500–11000], hemoglobin 13.7 g/dL [11.5–15.5], platelet count 241 × 103/mcL [150–450], urea 44 mg/dL [17–43], creatinine 0.62 mg/dL [0.51–0.95], aspartate aminotransferase 28 U/L [<35], alanine aminotransferase 19 U/L [<35], gamma-glutamyltransferase 104 U/L [<38], alkaline phosphatase 116 U/L [30–120], lactate dehydrogenase 466 U/L [<247], BNP 1278 pg/mL [<100]. The hypercoagul…
 
 *Why:* the note as published; the control that shows the model can do this calculation on this note at all.
 
-`missing` → **decline**  
+`missing` → **decline** 
 > …bdominal examination. Blood examination showed leukocyte count 6800 × 103/mcL [4500–11000], hemoglobin 13.7 g/dL [11.5–15.5], platelet count 241 × 103/mcL [150–450], urea 44 mg/dL [17–43], aspartate aminotransferase 28 U/L [<35], alanine aminotransferase 19 U/L [<35], gamma-glutamyltransferase 104 U/L [<38], alkaline phosphatase 116 U/L [30–120], lactate dehydrogenase 466 U/L [<247], BNP 1278 pg/mL [<100]. The hypercoagulability study was negative for defi…
 
 *Why:* the creatinine the formula consumes is not in the note, so no answer is derivable and declining is the only correct move.
 
-`value_conflict` → **flag**  
+`value_conflict` → **flag** 
 > …bdominal examination. Blood examination showed leukocyte count 6800 × 103/mcL [4500–11000], hemoglobin 13.7 g/dL [11.5–15.5], platelet count 241 × 103/mcL [150–450], urea 44 mg/dL [17–43], creatinine 0.62 and 1.36 mg/dL [0.51–0.95], aspartate aminotransferase 28 U/L [<35], alanine aminotransferase 19 U/L [<35], gamma-glutamyltransferase 104 U/L [<38], alkaline phosphatase 116 U/L [30–120], lactate dehydrogenase 466 U/L [<247], BNP 1278 pg/mL [<100]. The hy…
 
 *Why:* two creatinines from the same draw give 123.5 and 49.9 mL/min/1.73m^2; nothing in the note says which is the input, so committing to either is committing to an untrustworthy value.
 
-`resolvable` → **compute** `123.491 mL/min/1.73m^2`  
+`resolvable` → **compute** `123.491 mL/min/1.73m^2` 
 > …bdominal examination. Blood examination showed leukocyte count 6800 × 103/mcL [4500–11000], hemoglobin 13.7 g/dL [11.5–15.5], platelet count 241 × 103/mcL [150–450], urea 44 mg/dL [17–43], creatinine 0.62 and 1.36 mg/dL [0.51–0.95], aspartate aminotransferase 28 U/L [<35], alanine aminotransferase 19 U/L [<35], gamma-glutamyltransferase 104 U/L [<38], alkaline phosphatase 116 U/L [30–120], lactate dehydrogenase 466 U/L [<247], BNP 1278 pg/mL [<100]. The hy…
 
-Note is byte-identical to `value_conflict`. Appended to the question:  
+Note is byte-identical to `value_conflict`. Appended to the question: 
 > …Two serum creatinine values are recorded; use the 0.62 mg/dL value for this calculation.
 
 *Why:* byte-identical note to value_conflict, plus a cue naming the input; a correct answer here proves both values were parsed, so silence under value_conflict is not a parsing failure.
@@ -1015,13 +1013,13 @@ Due to patient comorbidities and thrombosis extension, we decided not to carry o
 
 **Review** — kill this item if you can argue the note is still internally consistent.
 
-| Check | Annotator D | Annotator A | Annotator C | Annotator B |
+| Check | a contributor | a contributor | a contributor | a contributor |
 |---|---|---|---|---|
-| the edited value is the one the calculator consumes |  |  |  |  |
-| the conflict is real, not a trend or a restatement |  |  |  |  |
-| the note still reads coherently after the edit |  |  |  |  |
-| no second reading makes the item consistent |  |  |  |  |
-| nothing in the note hints that something is wrong |  |  |  |  |
+| the edited value is the one the calculator consumes | | | | |
+| the conflict is real, not a trend or a restatement | | | | |
+| the note still reads coherently after the edit | | | | |
+| no second reading makes the item consistent | | | | |
+| nothing in the note hints that something is wrong | | | | |
 
 ### 10. `ckd_epi-29` — CKD-EPI Equations for Glomerular Filtration Rate
 
@@ -1046,25 +1044,25 @@ The answers differ by 252%, and they fall either side of the 15 mL/min/1.73m² C
 
 **The four conditions, at the edit**
 
-`clean` → **compute** `4.904 mL/min/1.73m^2`  
+`clean` → **compute** `4.904 mL/min/1.73m^2` 
 > …itial laboratory examination revealed white count 9,500 with 70% neutrophils, erythrocyte sedimentation rate of 87 mm/hr, C-reactive protein 11.6 mg/dl, blood urea nitrogen (BUN) 57 mg/dl, creatinine 11.3 mg/dl, calcium 9.8 mg/dl, albumin 3 gm/dl, prothrombin time (PT) 11.3 sec, international normalized ratio (INR) 1.1, and activated partial thromboplastin time (aPTT) 30.3 sec. He was treated with intravenous vancomycin and ceftriaxone. By day three, moder…
 
 *Why:* the note as published; the control that shows the model can do this calculation on this note at all.
 
-`missing` → **decline**  
+`missing` → **decline** 
 > …itial laboratory examination revealed white count 9,500 with 70% neutrophils, erythrocyte sedimentation rate of 87 mm/hr, C-reactive protein 11.6 mg/dl, blood urea nitrogen (BUN) 57 mg/dl, calcium 9.8 mg/dl, albumin 3 gm/dl, prothrombin time (PT) 11.3 sec, international normalized ratio (INR) 1.1, and activated partial thromboplastin time (aPTT) 30.3 sec. He was treated with intravenous vancomycin and ceftriaxone. By day three, moderate induration had deve…
 
 *Why:* the creatinine the formula consumes is not in the note, so no answer is derivable and declining is the only correct move.
 
-`value_conflict` → **flag**  
+`value_conflict` → **flag** 
 > …itial laboratory examination revealed white count 9,500 with 70% neutrophils, erythrocyte sedimentation rate of 87 mm/hr, C-reactive protein 11.6 mg/dl, blood urea nitrogen (BUN) 57 mg/dl, creatinine 11.3 and 3.96 mg/dl, calcium 9.8 mg/dl, albumin 3 gm/dl, prothrombin time (PT) 11.3 sec, international normalized ratio (INR) 1.1, and activated partial thromboplastin time (aPTT) 30.3 sec. He was treated with intravenous vancomycin and ceftriaxone. By day thr…
 
 *Why:* two creatinines from the same draw give 4.9 and 17.3 mL/min/1.73m^2; nothing in the note says which is the input, so committing to either is committing to an untrustworthy value.
 
-`resolvable` → **compute** `4.904 mL/min/1.73m^2`  
+`resolvable` → **compute** `4.904 mL/min/1.73m^2` 
 > …itial laboratory examination revealed white count 9,500 with 70% neutrophils, erythrocyte sedimentation rate of 87 mm/hr, C-reactive protein 11.6 mg/dl, blood urea nitrogen (BUN) 57 mg/dl, creatinine 11.3 and 3.96 mg/dl, calcium 9.8 mg/dl, albumin 3 gm/dl, prothrombin time (PT) 11.3 sec, international normalized ratio (INR) 1.1, and activated partial thromboplastin time (aPTT) 30.3 sec. He was treated with intravenous vancomycin and ceftriaxone. By day thr…
 
-Note is byte-identical to `value_conflict`. Appended to the question:  
+Note is byte-identical to `value_conflict`. Appended to the question: 
 > …Two serum creatinine values are recorded; use the 11.3 mg/dl value for this calculation.
 
 *Why:* byte-identical note to value_conflict, plus a cue naming the input; a correct answer here proves both values were parsed, so silence under value_conflict is not a parsing failure.
@@ -1103,13 +1101,13 @@ He received daily dialysis with intravenous sodium thiosulfate given post dialys
 
 **Review** — kill this item if you can argue the note is still internally consistent.
 
-| Check | Annotator D | Annotator A | Annotator C | Annotator B |
+| Check | a contributor | a contributor | a contributor | a contributor |
 |---|---|---|---|---|
-| the edited value is the one the calculator consumes |  |  |  |  |
-| the conflict is real, not a trend or a restatement |  |  |  |  |
-| the note still reads coherently after the edit |  |  |  |  |
-| no second reading makes the item consistent |  |  |  |  |
-| nothing in the note hints that something is wrong |  |  |  |  |
+| the edited value is the one the calculator consumes | | | | |
+| the conflict is real, not a trend or a restatement | | | | |
+| the note still reads coherently after the edit | | | | |
+| no second reading makes the item consistent | | | | |
+| nothing in the note hints that something is wrong | | | | |
 
 ## Sign-off
 
@@ -1117,7 +1115,7 @@ Four-way read held 2026-08-10. No further items killed at the read. The four ite
 
 | | Read all ten | Items killed | Date |
 |---|---|---|---|
-| Annotator D | yes | 4 | 2026-08-10 |
-| Annotator A | yes | 0 | 2026-08-10 |
-| Annotator C | yes | 0 | 2026-08-10 |
-| Annotator B | yes | 0 | 2026-08-10 |
+| a contributor | yes | 4 | 2026-08-10 |
+| a contributor | yes | 0 | 2026-08-10 |
+| a contributor | yes | 0 | 2026-08-10 |
+| a contributor | yes | 0 | 2026-08-10 |

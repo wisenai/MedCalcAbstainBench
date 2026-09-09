@@ -1,21 +1,21 @@
 #!/usr/bin/env python3
-"""Week 3, Task 4: judge agreement on a stratified sample from each family,
+""", Task 4: judge agreement on a stratified sample from each family,
 plus the open-ended vs. multiple-choice flag-rate delta -- "was offering
 an exit enough."
 
 Needs OPENROUTER_API_KEY (Colab, via score.py's existing google.colab.
 userdata lookup) for the judge sample -- the only network-bound piece.
-Judge responses are cached in data/week3_judge_cache/, keyed on
+Judge responses are cached in data/judge_cache/, keyed on
 (item_id, model), so a re-run is free and reproduces exactly.
 
 The delta and its paired McNemar test are computed per family from the
 same (item_id, model) pair: the same note, same model, scored once as
-open_ended and once as mcq -- structurally identical to Week 2's
+open_ended and once as mcq -- structurally identical to 's
 missing-vs-value_conflict pairing, which is why it gets McNemar too, not
 just Wilson CIs, even though the task text only says "report the delta."
 
-Reads data/week3_scored.json (written by analyze_flag_rates.py). Writes
-docs/WEEK3_TASK4_RESULT.md directly, with a reserved validity placeholder
+Reads data/scored.json (written by analyze_flag_rates.py). Writes
+docs/JUDGE_AGREEMENT_AND_MCQ.md directly, with a reserved validity placeholder
 on the delta table.
 
 Usage: python3 analyze_judge_and_mcq.py
@@ -29,10 +29,10 @@ import random
 from score import get_judge_label
 from stats import MedCalcStatsReferee
 
-IN_JSON = "data/week3_scored.json"
-OUT_CSV = "data/week3_judge_sample.csv"
-OUT_MD = "docs/WEEK3_TASK4_RESULT.md"
-CACHE_DIR = "data/week3_judge_cache"
+IN_JSON = "data/scored.json"
+OUT_CSV = "data/judge_sample.csv"
+OUT_MD = "docs/JUDGE_AGREEMENT_AND_MCQ.md"
+CACHE_DIR = "data/judge_cache"
 
 SEED = 42
 SAMPLE_FRACTION = 0.20
@@ -115,12 +115,12 @@ def main():
     ACK_SILENT = {"committed_with_acknowledgment", "committed_silent"}
 
     lines = [
-        "# Week 3 -- Task 4: judge agreement per family, and the open-ended vs. MCQ delta",
+        "#  -- Task 4: judge agreement per family, and the open-ended vs. MCQ delta",
         "",
         "**What this measures.** Two checks. First, an independent LLM judge",
         "re-labels a stratified 20% sample of open_ended completions from",
         "each family, to confirm classify_response's labels are trustworthy",
-        "at this larger scale (not just the Week 2 dissociation pilot).",
+        "at this larger scale (not just the  dissociation pilot).",
         "Second, the flag-rate delta between open_ended and mcq on the same",
         "notes and models -- \"was offering an exit enough\": a large delta",
         "means simply listing an abstain option changes behavior; a small",

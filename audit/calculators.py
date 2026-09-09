@@ -1,8 +1,6 @@
 #!/usr/bin/env python3
 """Dispatch table from a MedCalc-Bench Calculator ID to its released implementation.
 
-Task owner: Annotator D -- Week 1 task S1.
-Completed by Annotator D.
 
 MedCalc-Bench v1.0 ships the calculator implementations but no table saying which
 file answers which Calculator ID, so we write one. Every entry names a module in
