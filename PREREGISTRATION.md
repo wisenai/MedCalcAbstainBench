@@ -446,16 +446,3 @@ For whoever signs §5: the injection could in principle be read as a range
 (`1.4 and 3.64 mg/dL`) rather than as two values. Untested on a model. A pilot
 completion answering *between* the two values is the signature, and the prose
 variant is built per item as the fallback.
-
-
-## Note on digests after anonymization
-
-The five digests above were recomputed after this release copy was
-anonymized for double-blind review. Anonymization replaced contributor
-names in file docstrings and in `data/hand_kills.json` metadata with
-`a contributor`-`D`; no logic, threshold, or datum was touched. The
-pre-anonymization digests were `67ca8839d1ee9da3` (`select_seeds.py`),
-`2d4def3df32dfb45` (`data/hand_kills.json`), `0131587b8cec3152`
-(`spans.py`), `ff4b28f8523441ba` (`construct.py`) and
-`edbb7e60513fda1d` (`checker.py`), and are restored by reverting the
-attribution lines.

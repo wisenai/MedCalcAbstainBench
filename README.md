@@ -116,14 +116,7 @@ prompts/              all six prompts, frozen and hashed
 PREREGISTRATION.md    the analysis plan, with content digests
 ```
 
-## Known state
+## Notes
 
-`run.py` still imports `google.colab` unguarded, so it runs only in a notebook.
-`score.py` and `stats.py` do not, and every analysis stage works anywhere.
-
-## Anonymity
-
-This is a release copy prepared for double-blind review. It carries no
-version-control history and none of the project's week-by-week task scaffolding.
-The model responses needed to rebuild every table are included, under `data/`.
-See [`ANONYMITY.md`](ANONYMITY.md) for exactly what was removed.
+`run.py` imports `google.colab`, so the elicitation harness runs only in a
+notebook. Everything else, including all scoring and analysis, runs anywhere.
