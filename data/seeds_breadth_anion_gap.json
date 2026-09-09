@@ -1,0 +1,323 @@
+{
+  "arm": "anion_gap",
+  "calculator": "Anion Gap",
+  "calculator_id": "39",
+  "family": "breadth",
+  "shape": "value_conflict",
+  "conflict_on": "chloride",
+  "n_screened": 216,
+  "n_eligible": 129,
+  "n_selected": 25,
+  "rejections": {
+    "chloride is not stated as the calculator consumes it": 17,
+    "no second value clears divergence, band and plausibility together": 18,
+    "Bicarbonate is not stated in the note at the consumed value": 25,
+    "more than one span carries the consumed Bicarbonate": 1,
+    "note states more than one chloride": 16,
+    "published components give a non-positive Anion Gap": 5,
+    "Sodium is not stated in the note at the consumed value": 5
+  },
+  "seeds_digest": "0cd51dd8deefd1adf7a09591b26ba9c7039b7c8ba89381170ff2286ae2045379",
+  "seeds": [
+    {
+      "note_id": "pmc-3477656-1",
+      "split": "test",
+      "arm": "anion_gap",
+      "components": {
+        "sodium": 136.0,
+        "chloride": 101.0,
+        "bicarbonate": 17.0
+      },
+      "clean_answer": 18.0,
+      "published_answer": "18"
+    },
+    {
+      "note_id": "pmc-7544303-1",
+      "split": "test",
+      "arm": "anion_gap",
+      "components": {
+        "sodium": 144.0,
+        "chloride": 99.0,
+        "bicarbonate": 5.8
+      },
+      "clean_answer": 39.2,
+      "published_answer": "39.2"
+    },
+    {
+      "note_id": "pmc-2875708-1",
+      "split": "test",
+      "arm": "anion_gap",
+      "components": {
+        "sodium": 137.0,
+        "chloride": 99.0,
+        "bicarbonate": 22.0
+      },
+      "clean_answer": 16.0,
+      "published_answer": "16"
+    },
+    {
+      "note_id": "usmle-5230",
+      "split": "test",
+      "arm": "anion_gap",
+      "components": {
+        "sodium": 137.0,
+        "chloride": 92.0,
+        "bicarbonate": 6.0
+      },
+      "clean_answer": 39.0,
+      "published_answer": "39"
+    },
+    {
+      "note_id": "pmc-2672257-1",
+      "split": "test",
+      "arm": "anion_gap",
+      "components": {
+        "sodium": 138.0,
+        "chloride": 105.0,
+        "bicarbonate": 23.0
+      },
+      "clean_answer": 10.0,
+      "published_answer": "10"
+    },
+    {
+      "note_id": "pmc-6031073-1",
+      "split": "test",
+      "arm": "anion_gap",
+      "components": {
+        "sodium": 140.0,
+        "chloride": 101.0,
+        "bicarbonate": 10.0
+      },
+      "clean_answer": 29.0,
+      "published_answer": "29"
+    },
+    {
+      "note_id": "pmc-3870642-1",
+      "split": "test",
+      "arm": "anion_gap",
+      "components": {
+        "sodium": 143.0,
+        "chloride": 107.0,
+        "bicarbonate": 23.0
+      },
+      "clean_answer": 13.0,
+      "published_answer": "13"
+    },
+    {
+      "note_id": "usmle-5709",
+      "split": "test",
+      "arm": "anion_gap",
+      "components": {
+        "sodium": 139.0,
+        "chloride": 100.0,
+        "bicarbonate": 23.0
+      },
+      "clean_answer": 16.0,
+      "published_answer": "16"
+    },
+    {
+      "note_id": "usmle-5910",
+      "split": "test",
+      "arm": "anion_gap",
+      "components": {
+        "sodium": 138.0,
+        "chloride": 104.0,
+        "bicarbonate": 25.0
+      },
+      "clean_answer": 9.0,
+      "published_answer": "9"
+    },
+    {
+      "note_id": "pmc-3986739-1",
+      "split": "train",
+      "arm": "anion_gap",
+      "components": {
+        "sodium": 134.0,
+        "chloride": 109.0,
+        "bicarbonate": 21.0
+      },
+      "clean_answer": 4.0,
+      "published_answer": "4.0"
+    },
+    {
+      "note_id": "pmc-7377651-2",
+      "split": "train",
+      "arm": "anion_gap",
+      "components": {
+        "sodium": 137.0,
+        "chloride": 105.0,
+        "bicarbonate": 23.0
+      },
+      "clean_answer": 9.0,
+      "published_answer": "9.0"
+    },
+    {
+      "note_id": "usmle-8498",
+      "split": "train",
+      "arm": "anion_gap",
+      "components": {
+        "sodium": 130.0,
+        "chloride": 102.0,
+        "bicarbonate": 10.0
+      },
+      "clean_answer": 18.0,
+      "published_answer": "18.0"
+    },
+    {
+      "note_id": "pmc-3658294-1",
+      "split": "train",
+      "arm": "anion_gap",
+      "components": {
+        "sodium": 135.0,
+        "chloride": 110.0,
+        "bicarbonate": 20.0
+      },
+      "clean_answer": 5.0,
+      "published_answer": "5.0"
+    },
+    {
+      "note_id": "pmc-4400567-1",
+      "split": "train",
+      "arm": "anion_gap",
+      "components": {
+        "sodium": 138.0,
+        "chloride": 106.0,
+        "bicarbonate": 18.0
+      },
+      "clean_answer": 14.0,
+      "published_answer": "14.0"
+    },
+    {
+      "note_id": "pmc-8058752-1",
+      "split": "train",
+      "arm": "anion_gap",
+      "components": {
+        "sodium": 140.0,
+        "chloride": 108.0,
+        "bicarbonate": 15.0
+      },
+      "clean_answer": 17.0,
+      "published_answer": "17.0"
+    },
+    {
+      "note_id": "usmle-4969",
+      "split": "train",
+      "arm": "anion_gap",
+      "components": {
+        "sodium": 129.0,
+        "chloride": 99.0,
+        "bicarbonate": 17.0
+      },
+      "clean_answer": 13.0,
+      "published_answer": "13.0"
+    },
+    {
+      "note_id": "pmc-514562-1",
+      "split": "train",
+      "arm": "anion_gap",
+      "components": {
+        "sodium": 142.0,
+        "chloride": 120.0,
+        "bicarbonate": 13.0
+      },
+      "clean_answer": 9.0,
+      "published_answer": "9.0"
+    },
+    {
+      "note_id": "pmc-3731624-1",
+      "split": "train",
+      "arm": "anion_gap",
+      "components": {
+        "sodium": 137.0,
+        "chloride": 104.0,
+        "bicarbonate": 17.7
+      },
+      "clean_answer": 15.3,
+      "published_answer": "15.3"
+    },
+    {
+      "note_id": "pmc-3471405-1",
+      "split": "train",
+      "arm": "anion_gap",
+      "components": {
+        "sodium": 133.0,
+        "chloride": 102.0,
+        "bicarbonate": 22.0
+      },
+      "clean_answer": 9.0,
+      "published_answer": "9.0"
+    },
+    {
+      "note_id": "pmc-3479936-1",
+      "split": "train",
+      "arm": "anion_gap",
+      "components": {
+        "sodium": 135.0,
+        "chloride": 102.0,
+        "bicarbonate": 21.0
+      },
+      "clean_answer": 12.0,
+      "published_answer": "12.0"
+    },
+    {
+      "note_id": "pmc-5453742-1",
+      "split": "train",
+      "arm": "anion_gap",
+      "components": {
+        "sodium": 134.0,
+        "chloride": 99.0,
+        "bicarbonate": 19.0
+      },
+      "clean_answer": 16.0,
+      "published_answer": "16.0"
+    },
+    {
+      "note_id": "usmle-4284",
+      "split": "train",
+      "arm": "anion_gap",
+      "components": {
+        "sodium": 139.0,
+        "chloride": 100.0,
+        "bicarbonate": 9.0
+      },
+      "clean_answer": 30.0,
+      "published_answer": "30.0"
+    },
+    {
+      "note_id": "pmc-3583747-1",
+      "split": "train",
+      "arm": "anion_gap",
+      "components": {
+        "sodium": 132.0,
+        "chloride": 95.0,
+        "bicarbonate": 27.0
+      },
+      "clean_answer": 10.0,
+      "published_answer": "10.0"
+    },
+    {
+      "note_id": "pmc-7749864-1",
+      "split": "train",
+      "arm": "anion_gap",
+      "components": {
+        "sodium": 136.0,
+        "chloride": 103.0,
+        "bicarbonate": 31.0
+      },
+      "clean_answer": 2.0,
+      "published_answer": "2.0"
+    },
+    {
+      "note_id": "usmle-1292",
+      "split": "train",
+      "arm": "anion_gap",
+      "components": {
+        "sodium": 138.0,
+        "chloride": 100.0,
+        "bicarbonate": 17.0
+      },
+      "clean_answer": 21.0,
+      "published_answer": "21.0"
+    }
+  ]
+}

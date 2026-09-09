@@ -1,0 +1,14 @@
+{
+  "_what_this_is": "SHA-256 of each frozen prompt, in Annotator A's manifest convention (sha256 of the raw text). The Week 1 clause says the six prompts are written and FROZEN, and this is what makes that enforceable rather than an intention.",
+  "_why_it_matters": "run.py keys the cache on hash(model, item_id, prompt_id, format) and NOT on the prompt text. So editing prompts/prompts.yaml does not invalidate anything: every completion generated under the old wording is silently reused as though it came from the new one. 240 cached completions carry the current open_ended text. A prompt edit is therefore a silent corruption of the pilot, and the only thing standing between us and it is this file plus the test that reads it.",
+  "_if_this_test_fails": "A prompt changed. That is not automatically wrong, but it invalidates every cached completion for that prompt_id. Re-run the affected cells, then update the hash here in the same commit so the two never drift.",
+  "convention": "hashlib.sha256(prompt_text.encode()).hexdigest()",
+  "prompts": {
+    "detector_only": "68271dc6b22c917cdb5237f126c7864b67f3ec56d68bc370e31ce044eccc2abf",
+    "inline_consistency": "37cfb9cbb7260eb2b0f0bc0ac91a1755d0324b7d09b6c0aa818be938f078d060",
+    "mcq": "52893313a41ce740a0f054b44fec4d635bd4662162bf2139e53552ae73fba954",
+    "neutral_exit": "3dbb2873d22eb99da65b9fe76563b635fd3bc81af5b90f5564f5dcb7b455a0d4",
+    "open_ended": "10b9cc1e463c2d1f867603c5adac7521dca8ec8c2b33dd57476a8b1e99f481ec",
+    "program_aided": "238063b655fc0ad356f3fcce36483e0a1a9f5e1085f96cabcc0ade30b61ffcf9"
+  }
+}

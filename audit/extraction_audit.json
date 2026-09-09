@@ -1,0 +1,6676 @@
+{
+  "generated_utc": "2026-08-16T23:27:29Z",
+  "n_rows": 1047,
+  "n_checks": 665,
+  "n_scoreable": 643,
+  "outcomes": {
+    "verified": 576,
+    "value_present_unlabelled": 49,
+    "verified_no_unit": 6,
+    "ambiguous": 2,
+    "verified_ordinal": 7,
+    "unsupported_unit": 22,
+    "value_missing_entirely": 3
+  },
+  "by_quantity": {
+    "creatinine": {
+      "verified": 94,
+      "value_present_unlabelled": 7,
+      "verified_no_unit": 4,
+      "verified_ordinal": 3,
+      "ambiguous": 1
+    },
+    "weight": {
+      "verified": 96,
+      "value_present_unlabelled": 16,
+      "unsupported_unit": 4,
+      "value_missing_entirely": 1,
+      "verified_ordinal": 2,
+      "verified_no_unit": 1
+    },
+    "height": {
+      "verified": 78,
+      "value_present_unlabelled": 24,
+      "unsupported_unit": 16,
+      "verified_ordinal": 2
+    },
+    "age": {
+      "verified": 308,
+      "ambiguous": 1,
+      "verified_no_unit": 1,
+      "unsupported_unit": 2,
+      "value_missing_entirely": 2,
+      "value_present_unlabelled": 2
+    }
+  },
+  "checks": [
+    {
+      "quantity": "creatinine",
+      "outcome": "verified",
+      "detail": null,
+      "text": "creatinine, 1.4 mg/dL",
+      "extracted": "1.4 mg/dL",
+      "note_id": "pmc-7671985-1",
+      "row_number": 1,
+      "calculator": "Creatinine Clearance (Cockcroft-Gault Equation)"
+    },
+    {
+      "quantity": "weight",
+      "outcome": "verified",
+      "detail": null,
+      "text": "weight, 48 kg",
+      "extracted": "48 kg",
+      "note_id": "pmc-7671985-1",
+      "row_number": 1,
+      "calculator": "Creatinine Clearance (Cockcroft-Gault Equation)"
+    },
+    {
+      "quantity": "height",
+      "outcome": "verified",
+      "detail": null,
+      "text": "height, 163 cm",
+      "extracted": "163 cm",
+      "note_id": "pmc-7671985-1",
+      "row_number": 1,
+      "calculator": "Creatinine Clearance (Cockcroft-Gault Equation)"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "87-year-old",
+      "extracted": "87 years",
+      "note_id": "pmc-7671985-1",
+      "row_number": 1,
+      "calculator": "Creatinine Clearance (Cockcroft-Gault Equation)"
+    },
+    {
+      "quantity": "creatinine",
+      "outcome": "verified",
+      "detail": null,
+      "text": "creatinine of 1.4 mg/dL",
+      "extracted": "1.4 mg/dL",
+      "note_id": "pmc-8605939-1",
+      "row_number": 2,
+      "calculator": "Creatinine Clearance (Cockcroft-Gault Equation)"
+    },
+    {
+      "quantity": "weight",
+      "outcome": "verified",
+      "detail": null,
+      "text": "weighed 67.2 kg",
+      "extracted": "67.2 kg",
+      "note_id": "pmc-8605939-1",
+      "row_number": 2,
+      "calculator": "Creatinine Clearance (Cockcroft-Gault Equation)"
+    },
+    {
+      "quantity": "height",
+      "outcome": "verified",
+      "detail": null,
+      "text": "173 cm tall",
+      "extracted": "173 cm",
+      "note_id": "pmc-8605939-1",
+      "row_number": 2,
+      "calculator": "Creatinine Clearance (Cockcroft-Gault Equation)"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "83-year-old",
+      "extracted": "83 years",
+      "note_id": "pmc-8605939-1",
+      "row_number": 2,
+      "calculator": "Creatinine Clearance (Cockcroft-Gault Equation)"
+    },
+    {
+      "quantity": "creatinine",
+      "outcome": "verified",
+      "detail": null,
+      "text": "serum creatinine level was 183 \u03bcmol/L",
+      "extracted": "183 \u00b5mol/L",
+      "note_id": "pmc-6482549-1",
+      "row_number": 3,
+      "calculator": "Creatinine Clearance (Cockcroft-Gault Equation)"
+    },
+    {
+      "quantity": "weight",
+      "outcome": "verified",
+      "detail": null,
+      "text": "body weight to 50 kg",
+      "extracted": "50 kg",
+      "note_id": "pmc-6482549-1",
+      "row_number": 3,
+      "calculator": "Creatinine Clearance (Cockcroft-Gault Equation)"
+    },
+    {
+      "quantity": "height",
+      "outcome": "value_present_unlabelled",
+      "detail": "160 appears in the note, but not attached to height by any construction we recognise",
+      "text": null,
+      "extracted": "160 cm",
+      "note_id": "pmc-6482549-1",
+      "row_number": 3,
+      "calculator": "Creatinine Clearance (Cockcroft-Gault Equation)"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "51-year-old",
+      "extracted": "51 years",
+      "note_id": "pmc-6482549-1",
+      "row_number": 3,
+      "calculator": "Creatinine Clearance (Cockcroft-Gault Equation)"
+    },
+    {
+      "quantity": "creatinine",
+      "outcome": "verified",
+      "detail": null,
+      "text": "Creatinine 0.8 mg/dL",
+      "extracted": "0.8 mg/dL",
+      "note_id": "usmle-1002",
+      "row_number": 4,
+      "calculator": "Creatinine Clearance (Cockcroft-Gault Equation)"
+    },
+    {
+      "quantity": "weight",
+      "outcome": "verified",
+      "detail": null,
+      "text": "weighs 105 kg",
+      "extracted": "105 kg",
+      "note_id": "usmle-1002",
+      "row_number": 4,
+      "calculator": "Creatinine Clearance (Cockcroft-Gault Equation)"
+    },
+    {
+      "quantity": "height",
+      "outcome": "verified",
+      "detail": null,
+      "text": "160 cm (5 ft 3 in) tall",
+      "extracted": "160 cm",
+      "note_id": "usmle-1002",
+      "row_number": 4,
+      "calculator": "Creatinine Clearance (Cockcroft-Gault Equation)"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "42-year-old",
+      "extracted": "42 years",
+      "note_id": "usmle-1002",
+      "row_number": 4,
+      "calculator": "Creatinine Clearance (Cockcroft-Gault Equation)"
+    },
+    {
+      "quantity": "creatinine",
+      "outcome": "value_present_unlabelled",
+      "detail": "0.7 appears in the note, but not attached to creatinine by any construction we recognise",
+      "text": null,
+      "extracted": "0.7 mg/dL",
+      "note_id": "pmc-4459668-1",
+      "row_number": 5,
+      "calculator": "Creatinine Clearance (Cockcroft-Gault Equation)"
+    },
+    {
+      "quantity": "weight",
+      "outcome": "value_present_unlabelled",
+      "detail": "58 appears in the note, but not attached to weight by any construction we recognise",
+      "text": null,
+      "extracted": "58 kg",
+      "note_id": "pmc-4459668-1",
+      "row_number": 5,
+      "calculator": "Creatinine Clearance (Cockcroft-Gault Equation)"
+    },
+    {
+      "quantity": "height",
+      "outcome": "value_present_unlabelled",
+      "detail": "156 appears in the note, but not attached to height by any construction we recognise",
+      "text": null,
+      "extracted": "156 cm",
+      "note_id": "pmc-4459668-1",
+      "row_number": 5,
+      "calculator": "Creatinine Clearance (Cockcroft-Gault Equation)"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "45-year-old",
+      "extracted": "45 years",
+      "note_id": "pmc-4459668-1",
+      "row_number": 5,
+      "calculator": "Creatinine Clearance (Cockcroft-Gault Equation)"
+    },
+    {
+      "quantity": "creatinine",
+      "outcome": "verified",
+      "detail": null,
+      "text": "serum creatinine: 0.86 mg/dL",
+      "extracted": "0.86 mg/dL",
+      "note_id": "pmc-5526772-1",
+      "row_number": 6,
+      "calculator": "Creatinine Clearance (Cockcroft-Gault Equation)"
+    },
+    {
+      "quantity": "weight",
+      "outcome": "verified",
+      "detail": null,
+      "text": "weighed 52.5 kg",
+      "extracted": "52.5 kg",
+      "note_id": "pmc-5526772-1",
+      "row_number": 6,
+      "calculator": "Creatinine Clearance (Cockcroft-Gault Equation)"
+    },
+    {
+      "quantity": "height",
+      "outcome": "verified",
+      "detail": null,
+      "text": "167 cm tall",
+      "extracted": "167 cm",
+      "note_id": "pmc-5526772-1",
+      "row_number": 6,
+      "calculator": "Creatinine Clearance (Cockcroft-Gault Equation)"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "41-year-old",
+      "extracted": "41 years",
+      "note_id": "pmc-5526772-1",
+      "row_number": 6,
+      "calculator": "Creatinine Clearance (Cockcroft-Gault Equation)"
+    },
+    {
+      "quantity": "creatinine",
+      "outcome": "verified",
+      "detail": null,
+      "text": "serum creatinine, 0.8 mg/dL",
+      "extracted": "0.8 mg/dL",
+      "note_id": "pmc-3830277-1",
+      "row_number": 7,
+      "calculator": "Creatinine Clearance (Cockcroft-Gault Equation)"
+    },
+    {
+      "quantity": "weight",
+      "outcome": "verified",
+      "detail": null,
+      "text": "body weight, 44.5 kg",
+      "extracted": "44.5 kg",
+      "note_id": "pmc-3830277-1",
+      "row_number": 7,
+      "calculator": "Creatinine Clearance (Cockcroft-Gault Equation)"
+    },
+    {
+      "quantity": "height",
+      "outcome": "verified",
+      "detail": null,
+      "text": "height 156 cm",
+      "extracted": "156 cm",
+      "note_id": "pmc-3830277-1",
+      "row_number": 7,
+      "calculator": "Creatinine Clearance (Cockcroft-Gault Equation)"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "68-year-old",
+      "extracted": "68 years",
+      "note_id": "pmc-3830277-1",
+      "row_number": 7,
+      "calculator": "Creatinine Clearance (Cockcroft-Gault Equation)"
+    },
+    {
+      "quantity": "creatinine",
+      "outcome": "verified",
+      "detail": null,
+      "text": "serum creatinine: 1.42 mg/dL",
+      "extracted": "1.42 mg/dL",
+      "note_id": "pmc-7220329-1",
+      "row_number": 8,
+      "calculator": "Creatinine Clearance (Cockcroft-Gault Equation)"
+    },
+    {
+      "quantity": "weight",
+      "outcome": "verified",
+      "detail": null,
+      "text": "weight: 59 kg",
+      "extracted": "59 kg",
+      "note_id": "pmc-7220329-1",
+      "row_number": 8,
+      "calculator": "Creatinine Clearance (Cockcroft-Gault Equation)"
+    },
+    {
+      "quantity": "height",
+      "outcome": "verified",
+      "detail": null,
+      "text": "height: 155 cm",
+      "extracted": "155 cm",
+      "note_id": "pmc-7220329-1",
+      "row_number": 8,
+      "calculator": "Creatinine Clearance (Cockcroft-Gault Equation)"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "71-year-old",
+      "extracted": "71 years",
+      "note_id": "pmc-7220329-1",
+      "row_number": 8,
+      "calculator": "Creatinine Clearance (Cockcroft-Gault Equation)"
+    },
+    {
+      "quantity": "creatinine",
+      "outcome": "verified",
+      "detail": null,
+      "text": "creatinine level of 3.26 mg/dL",
+      "extracted": "3.26 mg/dL",
+      "note_id": "pmc-7785505-1",
+      "row_number": 9,
+      "calculator": "Creatinine Clearance (Cockcroft-Gault Equation)"
+    },
+    {
+      "quantity": "weight",
+      "outcome": "verified",
+      "detail": null,
+      "text": "weight, 53 kg",
+      "extracted": "53 kg",
+      "note_id": "pmc-7785505-1",
+      "row_number": 9,
+      "calculator": "Creatinine Clearance (Cockcroft-Gault Equation)"
+    },
+    {
+      "quantity": "height",
+      "outcome": "verified",
+      "detail": null,
+      "text": "height, 153 cm",
+      "extracted": "153 cm",
+      "note_id": "pmc-7785505-1",
+      "row_number": 9,
+      "calculator": "Creatinine Clearance (Cockcroft-Gault Equation)"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "82-year-old",
+      "extracted": "82 years",
+      "note_id": "pmc-7785505-1",
+      "row_number": 9,
+      "calculator": "Creatinine Clearance (Cockcroft-Gault Equation)"
+    },
+    {
+      "quantity": "creatinine",
+      "outcome": "verified",
+      "detail": null,
+      "text": "creatinine, 0.90 mg/dL",
+      "extracted": "0.9 mg/dL",
+      "note_id": "pmc-8062170-1",
+      "row_number": 10,
+      "calculator": "Creatinine Clearance (Cockcroft-Gault Equation)"
+    },
+    {
+      "quantity": "weight",
+      "outcome": "verified",
+      "detail": null,
+      "text": "weight, 60 kg",
+      "extracted": "60 kg",
+      "note_id": "pmc-8062170-1",
+      "row_number": 10,
+      "calculator": "Creatinine Clearance (Cockcroft-Gault Equation)"
+    },
+    {
+      "quantity": "height",
+      "outcome": "verified",
+      "detail": null,
+      "text": "height, 160 cm",
+      "extracted": "160 cm",
+      "note_id": "pmc-8062170-1",
+      "row_number": 10,
+      "calculator": "Creatinine Clearance (Cockcroft-Gault Equation)"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "47-year-old",
+      "extracted": "47 years",
+      "note_id": "pmc-8062170-1",
+      "row_number": 10,
+      "calculator": "Creatinine Clearance (Cockcroft-Gault Equation)"
+    },
+    {
+      "quantity": "creatinine",
+      "outcome": "verified",
+      "detail": null,
+      "text": "creatinine, 5.09 mg/dL",
+      "extracted": "5.09 mg/dL",
+      "note_id": "pmc-6331344-1",
+      "row_number": 11,
+      "calculator": "Creatinine Clearance (Cockcroft-Gault Equation)"
+    },
+    {
+      "quantity": "weight",
+      "outcome": "verified",
+      "detail": null,
+      "text": "weighed 68 kg",
+      "extracted": "68 kg",
+      "note_id": "pmc-6331344-1",
+      "row_number": 11,
+      "calculator": "Creatinine Clearance (Cockcroft-Gault Equation)"
+    },
+    {
+      "quantity": "height",
+      "outcome": "verified",
+      "detail": null,
+      "text": "168.0 cm tall",
+      "extracted": "168 cm",
+      "note_id": "pmc-6331344-1",
+      "row_number": 11,
+      "calculator": "Creatinine Clearance (Cockcroft-Gault Equation)"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "66-year-old",
+      "extracted": "66 years",
+      "note_id": "pmc-6331344-1",
+      "row_number": 11,
+      "calculator": "Creatinine Clearance (Cockcroft-Gault Equation)"
+    },
+    {
+      "quantity": "creatinine",
+      "outcome": "verified",
+      "detail": null,
+      "text": "serum creatinine level was 1.1 mg/dL",
+      "extracted": "1.1 mg/dL",
+      "note_id": "pmc-6787834-1",
+      "row_number": 12,
+      "calculator": "Creatinine Clearance (Cockcroft-Gault Equation)"
+    },
+    {
+      "quantity": "weight",
+      "outcome": "verified",
+      "detail": null,
+      "text": "weighed 59 kg",
+      "extracted": "59 kg",
+      "note_id": "pmc-6787834-1",
+      "row_number": 12,
+      "calculator": "Creatinine Clearance (Cockcroft-Gault Equation)"
+    },
+    {
+      "quantity": "height",
+      "outcome": "verified",
+      "detail": null,
+      "text": "168 cm tall",
+      "extracted": "168 cm",
+      "note_id": "pmc-6787834-1",
+      "row_number": 12,
+      "calculator": "Creatinine Clearance (Cockcroft-Gault Equation)"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "53-year-old",
+      "extracted": "53 years",
+      "note_id": "pmc-6787834-1",
+      "row_number": 12,
+      "calculator": "Creatinine Clearance (Cockcroft-Gault Equation)"
+    },
+    {
+      "quantity": "creatinine",
+      "outcome": "verified_no_unit",
+      "detail": "value attached to the label, but the note states no unit, so the unit is unconfirmed",
+      "text": "creatinine is 2.13",
+      "extracted": "2.13 mg/dL",
+      "note_id": "pmc-5676754-1",
+      "row_number": 13,
+      "calculator": "Creatinine Clearance (Cockcroft-Gault Equation)"
+    },
+    {
+      "quantity": "weight",
+      "outcome": "verified",
+      "detail": null,
+      "text": "weighs 106 kg",
+      "extracted": "106 kg",
+      "note_id": "pmc-5676754-1",
+      "row_number": 13,
+      "calculator": "Creatinine Clearance (Cockcroft-Gault Equation)"
+    },
+    {
+      "quantity": "height",
+      "outcome": "value_present_unlabelled",
+      "detail": "168 appears in the note, but not attached to height by any construction we recognise",
+      "text": null,
+      "extracted": "168 cm",
+      "note_id": "pmc-5676754-1",
+      "row_number": 13,
+      "calculator": "Creatinine Clearance (Cockcroft-Gault Equation)"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "58 year old",
+      "extracted": "58 years",
+      "note_id": "pmc-5676754-1",
+      "row_number": 13,
+      "calculator": "Creatinine Clearance (Cockcroft-Gault Equation)"
+    },
+    {
+      "quantity": "creatinine",
+      "outcome": "verified",
+      "detail": null,
+      "text": "serum creatinine 1.27 mg/dL",
+      "extracted": "1.27 mg/dL",
+      "note_id": "pmc-5411626-1",
+      "row_number": 14,
+      "calculator": "Creatinine Clearance (Cockcroft-Gault Equation)"
+    },
+    {
+      "quantity": "weight",
+      "outcome": "verified",
+      "detail": null,
+      "text": "weight was 40 kg",
+      "extracted": "40 kg",
+      "note_id": "pmc-5411626-1",
+      "row_number": 14,
+      "calculator": "Creatinine Clearance (Cockcroft-Gault Equation)"
+    },
+    {
+      "quantity": "height",
+      "outcome": "verified",
+      "detail": null,
+      "text": "height was 153 cm",
+      "extracted": "153 cm",
+      "note_id": "pmc-5411626-1",
+      "row_number": 14,
+      "calculator": "Creatinine Clearance (Cockcroft-Gault Equation)"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "81-year-old",
+      "extracted": "81 years",
+      "note_id": "pmc-5411626-1",
+      "row_number": 14,
+      "calculator": "Creatinine Clearance (Cockcroft-Gault Equation)"
+    },
+    {
+      "quantity": "creatinine",
+      "outcome": "value_present_unlabelled",
+      "detail": "2.04 appears in the note, but not attached to creatinine by any construction we recognise",
+      "text": null,
+      "extracted": "2.04 mg/dL",
+      "note_id": "pmc-7819202-1",
+      "row_number": 15,
+      "calculator": "Creatinine Clearance (Cockcroft-Gault Equation)"
+    },
+    {
+      "quantity": "weight",
+      "outcome": "verified",
+      "detail": null,
+      "text": "weight is 46.1 kg",
+      "extracted": "46.1 kg",
+      "note_id": "pmc-7819202-1",
+      "row_number": 15,
+      "calculator": "Creatinine Clearance (Cockcroft-Gault Equation)"
+    },
+    {
+      "quantity": "height",
+      "outcome": "verified",
+      "detail": null,
+      "text": "height is 164 cm",
+      "extracted": "164 cm",
+      "note_id": "pmc-7819202-1",
+      "row_number": 15,
+      "calculator": "Creatinine Clearance (Cockcroft-Gault Equation)"
+    },
+    {
+      "quantity": "age",
+      "outcome": "ambiguous",
+      "detail": "2 occurrences of this value",
+      "text": "20-year-old",
+      "extracted": "20 years",
+      "note_id": "pmc-7819202-1",
+      "row_number": 15,
+      "calculator": "Creatinine Clearance (Cockcroft-Gault Equation)"
+    },
+    {
+      "quantity": "creatinine",
+      "outcome": "verified",
+      "detail": null,
+      "text": "creatinine, 0.93 mg/dl",
+      "extracted": "0.93 mg/dL",
+      "note_id": "pmc-8474094-1",
+      "row_number": 16,
+      "calculator": "Creatinine Clearance (Cockcroft-Gault Equation)"
+    },
+    {
+      "quantity": "weight",
+      "outcome": "verified",
+      "detail": null,
+      "text": "weighed 62.8 kg",
+      "extracted": "62.8 kg",
+      "note_id": "pmc-8474094-1",
+      "row_number": 16,
+      "calculator": "Creatinine Clearance (Cockcroft-Gault Equation)"
+    },
+    {
+      "quantity": "height",
+      "outcome": "verified",
+      "detail": null,
+      "text": "160 cm tall",
+      "extracted": "160 cm",
+      "note_id": "pmc-8474094-1",
+      "row_number": 16,
+      "calculator": "Creatinine Clearance (Cockcroft-Gault Equation)"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "78-year-old",
+      "extracted": "78 years",
+      "note_id": "pmc-8474094-1",
+      "row_number": 16,
+      "calculator": "Creatinine Clearance (Cockcroft-Gault Equation)"
+    },
+    {
+      "quantity": "creatinine",
+      "outcome": "verified",
+      "detail": null,
+      "text": "serum creatinine concentration is 1.5 mg/dL",
+      "extracted": "1.5 mg/dL",
+      "note_id": "usmle-1896",
+      "row_number": 17,
+      "calculator": "Creatinine Clearance (Cockcroft-Gault Equation)"
+    },
+    {
+      "quantity": "weight",
+      "outcome": "verified",
+      "detail": null,
+      "text": "weighs 109 kg",
+      "extracted": "109 kg",
+      "note_id": "usmle-1896",
+      "row_number": 17,
+      "calculator": "Creatinine Clearance (Cockcroft-Gault Equation)"
+    },
+    {
+      "quantity": "height",
+      "outcome": "verified",
+      "detail": null,
+      "text": "188 cm (6 ft 2 in) tall",
+      "extracted": "188 cm",
+      "note_id": "usmle-1896",
+      "row_number": 17,
+      "calculator": "Creatinine Clearance (Cockcroft-Gault Equation)"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "55-year-old",
+      "extracted": "55 years",
+      "note_id": "usmle-1896",
+      "row_number": 17,
+      "calculator": "Creatinine Clearance (Cockcroft-Gault Equation)"
+    },
+    {
+      "quantity": "creatinine",
+      "outcome": "verified",
+      "detail": null,
+      "text": "Cr 10.7 mg/dL",
+      "extracted": "10.7 mg/dL",
+      "note_id": "pmc-5411661-1",
+      "row_number": 18,
+      "calculator": "Creatinine Clearance (Cockcroft-Gault Equation)"
+    },
+    {
+      "quantity": "weight",
+      "outcome": "verified",
+      "detail": null,
+      "text": "weight was 58.5 kg",
+      "extracted": "58.5 kg",
+      "note_id": "pmc-5411661-1",
+      "row_number": 18,
+      "calculator": "Creatinine Clearance (Cockcroft-Gault Equation)"
+    },
+    {
+      "quantity": "height",
+      "outcome": "verified",
+      "detail": null,
+      "text": "height was 163.1 cm",
+      "extracted": "163.1 cm",
+      "note_id": "pmc-5411661-1",
+      "row_number": 18,
+      "calculator": "Creatinine Clearance (Cockcroft-Gault Equation)"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "60-year-old",
+      "extracted": "60 years",
+      "note_id": "pmc-5411661-1",
+      "row_number": 18,
+      "calculator": "Creatinine Clearance (Cockcroft-Gault Equation)"
+    },
+    {
+      "quantity": "creatinine",
+      "outcome": "verified",
+      "detail": null,
+      "text": "creatinine of 1.4 mg/dl",
+      "extracted": "1.4 mg/dL",
+      "note_id": "pmc-4641361-1",
+      "row_number": 19,
+      "calculator": "Creatinine Clearance (Cockcroft-Gault Equation)"
+    },
+    {
+      "quantity": "weight",
+      "outcome": "verified",
+      "detail": null,
+      "text": "body weight was 61.0 kg",
+      "extracted": "61 kg",
+      "note_id": "pmc-4641361-1",
+      "row_number": 19,
+      "calculator": "Creatinine Clearance (Cockcroft-Gault Equation)"
+    },
+    {
+      "quantity": "height",
+      "outcome": "verified",
+      "detail": null,
+      "text": "height was 155.5 cm",
+      "extracted": "155.5 cm",
+      "note_id": "pmc-4641361-1",
+      "row_number": 19,
+      "calculator": "Creatinine Clearance (Cockcroft-Gault Equation)"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "49-year-old",
+      "extracted": "49 years",
+      "note_id": "pmc-4641361-1",
+      "row_number": 19,
+      "calculator": "Creatinine Clearance (Cockcroft-Gault Equation)"
+    },
+    {
+      "quantity": "creatinine",
+      "outcome": "verified",
+      "detail": null,
+      "text": "creatinine 1.7 mg/dl",
+      "extracted": "1.7 mg/dL",
+      "note_id": "pmc-6713257-1",
+      "row_number": 20,
+      "calculator": "Creatinine Clearance (Cockcroft-Gault Equation)"
+    },
+    {
+      "quantity": "weight",
+      "outcome": "verified",
+      "detail": null,
+      "text": "weight was 99 kg",
+      "extracted": "99 kg",
+      "note_id": "pmc-6713257-1",
+      "row_number": 20,
+      "calculator": "Creatinine Clearance (Cockcroft-Gault Equation)"
+    },
+    {
+      "quantity": "height",
+      "outcome": "verified",
+      "detail": null,
+      "text": "height was 179 cm",
+      "extracted": "179 cm",
+      "note_id": "pmc-6713257-1",
+      "row_number": 20,
+      "calculator": "Creatinine Clearance (Cockcroft-Gault Equation)"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "28-year-old",
+      "extracted": "28 years",
+      "note_id": "pmc-6713257-1",
+      "row_number": 20,
+      "calculator": "Creatinine Clearance (Cockcroft-Gault Equation)"
+    },
+    {
+      "quantity": "creatinine",
+      "outcome": "verified",
+      "detail": null,
+      "text": "SCr 42.0 \u03bcmol/L",
+      "extracted": "42 \u00b5mol/L",
+      "note_id": "pmc-6426590-1",
+      "row_number": 21,
+      "calculator": "CKD-EPI Equations for Glomerular Filtration Rate"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "32-year-old",
+      "extracted": "32 years",
+      "note_id": "pmc-6426590-1",
+      "row_number": 21,
+      "calculator": "CKD-EPI Equations for Glomerular Filtration Rate"
+    },
+    {
+      "quantity": "creatinine",
+      "outcome": "verified_ordinal",
+      "detail": "'respectively' construction, position confirmed",
+      "text": "arkable for elevated serum urea nitrogen and creatinine, 18.9 mmol/L and 366 \u03bcmol/L, respectively",
+      "extracted": "366 \u00b5mol/L",
+      "note_id": "pmc-4421172-1",
+      "row_number": 22,
+      "calculator": "CKD-EPI Equations for Glomerular Filtration Rate"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "57-year-old",
+      "extracted": "57 years",
+      "note_id": "pmc-4421172-1",
+      "row_number": 22,
+      "calculator": "CKD-EPI Equations for Glomerular Filtration Rate"
+    },
+    {
+      "quantity": "creatinine",
+      "outcome": "verified",
+      "detail": null,
+      "text": "Serum creatinine level was 80.4 \u03bcmol/L",
+      "extracted": "80.4 \u00b5mol/L",
+      "note_id": "pmc-8520182-1",
+      "row_number": 23,
+      "calculator": "CKD-EPI Equations for Glomerular Filtration Rate"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "74-year-old",
+      "extracted": "74 years",
+      "note_id": "pmc-8520182-1",
+      "row_number": 23,
+      "calculator": "CKD-EPI Equations for Glomerular Filtration Rate"
+    },
+    {
+      "quantity": "creatinine",
+      "outcome": "verified",
+      "detail": null,
+      "text": "creatinine level of 0.9 mg/dL",
+      "extracted": "0.9 mg/dL",
+      "note_id": "usmle-10682",
+      "row_number": 24,
+      "calculator": "CKD-EPI Equations for Glomerular Filtration Rate"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "30-year-old",
+      "extracted": "30 years",
+      "note_id": "usmle-10682",
+      "row_number": 24,
+      "calculator": "CKD-EPI Equations for Glomerular Filtration Rate"
+    },
+    {
+      "quantity": "creatinine",
+      "outcome": "verified_ordinal",
+      "detail": "paired X/Y construction, position confirmed",
+      "text": " Baseline blood urea nitrogen/creatinine was 32/0.87",
+      "extracted": "0.87 mg/dL",
+      "note_id": "pmc-3857264-1",
+      "row_number": 25,
+      "calculator": "CKD-EPI Equations for Glomerular Filtration Rate"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "80-year-old",
+      "extracted": "80 years",
+      "note_id": "pmc-3857264-1",
+      "row_number": 25,
+      "calculator": "CKD-EPI Equations for Glomerular Filtration Rate"
+    },
+    {
+      "quantity": "creatinine",
+      "outcome": "verified",
+      "detail": null,
+      "text": "creatinine, 0.76 mg/dL",
+      "extracted": "0.76 mg/dL",
+      "note_id": "pmc-8712236-1",
+      "row_number": 26,
+      "calculator": "CKD-EPI Equations for Glomerular Filtration Rate"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "71-year-old",
+      "extracted": "71 years",
+      "note_id": "pmc-8712236-1",
+      "row_number": 26,
+      "calculator": "CKD-EPI Equations for Glomerular Filtration Rate"
+    },
+    {
+      "quantity": "creatinine",
+      "outcome": "verified_no_unit",
+      "detail": "value attached to the label, but the note states no unit, so the unit is unconfirmed",
+      "text": "creatinine 1.78",
+      "extracted": "1.78 mg/dL",
+      "note_id": "usmle-11198",
+      "row_number": 27,
+      "calculator": "CKD-EPI Equations for Glomerular Filtration Rate"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "27-year-old",
+      "extracted": "27 years",
+      "note_id": "usmle-11198",
+      "row_number": 27,
+      "calculator": "CKD-EPI Equations for Glomerular Filtration Rate"
+    },
+    {
+      "quantity": "creatinine",
+      "outcome": "verified",
+      "detail": null,
+      "text": "creatinine of 1.7 mg/dL",
+      "extracted": "1.7 mg/dL",
+      "note_id": "pmc-6892572-1",
+      "row_number": 28,
+      "calculator": "CKD-EPI Equations for Glomerular Filtration Rate"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "29-year-old",
+      "extracted": "29 years",
+      "note_id": "pmc-6892572-1",
+      "row_number": 28,
+      "calculator": "CKD-EPI Equations for Glomerular Filtration Rate"
+    },
+    {
+      "quantity": "creatinine",
+      "outcome": "verified",
+      "detail": null,
+      "text": "creatinine 11.3 mg/dl",
+      "extracted": "11.3 mg/dL",
+      "note_id": "pmc-6988719-1",
+      "row_number": 29,
+      "calculator": "CKD-EPI Equations for Glomerular Filtration Rate"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "53-year-old",
+      "extracted": "53 years",
+      "note_id": "pmc-6988719-1",
+      "row_number": 29,
+      "calculator": "CKD-EPI Equations for Glomerular Filtration Rate"
+    },
+    {
+      "quantity": "creatinine",
+      "outcome": "verified",
+      "detail": null,
+      "text": "creatinine = 5.4 mg/dL",
+      "extracted": "5.4 mg/dL",
+      "note_id": "pmc-7405101-3",
+      "row_number": 30,
+      "calculator": "CKD-EPI Equations for Glomerular Filtration Rate"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "61-year-old",
+      "extracted": "61 years",
+      "note_id": "pmc-7405101-3",
+      "row_number": 30,
+      "calculator": "CKD-EPI Equations for Glomerular Filtration Rate"
+    },
+    {
+      "quantity": "creatinine",
+      "outcome": "verified",
+      "detail": null,
+      "text": "creatinine 1.17 mg/dL",
+      "extracted": "1.17 mg/dL",
+      "note_id": "pmc-5624663-1",
+      "row_number": 31,
+      "calculator": "CKD-EPI Equations for Glomerular Filtration Rate"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "60-year-old",
+      "extracted": "60 years",
+      "note_id": "pmc-5624663-1",
+      "row_number": 31,
+      "calculator": "CKD-EPI Equations for Glomerular Filtration Rate"
+    },
+    {
+      "quantity": "creatinine",
+      "outcome": "verified",
+      "detail": null,
+      "text": "serum creatinine levels (8.9 mg/dL",
+      "extracted": "8.9 mg/dL",
+      "note_id": "pmc-7983145-1",
+      "row_number": 32,
+      "calculator": "CKD-EPI Equations for Glomerular Filtration Rate"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "38-year-old",
+      "extracted": "38 years",
+      "note_id": "pmc-7983145-1",
+      "row_number": 32,
+      "calculator": "CKD-EPI Equations for Glomerular Filtration Rate"
+    },
+    {
+      "quantity": "creatinine",
+      "outcome": "verified",
+      "detail": null,
+      "text": "creatinine of 1.4 mg/dL",
+      "extracted": "1.4 mg/dL",
+      "note_id": "pmc-8346262-1",
+      "row_number": 33,
+      "calculator": "CKD-EPI Equations for Glomerular Filtration Rate"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "65-year-old",
+      "extracted": "65 years",
+      "note_id": "pmc-8346262-1",
+      "row_number": 33,
+      "calculator": "CKD-EPI Equations for Glomerular Filtration Rate"
+    },
+    {
+      "quantity": "creatinine",
+      "outcome": "verified",
+      "detail": null,
+      "text": "Creatinine: 3.1 mg/dL",
+      "extracted": "3.1 mg/dL",
+      "note_id": "usmle-4906",
+      "row_number": 34,
+      "calculator": "CKD-EPI Equations for Glomerular Filtration Rate"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "58-year-old",
+      "extracted": "58 years",
+      "note_id": "usmle-4906",
+      "row_number": 34,
+      "calculator": "CKD-EPI Equations for Glomerular Filtration Rate"
+    },
+    {
+      "quantity": "creatinine",
+      "outcome": "verified",
+      "detail": null,
+      "text": "Creatinine: 1.1 mg/dL",
+      "extracted": "1.1 mg/dL",
+      "note_id": "usmle-5468",
+      "row_number": 35,
+      "calculator": "CKD-EPI Equations for Glomerular Filtration Rate"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "33-year-old",
+      "extracted": "33 years",
+      "note_id": "usmle-5468",
+      "row_number": 35,
+      "calculator": "CKD-EPI Equations for Glomerular Filtration Rate"
+    },
+    {
+      "quantity": "creatinine",
+      "outcome": "verified",
+      "detail": null,
+      "text": "creatinine (Cr) 134 \u03bcmol/L",
+      "extracted": "134 \u00b5mol/L",
+      "note_id": "pmc-6919406-1",
+      "row_number": 36,
+      "calculator": "CKD-EPI Equations for Glomerular Filtration Rate"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "70-year-old",
+      "extracted": "70 years",
+      "note_id": "pmc-6919406-1",
+      "row_number": 36,
+      "calculator": "CKD-EPI Equations for Glomerular Filtration Rate"
+    },
+    {
+      "quantity": "creatinine",
+      "outcome": "verified",
+      "detail": null,
+      "text": "serum creatinine (1.62 mg/dl",
+      "extracted": "1.62 mg/dL",
+      "note_id": "pmc-4448053-1",
+      "row_number": 37,
+      "calculator": "CKD-EPI Equations for Glomerular Filtration Rate"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "75-year-old",
+      "extracted": "75 years",
+      "note_id": "pmc-4448053-1",
+      "row_number": 37,
+      "calculator": "CKD-EPI Equations for Glomerular Filtration Rate"
+    },
+    {
+      "quantity": "creatinine",
+      "outcome": "verified",
+      "detail": null,
+      "text": "creatinine of 2.31 mg/dL",
+      "extracted": "2.31 mg/dL",
+      "note_id": "pmc-7425612-1",
+      "row_number": 38,
+      "calculator": "CKD-EPI Equations for Glomerular Filtration Rate"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "78-year-old",
+      "extracted": "78 years",
+      "note_id": "pmc-7425612-1",
+      "row_number": 38,
+      "calculator": "CKD-EPI Equations for Glomerular Filtration Rate"
+    },
+    {
+      "quantity": "creatinine",
+      "outcome": "verified",
+      "detail": null,
+      "text": "serum creatinine: 3 mg/dL",
+      "extracted": "3 mg/dL",
+      "note_id": "pmc-5394405-1",
+      "row_number": 39,
+      "calculator": "CKD-EPI Equations for Glomerular Filtration Rate"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "18-year-old",
+      "extracted": "18 years",
+      "note_id": "pmc-5394405-1",
+      "row_number": 39,
+      "calculator": "CKD-EPI Equations for Glomerular Filtration Rate"
+    },
+    {
+      "quantity": "creatinine",
+      "outcome": "verified",
+      "detail": null,
+      "text": "creatinine 1.84 mg/dL",
+      "extracted": "1.84 mg/dL",
+      "note_id": "pmc-7523830-1",
+      "row_number": 40,
+      "calculator": "CKD-EPI Equations for Glomerular Filtration Rate"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "64-year-old",
+      "extracted": "64 years",
+      "note_id": "pmc-7523830-1",
+      "row_number": 40,
+      "calculator": "CKD-EPI Equations for Glomerular Filtration Rate"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "38-year-old",
+      "extracted": "38 years",
+      "note_id": "pmc-7196137-1",
+      "row_number": 41,
+      "calculator": "CHA2DS2-VASc Score for Atrial Fibrillation Stroke Risk"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "68-year-old",
+      "extracted": "68 years",
+      "note_id": "pmc-7099753-3",
+      "row_number": 42,
+      "calculator": "CHA2DS2-VASc Score for Atrial Fibrillation Stroke Risk"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "86-year-old",
+      "extracted": "86 years",
+      "note_id": "pmc-8136881-1",
+      "row_number": 43,
+      "calculator": "CHA2DS2-VASc Score for Atrial Fibrillation Stroke Risk"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "68-year-old",
+      "extracted": "68 years",
+      "note_id": "pmc-7294161-1",
+      "row_number": 44,
+      "calculator": "CHA2DS2-VASc Score for Atrial Fibrillation Stroke Risk"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "75-year-old",
+      "extracted": "75 years",
+      "note_id": "pmc-6959961-2",
+      "row_number": 45,
+      "calculator": "CHA2DS2-VASc Score for Atrial Fibrillation Stroke Risk"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "56-year-old",
+      "extracted": "56 years",
+      "note_id": "pmc-3317869-1",
+      "row_number": 46,
+      "calculator": "CHA2DS2-VASc Score for Atrial Fibrillation Stroke Risk"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "21-year-old",
+      "extracted": "21 years",
+      "note_id": "pmc-3888688-1",
+      "row_number": 47,
+      "calculator": "CHA2DS2-VASc Score for Atrial Fibrillation Stroke Risk"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "75-year-old",
+      "extracted": "75 years",
+      "note_id": "pmc-6939804-1",
+      "row_number": 48,
+      "calculator": "CHA2DS2-VASc Score for Atrial Fibrillation Stroke Risk"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "90-year-old",
+      "extracted": "90 years",
+      "note_id": "pmc-8096577-1",
+      "row_number": 49,
+      "calculator": "CHA2DS2-VASc Score for Atrial Fibrillation Stroke Risk"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "55-year-old",
+      "extracted": "55 years",
+      "note_id": "pmc-4369977-1",
+      "row_number": 50,
+      "calculator": "CHA2DS2-VASc Score for Atrial Fibrillation Stroke Risk"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "63-year-old",
+      "extracted": "63 years",
+      "note_id": "pmc-3318870-1",
+      "row_number": 51,
+      "calculator": "CHA2DS2-VASc Score for Atrial Fibrillation Stroke Risk"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "59-year-old",
+      "extracted": "59 years",
+      "note_id": "pmc-4967640-1",
+      "row_number": 52,
+      "calculator": "CHA2DS2-VASc Score for Atrial Fibrillation Stroke Risk"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "78-year-old",
+      "extracted": "78 years",
+      "note_id": "pmc-3286501-2",
+      "row_number": 53,
+      "calculator": "CHA2DS2-VASc Score for Atrial Fibrillation Stroke Risk"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "64-year-old",
+      "extracted": "64 years",
+      "note_id": "pmc-7437123-4",
+      "row_number": 54,
+      "calculator": "CHA2DS2-VASc Score for Atrial Fibrillation Stroke Risk"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "57-year-old",
+      "extracted": "57 years",
+      "note_id": "pmc-6533936-1",
+      "row_number": 55,
+      "calculator": "CHA2DS2-VASc Score for Atrial Fibrillation Stroke Risk"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "62-year-old",
+      "extracted": "62 years",
+      "note_id": "pmc-4157480-1",
+      "row_number": 56,
+      "calculator": "CHA2DS2-VASc Score for Atrial Fibrillation Stroke Risk"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "73-year-old",
+      "extracted": "73 years",
+      "note_id": "pmc-8515802-1",
+      "row_number": 57,
+      "calculator": "CHA2DS2-VASc Score for Atrial Fibrillation Stroke Risk"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "76-year-old",
+      "extracted": "76 years",
+      "note_id": "pmc-7229273-1",
+      "row_number": 58,
+      "calculator": "CHA2DS2-VASc Score for Atrial Fibrillation Stroke Risk"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "42-year-old",
+      "extracted": "42 years",
+      "note_id": "pmc-6296059-1",
+      "row_number": 59,
+      "calculator": "CHA2DS2-VASc Score for Atrial Fibrillation Stroke Risk"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "83-year-old",
+      "extracted": "83 years",
+      "note_id": "pmc-4464016-1",
+      "row_number": 60,
+      "calculator": "CHA2DS2-VASc Score for Atrial Fibrillation Stroke Risk"
+    },
+    {
+      "quantity": "weight",
+      "outcome": "verified",
+      "detail": null,
+      "text": "weight 10.2 kg",
+      "extracted": "10.2 kg",
+      "note_id": "pmc-5016880-1",
+      "row_number": 81,
+      "calculator": "Body Mass Index (BMI)"
+    },
+    {
+      "quantity": "height",
+      "outcome": "value_present_unlabelled",
+      "detail": "83.8 appears in the note, but not attached to height by any construction we recognise",
+      "text": null,
+      "extracted": "83.8 cm",
+      "note_id": "pmc-5016880-1",
+      "row_number": 81,
+      "calculator": "Body Mass Index (BMI)"
+    },
+    {
+      "quantity": "weight",
+      "outcome": "verified",
+      "detail": null,
+      "text": "weight was measured to be 46.5 kg",
+      "extracted": "46.5 kg",
+      "note_id": "pmc-8131347-1",
+      "row_number": 82,
+      "calculator": "Body Mass Index (BMI)"
+    },
+    {
+      "quantity": "height",
+      "outcome": "verified",
+      "detail": null,
+      "text": "height was measured to be 139.8 cm",
+      "extracted": "139.8 cm",
+      "note_id": "pmc-8131347-1",
+      "row_number": 82,
+      "calculator": "Body Mass Index (BMI)"
+    },
+    {
+      "quantity": "weight",
+      "outcome": "verified",
+      "detail": null,
+      "text": "weight 81 kg",
+      "extracted": "81 kg",
+      "note_id": "pmc-6598109-2",
+      "row_number": 83,
+      "calculator": "Body Mass Index (BMI)"
+    },
+    {
+      "quantity": "height",
+      "outcome": "verified",
+      "detail": null,
+      "text": "height was 170 cm",
+      "extracted": "170 cm",
+      "note_id": "pmc-6598109-2",
+      "row_number": 83,
+      "calculator": "Body Mass Index (BMI)"
+    },
+    {
+      "quantity": "weight",
+      "outcome": "verified",
+      "detail": null,
+      "text": "weighed 63 kg",
+      "extracted": "63 kg",
+      "note_id": "pmc-3030060-1",
+      "row_number": 84,
+      "calculator": "Body Mass Index (BMI)"
+    },
+    {
+      "quantity": "height",
+      "outcome": "value_present_unlabelled",
+      "detail": "168 appears in the note, but not attached to height by any construction we recognise",
+      "text": null,
+      "extracted": "168 cm",
+      "note_id": "pmc-3030060-1",
+      "row_number": 84,
+      "calculator": "Body Mass Index (BMI)"
+    },
+    {
+      "quantity": "weight",
+      "outcome": "verified",
+      "detail": null,
+      "text": "weight: 66 kg",
+      "extracted": "66 kg",
+      "note_id": "pmc-5835299-1",
+      "row_number": 85,
+      "calculator": "Body Mass Index (BMI)"
+    },
+    {
+      "quantity": "height",
+      "outcome": "verified",
+      "detail": null,
+      "text": "height: 166 cm",
+      "extracted": "166 cm",
+      "note_id": "pmc-5835299-1",
+      "row_number": 85,
+      "calculator": "Body Mass Index (BMI)"
+    },
+    {
+      "quantity": "weight",
+      "outcome": "verified",
+      "detail": null,
+      "text": "body weight was 8.1 kg",
+      "extracted": "8.1 kg",
+      "note_id": "pmc-2693609-1",
+      "row_number": 86,
+      "calculator": "Body Mass Index (BMI)"
+    },
+    {
+      "quantity": "height",
+      "outcome": "value_present_unlabelled",
+      "detail": "66 appears in the note, but not attached to height by any construction we recognise",
+      "text": null,
+      "extracted": "66 cm",
+      "note_id": "pmc-2693609-1",
+      "row_number": 86,
+      "calculator": "Body Mass Index (BMI)"
+    },
+    {
+      "quantity": "weight",
+      "outcome": "verified",
+      "detail": null,
+      "text": "weight 60.2 kg",
+      "extracted": "60.2 kg",
+      "note_id": "pmc-7475287-1",
+      "row_number": 87,
+      "calculator": "Body Mass Index (BMI)"
+    },
+    {
+      "quantity": "height",
+      "outcome": "verified",
+      "detail": null,
+      "text": "height 165.0 cm",
+      "extracted": "165 cm",
+      "note_id": "pmc-7475287-1",
+      "row_number": 87,
+      "calculator": "Body Mass Index (BMI)"
+    },
+    {
+      "quantity": "weight",
+      "outcome": "verified",
+      "detail": null,
+      "text": "weight: 48.9 kg",
+      "extracted": "48.9 kg",
+      "note_id": "pmc-7292160-1",
+      "row_number": 88,
+      "calculator": "Body Mass Index (BMI)"
+    },
+    {
+      "quantity": "height",
+      "outcome": "unsupported_unit",
+      "detail": "unit 'm' has no locator",
+      "text": null,
+      "note_id": "pmc-7292160-1",
+      "row_number": 88,
+      "calculator": "Body Mass Index (BMI)"
+    },
+    {
+      "quantity": "weight",
+      "outcome": "verified",
+      "detail": null,
+      "text": "weight of 42 kg",
+      "extracted": "42 kg",
+      "note_id": "pmc-5371580-1",
+      "row_number": 89,
+      "calculator": "Body Mass Index (BMI)"
+    },
+    {
+      "quantity": "height",
+      "outcome": "verified",
+      "detail": null,
+      "text": "height of 145 cm",
+      "extracted": "145 cm",
+      "note_id": "pmc-5371580-1",
+      "row_number": 89,
+      "calculator": "Body Mass Index (BMI)"
+    },
+    {
+      "quantity": "weight",
+      "outcome": "value_present_unlabelled",
+      "detail": "66 appears in the note, but not attached to weight by any construction we recognise",
+      "text": null,
+      "extracted": "66 kg",
+      "note_id": "pmc-5411553-3",
+      "row_number": 90,
+      "calculator": "Body Mass Index (BMI)"
+    },
+    {
+      "quantity": "height",
+      "outcome": "value_present_unlabelled",
+      "detail": "165 appears in the note, but not attached to height by any construction we recognise",
+      "text": null,
+      "extracted": "165 cm",
+      "note_id": "pmc-5411553-3",
+      "row_number": 90,
+      "calculator": "Body Mass Index (BMI)"
+    },
+    {
+      "quantity": "weight",
+      "outcome": "verified",
+      "detail": null,
+      "text": "weighed 42 kg",
+      "extracted": "42 kg",
+      "note_id": "pmc-6966935-1",
+      "row_number": 91,
+      "calculator": "Body Mass Index (BMI)"
+    },
+    {
+      "quantity": "height",
+      "outcome": "value_present_unlabelled",
+      "detail": "137 appears in the note, but not attached to height by any construction we recognise",
+      "text": null,
+      "extracted": "137 cm",
+      "note_id": "pmc-6966935-1",
+      "row_number": 91,
+      "calculator": "Body Mass Index (BMI)"
+    },
+    {
+      "quantity": "weight",
+      "outcome": "verified",
+      "detail": null,
+      "text": "weighing 68 kg",
+      "extracted": "68 kg",
+      "note_id": "pmc-5576131-1",
+      "row_number": 92,
+      "calculator": "Body Mass Index (BMI)"
+    },
+    {
+      "quantity": "height",
+      "outcome": "verified",
+      "detail": null,
+      "text": "160 cm tall",
+      "extracted": "160 cm",
+      "note_id": "pmc-5576131-1",
+      "row_number": 92,
+      "calculator": "Body Mass Index (BMI)"
+    },
+    {
+      "quantity": "weight",
+      "outcome": "verified",
+      "detail": null,
+      "text": "weight of 105 kg",
+      "extracted": "105 kg",
+      "note_id": "pmc-5783153-1",
+      "row_number": 93,
+      "calculator": "Body Mass Index (BMI)"
+    },
+    {
+      "quantity": "height",
+      "outcome": "verified",
+      "detail": null,
+      "text": "height of 183 cm",
+      "extracted": "183 cm",
+      "note_id": "pmc-5783153-1",
+      "row_number": 93,
+      "calculator": "Body Mass Index (BMI)"
+    },
+    {
+      "quantity": "weight",
+      "outcome": "verified",
+      "detail": null,
+      "text": "weight was 50 kg",
+      "extracted": "50 kg",
+      "note_id": "pmc-5073164-3",
+      "row_number": 94,
+      "calculator": "Body Mass Index (BMI)"
+    },
+    {
+      "quantity": "height",
+      "outcome": "verified",
+      "detail": null,
+      "text": "height was 143 cm",
+      "extracted": "143 cm",
+      "note_id": "pmc-5073164-3",
+      "row_number": 94,
+      "calculator": "Body Mass Index (BMI)"
+    },
+    {
+      "quantity": "weight",
+      "outcome": "verified",
+      "detail": null,
+      "text": "weight of 63 kg",
+      "extracted": "63 kg",
+      "note_id": "pmc-5244004-1",
+      "row_number": 95,
+      "calculator": "Body Mass Index (BMI)"
+    },
+    {
+      "quantity": "height",
+      "outcome": "verified",
+      "detail": null,
+      "text": "height of 161 cm",
+      "extracted": "161 cm",
+      "note_id": "pmc-5244004-1",
+      "row_number": 95,
+      "calculator": "Body Mass Index (BMI)"
+    },
+    {
+      "quantity": "weight",
+      "outcome": "verified",
+      "detail": null,
+      "text": "weight was 38 kg",
+      "extracted": "38 kg",
+      "note_id": "pmc-2729973-1",
+      "row_number": 96,
+      "calculator": "Body Mass Index (BMI)"
+    },
+    {
+      "quantity": "height",
+      "outcome": "verified",
+      "detail": null,
+      "text": "height was 139 cm",
+      "extracted": "139 cm",
+      "note_id": "pmc-2729973-1",
+      "row_number": 96,
+      "calculator": "Body Mass Index (BMI)"
+    },
+    {
+      "quantity": "weight",
+      "outcome": "verified",
+      "detail": null,
+      "text": "weight of 44 kg",
+      "extracted": "44 kg",
+      "note_id": "pmc-7021465-1",
+      "row_number": 97,
+      "calculator": "Body Mass Index (BMI)"
+    },
+    {
+      "quantity": "height",
+      "outcome": "verified",
+      "detail": null,
+      "text": "height of 156 cm",
+      "extracted": "156 cm",
+      "note_id": "pmc-7021465-1",
+      "row_number": 97,
+      "calculator": "Body Mass Index (BMI)"
+    },
+    {
+      "quantity": "weight",
+      "outcome": "verified",
+      "detail": null,
+      "text": "body weight of 39 kg",
+      "extracted": "39 kg",
+      "note_id": "pmc-7808674-1",
+      "row_number": 98,
+      "calculator": "Body Mass Index (BMI)"
+    },
+    {
+      "quantity": "height",
+      "outcome": "verified",
+      "detail": null,
+      "text": "height of 172 cm",
+      "extracted": "172 cm",
+      "note_id": "pmc-7808674-1",
+      "row_number": 98,
+      "calculator": "Body Mass Index (BMI)"
+    },
+    {
+      "quantity": "weight",
+      "outcome": "value_present_unlabelled",
+      "detail": "60 appears in the note, but not attached to weight by any construction we recognise",
+      "text": null,
+      "extracted": "60 kg",
+      "note_id": "pmc-2239218-1",
+      "row_number": 99,
+      "calculator": "Body Mass Index (BMI)"
+    },
+    {
+      "quantity": "height",
+      "outcome": "value_present_unlabelled",
+      "detail": "180 appears in the note, but not attached to height by any construction we recognise",
+      "text": null,
+      "extracted": "180 cm",
+      "note_id": "pmc-2239218-1",
+      "row_number": 99,
+      "calculator": "Body Mass Index (BMI)"
+    },
+    {
+      "quantity": "weight",
+      "outcome": "verified",
+      "detail": null,
+      "text": "weight was 15 kg",
+      "extracted": "15 kg",
+      "note_id": "pmc-5687981-1",
+      "row_number": 100,
+      "calculator": "Body Mass Index (BMI)"
+    },
+    {
+      "quantity": "height",
+      "outcome": "verified",
+      "detail": null,
+      "text": "height was 98 cm",
+      "extracted": "98 cm",
+      "note_id": "pmc-5687981-1",
+      "row_number": 100,
+      "calculator": "Body Mass Index (BMI)"
+    },
+    {
+      "quantity": "creatinine",
+      "outcome": "verified",
+      "detail": null,
+      "text": "serum creatinine at 1.87 mg/dL",
+      "extracted": "1.87 mg/dL",
+      "note_id": "pmc-5141308-1",
+      "row_number": 140,
+      "calculator": "MDRD GFR Equation"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "51-year-old",
+      "extracted": "51 years",
+      "note_id": "pmc-5141308-1",
+      "row_number": 140,
+      "calculator": "MDRD GFR Equation"
+    },
+    {
+      "quantity": "creatinine",
+      "outcome": "verified_no_unit",
+      "detail": "value attached to the label, but the note states no unit, so the unit is unconfirmed",
+      "text": "serum creatinine was found to be raised (1.9",
+      "extracted": "1.9 mg/dL",
+      "note_id": "pmc-3764696-1",
+      "row_number": 141,
+      "calculator": "MDRD GFR Equation"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "60-year-old",
+      "extracted": "60 years",
+      "note_id": "pmc-3764696-1",
+      "row_number": 141,
+      "calculator": "MDRD GFR Equation"
+    },
+    {
+      "quantity": "creatinine",
+      "outcome": "verified",
+      "detail": null,
+      "text": "serum creatinine of 14.6 mg/dL",
+      "extracted": "14.6 mg/dL",
+      "note_id": "pmc-4065736-1",
+      "row_number": 142,
+      "calculator": "MDRD GFR Equation"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "27-year-old",
+      "extracted": "27 years",
+      "note_id": "pmc-4065736-1",
+      "row_number": 142,
+      "calculator": "MDRD GFR Equation"
+    },
+    {
+      "quantity": "creatinine",
+      "outcome": "verified",
+      "detail": null,
+      "text": "serum creatinine decreasing to 1.6 mg/dL",
+      "extracted": "1.6 mg/dL",
+      "note_id": "pmc-4393486-1",
+      "row_number": 143,
+      "calculator": "MDRD GFR Equation"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "66-year-old",
+      "extracted": "66 years",
+      "note_id": "pmc-4393486-1",
+      "row_number": 143,
+      "calculator": "MDRD GFR Equation"
+    },
+    {
+      "quantity": "creatinine",
+      "outcome": "verified",
+      "detail": null,
+      "text": "creatinine 1.14 mg/dl",
+      "extracted": "1.14 mg/dL",
+      "note_id": "pmc-6485150-1",
+      "row_number": 144,
+      "calculator": "MDRD GFR Equation"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "94-year old",
+      "extracted": "94 years",
+      "note_id": "pmc-6485150-1",
+      "row_number": 144,
+      "calculator": "MDRD GFR Equation"
+    },
+    {
+      "quantity": "creatinine",
+      "outcome": "verified",
+      "detail": null,
+      "text": "creatinine level, 6.6 mg/dL",
+      "extracted": "6.6 mg/dL",
+      "note_id": "pmc-4381148-1",
+      "row_number": 145,
+      "calculator": "MDRD GFR Equation"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "65-year-old",
+      "extracted": "65 years",
+      "note_id": "pmc-4381148-1",
+      "row_number": 145,
+      "calculator": "MDRD GFR Equation"
+    },
+    {
+      "quantity": "creatinine",
+      "outcome": "value_present_unlabelled",
+      "detail": "1.7 appears in the note, but not attached to creatinine by any construction we recognise",
+      "text": null,
+      "extracted": "1.7 mg/dL",
+      "note_id": "pmc-4494093-1",
+      "row_number": 146,
+      "calculator": "MDRD GFR Equation"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "67-year-old",
+      "extracted": "67 years",
+      "note_id": "pmc-4494093-1",
+      "row_number": 146,
+      "calculator": "MDRD GFR Equation"
+    },
+    {
+      "quantity": "creatinine",
+      "outcome": "verified_no_unit",
+      "detail": "value attached to the label, but the note states no unit, so the unit is unconfirmed",
+      "text": "creatinine 10",
+      "extracted": "10 mg/dL",
+      "note_id": "pmc-1847820-1",
+      "row_number": 147,
+      "calculator": "MDRD GFR Equation"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "40-year-old",
+      "extracted": "40 years",
+      "note_id": "pmc-1847820-1",
+      "row_number": 147,
+      "calculator": "MDRD GFR Equation"
+    },
+    {
+      "quantity": "creatinine",
+      "outcome": "verified",
+      "detail": null,
+      "text": "serum creatinine of 12.9 mg/dL",
+      "extracted": "12.9 mg/dL",
+      "note_id": "pmc-5451771-1",
+      "row_number": 148,
+      "calculator": "MDRD GFR Equation"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "22-year-old",
+      "extracted": "22 years",
+      "note_id": "pmc-5451771-1",
+      "row_number": 148,
+      "calculator": "MDRD GFR Equation"
+    },
+    {
+      "quantity": "creatinine",
+      "outcome": "value_present_unlabelled",
+      "detail": "16.4 appears in the note, but not attached to creatinine by any construction we recognise",
+      "text": null,
+      "extracted": "16.4 mg/dL",
+      "note_id": "pmc-6454930-1",
+      "row_number": 149,
+      "calculator": "MDRD GFR Equation"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "66-year-old",
+      "extracted": "66 years",
+      "note_id": "pmc-6454930-1",
+      "row_number": 149,
+      "calculator": "MDRD GFR Equation"
+    },
+    {
+      "quantity": "creatinine",
+      "outcome": "verified",
+      "detail": null,
+      "text": "creatinine 0.83 mg/dL",
+      "extracted": "0.83 mg/dL",
+      "note_id": "pmc-8425126-1",
+      "row_number": 150,
+      "calculator": "MDRD GFR Equation"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "62-year-old",
+      "extracted": "62 years",
+      "note_id": "pmc-8425126-1",
+      "row_number": 150,
+      "calculator": "MDRD GFR Equation"
+    },
+    {
+      "quantity": "creatinine",
+      "outcome": "verified",
+      "detail": null,
+      "text": "creatinine level was elevated at 1.22 mg/dL",
+      "extracted": "1.22 mg/dL",
+      "note_id": "pmc-6122666-1",
+      "row_number": 151,
+      "calculator": "MDRD GFR Equation"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "49-year-old",
+      "extracted": "49 years",
+      "note_id": "pmc-6122666-1",
+      "row_number": 151,
+      "calculator": "MDRD GFR Equation"
+    },
+    {
+      "quantity": "creatinine",
+      "outcome": "value_present_unlabelled",
+      "detail": "12.35 appears in the note, but not attached to creatinine by any construction we recognise",
+      "text": null,
+      "extracted": "12.35 mg/dL",
+      "note_id": "pmc-6009022-1",
+      "row_number": 152,
+      "calculator": "MDRD GFR Equation"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "26-year-old",
+      "extracted": "26 years",
+      "note_id": "pmc-6009022-1",
+      "row_number": 152,
+      "calculator": "MDRD GFR Equation"
+    },
+    {
+      "quantity": "creatinine",
+      "outcome": "ambiguous",
+      "detail": "2 values for this label in one bracket; extraction chose",
+      "text": "Serum creatininemia further improved (115 \u03bcmol/L January 24, 2014, and 106 \u03bcmol/L on January 22, 2015)",
+      "extracted": "106 \u00b5mol/L",
+      "note_id": "pmc-4756134-1",
+      "row_number": 153,
+      "calculator": "MDRD GFR Equation"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "43-year-old",
+      "extracted": "43 years",
+      "note_id": "pmc-4756134-1",
+      "row_number": 153,
+      "calculator": "MDRD GFR Equation"
+    },
+    {
+      "quantity": "creatinine",
+      "outcome": "verified",
+      "detail": null,
+      "text": "serum creatinine (SCr), 7.2 mg/dl",
+      "extracted": "7.2 mg/dL",
+      "note_id": "pmc-3841498-1",
+      "row_number": 154,
+      "calculator": "MDRD GFR Equation"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "17-year-old",
+      "extracted": "17 years",
+      "note_id": "pmc-3841498-1",
+      "row_number": 154,
+      "calculator": "MDRD GFR Equation"
+    },
+    {
+      "quantity": "creatinine",
+      "outcome": "verified",
+      "detail": null,
+      "text": "serum creatinine concentration of 2.4 mg/dL",
+      "extracted": "2.4 mg/dL",
+      "note_id": "usmle-3514",
+      "row_number": 155,
+      "calculator": "MDRD GFR Equation"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "48-year-old",
+      "extracted": "48 years",
+      "note_id": "usmle-3514",
+      "row_number": 155,
+      "calculator": "MDRD GFR Equation"
+    },
+    {
+      "quantity": "creatinine",
+      "outcome": "verified",
+      "detail": null,
+      "text": "creatinine of 7.7 mg/dL",
+      "extracted": "7.7 mg/dL",
+      "note_id": "pmc-5971350-1",
+      "row_number": 156,
+      "calculator": "MDRD GFR Equation"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "63-year-old",
+      "extracted": "63 years",
+      "note_id": "pmc-5971350-1",
+      "row_number": 156,
+      "calculator": "MDRD GFR Equation"
+    },
+    {
+      "quantity": "creatinine",
+      "outcome": "verified",
+      "detail": null,
+      "text": "Creatinine 3.1 mg/dL",
+      "extracted": "3.1 mg/dL",
+      "note_id": "usmle-3704",
+      "row_number": 157,
+      "calculator": "MDRD GFR Equation"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "55-year-old",
+      "extracted": "55 years",
+      "note_id": "usmle-3704",
+      "row_number": 157,
+      "calculator": "MDRD GFR Equation"
+    },
+    {
+      "quantity": "creatinine",
+      "outcome": "verified",
+      "detail": null,
+      "text": "serum creatinine of 5 mg/dL",
+      "extracted": "5 mg/dL",
+      "note_id": "pmc-8022897-1",
+      "row_number": 158,
+      "calculator": "MDRD GFR Equation"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "66-year-old",
+      "extracted": "66 years",
+      "note_id": "pmc-8022897-1",
+      "row_number": 158,
+      "calculator": "MDRD GFR Equation"
+    },
+    {
+      "quantity": "creatinine",
+      "outcome": "verified",
+      "detail": null,
+      "text": "creatinine 8mg/dL",
+      "extracted": "8 mg/dL",
+      "note_id": "pmc-4227449-1",
+      "row_number": 159,
+      "calculator": "MDRD GFR Equation"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "73-year-old",
+      "extracted": "73 years",
+      "note_id": "pmc-4227449-1",
+      "row_number": 159,
+      "calculator": "MDRD GFR Equation"
+    },
+    {
+      "quantity": "height",
+      "outcome": "verified",
+      "detail": null,
+      "text": "height was 158 cm",
+      "extracted": "158 cm",
+      "note_id": "pmc-7364813-1",
+      "row_number": 160,
+      "calculator": "Ideal Body Weight"
+    },
+    {
+      "quantity": "height",
+      "outcome": "value_present_unlabelled",
+      "detail": "177 appears in the note, but not attached to height by any construction we recognise",
+      "text": null,
+      "extracted": "177 cm",
+      "note_id": "pmc-3623538-1",
+      "row_number": 161,
+      "calculator": "Ideal Body Weight"
+    },
+    {
+      "quantity": "height",
+      "outcome": "value_present_unlabelled",
+      "detail": "171 appears in the note, but not attached to height by any construction we recognise",
+      "text": null,
+      "extracted": "171 cm",
+      "note_id": "pmc-3780833-1",
+      "row_number": 162,
+      "calculator": "Ideal Body Weight"
+    },
+    {
+      "quantity": "height",
+      "outcome": "verified",
+      "detail": null,
+      "text": "161 cm tall",
+      "extracted": "161 cm",
+      "note_id": "pmc-5548950-1",
+      "row_number": 163,
+      "calculator": "Ideal Body Weight"
+    },
+    {
+      "quantity": "height",
+      "outcome": "verified",
+      "detail": null,
+      "text": "height 164 cm",
+      "extracted": "164 cm",
+      "note_id": "pmc-2876933-1",
+      "row_number": 164,
+      "calculator": "Ideal Body Weight"
+    },
+    {
+      "quantity": "height",
+      "outcome": "unsupported_unit",
+      "detail": "unit 'm' has no locator",
+      "text": null,
+      "note_id": "pmc-4236960-1",
+      "row_number": 165,
+      "calculator": "Ideal Body Weight"
+    },
+    {
+      "quantity": "height",
+      "outcome": "verified",
+      "detail": null,
+      "text": "155 cm (5 ft 2 in) tall",
+      "extracted": "155 cm",
+      "note_id": "usmle-8635",
+      "row_number": 166,
+      "calculator": "Ideal Body Weight"
+    },
+    {
+      "quantity": "height",
+      "outcome": "verified",
+      "detail": null,
+      "text": "Height was 186 cm",
+      "extracted": "186 cm",
+      "note_id": "pmc-4805055-1",
+      "row_number": 167,
+      "calculator": "Ideal Body Weight"
+    },
+    {
+      "quantity": "height",
+      "outcome": "unsupported_unit",
+      "detail": "unit 'm' has no locator",
+      "text": null,
+      "note_id": "pmc-5482957-1",
+      "row_number": 168,
+      "calculator": "Ideal Body Weight"
+    },
+    {
+      "quantity": "height",
+      "outcome": "verified",
+      "detail": null,
+      "text": "height was 162.0 cm",
+      "extracted": "162 cm",
+      "note_id": "pmc-8045308-1",
+      "row_number": 169,
+      "calculator": "Ideal Body Weight"
+    },
+    {
+      "quantity": "height",
+      "outcome": "verified",
+      "detail": null,
+      "text": "height, 165 cm",
+      "extracted": "165 cm",
+      "note_id": "pmc-8716215-1",
+      "row_number": 170,
+      "calculator": "Ideal Body Weight"
+    },
+    {
+      "quantity": "height",
+      "outcome": "verified",
+      "detail": null,
+      "text": "height 157.5 cm",
+      "extracted": "157.5 cm",
+      "note_id": "pmc-3675438-1",
+      "row_number": 171,
+      "calculator": "Ideal Body Weight"
+    },
+    {
+      "quantity": "height",
+      "outcome": "unsupported_unit",
+      "detail": "unit 'm' has no locator",
+      "text": null,
+      "note_id": "pmc-7297919-1",
+      "row_number": 172,
+      "calculator": "Ideal Body Weight"
+    },
+    {
+      "quantity": "height",
+      "outcome": "value_present_unlabelled",
+      "detail": "178 appears in the note, but not attached to height by any construction we recognise",
+      "text": null,
+      "extracted": "178 cm",
+      "note_id": "pmc-6314998-1",
+      "row_number": 173,
+      "calculator": "Ideal Body Weight"
+    },
+    {
+      "quantity": "height",
+      "outcome": "verified",
+      "detail": null,
+      "text": "159 cm tall",
+      "extracted": "159 cm",
+      "note_id": "pmc-5035782-1",
+      "row_number": 174,
+      "calculator": "Ideal Body Weight"
+    },
+    {
+      "quantity": "height",
+      "outcome": "verified",
+      "detail": null,
+      "text": "height 158 cm",
+      "extracted": "158 cm",
+      "note_id": "pmc-8204462-1",
+      "row_number": 175,
+      "calculator": "Ideal Body Weight"
+    },
+    {
+      "quantity": "height",
+      "outcome": "verified",
+      "detail": null,
+      "text": "height: 165 cm",
+      "extracted": "165 cm",
+      "note_id": "pmc-7433059-1",
+      "row_number": 176,
+      "calculator": "Ideal Body Weight"
+    },
+    {
+      "quantity": "height",
+      "outcome": "verified",
+      "detail": null,
+      "text": "height was 156 cm",
+      "extracted": "156 cm",
+      "note_id": "pmc-2978397-1",
+      "row_number": 177,
+      "calculator": "Ideal Body Weight"
+    },
+    {
+      "quantity": "height",
+      "outcome": "unsupported_unit",
+      "detail": "unit 'm' has no locator",
+      "text": null,
+      "note_id": "pmc-3643850-1",
+      "row_number": 178,
+      "calculator": "Ideal Body Weight"
+    },
+    {
+      "quantity": "height",
+      "outcome": "verified",
+      "detail": null,
+      "text": "height: 160 cm",
+      "extracted": "160 cm",
+      "note_id": "pmc-8130080-1",
+      "row_number": 179,
+      "calculator": "Ideal Body Weight"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "52-year-old",
+      "extracted": "52 years",
+      "note_id": "pmc-3466862-1",
+      "row_number": 260,
+      "calculator": "HEART Score for Major Cardiac Events"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "47-year-old",
+      "extracted": "47 years",
+      "note_id": "pmc-8509094-1",
+      "row_number": 261,
+      "calculator": "HEART Score for Major Cardiac Events"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "64-year-old",
+      "extracted": "64 years",
+      "note_id": "pmc-4132257-1",
+      "row_number": 262,
+      "calculator": "HEART Score for Major Cardiac Events"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "44-year-old",
+      "extracted": "44 years",
+      "note_id": "pmc-8643279-1",
+      "row_number": 263,
+      "calculator": "HEART Score for Major Cardiac Events"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "53-year-old",
+      "extracted": "53 years",
+      "note_id": "pmc-7752799-1",
+      "row_number": 264,
+      "calculator": "HEART Score for Major Cardiac Events"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "77-year-old",
+      "extracted": "77 years",
+      "note_id": "pmc-6276522-1",
+      "row_number": 265,
+      "calculator": "HEART Score for Major Cardiac Events"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "45-year-old",
+      "extracted": "45 years",
+      "note_id": "pmc-5741599-1",
+      "row_number": 266,
+      "calculator": "HEART Score for Major Cardiac Events"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "46-year-old",
+      "extracted": "46 years",
+      "note_id": "pmc-8161714-1",
+      "row_number": 267,
+      "calculator": "HEART Score for Major Cardiac Events"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "66-year-old",
+      "extracted": "66 years",
+      "note_id": "pmc-8053007-1",
+      "row_number": 268,
+      "calculator": "HEART Score for Major Cardiac Events"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "25-year-old",
+      "extracted": "25 years",
+      "note_id": "pmc-4754474-1",
+      "row_number": 269,
+      "calculator": "HEART Score for Major Cardiac Events"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "63-year-old",
+      "extracted": "63 years",
+      "note_id": "pmc-4244065-1",
+      "row_number": 270,
+      "calculator": "HEART Score for Major Cardiac Events"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "39-year-old",
+      "extracted": "39 years",
+      "note_id": "pmc-7305571-1",
+      "row_number": 271,
+      "calculator": "HEART Score for Major Cardiac Events"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "29-year-old",
+      "extracted": "29 years",
+      "note_id": "usmle-9492",
+      "row_number": 272,
+      "calculator": "HEART Score for Major Cardiac Events"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "53-year-old",
+      "extracted": "53 years",
+      "note_id": "pmc-7290110-1",
+      "row_number": 273,
+      "calculator": "HEART Score for Major Cardiac Events"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "24 years old",
+      "extracted": "24 years",
+      "note_id": "pmc-7780869-1",
+      "row_number": 274,
+      "calculator": "HEART Score for Major Cardiac Events"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "74-year-old",
+      "extracted": "74 years",
+      "note_id": "pmc-4793133-1",
+      "row_number": 275,
+      "calculator": "HEART Score for Major Cardiac Events"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "27-year-old",
+      "extracted": "27 years",
+      "note_id": "pmc-5014934-1",
+      "row_number": 276,
+      "calculator": "HEART Score for Major Cardiac Events"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "60 year old",
+      "extracted": "60 years",
+      "note_id": "pmc-2783103-1",
+      "row_number": 277,
+      "calculator": "HEART Score for Major Cardiac Events"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "35-year-old",
+      "extracted": "35 years",
+      "note_id": "pmc-4980942-1",
+      "row_number": 278,
+      "calculator": "HEART Score for Major Cardiac Events"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "60-year-old",
+      "extracted": "60 years",
+      "note_id": "usmle-353",
+      "row_number": 279,
+      "calculator": "HEART Score for Major Cardiac Events"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "47-year-old",
+      "extracted": "47 years",
+      "note_id": "pmc-6925761-1",
+      "row_number": 280,
+      "calculator": "Fibrosis-4 (FIB-4) Index for Liver Fibrosis"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "36-year-old",
+      "extracted": "36 years",
+      "note_id": "pmc-7524929-1",
+      "row_number": 281,
+      "calculator": "Fibrosis-4 (FIB-4) Index for Liver Fibrosis"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "51-year-old",
+      "extracted": "51 years",
+      "note_id": "usmle-325",
+      "row_number": 282,
+      "calculator": "Fibrosis-4 (FIB-4) Index for Liver Fibrosis"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "49-year-old",
+      "extracted": "49 years",
+      "note_id": "pmc-3970270-1",
+      "row_number": 283,
+      "calculator": "Fibrosis-4 (FIB-4) Index for Liver Fibrosis"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "62-year-old",
+      "extracted": "62 years",
+      "note_id": "pmc-4721898-2",
+      "row_number": 284,
+      "calculator": "Fibrosis-4 (FIB-4) Index for Liver Fibrosis"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "45-year-old",
+      "extracted": "45 years",
+      "note_id": "usmle-9883",
+      "row_number": 285,
+      "calculator": "Fibrosis-4 (FIB-4) Index for Liver Fibrosis"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "55-year-old",
+      "extracted": "55 years",
+      "note_id": "pmc-6095933-1",
+      "row_number": 286,
+      "calculator": "Fibrosis-4 (FIB-4) Index for Liver Fibrosis"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "81-year-old",
+      "extracted": "81 years",
+      "note_id": "pmc-7184854-1",
+      "row_number": 287,
+      "calculator": "Fibrosis-4 (FIB-4) Index for Liver Fibrosis"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "50-year-old",
+      "extracted": "50 years",
+      "note_id": "pmc-4423457-1",
+      "row_number": 288,
+      "calculator": "Fibrosis-4 (FIB-4) Index for Liver Fibrosis"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "60-year-old",
+      "extracted": "60 years",
+      "note_id": "pmc-5066381-2",
+      "row_number": 289,
+      "calculator": "Fibrosis-4 (FIB-4) Index for Liver Fibrosis"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "51-year-old",
+      "extracted": "51 years",
+      "note_id": "pmc-8383533-4",
+      "row_number": 290,
+      "calculator": "Fibrosis-4 (FIB-4) Index for Liver Fibrosis"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified_no_unit",
+      "detail": "value attached to the label, but the note states no unit, so the unit is unconfirmed",
+      "text": "age 2",
+      "extracted": "2 years",
+      "note_id": "pmc-5569276-1",
+      "row_number": 291,
+      "calculator": "Fibrosis-4 (FIB-4) Index for Liver Fibrosis"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "73-year-old",
+      "extracted": "73 years",
+      "note_id": "pmc-3326999-1",
+      "row_number": 292,
+      "calculator": "Fibrosis-4 (FIB-4) Index for Liver Fibrosis"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "64-year-old",
+      "extracted": "64 years",
+      "note_id": "pmc-3236148-1",
+      "row_number": 293,
+      "calculator": "Fibrosis-4 (FIB-4) Index for Liver Fibrosis"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "39-year-old",
+      "extracted": "39 years",
+      "note_id": "pmc-8383518-1",
+      "row_number": 294,
+      "calculator": "Fibrosis-4 (FIB-4) Index for Liver Fibrosis"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "59-year-old",
+      "extracted": "59 years",
+      "note_id": "pmc-4943902-1",
+      "row_number": 295,
+      "calculator": "Fibrosis-4 (FIB-4) Index for Liver Fibrosis"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "66-year-old",
+      "extracted": "66 years",
+      "note_id": "pmc-5842090-1",
+      "row_number": 296,
+      "calculator": "Fibrosis-4 (FIB-4) Index for Liver Fibrosis"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "48-year-old",
+      "extracted": "48 years",
+      "note_id": "pmc-8309678-1",
+      "row_number": 297,
+      "calculator": "Fibrosis-4 (FIB-4) Index for Liver Fibrosis"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "64-year-old",
+      "extracted": "64 years",
+      "note_id": "pmc-4426646-1",
+      "row_number": 298,
+      "calculator": "Fibrosis-4 (FIB-4) Index for Liver Fibrosis"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "52-year-old",
+      "extracted": "52 years",
+      "note_id": "pmc-8063940-1",
+      "row_number": 299,
+      "calculator": "Fibrosis-4 (FIB-4) Index for Liver Fibrosis"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "15-year-old",
+      "extracted": "15 years",
+      "note_id": "usmle-12605",
+      "row_number": 300,
+      "calculator": "Centor Score (Modified/McIsaac) for Strep Pharyngitis"
+    },
+    {
+      "quantity": "age",
+      "outcome": "unsupported_unit",
+      "detail": "unit 'months' has no locator",
+      "text": null,
+      "note_id": "pmc-7205374-1",
+      "row_number": 301,
+      "calculator": "Centor Score (Modified/McIsaac) for Strep Pharyngitis"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "4-year-old",
+      "extracted": "4 years",
+      "note_id": "usmle-414",
+      "row_number": 302,
+      "calculator": "Centor Score (Modified/McIsaac) for Strep Pharyngitis"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "29-year-old",
+      "extracted": "29 years",
+      "note_id": "pmc-8169128-1",
+      "row_number": 303,
+      "calculator": "Centor Score (Modified/McIsaac) for Strep Pharyngitis"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "14-year-old",
+      "extracted": "14 years",
+      "note_id": "usmle-12316",
+      "row_number": 304,
+      "calculator": "Centor Score (Modified/McIsaac) for Strep Pharyngitis"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "32-year-old",
+      "extracted": "32 years",
+      "note_id": "usmle-8066",
+      "row_number": 305,
+      "calculator": "Centor Score (Modified/McIsaac) for Strep Pharyngitis"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "68-year-old",
+      "extracted": "68 years",
+      "note_id": "pmc-7362490-1",
+      "row_number": 306,
+      "calculator": "Centor Score (Modified/McIsaac) for Strep Pharyngitis"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "19-year-old",
+      "extracted": "19 years",
+      "note_id": "usmle-6356",
+      "row_number": 307,
+      "calculator": "Centor Score (Modified/McIsaac) for Strep Pharyngitis"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "14-year-old",
+      "extracted": "14 years",
+      "note_id": "usmle-4026",
+      "row_number": 308,
+      "calculator": "Centor Score (Modified/McIsaac) for Strep Pharyngitis"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "32-year-old",
+      "extracted": "32 years",
+      "note_id": "pmc-4327960-1",
+      "row_number": 309,
+      "calculator": "Centor Score (Modified/McIsaac) for Strep Pharyngitis"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "16-year-old",
+      "extracted": "16 years",
+      "note_id": "pmc-5931247-2",
+      "row_number": 310,
+      "calculator": "Centor Score (Modified/McIsaac) for Strep Pharyngitis"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "17-year-old",
+      "extracted": "17 years",
+      "note_id": "usmle-6179",
+      "row_number": 311,
+      "calculator": "Centor Score (Modified/McIsaac) for Strep Pharyngitis"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "59-year-old",
+      "extracted": "59 years",
+      "note_id": "pmc-4307710-1",
+      "row_number": 312,
+      "calculator": "Centor Score (Modified/McIsaac) for Strep Pharyngitis"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "64-year-old",
+      "extracted": "64 years",
+      "note_id": "usmle-9610",
+      "row_number": 313,
+      "calculator": "Centor Score (Modified/McIsaac) for Strep Pharyngitis"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "8-year-old",
+      "extracted": "8 years",
+      "note_id": "usmle-4768",
+      "row_number": 314,
+      "calculator": "Centor Score (Modified/McIsaac) for Strep Pharyngitis"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "16-year-old",
+      "extracted": "16 years",
+      "note_id": "usmle-4327",
+      "row_number": 315,
+      "calculator": "Centor Score (Modified/McIsaac) for Strep Pharyngitis"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "6-year-old",
+      "extracted": "6 years",
+      "note_id": "usmle-8175",
+      "row_number": 316,
+      "calculator": "Centor Score (Modified/McIsaac) for Strep Pharyngitis"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "66-year-old",
+      "extracted": "66 years",
+      "note_id": "pmc-5745701-1",
+      "row_number": 317,
+      "calculator": "Centor Score (Modified/McIsaac) for Strep Pharyngitis"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "7-year-old",
+      "extracted": "7 years",
+      "note_id": "usmle-262",
+      "row_number": 318,
+      "calculator": "Centor Score (Modified/McIsaac) for Strep Pharyngitis"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "57-year-old",
+      "extracted": "57 years",
+      "note_id": "pmc-8240916-1",
+      "row_number": 319,
+      "calculator": "Centor Score (Modified/McIsaac) for Strep Pharyngitis"
+    },
+    {
+      "quantity": "weight",
+      "outcome": "verified",
+      "detail": null,
+      "text": "weighed 17 kg",
+      "extracted": "17 kg",
+      "note_id": "pmc-6330555-1",
+      "row_number": 320,
+      "calculator": "Maintenance Fluids Calculations"
+    },
+    {
+      "quantity": "weight",
+      "outcome": "verified",
+      "detail": null,
+      "text": "weight was 7.9 kg",
+      "extracted": "7.9 kg",
+      "note_id": "pmc-7661936-1",
+      "row_number": 321,
+      "calculator": "Maintenance Fluids Calculations"
+    },
+    {
+      "quantity": "weight",
+      "outcome": "value_present_unlabelled",
+      "detail": "2.3 appears in the note, but not attached to weight by any construction we recognise",
+      "text": null,
+      "extracted": "2.3 kg",
+      "note_id": "usmle-8221",
+      "row_number": 322,
+      "calculator": "Maintenance Fluids Calculations"
+    },
+    {
+      "quantity": "weight",
+      "outcome": "verified",
+      "detail": null,
+      "text": "weight gain was 20 kg",
+      "extracted": "20 kg",
+      "note_id": "pmc-7769218-1",
+      "row_number": 323,
+      "calculator": "Maintenance Fluids Calculations"
+    },
+    {
+      "quantity": "weight",
+      "outcome": "unsupported_unit",
+      "detail": "unit 'g' has no locator",
+      "text": null,
+      "note_id": "pmc-3713679-1",
+      "row_number": 324,
+      "calculator": "Maintenance Fluids Calculations"
+    },
+    {
+      "quantity": "weight",
+      "outcome": "verified",
+      "detail": null,
+      "text": "weight 43 kg",
+      "extracted": "43 kg",
+      "note_id": "pmc-3659367-1",
+      "row_number": 325,
+      "calculator": "Maintenance Fluids Calculations"
+    },
+    {
+      "quantity": "weight",
+      "outcome": "verified",
+      "detail": null,
+      "text": "weight 53.1 kg",
+      "extracted": "53.1 kg",
+      "note_id": "pmc-6967275-1",
+      "row_number": 326,
+      "calculator": "Maintenance Fluids Calculations"
+    },
+    {
+      "quantity": "weight",
+      "outcome": "verified",
+      "detail": null,
+      "text": "weighed 84 kg",
+      "extracted": "84 kg",
+      "note_id": "pmc-4897797-1",
+      "row_number": 327,
+      "calculator": "Maintenance Fluids Calculations"
+    },
+    {
+      "quantity": "weight",
+      "outcome": "value_present_unlabelled",
+      "detail": "1.1 appears in the note, but not attached to weight by any construction we recognise",
+      "text": null,
+      "extracted": "1.1 kg",
+      "note_id": "pmc-6378717-1",
+      "row_number": 328,
+      "calculator": "Maintenance Fluids Calculations"
+    },
+    {
+      "quantity": "weight",
+      "outcome": "verified",
+      "detail": null,
+      "text": "weighed 91 kg",
+      "extracted": "91 kg",
+      "note_id": "pmc-5548950-1",
+      "row_number": 329,
+      "calculator": "Maintenance Fluids Calculations"
+    },
+    {
+      "quantity": "weight",
+      "outcome": "verified",
+      "detail": null,
+      "text": "4 kg in weight",
+      "extracted": "4 kg",
+      "note_id": "pmc-4184697-1",
+      "row_number": 330,
+      "calculator": "Maintenance Fluids Calculations"
+    },
+    {
+      "quantity": "weight",
+      "outcome": "verified",
+      "detail": null,
+      "text": "54 kg in weight",
+      "extracted": "54 kg",
+      "note_id": "pmc-3640174-1",
+      "row_number": 331,
+      "calculator": "Maintenance Fluids Calculations"
+    },
+    {
+      "quantity": "weight",
+      "outcome": "value_missing_entirely",
+      "detail": "the number 7 does not appear anywhere in the note",
+      "text": null,
+      "extracted": "7 kg",
+      "note_id": "pmc-3893835-1",
+      "row_number": 332,
+      "calculator": "Maintenance Fluids Calculations"
+    },
+    {
+      "quantity": "weight",
+      "outcome": "verified",
+      "detail": null,
+      "text": "weight was 60 kg",
+      "extracted": "60 kg",
+      "note_id": "pmc-4208265-1",
+      "row_number": 333,
+      "calculator": "Maintenance Fluids Calculations"
+    },
+    {
+      "quantity": "weight",
+      "outcome": "verified",
+      "detail": null,
+      "text": "weight was 38.1 kg",
+      "extracted": "38.1 kg",
+      "note_id": "pmc-5970484-1",
+      "row_number": 334,
+      "calculator": "Maintenance Fluids Calculations"
+    },
+    {
+      "quantity": "weight",
+      "outcome": "verified",
+      "detail": null,
+      "text": "weight 52.2 kg",
+      "extracted": "52.2 kg",
+      "note_id": "pmc-4610930-1",
+      "row_number": 335,
+      "calculator": "Maintenance Fluids Calculations"
+    },
+    {
+      "quantity": "weight",
+      "outcome": "verified",
+      "detail": null,
+      "text": "weighs 45 kg",
+      "extracted": "45 kg",
+      "note_id": "pmc-3206412-1",
+      "row_number": 336,
+      "calculator": "Maintenance Fluids Calculations"
+    },
+    {
+      "quantity": "weight",
+      "outcome": "unsupported_unit",
+      "detail": "unit 'lbs' has no locator",
+      "text": null,
+      "note_id": "pmc-6497486-1",
+      "row_number": 337,
+      "calculator": "Maintenance Fluids Calculations"
+    },
+    {
+      "quantity": "weight",
+      "outcome": "verified",
+      "detail": null,
+      "text": "weight 39.5 kg",
+      "extracted": "39.5 kg",
+      "note_id": "pmc-7461646-1",
+      "row_number": 338,
+      "calculator": "Maintenance Fluids Calculations"
+    },
+    {
+      "quantity": "weight",
+      "outcome": "value_present_unlabelled",
+      "detail": "63 appears in the note, but not attached to weight by any construction we recognise",
+      "text": null,
+      "extracted": "63 kg",
+      "note_id": "pmc-6632496-1",
+      "row_number": 339,
+      "calculator": "Maintenance Fluids Calculations"
+    },
+    {
+      "quantity": "creatinine",
+      "outcome": "verified",
+      "detail": null,
+      "text": "creatinine 2.0 mg/dL",
+      "extracted": "2 mg/dL",
+      "note_id": "pmc-4528787-1",
+      "row_number": 340,
+      "calculator": "MELD Na (UNOS/OPTN)"
+    },
+    {
+      "quantity": "creatinine",
+      "outcome": "verified",
+      "detail": null,
+      "text": "creatinine was 1 mg/dL",
+      "extracted": "1 mg/dL",
+      "note_id": "pmc-3094288-1",
+      "row_number": 341,
+      "calculator": "MELD Na (UNOS/OPTN)"
+    },
+    {
+      "quantity": "creatinine",
+      "outcome": "verified",
+      "detail": null,
+      "text": "creatinine 4.90mg/dL",
+      "extracted": "4.9 mg/dL",
+      "note_id": "pmc-3741440-1",
+      "row_number": 342,
+      "calculator": "MELD Na (UNOS/OPTN)"
+    },
+    {
+      "quantity": "creatinine",
+      "outcome": "verified",
+      "detail": null,
+      "text": "creatinine 3.16 mg/dL",
+      "extracted": "3.16 mg/dL",
+      "note_id": "pmc-3701851-1",
+      "row_number": 343,
+      "calculator": "MELD Na (UNOS/OPTN)"
+    },
+    {
+      "quantity": "creatinine",
+      "outcome": "verified",
+      "detail": null,
+      "text": "Creatinine was 10.48 mg/dL",
+      "extracted": "10.48 mg/dL",
+      "note_id": "pmc-4528898-1",
+      "row_number": 344,
+      "calculator": "MELD Na (UNOS/OPTN)"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "22-year-old",
+      "extracted": "22 years",
+      "note_id": "2",
+      "row_number": 345,
+      "calculator": "HAS-BLED Score for Major Bleeding Risk"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "72-year-old",
+      "extracted": "72 years",
+      "note_id": "3",
+      "row_number": 346,
+      "calculator": "HAS-BLED Score for Major Bleeding Risk"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "57-year-old",
+      "extracted": "57 years",
+      "note_id": "4",
+      "row_number": 347,
+      "calculator": "HAS-BLED Score for Major Bleeding Risk"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "33-year-old",
+      "extracted": "33 years",
+      "note_id": "5",
+      "row_number": 348,
+      "calculator": "HAS-BLED Score for Major Bleeding Risk"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "75-year-old",
+      "extracted": "75 years",
+      "note_id": "6",
+      "row_number": 349,
+      "calculator": "HAS-BLED Score for Major Bleeding Risk"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "58-year-old",
+      "extracted": "58 years",
+      "note_id": "7",
+      "row_number": 350,
+      "calculator": "HAS-BLED Score for Major Bleeding Risk"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "67-year-old",
+      "extracted": "67 years",
+      "note_id": "8",
+      "row_number": 351,
+      "calculator": "HAS-BLED Score for Major Bleeding Risk"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "82-year-old",
+      "extracted": "82 years",
+      "note_id": "9",
+      "row_number": 352,
+      "calculator": "HAS-BLED Score for Major Bleeding Risk"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "72-year-old",
+      "extracted": "72 years",
+      "note_id": "10",
+      "row_number": 353,
+      "calculator": "HAS-BLED Score for Major Bleeding Risk"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "65-year-old",
+      "extracted": "65 years",
+      "note_id": "11",
+      "row_number": 354,
+      "calculator": "HAS-BLED Score for Major Bleeding Risk"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "78-year-old",
+      "extracted": "78 years",
+      "note_id": "12",
+      "row_number": 355,
+      "calculator": "HAS-BLED Score for Major Bleeding Risk"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "85-year-old",
+      "extracted": "85 years",
+      "note_id": "13",
+      "row_number": 356,
+      "calculator": "HAS-BLED Score for Major Bleeding Risk"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "62-year-old",
+      "extracted": "62 years",
+      "note_id": "14",
+      "row_number": 357,
+      "calculator": "HAS-BLED Score for Major Bleeding Risk"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "70-year-old",
+      "extracted": "70 years",
+      "note_id": "15",
+      "row_number": 358,
+      "calculator": "HAS-BLED Score for Major Bleeding Risk"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "52-year-old",
+      "extracted": "52 years",
+      "note_id": "16",
+      "row_number": 359,
+      "calculator": "HAS-BLED Score for Major Bleeding Risk"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "59-year-old",
+      "extracted": "59 years",
+      "note_id": "17",
+      "row_number": 360,
+      "calculator": "HAS-BLED Score for Major Bleeding Risk"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "61-year-old",
+      "extracted": "61 years",
+      "note_id": "18",
+      "row_number": 361,
+      "calculator": "HAS-BLED Score for Major Bleeding Risk"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "65-year-old",
+      "extracted": "65 years",
+      "note_id": "19",
+      "row_number": 362,
+      "calculator": "HAS-BLED Score for Major Bleeding Risk"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "70-year-old",
+      "extracted": "70 years",
+      "note_id": "20",
+      "row_number": 363,
+      "calculator": "HAS-BLED Score for Major Bleeding Risk"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "80-year-old",
+      "extracted": "80 years",
+      "note_id": "21",
+      "row_number": 364,
+      "calculator": "HAS-BLED Score for Major Bleeding Risk"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "60-year-old",
+      "extracted": "60 years",
+      "note_id": "2",
+      "row_number": 427,
+      "calculator": "Charlson Comorbidity Index (CCI)"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "75-year-old",
+      "extracted": "75 years",
+      "note_id": "3",
+      "row_number": 428,
+      "calculator": "Charlson Comorbidity Index (CCI)"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "58-year-old",
+      "extracted": "58 years",
+      "note_id": "4",
+      "row_number": 429,
+      "calculator": "Charlson Comorbidity Index (CCI)"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "55 years old",
+      "extracted": "55 years",
+      "note_id": "5",
+      "row_number": 430,
+      "calculator": "Charlson Comorbidity Index (CCI)"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "72-year-old",
+      "extracted": "72 years",
+      "note_id": "6",
+      "row_number": 431,
+      "calculator": "Charlson Comorbidity Index (CCI)"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "72-year-old",
+      "extracted": "72 years",
+      "note_id": "7",
+      "row_number": 432,
+      "calculator": "Charlson Comorbidity Index (CCI)"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "68-year-old",
+      "extracted": "68 years",
+      "note_id": "8",
+      "row_number": 433,
+      "calculator": "Charlson Comorbidity Index (CCI)"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "80-year-old",
+      "extracted": "80 years",
+      "note_id": "9",
+      "row_number": 434,
+      "calculator": "Charlson Comorbidity Index (CCI)"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "55-year-old",
+      "extracted": "55 years",
+      "note_id": "10",
+      "row_number": 435,
+      "calculator": "Charlson Comorbidity Index (CCI)"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "60-year-old",
+      "extracted": "60 years",
+      "note_id": "11",
+      "row_number": 436,
+      "calculator": "Charlson Comorbidity Index (CCI)"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "65-year-old",
+      "extracted": "65 years",
+      "note_id": "12",
+      "row_number": 437,
+      "calculator": "Charlson Comorbidity Index (CCI)"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "75-year-old",
+      "extracted": "75 years",
+      "note_id": "13",
+      "row_number": 438,
+      "calculator": "Charlson Comorbidity Index (CCI)"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "85-year-old",
+      "extracted": "85 years",
+      "note_id": "14",
+      "row_number": 439,
+      "calculator": "Charlson Comorbidity Index (CCI)"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "78-year-old",
+      "extracted": "78 years",
+      "note_id": "15",
+      "row_number": 440,
+      "calculator": "Charlson Comorbidity Index (CCI)"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "70-year-old",
+      "extracted": "70 years",
+      "note_id": "16",
+      "row_number": 441,
+      "calculator": "Charlson Comorbidity Index (CCI)"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "88-year-old",
+      "extracted": "88 years",
+      "note_id": "17",
+      "row_number": 442,
+      "calculator": "Charlson Comorbidity Index (CCI)"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "90-year-old",
+      "extracted": "90 years",
+      "note_id": "18",
+      "row_number": 443,
+      "calculator": "Charlson Comorbidity Index (CCI)"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "82-year-old",
+      "extracted": "82 years",
+      "note_id": "19",
+      "row_number": 444,
+      "calculator": "Charlson Comorbidity Index (CCI)"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "79-year-old",
+      "extracted": "79 years",
+      "note_id": "20",
+      "row_number": 445,
+      "calculator": "Charlson Comorbidity Index (CCI)"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "76-year-old",
+      "extracted": "76 years",
+      "note_id": "21",
+      "row_number": 446,
+      "calculator": "Charlson Comorbidity Index (CCI)"
+    },
+    {
+      "quantity": "weight",
+      "outcome": "unsupported_unit",
+      "detail": "unit 'lbs' has no locator",
+      "text": null,
+      "note_id": "pmc-8531789-1",
+      "row_number": 467,
+      "calculator": "Free Water Deficit"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "23-year-old",
+      "extracted": "23 years",
+      "note_id": "pmc-8531789-1",
+      "row_number": 467,
+      "calculator": "Free Water Deficit"
+    },
+    {
+      "quantity": "weight",
+      "outcome": "verified",
+      "detail": null,
+      "text": "body weight was 30 kg",
+      "extracted": "30 kg",
+      "note_id": "pmc-3221905-1",
+      "row_number": 468,
+      "calculator": "Free Water Deficit"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "35-year-old",
+      "extracted": "35 years",
+      "note_id": "pmc-3221905-1",
+      "row_number": 468,
+      "calculator": "Free Water Deficit"
+    },
+    {
+      "quantity": "weight",
+      "outcome": "verified",
+      "detail": null,
+      "text": "weight was 43.4 kg",
+      "extracted": "43.4 kg",
+      "note_id": "pmc-4805216-1",
+      "row_number": 469,
+      "calculator": "Free Water Deficit"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "14-year-old",
+      "extracted": "14 years",
+      "note_id": "pmc-4805216-1",
+      "row_number": 469,
+      "calculator": "Free Water Deficit"
+    },
+    {
+      "quantity": "weight",
+      "outcome": "verified",
+      "detail": null,
+      "text": "weight 41.8 kg",
+      "extracted": "41.8 kg",
+      "note_id": "pmc-8627704-1",
+      "row_number": 470,
+      "calculator": "Free Water Deficit"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "86-year-old",
+      "extracted": "86 years",
+      "note_id": "pmc-8627704-1",
+      "row_number": 470,
+      "calculator": "Free Water Deficit"
+    },
+    {
+      "quantity": "weight",
+      "outcome": "verified",
+      "detail": null,
+      "text": "weight, 89 kg",
+      "extracted": "89 kg",
+      "note_id": "pmc-8059042-1",
+      "row_number": 471,
+      "calculator": "Free Water Deficit"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "53-year-old",
+      "extracted": "53 years",
+      "note_id": "pmc-8059042-1",
+      "row_number": 471,
+      "calculator": "Free Water Deficit"
+    },
+    {
+      "quantity": "weight",
+      "outcome": "verified",
+      "detail": null,
+      "text": "weight approximately 50 kg",
+      "extracted": "50 kg",
+      "note_id": "pmc-7859974-2",
+      "row_number": 472,
+      "calculator": "Free Water Deficit"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "46-year-old",
+      "extracted": "46 years",
+      "note_id": "pmc-7859974-2",
+      "row_number": 472,
+      "calculator": "Free Water Deficit"
+    },
+    {
+      "quantity": "weight",
+      "outcome": "verified",
+      "detail": null,
+      "text": "body weight loss (2 kg",
+      "extracted": "2 kg",
+      "note_id": "pmc-5910524-1",
+      "row_number": 473,
+      "calculator": "Free Water Deficit"
+    },
+    {
+      "quantity": "age",
+      "outcome": "unsupported_unit",
+      "detail": "unit 'months' has no locator",
+      "text": null,
+      "note_id": "pmc-5910524-1",
+      "row_number": 473,
+      "calculator": "Free Water Deficit"
+    },
+    {
+      "quantity": "weight",
+      "outcome": "verified",
+      "detail": null,
+      "text": "weight: 16 kg",
+      "extracted": "16 kg",
+      "note_id": "pmc-3614763-1",
+      "row_number": 474,
+      "calculator": "Free Water Deficit"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "7-year-old",
+      "extracted": "7 years",
+      "note_id": "pmc-3614763-1",
+      "row_number": 474,
+      "calculator": "Free Water Deficit"
+    },
+    {
+      "quantity": "weight",
+      "outcome": "verified",
+      "detail": null,
+      "text": "weighing 37 kg",
+      "extracted": "37 kg",
+      "note_id": "pmc-4940536-1",
+      "row_number": 475,
+      "calculator": "Free Water Deficit"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "25-year-old",
+      "extracted": "25 years",
+      "note_id": "pmc-4940536-1",
+      "row_number": 475,
+      "calculator": "Free Water Deficit"
+    },
+    {
+      "quantity": "weight",
+      "outcome": "verified",
+      "detail": null,
+      "text": "weight was 40 kg",
+      "extracted": "40 kg",
+      "note_id": "pmc-6444668-1",
+      "row_number": 476,
+      "calculator": "Free Water Deficit"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "10-year-old",
+      "extracted": "10 years",
+      "note_id": "pmc-6444668-1",
+      "row_number": 476,
+      "calculator": "Free Water Deficit"
+    },
+    {
+      "quantity": "weight",
+      "outcome": "verified",
+      "detail": null,
+      "text": "body weight (weight 53 kg",
+      "extracted": "53 kg",
+      "note_id": "pmc-2848063-1",
+      "row_number": 477,
+      "calculator": "Free Water Deficit"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "24-year-old",
+      "extracted": "24 years",
+      "note_id": "pmc-2848063-1",
+      "row_number": 477,
+      "calculator": "Free Water Deficit"
+    },
+    {
+      "quantity": "weight",
+      "outcome": "verified",
+      "detail": null,
+      "text": "weight was 120 kg",
+      "extracted": "120 kg",
+      "note_id": "pmc-2633322-1",
+      "row_number": 478,
+      "calculator": "Free Water Deficit"
+    },
+    {
+      "quantity": "age",
+      "outcome": "value_missing_entirely",
+      "detail": "the number 50 does not appear anywhere in the note",
+      "text": null,
+      "extracted": "50 years",
+      "note_id": "pmc-2633322-1",
+      "row_number": 478,
+      "calculator": "Free Water Deficit"
+    },
+    {
+      "quantity": "weight",
+      "outcome": "verified_ordinal",
+      "detail": "'respectively' construction, position confirmed",
+      "text": "Weight and height upon admission were recorded to be 90 kg and 189 cm, respectively",
+      "extracted": "90 kg",
+      "note_id": "pmc-6537418-1",
+      "row_number": 479,
+      "calculator": "Free Water Deficit"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "21-year-old",
+      "extracted": "21 years",
+      "note_id": "pmc-6537418-1",
+      "row_number": 479,
+      "calculator": "Free Water Deficit"
+    },
+    {
+      "quantity": "weight",
+      "outcome": "verified",
+      "detail": null,
+      "text": "body weight: 73 kg",
+      "extracted": "73 kg",
+      "note_id": "pmc-3668109-2",
+      "row_number": 480,
+      "calculator": "Free Water Deficit"
+    },
+    {
+      "quantity": "age",
+      "outcome": "value_present_unlabelled",
+      "detail": "40 appears in the note, but not attached to age by any construction we recognise",
+      "text": null,
+      "extracted": "40 years",
+      "note_id": "pmc-3668109-2",
+      "row_number": 480,
+      "calculator": "Free Water Deficit"
+    },
+    {
+      "quantity": "weight",
+      "outcome": "verified",
+      "detail": null,
+      "text": "8 kg weight",
+      "extracted": "8 kg",
+      "note_id": "pmc-8315083-1",
+      "row_number": 481,
+      "calculator": "Free Water Deficit"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "51-year-old",
+      "extracted": "51 years",
+      "note_id": "pmc-8315083-1",
+      "row_number": 481,
+      "calculator": "Free Water Deficit"
+    },
+    {
+      "quantity": "weight",
+      "outcome": "unsupported_unit",
+      "detail": "unit 'lbs' has no locator",
+      "text": null,
+      "note_id": "usmle-5862",
+      "row_number": 482,
+      "calculator": "Free Water Deficit"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "52-year-old",
+      "extracted": "52 years",
+      "note_id": "usmle-5862",
+      "row_number": 482,
+      "calculator": "Free Water Deficit"
+    },
+    {
+      "quantity": "weight",
+      "outcome": "verified",
+      "detail": null,
+      "text": "body weight was 70.9 kg",
+      "extracted": "70.9 kg",
+      "note_id": "pmc-7405338-1",
+      "row_number": 483,
+      "calculator": "Free Water Deficit"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "44-year-old",
+      "extracted": "44 years",
+      "note_id": "pmc-7405338-1",
+      "row_number": 483,
+      "calculator": "Free Water Deficit"
+    },
+    {
+      "quantity": "weight",
+      "outcome": "verified",
+      "detail": null,
+      "text": "weighed 72 kg",
+      "extracted": "72 kg",
+      "note_id": "pmc-3147132-1",
+      "row_number": 484,
+      "calculator": "Free Water Deficit"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "28-year-old",
+      "extracted": "28 years",
+      "note_id": "pmc-3147132-1",
+      "row_number": 484,
+      "calculator": "Free Water Deficit"
+    },
+    {
+      "quantity": "weight",
+      "outcome": "verified",
+      "detail": null,
+      "text": "weight 45 kg",
+      "extracted": "45 kg",
+      "note_id": "pmc-3674643-1",
+      "row_number": 485,
+      "calculator": "Free Water Deficit"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "99-year-old",
+      "extracted": "99 years",
+      "note_id": "pmc-3674643-1",
+      "row_number": 485,
+      "calculator": "Free Water Deficit"
+    },
+    {
+      "quantity": "weight",
+      "outcome": "value_present_unlabelled",
+      "detail": "10 appears in the note, but not attached to weight by any construction we recognise",
+      "text": null,
+      "extracted": "10 kg",
+      "note_id": "usmle-1760",
+      "row_number": 486,
+      "calculator": "Free Water Deficit"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "50-year-old",
+      "extracted": "50 years",
+      "note_id": "usmle-1760",
+      "row_number": 486,
+      "calculator": "Free Water Deficit"
+    },
+    {
+      "quantity": "creatinine",
+      "outcome": "verified",
+      "detail": null,
+      "text": "serum creatinine 0.6 mg/dL",
+      "extracted": "0.6 mg/dL",
+      "note_id": "pmc-8088595-1",
+      "row_number": 507,
+      "calculator": "Fractional Excretion of Sodium (FENa)"
+    },
+    {
+      "quantity": "creatinine",
+      "outcome": "verified",
+      "detail": null,
+      "text": "creatinine 0.5 mg/dL",
+      "extracted": "0.5 mg/dL",
+      "note_id": "pmc-3950227-1",
+      "row_number": 508,
+      "calculator": "Fractional Excretion of Sodium (FENa)"
+    },
+    {
+      "quantity": "creatinine",
+      "outcome": "verified",
+      "detail": null,
+      "text": "creatinine was 1.57 mg/dL",
+      "extracted": "1.57 mg/dL",
+      "note_id": "pmc-7327389-1",
+      "row_number": 509,
+      "calculator": "Fractional Excretion of Sodium (FENa)"
+    },
+    {
+      "quantity": "creatinine",
+      "outcome": "verified_ordinal",
+      "detail": "paired X/Y construction, position confirmed",
+      "text": " blood urea nitrogen/creatinine were 21.9/1.98mg/dL",
+      "extracted": "1.98 mg/dL",
+      "note_id": "pmc-6051943-1",
+      "row_number": 510,
+      "calculator": "Fractional Excretion of Sodium (FENa)"
+    },
+    {
+      "quantity": "creatinine",
+      "outcome": "verified",
+      "detail": null,
+      "text": "creatinine 0.65 mg/dL",
+      "extracted": "0.65 mg/dL",
+      "note_id": "pmc-7920733-1",
+      "row_number": 511,
+      "calculator": "Fractional Excretion of Sodium (FENa)"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "57-year-old",
+      "extracted": "57 years",
+      "note_id": "usmle-5128",
+      "row_number": 532,
+      "calculator": "CURB-65 Score for Pneumonia Severity"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "76-year-old",
+      "extracted": "76 years",
+      "note_id": "pmc-3914016-1",
+      "row_number": 533,
+      "calculator": "CURB-65 Score for Pneumonia Severity"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "63-year-old",
+      "extracted": "63 years",
+      "note_id": "pmc-5519313-1",
+      "row_number": 534,
+      "calculator": "CURB-65 Score for Pneumonia Severity"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "78-year-old",
+      "extracted": "78 years",
+      "note_id": "pmc-7425612-1",
+      "row_number": 535,
+      "calculator": "CURB-65 Score for Pneumonia Severity"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "78-year-old",
+      "extracted": "78 years",
+      "note_id": "pmc-8104349-1",
+      "row_number": 536,
+      "calculator": "CURB-65 Score for Pneumonia Severity"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "70-year-old",
+      "extracted": "70 years",
+      "note_id": "pmc-7725203-1",
+      "row_number": 537,
+      "calculator": "CURB-65 Score for Pneumonia Severity"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "65-year-old",
+      "extracted": "65 years",
+      "note_id": "usmle-6047",
+      "row_number": 538,
+      "calculator": "CURB-65 Score for Pneumonia Severity"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "27-year-old",
+      "extracted": "27 years",
+      "note_id": "usmle-6150",
+      "row_number": 539,
+      "calculator": "CURB-65 Score for Pneumonia Severity"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "60-year-old",
+      "extracted": "60 years",
+      "note_id": "pmc-7294477-1",
+      "row_number": 540,
+      "calculator": "CURB-65 Score for Pneumonia Severity"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "37-year-old",
+      "extracted": "37 years",
+      "note_id": "pmc-7480889-1",
+      "row_number": 541,
+      "calculator": "CURB-65 Score for Pneumonia Severity"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "73-year-old",
+      "extracted": "73 years",
+      "note_id": "pmc-4070485-1",
+      "row_number": 542,
+      "calculator": "CURB-65 Score for Pneumonia Severity"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "32-year-old",
+      "extracted": "32 years",
+      "note_id": "pmc-7755652-1",
+      "row_number": 543,
+      "calculator": "CURB-65 Score for Pneumonia Severity"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "78-year-old",
+      "extracted": "78 years",
+      "note_id": "pmc-5754342-1",
+      "row_number": 544,
+      "calculator": "CURB-65 Score for Pneumonia Severity"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "44-year-old",
+      "extracted": "44 years",
+      "note_id": "pmc-5298528-1",
+      "row_number": 545,
+      "calculator": "CURB-65 Score for Pneumonia Severity"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "85-year-old",
+      "extracted": "85 years",
+      "note_id": "pmc-8025799-1",
+      "row_number": 546,
+      "calculator": "CURB-65 Score for Pneumonia Severity"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "61-year-old",
+      "extracted": "61 years",
+      "note_id": "pmc-3447652-1",
+      "row_number": 547,
+      "calculator": "CURB-65 Score for Pneumonia Severity"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "41-year-old",
+      "extracted": "41 years",
+      "note_id": "pmc-7282354-1",
+      "row_number": 548,
+      "calculator": "CURB-65 Score for Pneumonia Severity"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "68-year-old",
+      "extracted": "68 years",
+      "note_id": "usmle-8555",
+      "row_number": 549,
+      "calculator": "CURB-65 Score for Pneumonia Severity"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "62-year-old",
+      "extracted": "62 years",
+      "note_id": "usmle-187",
+      "row_number": 550,
+      "calculator": "CURB-65 Score for Pneumonia Severity"
+    },
+    {
+      "quantity": "age",
+      "outcome": "value_missing_entirely",
+      "detail": "the number 50 does not appear anywhere in the note",
+      "text": null,
+      "extracted": "50 years",
+      "note_id": "pmc-2988179-1",
+      "row_number": 551,
+      "calculator": "CURB-65 Score for Pneumonia Severity"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "54-year-old",
+      "extracted": "54 years",
+      "note_id": "pmc-7871576-1",
+      "row_number": 552,
+      "calculator": "Framingham Risk Score for Hard Coronary Heart Disease"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "49-year-old",
+      "extracted": "49 years",
+      "note_id": "pmc-8279282-1",
+      "row_number": 553,
+      "calculator": "Framingham Risk Score for Hard Coronary Heart Disease"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "47-year-old",
+      "extracted": "47 years",
+      "note_id": "pmc-8583680-1",
+      "row_number": 554,
+      "calculator": "Framingham Risk Score for Hard Coronary Heart Disease"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "39-year-old",
+      "extracted": "39 years",
+      "note_id": "pmc-3651988-1",
+      "row_number": 555,
+      "calculator": "Framingham Risk Score for Hard Coronary Heart Disease"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "67-year-old",
+      "extracted": "67 years",
+      "note_id": "pmc-3313753-1",
+      "row_number": 556,
+      "calculator": "Framingham Risk Score for Hard Coronary Heart Disease"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "73-year-old",
+      "extracted": "73 years",
+      "note_id": "pmc-7717085-1",
+      "row_number": 557,
+      "calculator": "Framingham Risk Score for Hard Coronary Heart Disease"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "67-year-old",
+      "extracted": "67 years",
+      "note_id": "usmle-1128",
+      "row_number": 558,
+      "calculator": "Framingham Risk Score for Hard Coronary Heart Disease"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "68-year-old",
+      "extracted": "68 years",
+      "note_id": "pmc-6118291-1",
+      "row_number": 559,
+      "calculator": "Framingham Risk Score for Hard Coronary Heart Disease"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "57-year-old",
+      "extracted": "57 years",
+      "note_id": "pmc-6530099-1",
+      "row_number": 560,
+      "calculator": "Framingham Risk Score for Hard Coronary Heart Disease"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "50-year-old",
+      "extracted": "50 years",
+      "note_id": "pmc-4429202-1",
+      "row_number": 561,
+      "calculator": "Framingham Risk Score for Hard Coronary Heart Disease"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "47-year-old",
+      "extracted": "47 years",
+      "note_id": "pmc-4114920-1",
+      "row_number": 562,
+      "calculator": "Framingham Risk Score for Hard Coronary Heart Disease"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "71-year-old",
+      "extracted": "71 years",
+      "note_id": "usmle-1989",
+      "row_number": 563,
+      "calculator": "Framingham Risk Score for Hard Coronary Heart Disease"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "56-year-old",
+      "extracted": "56 years",
+      "note_id": "pmc-7887157-1",
+      "row_number": 564,
+      "calculator": "Framingham Risk Score for Hard Coronary Heart Disease"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "65-year-old",
+      "extracted": "65 years",
+      "note_id": "pmc-4709961-1",
+      "row_number": 565,
+      "calculator": "Framingham Risk Score for Hard Coronary Heart Disease"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "51 year-old",
+      "extracted": "51 years",
+      "note_id": "pmc-2813536-1",
+      "row_number": 566,
+      "calculator": "Framingham Risk Score for Hard Coronary Heart Disease"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "35-year-old",
+      "extracted": "35 years",
+      "note_id": "pmc-2769292-1",
+      "row_number": 567,
+      "calculator": "Framingham Risk Score for Hard Coronary Heart Disease"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "61-year-old",
+      "extracted": "61 years",
+      "note_id": "pmc-7315174-1",
+      "row_number": 568,
+      "calculator": "PERC Rule for Pulmonary Embolism"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "33-year-old",
+      "extracted": "33 years",
+      "note_id": "pmc-7343298-3",
+      "row_number": 569,
+      "calculator": "PERC Rule for Pulmonary Embolism"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "35-year-old",
+      "extracted": "35 years",
+      "note_id": "pmc-8011470-1",
+      "row_number": 570,
+      "calculator": "PERC Rule for Pulmonary Embolism"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "23-year-old",
+      "extracted": "23 years",
+      "note_id": "usmle-5963",
+      "row_number": 571,
+      "calculator": "PERC Rule for Pulmonary Embolism"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "23-year-old",
+      "extracted": "23 years",
+      "note_id": "pmc-4614570-1",
+      "row_number": 572,
+      "calculator": "PERC Rule for Pulmonary Embolism"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "82-year-old",
+      "extracted": "82 years",
+      "note_id": "pmc-7306638-1",
+      "row_number": 573,
+      "calculator": "PERC Rule for Pulmonary Embolism"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "76-year-old",
+      "extracted": "76 years",
+      "note_id": "pmc-7012568-1",
+      "row_number": 574,
+      "calculator": "PERC Rule for Pulmonary Embolism"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "41-year-old",
+      "extracted": "41 years",
+      "note_id": "pmc-8088400-1",
+      "row_number": 575,
+      "calculator": "PERC Rule for Pulmonary Embolism"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "66-year-old",
+      "extracted": "66 years",
+      "note_id": "pmc-4280479-1",
+      "row_number": 576,
+      "calculator": "PERC Rule for Pulmonary Embolism"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "73-year-old",
+      "extracted": "73 years",
+      "note_id": "pmc-7890353-1",
+      "row_number": 577,
+      "calculator": "PERC Rule for Pulmonary Embolism"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "65-year-old",
+      "extracted": "65 years",
+      "note_id": "pmc-8223855-1",
+      "row_number": 578,
+      "calculator": "PERC Rule for Pulmonary Embolism"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "69-year-old",
+      "extracted": "69 years",
+      "note_id": "usmle-1611",
+      "row_number": 579,
+      "calculator": "PERC Rule for Pulmonary Embolism"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "54-year-old",
+      "extracted": "54 years",
+      "note_id": "pmc-7676805-1",
+      "row_number": 580,
+      "calculator": "PERC Rule for Pulmonary Embolism"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "78-year-old",
+      "extracted": "78 years",
+      "note_id": "pmc-6994785-1",
+      "row_number": 581,
+      "calculator": "PERC Rule for Pulmonary Embolism"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "59-year-old",
+      "extracted": "59 years",
+      "note_id": "pmc-8520941-1",
+      "row_number": 582,
+      "calculator": "PERC Rule for Pulmonary Embolism"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "77-year-old",
+      "extracted": "77 years",
+      "note_id": "pmc-7444888-1",
+      "row_number": 583,
+      "calculator": "PERC Rule for Pulmonary Embolism"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "18-year-old",
+      "extracted": "18 years",
+      "note_id": "pmc-6075479-1",
+      "row_number": 584,
+      "calculator": "PERC Rule for Pulmonary Embolism"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "57-year-old",
+      "extracted": "57 years",
+      "note_id": "pmc-3883470-1",
+      "row_number": 585,
+      "calculator": "PERC Rule for Pulmonary Embolism"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "42-year-old",
+      "extracted": "42 years",
+      "note_id": "pmc-5412761-1",
+      "row_number": 586,
+      "calculator": "PERC Rule for Pulmonary Embolism"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "46-year-old",
+      "extracted": "46 years",
+      "note_id": "usmle-4760",
+      "row_number": 587,
+      "calculator": "PERC Rule for Pulmonary Embolism"
+    },
+    {
+      "quantity": "weight",
+      "outcome": "verified",
+      "detail": null,
+      "text": "body weight was 77.1 kg",
+      "extracted": "77.1 kg",
+      "note_id": "pmc-7195762-1",
+      "row_number": 683,
+      "calculator": "Body Surface Area Calculator"
+    },
+    {
+      "quantity": "height",
+      "outcome": "verified",
+      "detail": null,
+      "text": "height was 176.1 cm",
+      "extracted": "176.1 cm",
+      "note_id": "pmc-7195762-1",
+      "row_number": 683,
+      "calculator": "Body Surface Area Calculator"
+    },
+    {
+      "quantity": "weight",
+      "outcome": "verified_ordinal",
+      "detail": "'respectively' construction, position confirmed",
+      "text": " Her height and weight were 153 cm and 53 kg, respectively",
+      "extracted": "53 kg",
+      "note_id": "pmc-4255049-1",
+      "row_number": 685,
+      "calculator": "Body Surface Area Calculator"
+    },
+    {
+      "quantity": "height",
+      "outcome": "verified",
+      "detail": null,
+      "text": "height and weight were 153 cm",
+      "extracted": "153 cm",
+      "note_id": "pmc-4255049-1",
+      "row_number": 685,
+      "calculator": "Body Surface Area Calculator"
+    },
+    {
+      "quantity": "weight",
+      "outcome": "verified",
+      "detail": null,
+      "text": "weight of 42 kg",
+      "extracted": "42 kg",
+      "note_id": "pmc-7418236-1",
+      "row_number": 688,
+      "calculator": "Body Surface Area Calculator"
+    },
+    {
+      "quantity": "height",
+      "outcome": "verified",
+      "detail": null,
+      "text": "height of 146 cm",
+      "extracted": "146 cm",
+      "note_id": "pmc-7418236-1",
+      "row_number": 688,
+      "calculator": "Body Surface Area Calculator"
+    },
+    {
+      "quantity": "weight",
+      "outcome": "verified",
+      "detail": null,
+      "text": "weight was 85 kg",
+      "extracted": "85 kg",
+      "note_id": "pmc-8051037-1",
+      "row_number": 689,
+      "calculator": "Body Surface Area Calculator"
+    },
+    {
+      "quantity": "height",
+      "outcome": "verified",
+      "detail": null,
+      "text": "height was 164 cm",
+      "extracted": "164 cm",
+      "note_id": "pmc-8051037-1",
+      "row_number": 689,
+      "calculator": "Body Surface Area Calculator"
+    },
+    {
+      "quantity": "weight",
+      "outcome": "verified",
+      "detail": null,
+      "text": "weight, 62 kg",
+      "extracted": "62 kg",
+      "note_id": "pmc-5608682-1",
+      "row_number": 691,
+      "calculator": "Body Surface Area Calculator"
+    },
+    {
+      "quantity": "height",
+      "outcome": "verified",
+      "detail": null,
+      "text": "height, 158 cm",
+      "extracted": "158 cm",
+      "note_id": "pmc-5608682-1",
+      "row_number": 691,
+      "calculator": "Body Surface Area Calculator"
+    },
+    {
+      "quantity": "weight",
+      "outcome": "value_present_unlabelled",
+      "detail": "52 appears in the note, but not attached to weight by any construction we recognise",
+      "text": null,
+      "extracted": "52 kg",
+      "note_id": "pmc-4227985-1",
+      "row_number": 693,
+      "calculator": "Body Surface Area Calculator"
+    },
+    {
+      "quantity": "height",
+      "outcome": "value_present_unlabelled",
+      "detail": "165 appears in the note, but not attached to height by any construction we recognise",
+      "text": null,
+      "extracted": "165 cm",
+      "note_id": "pmc-4227985-1",
+      "row_number": 693,
+      "calculator": "Body Surface Area Calculator"
+    },
+    {
+      "quantity": "weight",
+      "outcome": "verified_no_unit",
+      "detail": "value attached to the label, but the note states no unit, so the unit is unconfirmed",
+      "text": "weight 32",
+      "extracted": "32 kg",
+      "note_id": "pmc-6166568-1",
+      "row_number": 694,
+      "calculator": "Body Surface Area Calculator"
+    },
+    {
+      "quantity": "height",
+      "outcome": "verified",
+      "detail": null,
+      "text": "height 150 cm",
+      "extracted": "150 cm",
+      "note_id": "pmc-6166568-1",
+      "row_number": 694,
+      "calculator": "Body Surface Area Calculator"
+    },
+    {
+      "quantity": "weight",
+      "outcome": "verified",
+      "detail": null,
+      "text": "weight (37 kg",
+      "extracted": "37 kg",
+      "note_id": "pmc-6280227-1",
+      "row_number": 695,
+      "calculator": "Body Surface Area Calculator"
+    },
+    {
+      "quantity": "height",
+      "outcome": "verified",
+      "detail": null,
+      "text": "height (148 cm",
+      "extracted": "148 cm",
+      "note_id": "pmc-6280227-1",
+      "row_number": 695,
+      "calculator": "Body Surface Area Calculator"
+    },
+    {
+      "quantity": "weight",
+      "outcome": "verified",
+      "detail": null,
+      "text": "weight and height of 52 kg",
+      "extracted": "52 kg",
+      "note_id": "pmc-8138415-1",
+      "row_number": 696,
+      "calculator": "Body Surface Area Calculator"
+    },
+    {
+      "quantity": "height",
+      "outcome": "verified_ordinal",
+      "detail": "'respectively' construction, position confirmed",
+      "text": " with a history of BN and weight and height of 52 kg and 164 cm, respectively",
+      "extracted": "164 cm",
+      "note_id": "pmc-8138415-1",
+      "row_number": 696,
+      "calculator": "Body Surface Area Calculator"
+    },
+    {
+      "quantity": "weight",
+      "outcome": "verified",
+      "detail": null,
+      "text": "body weight was 60 kg",
+      "extracted": "60 kg",
+      "note_id": "pmc-8593422-1",
+      "row_number": 697,
+      "calculator": "Body Surface Area Calculator"
+    },
+    {
+      "quantity": "height",
+      "outcome": "verified",
+      "detail": null,
+      "text": "height was 157 cm",
+      "extracted": "157 cm",
+      "note_id": "pmc-8593422-1",
+      "row_number": 697,
+      "calculator": "Body Surface Area Calculator"
+    },
+    {
+      "quantity": "weight",
+      "outcome": "verified",
+      "detail": null,
+      "text": "weight was 60 kg",
+      "extracted": "60 kg",
+      "note_id": "pmc-4208265-1",
+      "row_number": 698,
+      "calculator": "Body Surface Area Calculator"
+    },
+    {
+      "quantity": "height",
+      "outcome": "verified",
+      "detail": null,
+      "text": "height was 168 cm",
+      "extracted": "168 cm",
+      "note_id": "pmc-4208265-1",
+      "row_number": 698,
+      "calculator": "Body Surface Area Calculator"
+    },
+    {
+      "quantity": "weight",
+      "outcome": "value_present_unlabelled",
+      "detail": "90 appears in the note, but not attached to weight by any construction we recognise",
+      "text": null,
+      "extracted": "90 kg",
+      "note_id": "pmc-8203434-1",
+      "row_number": 699,
+      "calculator": "Body Surface Area Calculator"
+    },
+    {
+      "quantity": "height",
+      "outcome": "value_present_unlabelled",
+      "detail": "187 appears in the note, but not attached to height by any construction we recognise",
+      "text": null,
+      "extracted": "187 cm",
+      "note_id": "pmc-8203434-1",
+      "row_number": 699,
+      "calculator": "Body Surface Area Calculator"
+    },
+    {
+      "quantity": "weight",
+      "outcome": "verified",
+      "detail": null,
+      "text": "weight 125 kg",
+      "extracted": "125 kg",
+      "note_id": "pmc-4377251-1",
+      "row_number": 700,
+      "calculator": "Body Surface Area Calculator"
+    },
+    {
+      "quantity": "height",
+      "outcome": "verified",
+      "detail": null,
+      "text": "height 171 cm",
+      "extracted": "171 cm",
+      "note_id": "pmc-4377251-1",
+      "row_number": 700,
+      "calculator": "Body Surface Area Calculator"
+    },
+    {
+      "quantity": "weight",
+      "outcome": "verified",
+      "detail": null,
+      "text": "weight 100 kg",
+      "extracted": "100 kg",
+      "note_id": "pmc-8524955-1",
+      "row_number": 701,
+      "calculator": "Body Surface Area Calculator"
+    },
+    {
+      "quantity": "height",
+      "outcome": "value_present_unlabelled",
+      "detail": "172 appears in the note, but not attached to height by any construction we recognise",
+      "text": null,
+      "extracted": "172 cm",
+      "note_id": "pmc-8524955-1",
+      "row_number": 701,
+      "calculator": "Body Surface Area Calculator"
+    },
+    {
+      "quantity": "weight",
+      "outcome": "value_present_unlabelled",
+      "detail": "70 appears in the note, but not attached to weight by any construction we recognise",
+      "text": null,
+      "extracted": "70 kg",
+      "note_id": "pmc-6585518-1",
+      "row_number": 702,
+      "calculator": "Body Surface Area Calculator"
+    },
+    {
+      "quantity": "height",
+      "outcome": "value_present_unlabelled",
+      "detail": "170 appears in the note, but not attached to height by any construction we recognise",
+      "text": null,
+      "extracted": "170 cm",
+      "note_id": "pmc-6585518-1",
+      "row_number": 702,
+      "calculator": "Body Surface Area Calculator"
+    },
+    {
+      "quantity": "weight",
+      "outcome": "verified",
+      "detail": null,
+      "text": "weighing 60 kg",
+      "extracted": "60 kg",
+      "note_id": "pmc-4173403-1",
+      "row_number": 703,
+      "calculator": "Body Surface Area Calculator"
+    },
+    {
+      "quantity": "height",
+      "outcome": "value_present_unlabelled",
+      "detail": "165 appears in the note, but not attached to height by any construction we recognise",
+      "text": null,
+      "extracted": "165 cm",
+      "note_id": "pmc-4173403-1",
+      "row_number": 703,
+      "calculator": "Body Surface Area Calculator"
+    },
+    {
+      "quantity": "weight",
+      "outcome": "verified",
+      "detail": null,
+      "text": "weight was 8.4 kg",
+      "extracted": "8.4 kg",
+      "note_id": "pmc-8072816-1",
+      "row_number": 704,
+      "calculator": "Body Surface Area Calculator"
+    },
+    {
+      "quantity": "height",
+      "outcome": "verified",
+      "detail": null,
+      "text": "height 74 cm",
+      "extracted": "74 cm",
+      "note_id": "pmc-8072816-1",
+      "row_number": 704,
+      "calculator": "Body Surface Area Calculator"
+    },
+    {
+      "quantity": "weight",
+      "outcome": "verified",
+      "detail": null,
+      "text": "weighs 79 kg",
+      "extracted": "79 kg",
+      "note_id": "usmle-8635",
+      "row_number": 705,
+      "calculator": "Body Surface Area Calculator"
+    },
+    {
+      "quantity": "height",
+      "outcome": "verified",
+      "detail": null,
+      "text": "155 cm (5 ft 2 in) tall",
+      "extracted": "155 cm",
+      "note_id": "usmle-8635",
+      "row_number": 705,
+      "calculator": "Body Surface Area Calculator"
+    },
+    {
+      "quantity": "weight",
+      "outcome": "verified",
+      "detail": null,
+      "text": "body weight was 10.6 kg",
+      "extracted": "10.6 kg",
+      "note_id": "pmc-5177711-1",
+      "row_number": 706,
+      "calculator": "Body Surface Area Calculator"
+    },
+    {
+      "quantity": "height",
+      "outcome": "verified",
+      "detail": null,
+      "text": "height was 77.2 cm",
+      "extracted": "77.2 cm",
+      "note_id": "pmc-5177711-1",
+      "row_number": 706,
+      "calculator": "Body Surface Area Calculator"
+    },
+    {
+      "quantity": "weight",
+      "outcome": "value_present_unlabelled",
+      "detail": "70 appears in the note, but not attached to weight by any construction we recognise",
+      "text": null,
+      "extracted": "70 kg",
+      "note_id": "pmc-6967019-2",
+      "row_number": 707,
+      "calculator": "Body Surface Area Calculator"
+    },
+    {
+      "quantity": "height",
+      "outcome": "value_present_unlabelled",
+      "detail": "170 appears in the note, but not attached to height by any construction we recognise",
+      "text": null,
+      "extracted": "170 cm",
+      "note_id": "pmc-6967019-2",
+      "row_number": 707,
+      "calculator": "Body Surface Area Calculator"
+    },
+    {
+      "quantity": "weight",
+      "outcome": "verified",
+      "detail": null,
+      "text": "weight 80 kg",
+      "extracted": "80 kg",
+      "note_id": "pmc-8342838-1",
+      "row_number": 708,
+      "calculator": "Adjusted Body Weight"
+    },
+    {
+      "quantity": "height",
+      "outcome": "verified",
+      "detail": null,
+      "text": "height 168 cm",
+      "extracted": "168 cm",
+      "note_id": "pmc-8342838-1",
+      "row_number": 708,
+      "calculator": "Adjusted Body Weight"
+    },
+    {
+      "quantity": "weight",
+      "outcome": "verified",
+      "detail": null,
+      "text": "weighed 59.0 kg",
+      "extracted": "59 kg",
+      "note_id": "pmc-5943133-1",
+      "row_number": 709,
+      "calculator": "Adjusted Body Weight"
+    },
+    {
+      "quantity": "height",
+      "outcome": "verified",
+      "detail": null,
+      "text": "168.0 cm tall",
+      "extracted": "168 cm",
+      "note_id": "pmc-5943133-1",
+      "row_number": 709,
+      "calculator": "Adjusted Body Weight"
+    },
+    {
+      "quantity": "weight",
+      "outcome": "verified",
+      "detail": null,
+      "text": "weighed 78.8 kg",
+      "extracted": "78.8 kg",
+      "note_id": "pmc-4684581-1",
+      "row_number": 710,
+      "calculator": "Adjusted Body Weight"
+    },
+    {
+      "quantity": "height",
+      "outcome": "verified",
+      "detail": null,
+      "text": "height of 157 cm",
+      "extracted": "157 cm",
+      "note_id": "pmc-4684581-1",
+      "row_number": 710,
+      "calculator": "Adjusted Body Weight"
+    },
+    {
+      "quantity": "weight",
+      "outcome": "verified",
+      "detail": null,
+      "text": "weight (62.4 kg",
+      "extracted": "62.4 kg",
+      "note_id": "pmc-7049766-1",
+      "row_number": 711,
+      "calculator": "Adjusted Body Weight"
+    },
+    {
+      "quantity": "height",
+      "outcome": "verified",
+      "detail": null,
+      "text": "height (153.4 cm",
+      "extracted": "153.4 cm",
+      "note_id": "pmc-7049766-1",
+      "row_number": 711,
+      "calculator": "Adjusted Body Weight"
+    },
+    {
+      "quantity": "weight",
+      "outcome": "value_present_unlabelled",
+      "detail": "56.8 appears in the note, but not attached to weight by any construction we recognise",
+      "text": null,
+      "extracted": "56.8 kg",
+      "note_id": "pmc-7509996-1",
+      "row_number": 712,
+      "calculator": "Adjusted Body Weight"
+    },
+    {
+      "quantity": "height",
+      "outcome": "verified_ordinal",
+      "detail": "'respectively' construction, position confirmed",
+      "text": "height and weight of the patient were 160 cm and 56.8 kg, respectively",
+      "extracted": "160 cm",
+      "note_id": "pmc-7509996-1",
+      "row_number": 712,
+      "calculator": "Adjusted Body Weight"
+    },
+    {
+      "quantity": "weight",
+      "outcome": "verified",
+      "detail": null,
+      "text": "70 kg in weight",
+      "extracted": "70 kg",
+      "note_id": "pmc-4891545-1",
+      "row_number": 713,
+      "calculator": "Adjusted Body Weight"
+    },
+    {
+      "quantity": "height",
+      "outcome": "value_present_unlabelled",
+      "detail": "182 appears in the note, but not attached to height by any construction we recognise",
+      "text": null,
+      "extracted": "182 cm",
+      "note_id": "pmc-4891545-1",
+      "row_number": 713,
+      "calculator": "Adjusted Body Weight"
+    },
+    {
+      "quantity": "weight",
+      "outcome": "value_present_unlabelled",
+      "detail": "90 appears in the note, but not attached to weight by any construction we recognise",
+      "text": null,
+      "extracted": "90 kg",
+      "note_id": "pmc-4784187-1",
+      "row_number": 714,
+      "calculator": "Adjusted Body Weight"
+    },
+    {
+      "quantity": "height",
+      "outcome": "value_present_unlabelled",
+      "detail": "180 appears in the note, but not attached to height by any construction we recognise",
+      "text": null,
+      "extracted": "180 cm",
+      "note_id": "pmc-4784187-1",
+      "row_number": 714,
+      "calculator": "Adjusted Body Weight"
+    },
+    {
+      "quantity": "weight",
+      "outcome": "verified",
+      "detail": null,
+      "text": "weight 75 kg",
+      "extracted": "75 kg",
+      "note_id": "pmc-2933634-1",
+      "row_number": 715,
+      "calculator": "Adjusted Body Weight"
+    },
+    {
+      "quantity": "height",
+      "outcome": "verified",
+      "detail": null,
+      "text": "height 166 cm",
+      "extracted": "166 cm",
+      "note_id": "pmc-2933634-1",
+      "row_number": 715,
+      "calculator": "Adjusted Body Weight"
+    },
+    {
+      "quantity": "weight",
+      "outcome": "verified",
+      "detail": null,
+      "text": "weight of 53 kg",
+      "extracted": "53 kg",
+      "note_id": "pmc-4204687-1",
+      "row_number": 716,
+      "calculator": "Adjusted Body Weight"
+    },
+    {
+      "quantity": "height",
+      "outcome": "verified",
+      "detail": null,
+      "text": "height of 171 cm",
+      "extracted": "171 cm",
+      "note_id": "pmc-4204687-1",
+      "row_number": 716,
+      "calculator": "Adjusted Body Weight"
+    },
+    {
+      "quantity": "weight",
+      "outcome": "verified",
+      "detail": null,
+      "text": "weight was 47 kg",
+      "extracted": "47 kg",
+      "note_id": "pmc-8641749-1",
+      "row_number": 717,
+      "calculator": "Adjusted Body Weight"
+    },
+    {
+      "quantity": "height",
+      "outcome": "verified",
+      "detail": null,
+      "text": "height was 154 cm",
+      "extracted": "154 cm",
+      "note_id": "pmc-8641749-1",
+      "row_number": 717,
+      "calculator": "Adjusted Body Weight"
+    },
+    {
+      "quantity": "weight",
+      "outcome": "verified",
+      "detail": null,
+      "text": "weighs 89 kg",
+      "extracted": "89 kg",
+      "note_id": "usmle-1483",
+      "row_number": 718,
+      "calculator": "Adjusted Body Weight"
+    },
+    {
+      "quantity": "height",
+      "outcome": "verified",
+      "detail": null,
+      "text": "163 cm (5 ft 4 in) tall",
+      "extracted": "163 cm",
+      "note_id": "usmle-1483",
+      "row_number": 718,
+      "calculator": "Adjusted Body Weight"
+    },
+    {
+      "quantity": "weight",
+      "outcome": "value_present_unlabelled",
+      "detail": "107 appears in the note, but not attached to weight by any construction we recognise",
+      "text": null,
+      "extracted": "107 kg",
+      "note_id": "pmc-7593758-1",
+      "row_number": 719,
+      "calculator": "Adjusted Body Weight"
+    },
+    {
+      "quantity": "height",
+      "outcome": "value_present_unlabelled",
+      "detail": "180 appears in the note, but not attached to height by any construction we recognise",
+      "text": null,
+      "extracted": "180 cm",
+      "note_id": "pmc-7593758-1",
+      "row_number": 719,
+      "calculator": "Adjusted Body Weight"
+    },
+    {
+      "quantity": "weight",
+      "outcome": "verified",
+      "detail": null,
+      "text": "body weight was 39 kg",
+      "extracted": "39 kg",
+      "note_id": "pmc-7891243-1",
+      "row_number": 720,
+      "calculator": "Adjusted Body Weight"
+    },
+    {
+      "quantity": "height",
+      "outcome": "verified",
+      "detail": null,
+      "text": "height was 159 cm",
+      "extracted": "159 cm",
+      "note_id": "pmc-7891243-1",
+      "row_number": 720,
+      "calculator": "Adjusted Body Weight"
+    },
+    {
+      "quantity": "weight",
+      "outcome": "verified",
+      "detail": null,
+      "text": "70 kg in weight",
+      "extracted": "70 kg",
+      "note_id": "pmc-3249576-1",
+      "row_number": 721,
+      "calculator": "Adjusted Body Weight"
+    },
+    {
+      "quantity": "height",
+      "outcome": "value_present_unlabelled",
+      "detail": "155 appears in the note, but not attached to height by any construction we recognise",
+      "text": null,
+      "extracted": "155 cm",
+      "note_id": "pmc-3249576-1",
+      "row_number": 721,
+      "calculator": "Adjusted Body Weight"
+    },
+    {
+      "quantity": "weight",
+      "outcome": "verified",
+      "detail": null,
+      "text": "weight is 102 kg",
+      "extracted": "102 kg",
+      "note_id": "usmle-7046",
+      "row_number": 722,
+      "calculator": "Adjusted Body Weight"
+    },
+    {
+      "quantity": "height",
+      "outcome": "verified",
+      "detail": null,
+      "text": "height 180 cm",
+      "extracted": "180 cm",
+      "note_id": "usmle-7046",
+      "row_number": 722,
+      "calculator": "Adjusted Body Weight"
+    },
+    {
+      "quantity": "weight",
+      "outcome": "verified",
+      "detail": null,
+      "text": "body weight 61 kg",
+      "extracted": "61 kg",
+      "note_id": "pmc-4331399-2",
+      "row_number": 723,
+      "calculator": "Adjusted Body Weight"
+    },
+    {
+      "quantity": "height",
+      "outcome": "verified",
+      "detail": null,
+      "text": "height 166 cm",
+      "extracted": "166 cm",
+      "note_id": "pmc-4331399-2",
+      "row_number": 723,
+      "calculator": "Adjusted Body Weight"
+    },
+    {
+      "quantity": "weight",
+      "outcome": "value_present_unlabelled",
+      "detail": "49 appears in the note, but not attached to weight by any construction we recognise",
+      "text": null,
+      "extracted": "49 kg",
+      "note_id": "pmc-3816165-1",
+      "row_number": 724,
+      "calculator": "Adjusted Body Weight"
+    },
+    {
+      "quantity": "height",
+      "outcome": "value_present_unlabelled",
+      "detail": "156 appears in the note, but not attached to height by any construction we recognise",
+      "text": null,
+      "extracted": "156 cm",
+      "note_id": "pmc-3816165-1",
+      "row_number": 724,
+      "calculator": "Adjusted Body Weight"
+    },
+    {
+      "quantity": "weight",
+      "outcome": "verified",
+      "detail": null,
+      "text": "Body weight was 61 kg",
+      "extracted": "61 kg",
+      "note_id": "pmc-6937415-1",
+      "row_number": 725,
+      "calculator": "Adjusted Body Weight"
+    },
+    {
+      "quantity": "height",
+      "outcome": "verified",
+      "detail": null,
+      "text": "height were 172 cm",
+      "extracted": "172 cm",
+      "note_id": "pmc-6937415-1",
+      "row_number": 725,
+      "calculator": "Adjusted Body Weight"
+    },
+    {
+      "quantity": "weight",
+      "outcome": "value_present_unlabelled",
+      "detail": "79 appears in the note, but not attached to weight by any construction we recognise",
+      "text": null,
+      "extracted": "79 kg",
+      "note_id": "pmc-3030064-1",
+      "row_number": 726,
+      "calculator": "Adjusted Body Weight"
+    },
+    {
+      "quantity": "height",
+      "outcome": "value_present_unlabelled",
+      "detail": "164 appears in the note, but not attached to height by any construction we recognise",
+      "text": null,
+      "extracted": "164 cm",
+      "note_id": "pmc-3030064-1",
+      "row_number": 726,
+      "calculator": "Adjusted Body Weight"
+    },
+    {
+      "quantity": "weight",
+      "outcome": "verified",
+      "detail": null,
+      "text": "weight 69 kg",
+      "extracted": "69 kg",
+      "note_id": "pmc-5564119-1",
+      "row_number": 727,
+      "calculator": "Adjusted Body Weight"
+    },
+    {
+      "quantity": "height",
+      "outcome": "verified",
+      "detail": null,
+      "text": "height 159 cm",
+      "extracted": "159 cm",
+      "note_id": "pmc-5564119-1",
+      "row_number": 727,
+      "calculator": "Adjusted Body Weight"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "25-year-old",
+      "extracted": "25 years",
+      "note_id": "1",
+      "row_number": 828,
+      "calculator": "PSI Score: Pneumonia Severity Index for CAP"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "64-year-old",
+      "extracted": "64 years",
+      "note_id": "2",
+      "row_number": 829,
+      "calculator": "PSI Score: Pneumonia Severity Index for CAP"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "77-year-old",
+      "extracted": "77 years",
+      "note_id": "3",
+      "row_number": 830,
+      "calculator": "PSI Score: Pneumonia Severity Index for CAP"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "73-year-old",
+      "extracted": "73 years",
+      "note_id": "4",
+      "row_number": 831,
+      "calculator": "PSI Score: Pneumonia Severity Index for CAP"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "72-year-old",
+      "extracted": "72 years",
+      "note_id": "5",
+      "row_number": 832,
+      "calculator": "PSI Score: Pneumonia Severity Index for CAP"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "78-year-old",
+      "extracted": "78 years",
+      "note_id": "6",
+      "row_number": 833,
+      "calculator": "PSI Score: Pneumonia Severity Index for CAP"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "68-year-old",
+      "extracted": "68 years",
+      "note_id": "7",
+      "row_number": 834,
+      "calculator": "PSI Score: Pneumonia Severity Index for CAP"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "80-year-old",
+      "extracted": "80 years",
+      "note_id": "8",
+      "row_number": 835,
+      "calculator": "PSI Score: Pneumonia Severity Index for CAP"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "75-year-old",
+      "extracted": "75 years",
+      "note_id": "9",
+      "row_number": 836,
+      "calculator": "PSI Score: Pneumonia Severity Index for CAP"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "67-year-old",
+      "extracted": "67 years",
+      "note_id": "10",
+      "row_number": 837,
+      "calculator": "PSI Score: Pneumonia Severity Index for CAP"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "70-year-old",
+      "extracted": "70 years",
+      "note_id": "11",
+      "row_number": 838,
+      "calculator": "PSI Score: Pneumonia Severity Index for CAP"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "76-year-old",
+      "extracted": "76 years",
+      "note_id": "12",
+      "row_number": 839,
+      "calculator": "PSI Score: Pneumonia Severity Index for CAP"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "68-year-old",
+      "extracted": "68 years",
+      "note_id": "13",
+      "row_number": 840,
+      "calculator": "PSI Score: Pneumonia Severity Index for CAP"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "80-year-old",
+      "extracted": "80 years",
+      "note_id": "14",
+      "row_number": 841,
+      "calculator": "PSI Score: Pneumonia Severity Index for CAP"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "74-year-old",
+      "extracted": "74 years",
+      "note_id": "15",
+      "row_number": 842,
+      "calculator": "PSI Score: Pneumonia Severity Index for CAP"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "79-year-old",
+      "extracted": "79 years",
+      "note_id": "16",
+      "row_number": 843,
+      "calculator": "PSI Score: Pneumonia Severity Index for CAP"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "75-year-old",
+      "extracted": "75 years",
+      "note_id": "17",
+      "row_number": 844,
+      "calculator": "PSI Score: Pneumonia Severity Index for CAP"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "71-year-old",
+      "extracted": "71 years",
+      "note_id": "18",
+      "row_number": 845,
+      "calculator": "PSI Score: Pneumonia Severity Index for CAP"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "77-year-old",
+      "extracted": "77 years",
+      "note_id": "19",
+      "row_number": 846,
+      "calculator": "PSI Score: Pneumonia Severity Index for CAP"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "73-year-old",
+      "extracted": "73 years",
+      "note_id": "20",
+      "row_number": 847,
+      "calculator": "PSI Score: Pneumonia Severity Index for CAP"
+    },
+    {
+      "quantity": "creatinine",
+      "outcome": "verified",
+      "detail": null,
+      "text": "creatinine level of 1.258 mg/dL",
+      "extracted": "1.258 mg/dL",
+      "note_id": "1",
+      "row_number": 868,
+      "calculator": "APACHE II Score"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "43-year-old",
+      "extracted": "43 years",
+      "note_id": "1",
+      "row_number": 868,
+      "calculator": "APACHE II Score"
+    },
+    {
+      "quantity": "creatinine",
+      "outcome": "verified",
+      "detail": null,
+      "text": "creatinine level of 2.57 mg/dL",
+      "extracted": "2.57 mg/dL",
+      "note_id": "2",
+      "row_number": 869,
+      "calculator": "APACHE II Score"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "61-year-old",
+      "extracted": "61 years",
+      "note_id": "2",
+      "row_number": 869,
+      "calculator": "APACHE II Score"
+    },
+    {
+      "quantity": "creatinine",
+      "outcome": "verified",
+      "detail": null,
+      "text": "creatinine level of 4.58 mg/dL",
+      "extracted": "4.58 mg/dL",
+      "note_id": "3",
+      "row_number": 870,
+      "calculator": "APACHE II Score"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "73-year-old",
+      "extracted": "73 years",
+      "note_id": "3",
+      "row_number": 870,
+      "calculator": "APACHE II Score"
+    },
+    {
+      "quantity": "creatinine",
+      "outcome": "verified",
+      "detail": null,
+      "text": "creatinine of 3.67 mg/dL",
+      "extracted": "3.67 mg/dL",
+      "note_id": "4",
+      "row_number": 871,
+      "calculator": "APACHE II Score"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "57-year-old",
+      "extracted": "57 years",
+      "note_id": "4",
+      "row_number": 871,
+      "calculator": "APACHE II Score"
+    },
+    {
+      "quantity": "creatinine",
+      "outcome": "verified",
+      "detail": null,
+      "text": "creatinine level of 1.2 mg/dL",
+      "extracted": "1.2 mg/dL",
+      "note_id": "5",
+      "row_number": 872,
+      "calculator": "APACHE II Score"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "52-year-old",
+      "extracted": "52 years",
+      "note_id": "5",
+      "row_number": 872,
+      "calculator": "APACHE II Score"
+    },
+    {
+      "quantity": "creatinine",
+      "outcome": "verified",
+      "detail": null,
+      "text": "creatinine levels of 2.0 mg/dL",
+      "extracted": "2 mg/dL",
+      "note_id": "6",
+      "row_number": 873,
+      "calculator": "APACHE II Score"
+    },
+    {
+      "quantity": "age",
+      "outcome": "value_present_unlabelled",
+      "detail": "65 appears in the note, but not attached to age by any construction we recognise",
+      "text": null,
+      "extracted": "65 years",
+      "note_id": "6",
+      "row_number": 873,
+      "calculator": "APACHE II Score"
+    },
+    {
+      "quantity": "creatinine",
+      "outcome": "verified",
+      "detail": null,
+      "text": "creatinine of 1.3 mg/dL",
+      "extracted": "1.3 mg/dL",
+      "note_id": "7",
+      "row_number": 874,
+      "calculator": "APACHE II Score"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "58-year-old",
+      "extracted": "58 years",
+      "note_id": "7",
+      "row_number": 874,
+      "calculator": "APACHE II Score"
+    },
+    {
+      "quantity": "creatinine",
+      "outcome": "verified",
+      "detail": null,
+      "text": "creatinine levels at 3.8 mg/dL",
+      "extracted": "3.8 mg/dL",
+      "note_id": "8",
+      "row_number": 875,
+      "calculator": "APACHE II Score"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "60-year-old",
+      "extracted": "60 years",
+      "note_id": "8",
+      "row_number": 875,
+      "calculator": "APACHE II Score"
+    },
+    {
+      "quantity": "creatinine",
+      "outcome": "verified",
+      "detail": null,
+      "text": "creatinine at 2.5 mg/dL",
+      "extracted": "2.5 mg/dL",
+      "note_id": "9",
+      "row_number": 876,
+      "calculator": "APACHE II Score"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "67-year-old",
+      "extracted": "67 years",
+      "note_id": "9",
+      "row_number": 876,
+      "calculator": "APACHE II Score"
+    },
+    {
+      "quantity": "creatinine",
+      "outcome": "value_present_unlabelled",
+      "detail": "1.6 appears in the note, but not attached to creatinine by any construction we recognise",
+      "text": null,
+      "extracted": "1.6 mg/dL",
+      "note_id": "10",
+      "row_number": 877,
+      "calculator": "APACHE II Score"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "55-year-old",
+      "extracted": "55 years",
+      "note_id": "10",
+      "row_number": 877,
+      "calculator": "APACHE II Score"
+    },
+    {
+      "quantity": "creatinine",
+      "outcome": "verified",
+      "detail": null,
+      "text": "creatinine level of 2.0 mg/dL",
+      "extracted": "2 mg/dL",
+      "note_id": "11",
+      "row_number": 878,
+      "calculator": "APACHE II Score"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "70-year-old",
+      "extracted": "70 years",
+      "note_id": "11",
+      "row_number": 878,
+      "calculator": "APACHE II Score"
+    },
+    {
+      "quantity": "creatinine",
+      "outcome": "verified",
+      "detail": null,
+      "text": "creatinine level at 1.1 mg/dL",
+      "extracted": "1.1 mg/dL",
+      "note_id": "12",
+      "row_number": 879,
+      "calculator": "APACHE II Score"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "63-year-old",
+      "extracted": "63 years",
+      "note_id": "12",
+      "row_number": 879,
+      "calculator": "APACHE II Score"
+    },
+    {
+      "quantity": "creatinine",
+      "outcome": "verified",
+      "detail": null,
+      "text": "creatinine level of 1.8 mg/dL",
+      "extracted": "1.8 mg/dL",
+      "note_id": "13",
+      "row_number": 880,
+      "calculator": "APACHE II Score"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "56-year-old",
+      "extracted": "56 years",
+      "note_id": "13",
+      "row_number": 880,
+      "calculator": "APACHE II Score"
+    },
+    {
+      "quantity": "creatinine",
+      "outcome": "verified",
+      "detail": null,
+      "text": "creatinine level of 1.4 mg/dL",
+      "extracted": "1.4 mg/dL",
+      "note_id": "14",
+      "row_number": 881,
+      "calculator": "APACHE II Score"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "50-year-old",
+      "extracted": "50 years",
+      "note_id": "14",
+      "row_number": 881,
+      "calculator": "APACHE II Score"
+    },
+    {
+      "quantity": "creatinine",
+      "outcome": "verified",
+      "detail": null,
+      "text": "creatinine levels, recorded at 1.5 mg/dL",
+      "extracted": "1.5 mg/dL",
+      "note_id": "15",
+      "row_number": 882,
+      "calculator": "APACHE II Score"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "64-year-old",
+      "extracted": "64 years",
+      "note_id": "15",
+      "row_number": 882,
+      "calculator": "APACHE II Score"
+    },
+    {
+      "quantity": "creatinine",
+      "outcome": "verified",
+      "detail": null,
+      "text": "creatinine level of 1.3 mg/dL",
+      "extracted": "1.3 mg/dL",
+      "note_id": "16",
+      "row_number": 883,
+      "calculator": "APACHE II Score"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "57-year-old",
+      "extracted": "57 years",
+      "note_id": "16",
+      "row_number": 883,
+      "calculator": "APACHE II Score"
+    },
+    {
+      "quantity": "creatinine",
+      "outcome": "verified",
+      "detail": null,
+      "text": "creatinine value of 1.7 mg/dL",
+      "extracted": "1.7 mg/dL",
+      "note_id": "17",
+      "row_number": 884,
+      "calculator": "APACHE II Score"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "59-year-old",
+      "extracted": "59 years",
+      "note_id": "17",
+      "row_number": 884,
+      "calculator": "APACHE II Score"
+    },
+    {
+      "quantity": "creatinine",
+      "outcome": "verified",
+      "detail": null,
+      "text": "creatinine at 1.8 mg/dL",
+      "extracted": "1.8 mg/dL",
+      "note_id": "18",
+      "row_number": 885,
+      "calculator": "APACHE II Score"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "61-year-old",
+      "extracted": "61 years",
+      "note_id": "18",
+      "row_number": 885,
+      "calculator": "APACHE II Score"
+    },
+    {
+      "quantity": "creatinine",
+      "outcome": "verified",
+      "detail": null,
+      "text": "creatinine at 1.9 mg/dL",
+      "extracted": "1.9 mg/dL",
+      "note_id": "19",
+      "row_number": 886,
+      "calculator": "APACHE II Score"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "68-year-old",
+      "extracted": "68 years",
+      "note_id": "19",
+      "row_number": 886,
+      "calculator": "APACHE II Score"
+    },
+    {
+      "quantity": "creatinine",
+      "outcome": "verified",
+      "detail": null,
+      "text": "creatinine level, documented at 1.4 mg/dL",
+      "extracted": "1.4 mg/dL",
+      "note_id": "20",
+      "row_number": 887,
+      "calculator": "APACHE II Score"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "64-year-old",
+      "extracted": "64 years",
+      "note_id": "20",
+      "row_number": 887,
+      "calculator": "APACHE II Score"
+    },
+    {
+      "quantity": "creatinine",
+      "outcome": "verified",
+      "detail": null,
+      "text": "creatinine level of 121.32 \u00b5mol/L",
+      "extracted": "121.32 \u00b5mol/L",
+      "note_id": "1",
+      "row_number": 888,
+      "calculator": "Sequential Organ Failure Assessment (SOFA) Score"
+    },
+    {
+      "quantity": "creatinine",
+      "outcome": "verified",
+      "detail": null,
+      "text": "serum creatinine level of 92.12 \u00b5mol/L",
+      "extracted": "92.12 \u00b5mol/L",
+      "note_id": "2",
+      "row_number": 889,
+      "calculator": "Sequential Organ Failure Assessment (SOFA) Score"
+    },
+    {
+      "quantity": "creatinine",
+      "outcome": "verified",
+      "detail": null,
+      "text": "creatinine level of 2.56 mg/dL",
+      "extracted": "2.56 mg/dL",
+      "note_id": "3",
+      "row_number": 890,
+      "calculator": "Sequential Organ Failure Assessment (SOFA) Score"
+    },
+    {
+      "quantity": "creatinine",
+      "outcome": "verified",
+      "detail": null,
+      "text": "creatinine level of 1.5 mg/dL",
+      "extracted": "1.5 mg/dL",
+      "note_id": "5",
+      "row_number": 892,
+      "calculator": "Sequential Organ Failure Assessment (SOFA) Score"
+    },
+    {
+      "quantity": "creatinine",
+      "outcome": "verified",
+      "detail": null,
+      "text": "serum creatinine of 150 \u00b5mol/L",
+      "extracted": "150 \u00b5mol/L",
+      "note_id": "6",
+      "row_number": 893,
+      "calculator": "Sequential Organ Failure Assessment (SOFA) Score"
+    },
+    {
+      "quantity": "creatinine",
+      "outcome": "verified",
+      "detail": null,
+      "text": "serum creatinine level of 120 \u00b5mol/L",
+      "extracted": "120 \u00b5mol/L",
+      "note_id": "7",
+      "row_number": 894,
+      "calculator": "Sequential Organ Failure Assessment (SOFA) Score"
+    },
+    {
+      "quantity": "creatinine",
+      "outcome": "verified",
+      "detail": null,
+      "text": "creatinine levels of 1.2 mg/dL",
+      "extracted": "1.2 mg/dL",
+      "note_id": "8",
+      "row_number": 895,
+      "calculator": "Sequential Organ Failure Assessment (SOFA) Score"
+    },
+    {
+      "quantity": "creatinine",
+      "outcome": "verified",
+      "detail": null,
+      "text": "creatinine of 2.1 mg/dL",
+      "extracted": "2.1 mg/dL",
+      "note_id": "9",
+      "row_number": 896,
+      "calculator": "Sequential Organ Failure Assessment (SOFA) Score"
+    },
+    {
+      "quantity": "creatinine",
+      "outcome": "verified",
+      "detail": null,
+      "text": "creatinine measurement at 1.4 mg/dL",
+      "extracted": "1.4 mg/dL",
+      "note_id": "10",
+      "row_number": 897,
+      "calculator": "Sequential Organ Failure Assessment (SOFA) Score"
+    },
+    {
+      "quantity": "creatinine",
+      "outcome": "value_present_unlabelled",
+      "detail": "1.6 appears in the note, but not attached to creatinine by any construction we recognise",
+      "text": null,
+      "extracted": "1.6 mg/dL",
+      "note_id": "11",
+      "row_number": 898,
+      "calculator": "Sequential Organ Failure Assessment (SOFA) Score"
+    },
+    {
+      "quantity": "creatinine",
+      "outcome": "verified",
+      "detail": null,
+      "text": "creatinine level of 2.4 mg/dL",
+      "extracted": "2.4 mg/dL",
+      "note_id": "12",
+      "row_number": 899,
+      "calculator": "Sequential Organ Failure Assessment (SOFA) Score"
+    },
+    {
+      "quantity": "creatinine",
+      "outcome": "verified",
+      "detail": null,
+      "text": "creatinine is 1.1 mg/dL",
+      "extracted": "1.1 mg/dL",
+      "note_id": "13",
+      "row_number": 900,
+      "calculator": "Sequential Organ Failure Assessment (SOFA) Score"
+    },
+    {
+      "quantity": "creatinine",
+      "outcome": "verified",
+      "detail": null,
+      "text": "creatinine level of 1.7 mg/dL",
+      "extracted": "1.7 mg/dL",
+      "note_id": "14",
+      "row_number": 901,
+      "calculator": "Sequential Organ Failure Assessment (SOFA) Score"
+    },
+    {
+      "quantity": "creatinine",
+      "outcome": "verified",
+      "detail": null,
+      "text": "creatinine levels of 1.8 mg/dL",
+      "extracted": "1.8 mg/dL",
+      "note_id": "15",
+      "row_number": 902,
+      "calculator": "Sequential Organ Failure Assessment (SOFA) Score"
+    },
+    {
+      "quantity": "creatinine",
+      "outcome": "verified",
+      "detail": null,
+      "text": "creatinine level of 160 \u00b5mol/L",
+      "extracted": "160 \u00b5mol/L",
+      "note_id": "16",
+      "row_number": 903,
+      "calculator": "Sequential Organ Failure Assessment (SOFA) Score"
+    },
+    {
+      "quantity": "creatinine",
+      "outcome": "verified",
+      "detail": null,
+      "text": "creatinine of 1.9 mg/dL",
+      "extracted": "1.9 mg/dL",
+      "note_id": "17",
+      "row_number": 904,
+      "calculator": "Sequential Organ Failure Assessment (SOFA) Score"
+    },
+    {
+      "quantity": "creatinine",
+      "outcome": "verified",
+      "detail": null,
+      "text": "creatinine level of 130 \u00b5mol/L",
+      "extracted": "130 \u00b5mol/L",
+      "note_id": "18",
+      "row_number": 905,
+      "calculator": "Sequential Organ Failure Assessment (SOFA) Score"
+    },
+    {
+      "quantity": "creatinine",
+      "outcome": "verified",
+      "detail": null,
+      "text": "creatinine measure stands at 1.7 mg/dL",
+      "extracted": "1.7 mg/dL",
+      "note_id": "19",
+      "row_number": 906,
+      "calculator": "Sequential Organ Failure Assessment (SOFA) Score"
+    },
+    {
+      "quantity": "creatinine",
+      "outcome": "verified",
+      "detail": null,
+      "text": "serum creatinine level of 140 \u00b5mol/L",
+      "extracted": "140 \u00b5mol/L",
+      "note_id": "20",
+      "row_number": 907,
+      "calculator": "Sequential Organ Failure Assessment (SOFA) Score"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "63 year old",
+      "extracted": "63 years",
+      "note_id": "1",
+      "row_number": 908,
+      "calculator": "Caprini Score for Venous Thromboembolism (2005)"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "81-year-old",
+      "extracted": "81 years",
+      "note_id": "2",
+      "row_number": 909,
+      "calculator": "Caprini Score for Venous Thromboembolism (2005)"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "74-year-old",
+      "extracted": "74 years",
+      "note_id": "3",
+      "row_number": 910,
+      "calculator": "Caprini Score for Venous Thromboembolism (2005)"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "67-year-old",
+      "extracted": "67 years",
+      "note_id": "4",
+      "row_number": 911,
+      "calculator": "Caprini Score for Venous Thromboembolism (2005)"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "76-year-old",
+      "extracted": "76 years",
+      "note_id": "5",
+      "row_number": 912,
+      "calculator": "Caprini Score for Venous Thromboembolism (2005)"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "56 year old",
+      "extracted": "56 years",
+      "note_id": "6",
+      "row_number": 913,
+      "calculator": "Caprini Score for Venous Thromboembolism (2005)"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "68-year-old",
+      "extracted": "68 years",
+      "note_id": "7",
+      "row_number": 914,
+      "calculator": "Caprini Score for Venous Thromboembolism (2005)"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "39-year-old",
+      "extracted": "39 years",
+      "note_id": "8",
+      "row_number": 915,
+      "calculator": "Caprini Score for Venous Thromboembolism (2005)"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "45-year-old",
+      "extracted": "45 years",
+      "note_id": "9",
+      "row_number": 916,
+      "calculator": "Caprini Score for Venous Thromboembolism (2005)"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "55-year-old",
+      "extracted": "55 years",
+      "note_id": "10",
+      "row_number": 917,
+      "calculator": "Caprini Score for Venous Thromboembolism (2005)"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "70-year-old",
+      "extracted": "70 years",
+      "note_id": "11",
+      "row_number": 918,
+      "calculator": "Caprini Score for Venous Thromboembolism (2005)"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "52-year-old",
+      "extracted": "52 years",
+      "note_id": "12",
+      "row_number": 919,
+      "calculator": "Caprini Score for Venous Thromboembolism (2005)"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "60-year-old",
+      "extracted": "60 years",
+      "note_id": "13",
+      "row_number": 920,
+      "calculator": "Caprini Score for Venous Thromboembolism (2005)"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "48-year-old",
+      "extracted": "48 years",
+      "note_id": "14",
+      "row_number": 921,
+      "calculator": "Caprini Score for Venous Thromboembolism (2005)"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "72-year-old",
+      "extracted": "72 years",
+      "note_id": "15",
+      "row_number": 922,
+      "calculator": "Caprini Score for Venous Thromboembolism (2005)"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "65-year-old",
+      "extracted": "65 years",
+      "note_id": "16",
+      "row_number": 923,
+      "calculator": "Caprini Score for Venous Thromboembolism (2005)"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "56-year-old",
+      "extracted": "56 years",
+      "note_id": "17",
+      "row_number": 924,
+      "calculator": "Caprini Score for Venous Thromboembolism (2005)"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "62-year-old",
+      "extracted": "62 years",
+      "note_id": "18",
+      "row_number": 925,
+      "calculator": "Caprini Score for Venous Thromboembolism (2005)"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "58-year-old",
+      "extracted": "58 years",
+      "note_id": "19",
+      "row_number": 926,
+      "calculator": "Caprini Score for Venous Thromboembolism (2005)"
+    },
+    {
+      "quantity": "age",
+      "outcome": "verified",
+      "detail": null,
+      "text": "50-year-old",
+      "extracted": "50 years",
+      "note_id": "20",
+      "row_number": 927,
+      "calculator": "Caprini Score for Venous Thromboembolism (2005)"
+    },
+    {
+      "quantity": "height",
+      "outcome": "verified",
+      "detail": null,
+      "text": "height of 196 cm",
+      "extracted": "196 cm",
+      "note_id": "1",
+      "row_number": 968,
+      "calculator": "Target weight"
+    },
+    {
+      "quantity": "height",
+      "outcome": "verified",
+      "detail": null,
+      "text": "height of 169 cm",
+      "extracted": "169 cm",
+      "note_id": "2",
+      "row_number": 969,
+      "calculator": "Target weight"
+    },
+    {
+      "quantity": "height",
+      "outcome": "verified",
+      "detail": null,
+      "text": "height of 194 cm",
+      "extracted": "194 cm",
+      "note_id": "3",
+      "row_number": 970,
+      "calculator": "Target weight"
+    },
+    {
+      "quantity": "height",
+      "outcome": "unsupported_unit",
+      "detail": "unit 'm' has no locator",
+      "text": null,
+      "note_id": "4",
+      "row_number": 971,
+      "calculator": "Target weight"
+    },
+    {
+      "quantity": "height",
+      "outcome": "unsupported_unit",
+      "detail": "unit 'm' has no locator",
+      "text": null,
+      "note_id": "5",
+      "row_number": 972,
+      "calculator": "Target weight"
+    },
+    {
+      "quantity": "height",
+      "outcome": "unsupported_unit",
+      "detail": "unit 'in' has no locator",
+      "text": null,
+      "note_id": "6",
+      "row_number": 973,
+      "calculator": "Target weight"
+    },
+    {
+      "quantity": "height",
+      "outcome": "verified",
+      "detail": null,
+      "text": "height of 169 cm",
+      "extracted": "169 cm",
+      "note_id": "7",
+      "row_number": 974,
+      "calculator": "Target weight"
+    },
+    {
+      "quantity": "height",
+      "outcome": "unsupported_unit",
+      "detail": "unit 'in' has no locator",
+      "text": null,
+      "note_id": "8",
+      "row_number": 975,
+      "calculator": "Target weight"
+    },
+    {
+      "quantity": "height",
+      "outcome": "unsupported_unit",
+      "detail": "unit 'm' has no locator",
+      "text": null,
+      "note_id": "9",
+      "row_number": 976,
+      "calculator": "Target weight"
+    },
+    {
+      "quantity": "height",
+      "outcome": "unsupported_unit",
+      "detail": "unit 'in' has no locator",
+      "text": null,
+      "note_id": "10",
+      "row_number": 977,
+      "calculator": "Target weight"
+    },
+    {
+      "quantity": "height",
+      "outcome": "verified",
+      "detail": null,
+      "text": "height of 172 cm",
+      "extracted": "172 cm",
+      "note_id": "11",
+      "row_number": 978,
+      "calculator": "Target weight"
+    },
+    {
+      "quantity": "height",
+      "outcome": "verified",
+      "detail": null,
+      "text": "height of 145 cm",
+      "extracted": "145 cm",
+      "note_id": "12",
+      "row_number": 979,
+      "calculator": "Target weight"
+    },
+    {
+      "quantity": "height",
+      "outcome": "verified",
+      "detail": null,
+      "text": "height of 144 cm",
+      "extracted": "144 cm",
+      "note_id": "13",
+      "row_number": 980,
+      "calculator": "Target weight"
+    },
+    {
+      "quantity": "height",
+      "outcome": "unsupported_unit",
+      "detail": "unit 'in' has no locator",
+      "text": null,
+      "note_id": "14",
+      "row_number": 981,
+      "calculator": "Target weight"
+    },
+    {
+      "quantity": "height",
+      "outcome": "unsupported_unit",
+      "detail": "unit 'in' has no locator",
+      "text": null,
+      "note_id": "15",
+      "row_number": 982,
+      "calculator": "Target weight"
+    },
+    {
+      "quantity": "height",
+      "outcome": "unsupported_unit",
+      "detail": "unit 'in' has no locator",
+      "text": null,
+      "note_id": "16",
+      "row_number": 983,
+      "calculator": "Target weight"
+    },
+    {
+      "quantity": "height",
+      "outcome": "verified",
+      "detail": null,
+      "text": "height of 196 cm",
+      "extracted": "196 cm",
+      "note_id": "17",
+      "row_number": 984,
+      "calculator": "Target weight"
+    },
+    {
+      "quantity": "height",
+      "outcome": "unsupported_unit",
+      "detail": "unit 'm' has no locator",
+      "text": null,
+      "note_id": "18",
+      "row_number": 985,
+      "calculator": "Target weight"
+    },
+    {
+      "quantity": "height",
+      "outcome": "unsupported_unit",
+      "detail": "unit 'm' has no locator",
+      "text": null,
+      "note_id": "19",
+      "row_number": 986,
+      "calculator": "Target weight"
+    },
+    {
+      "quantity": "height",
+      "outcome": "verified",
+      "detail": null,
+      "text": "height of 196 cm",
+      "extracted": "196 cm",
+      "note_id": "20",
+      "row_number": 987,
+      "calculator": "Target weight"
+    }
+  ]
+}

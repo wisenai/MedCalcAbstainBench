@@ -1,0 +1,19 @@
+__pycache__/
+*.pyc
+.DS_Store
+.ipynb_checkpoints/
+
+# The blind-coding answer key: maps rows to families and automatic labels.
+# Committing this would let a coder see the answer and destroy the blind.
+pilot/items/_coding_key.json
+
+# MedCalc-Bench's own data. Fetched by fetch_medcalc.py, not redistributed.
+pilot/test_data.csv
+pilot/repo_impl/
+
+# Never commit credentials. If one lands here by accident, rotate it.
+SHEETS.json
+*.token
+
+# MedCalc-Bench v1.0 substrate. Fetched by fetch_medcalc.py, not redistributed.
+data/medcalc/

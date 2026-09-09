@@ -1,0 +1,84 @@
+{
+  "_what_this_is": "Defects in the released MedCalc-Bench substrate, recorded rather than repaired. See the module docstring for why.",
+  "substrate": {
+    "tag": "version-1.0",
+    "commit": "353ded7c61"
+  },
+  "ckd_epi_male_coefficient": {
+    "defect": "CKD-EPI 2021 uses kappa = 0.7 in the male branch; the published equation uses 0.9",
+    "file": "calculators/ckd-epi_2021_creatinine.py",
+    "coded_value": 0.7,
+    "published_value": 0.9,
+    "branch": "male, creatinine <= 0.9 mg/dL",
+    "rows_in_corpus": 519,
+    "rows_affected": 22,
+    "examples": [
+      {
+        "note_id": "pmc-3857264-1",
+        "split": "test",
+        "creatinine": 0.87,
+        "age": 80.0,
+        "shipped_answer": "80.852",
+        "as_implemented_a_0_7": 80.852,
+        "as_published_a_0_9": 87.228
+      },
+      {
+        "note_id": "pmc-8267016-1",
+        "split": "train",
+        "creatinine": 0.87,
+        "age": 45.0,
+        "shipped_answer": "100.514",
+        "as_implemented_a_0_7": 100.514,
+        "as_published_a_0_9": 108.44
+      },
+      {
+        "note_id": "usmle-6106",
+        "split": "train",
+        "creatinine": 0.8,
+        "age": 30.0,
+        "shipped_answer": "113.173",
+        "as_implemented_a_0_7": 113.173,
+        "as_published_a_0_9": 122.097
+      },
+      {
+        "note_id": "trec-ct-2022-22",
+        "split": "train",
+        "creatinine": 0.8,
+        "age": 15.0,
+        "shipped_answer": "124.239",
+        "as_implemented_a_0_7": 124.239,
+        "as_published_a_0_9": 134.036
+      },
+      {
+        "note_id": "pmc-2779295-1",
+        "split": "train",
+        "creatinine": 0.7,
+        "age": 7.0,
+        "shipped_answer": "135.951",
+        "as_implemented_a_0_7": 135.951,
+        "as_published_a_0_9": 146.671
+      }
+    ]
+  },
+  "bp_entity_mismatch": {
+    "defect": "extracted blood pressure disagrees with the pair stated in the note",
+    "rows_in_corpus": 948,
+    "rows_affected": 17,
+    "named": [
+      {
+        "note_id": "pmc-6637642-1",
+        "note_states": "85/140",
+        "entities_record": "140/85",
+        "shipped_answer": "103.333",
+        "why_it_matters": "the note's only pressure is physiologically impossible and the extraction put it back into plausible order"
+      },
+      {
+        "note_id": "pmc-5676363-1",
+        "note_states": "142/74",
+        "entities_record": "70/74",
+        "shipped_answer": "72.667",
+        "why_it_matters": "the shipped pair is itself impossible, so the shipped answer is computed from a systolic below its diastolic"
+      }
+    ]
+  }
+}

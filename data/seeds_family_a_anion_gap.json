@@ -1,0 +1,168 @@
+{
+  "calculator": "Anion Gap",
+  "calculator_id": "39",
+  "quantity": "anion_gap",
+  "family": "A",
+  "n_notes_screened": 8554,
+  "n_eligible": 5,
+  "n_selected": 5,
+  "rejections": {
+    "no documented Anion Gap": 8365,
+    "note has no Sodium, Chloride, Bicarbonate entities": 60,
+    "Sodium in a unit we do not convert (meq/ml)": 1,
+    "note has no Chloride, Bicarbonate entities": 31,
+    "more than one documented Anion Gap": 36,
+    "documented Anion Gap already disagrees with its own components": 26,
+    "Bicarbonate in a unit we do not convert (meq/dl)": 1,
+    "clinical framing 'normal' is attached to the value": 1,
+    "checker cannot read sodium, chloride, bicarbonate from the note text": 1,
+    "checker cannot read bicarbonate from the note text": 6,
+    "recomputed Anion Gap is not positive": 2,
+    "checker cannot read chloride, bicarbonate, anion_gap from the note text": 3,
+    "checker cannot read anion_gap from the note text": 4,
+    "clinical framing 'high' is attached to the value": 1,
+    "checker cannot read bicarbonate, anion_gap from the note text": 2,
+    "checker cannot read sodium, chloride, anion_gap from the note text": 1,
+    "checker cannot read sodium, bicarbonate, anion_gap from the note text": 1,
+    "Bicarbonate in a unit we do not convert (mg/dl)": 1,
+    "checker cannot read sodium, chloride, bicarbonate, anion_gap from the note text": 2,
+    "Sodium in a unit we do not convert (mg/dl)": 1,
+    "checker cannot read sodium from the note text": 1,
+    "recomputed Anion Gap outside a plausible range": 1,
+    "checker cannot read chloride, bicarbonate from the note text": 1
+  },
+  "natural_family_a_cases": 26,
+  "seeds_digest": "9874c44bd83068c704a508cfdec8f4c8d321ed1fd5c11cf349da46dfeb5ea062",
+  "seeds": [
+    {
+      "note_id": "pmc-7357312-1",
+      "split": "test",
+      "quantity": "anion_gap",
+      "stated_value": 30.0,
+      "recomputed_value": 30.0,
+      "components": {
+        "sodium": 137.0,
+        "chloride": 98.0,
+        "bicarbonate": 9.0
+      },
+      "components_as_recorded": {
+        "Sodium": [
+          137.0,
+          "mmol/L"
+        ],
+        "Chloride": [
+          98.0,
+          "mmol/L"
+        ],
+        "Bicarbonate": [
+          9.0,
+          "mmol/L"
+        ]
+      }
+    },
+    {
+      "note_id": "pmc-4942506-1",
+      "split": "test",
+      "quantity": "anion_gap",
+      "stated_value": 18.0,
+      "recomputed_value": 18.3,
+      "components": {
+        "sodium": 129.0,
+        "chloride": 97.0,
+        "bicarbonate": 13.7
+      },
+      "components_as_recorded": {
+        "Sodium": [
+          129.0,
+          "mEq/L"
+        ],
+        "Chloride": [
+          97.0,
+          "mEq/L"
+        ],
+        "Bicarbonate": [
+          13.7,
+          "mEq/L"
+        ]
+      }
+    },
+    {
+      "note_id": "pmc-3544066-1",
+      "split": "train",
+      "quantity": "anion_gap",
+      "stated_value": 27.0,
+      "recomputed_value": 27.0,
+      "components": {
+        "sodium": 138.0,
+        "chloride": 104.0,
+        "bicarbonate": 7.0
+      },
+      "components_as_recorded": {
+        "Sodium": [
+          138.0,
+          "mmol/L"
+        ],
+        "Chloride": [
+          104.0,
+          "mmol/L"
+        ],
+        "Bicarbonate": [
+          7.0,
+          "mmol/L"
+        ]
+      }
+    },
+    {
+      "note_id": "pmc-4620268-2",
+      "split": "train",
+      "quantity": "anion_gap",
+      "stated_value": 29.0,
+      "recomputed_value": 29.0,
+      "components": {
+        "sodium": 137.0,
+        "chloride": 99.0,
+        "bicarbonate": 9.0
+      },
+      "components_as_recorded": {
+        "Sodium": [
+          137.0,
+          "mEq/L"
+        ],
+        "Chloride": [
+          99.0,
+          "mEq/L"
+        ],
+        "Bicarbonate": [
+          9.0,
+          "mEq/L"
+        ]
+      }
+    },
+    {
+      "note_id": "pmc-5586928-1",
+      "split": "train",
+      "quantity": "anion_gap",
+      "stated_value": 24.0,
+      "recomputed_value": 24.0,
+      "components": {
+        "sodium": 152.0,
+        "chloride": 114.0,
+        "bicarbonate": 14.0
+      },
+      "components_as_recorded": {
+        "Sodium": [
+          152.0,
+          "mmol/L"
+        ],
+        "Chloride": [
+          114.0,
+          "mmol/L"
+        ],
+        "Bicarbonate": [
+          14.0,
+          "mmol/L"
+        ]
+      }
+    }
+  ]
+}

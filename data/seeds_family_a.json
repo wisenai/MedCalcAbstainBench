@@ -1,0 +1,667 @@
+{
+  "calculator": "Body Mass Index (BMI)",
+  "calculator_id": "6",
+  "quantity": "bmi",
+  "family": "A",
+  "n_notes_screened": 8554,
+  "n_eligible": 291,
+  "n_selected": 30,
+  "rejections": {
+    "no documented Body Mass Index (BMI)": 7202,
+    "checker cannot read height_cm from the note text": 70,
+    "checker cannot read weight_kg from the note text": 35,
+    "note has no height, weight entities": 295,
+    "note has no height entity": 158,
+    "clinical framing 'morbid obesity' is attached to the value": 3,
+    "more than one documented Body Mass Index (BMI)": 110,
+    "note has no weight entity": 244,
+    "checker cannot read height_cm, weight_kg from the note text": 64,
+    "checker cannot read weight_kg, bmi from the note text": 1,
+    "documented Body Mass Index (BMI) already disagrees with its own components": 41,
+    "clinical framing 'overweight' is attached to the value": 3,
+    "height or weight in a unit we do not convert": 8,
+    "clinical framing 'obesity' is attached to the value": 4,
+    "checker cannot read bmi from the note text": 5,
+    "clinical framing 'emaciated' is attached to the value": 1,
+    "checker cannot read height_cm, weight_kg, bmi from the note text": 5,
+    "clinical framing 'morbidly obese' is attached to the value": 1,
+    "clinical framing 'obese' is attached to the value": 7,
+    "checker cannot read height_cm, bmi from the note text": 2,
+    "clinical framing 'malnourished' is attached to the value": 1,
+    "recomputed Body Mass Index (BMI) outside a plausible range": 3
+  },
+  "natural_family_a_cases": 41,
+  "seeds_digest": "82c015619b2f89f72a10d97ec86bc75b966114150e3d41d078bcfb09c9445473",
+  "seeds": [
+    {
+      "note_id": "usmle-1002",
+      "split": "test",
+      "quantity": "bmi",
+      "stated_value": 42.0,
+      "recomputed_value": 41.016,
+      "components": {
+        "height_m": 1.6,
+        "weight_kg": 105.0
+      },
+      "components_as_recorded": {
+        "height": [
+          160.0,
+          "cm"
+        ],
+        "weight": [
+          105.0,
+          "kg"
+        ]
+      }
+    },
+    {
+      "note_id": "pmc-3830277-1",
+      "split": "test",
+      "quantity": "bmi",
+      "stated_value": 18.3,
+      "recomputed_value": 18.286,
+      "components": {
+        "height_m": 1.56,
+        "weight_kg": 44.5
+      },
+      "components_as_recorded": {
+        "height": [
+          156.0,
+          "cm"
+        ],
+        "weight": [
+          44.5,
+          "kg"
+        ]
+      }
+    },
+    {
+      "note_id": "pmc-7785505-1",
+      "split": "test",
+      "quantity": "bmi",
+      "stated_value": 22.6,
+      "recomputed_value": 22.641,
+      "components": {
+        "height_m": 1.53,
+        "weight_kg": 53.0
+      },
+      "components_as_recorded": {
+        "height": [
+          153.0,
+          "cm"
+        ],
+        "weight": [
+          53.0,
+          "kg"
+        ]
+      }
+    },
+    {
+      "note_id": "usmle-1896",
+      "split": "test",
+      "quantity": "bmi",
+      "stated_value": 31.0,
+      "recomputed_value": 30.84,
+      "components": {
+        "height_m": 1.88,
+        "weight_kg": 109.0
+      },
+      "components_as_recorded": {
+        "height": [
+          188.0,
+          "cm"
+        ],
+        "weight": [
+          109.0,
+          "kg"
+        ]
+      }
+    },
+    {
+      "note_id": "usmle-8635",
+      "split": "test",
+      "quantity": "bmi",
+      "stated_value": 32.0,
+      "recomputed_value": 32.882,
+      "components": {
+        "height_m": 1.55,
+        "weight_kg": 79.0
+      },
+      "components_as_recorded": {
+        "height": [
+          155.0,
+          "cm"
+        ],
+        "weight": [
+          79.0,
+          "kg"
+        ]
+      }
+    },
+    {
+      "note_id": "pmc-3659367-1",
+      "split": "test",
+      "quantity": "bmi",
+      "stated_value": 17.22,
+      "recomputed_value": 17.225,
+      "components": {
+        "height_m": 1.58,
+        "weight_kg": 43.0
+      },
+      "components_as_recorded": {
+        "height": [
+          158.0,
+          "cm"
+        ],
+        "weight": [
+          43.0,
+          "kg"
+        ]
+      }
+    },
+    {
+      "note_id": "pmc-4208265-1",
+      "split": "test",
+      "quantity": "bmi",
+      "stated_value": 21.2,
+      "recomputed_value": 21.259,
+      "components": {
+        "height_m": 1.68,
+        "weight_kg": 60.0
+      },
+      "components_as_recorded": {
+        "height": [
+          168.0,
+          "cm"
+        ],
+        "weight": [
+          60.0,
+          "kg"
+        ]
+      }
+    },
+    {
+      "note_id": "pmc-8051037-1",
+      "split": "test",
+      "quantity": "bmi",
+      "stated_value": 31.0,
+      "recomputed_value": 31.603,
+      "components": {
+        "height_m": 1.64,
+        "weight_kg": 85.0
+      },
+      "components_as_recorded": {
+        "height": [
+          164.0,
+          "cm"
+        ],
+        "weight": [
+          85.0,
+          "kg"
+        ]
+      }
+    },
+    {
+      "note_id": "pmc-4684581-1",
+      "split": "test",
+      "quantity": "bmi",
+      "stated_value": 31.9,
+      "recomputed_value": 31.969,
+      "components": {
+        "height_m": 1.57,
+        "weight_kg": 78.8
+      },
+      "components_as_recorded": {
+        "height": [
+          157.0,
+          "cm"
+        ],
+        "weight": [
+          78.8,
+          "kg"
+        ]
+      }
+    },
+    {
+      "note_id": "pmc-8641749-1",
+      "split": "test",
+      "quantity": "bmi",
+      "stated_value": 19.8,
+      "recomputed_value": 19.818,
+      "components": {
+        "height_m": 1.54,
+        "weight_kg": 47.0
+      },
+      "components_as_recorded": {
+        "height": [
+          154.0,
+          "cm"
+        ],
+        "weight": [
+          47.0,
+          "kg"
+        ]
+      }
+    },
+    {
+      "note_id": "usmle-1483",
+      "split": "test",
+      "quantity": "bmi",
+      "stated_value": 33.5,
+      "recomputed_value": 33.498,
+      "components": {
+        "height_m": 1.63,
+        "weight_kg": 89.0
+      },
+      "components_as_recorded": {
+        "height": [
+          163.0,
+          "cm"
+        ],
+        "weight": [
+          89.0,
+          "kg"
+        ]
+      }
+    },
+    {
+      "note_id": "pmc-7476800-1",
+      "split": "test",
+      "quantity": "bmi",
+      "stated_value": 20.4,
+      "recomputed_value": 20.448,
+      "components": {
+        "height_m": 1.613,
+        "weight_kg": 53.2
+      },
+      "components_as_recorded": {
+        "height": [
+          161.3,
+          "cm"
+        ],
+        "weight": [
+          53.2,
+          "kg"
+        ]
+      }
+    },
+    {
+      "note_id": "pmc-5544981-1",
+      "split": "train",
+      "quantity": "bmi",
+      "stated_value": 25.2,
+      "recomputed_value": 25.153,
+      "components": {
+        "height_m": 1.57,
+        "weight_kg": 62.0
+      },
+      "components_as_recorded": {
+        "height": [
+          157.0,
+          "cm"
+        ],
+        "weight": [
+          62.0,
+          "kg"
+        ]
+      }
+    },
+    {
+      "note_id": "usmle-101",
+      "split": "train",
+      "quantity": "bmi",
+      "stated_value": 27.8,
+      "recomputed_value": 27.778,
+      "components": {
+        "height_m": 1.8,
+        "weight_kg": 90.0
+      },
+      "components_as_recorded": {
+        "height": [
+          180.0,
+          "cm"
+        ],
+        "weight": [
+          90.0,
+          "kg"
+        ]
+      }
+    },
+    {
+      "note_id": "pmc-4255050-1",
+      "split": "train",
+      "quantity": "bmi",
+      "stated_value": 18.0,
+      "recomputed_value": 18.003,
+      "components": {
+        "height_m": 1.693,
+        "weight_kg": 51.6
+      },
+      "components_as_recorded": {
+        "height": [
+          169.3,
+          "cm"
+        ],
+        "weight": [
+          51.6,
+          "kg"
+        ]
+      }
+    },
+    {
+      "note_id": "pmc-5411536-1",
+      "split": "train",
+      "quantity": "bmi",
+      "stated_value": 20.7,
+      "recomputed_value": 20.701,
+      "components": {
+        "height_m": 1.63,
+        "weight_kg": 55.0
+      },
+      "components_as_recorded": {
+        "height": [
+          163.0,
+          "cm"
+        ],
+        "weight": [
+          55.0,
+          "kg"
+        ]
+      }
+    },
+    {
+      "note_id": "usmle-10",
+      "split": "train",
+      "quantity": "bmi",
+      "stated_value": 31.0,
+      "recomputed_value": 30.859,
+      "components": {
+        "height_m": 1.6,
+        "weight_kg": 79.0
+      },
+      "components_as_recorded": {
+        "height": [
+          160.0,
+          "cm"
+        ],
+        "weight": [
+          79.0,
+          "kg"
+        ]
+      }
+    },
+    {
+      "note_id": "pmc-6755925-1",
+      "split": "train",
+      "quantity": "bmi",
+      "stated_value": 19.88,
+      "recomputed_value": 19.879,
+      "components": {
+        "height_m": 1.57,
+        "weight_kg": 49.0
+      },
+      "components_as_recorded": {
+        "height": [
+          157.0,
+          "cm"
+        ],
+        "weight": [
+          49.0,
+          "kg"
+        ]
+      }
+    },
+    {
+      "note_id": "pmc-6202047-1",
+      "split": "train",
+      "quantity": "bmi",
+      "stated_value": 23.0,
+      "recomputed_value": 23.03,
+      "components": {
+        "height_m": 1.68,
+        "weight_kg": 65.0
+      },
+      "components_as_recorded": {
+        "height": [
+          168.0,
+          "cm"
+        ],
+        "weight": [
+          65.0,
+          "kg"
+        ]
+      }
+    },
+    {
+      "note_id": "pmc-3306738-1",
+      "split": "train",
+      "quantity": "bmi",
+      "stated_value": 15.0,
+      "recomputed_value": 14.984,
+      "components": {
+        "height_m": 1.55,
+        "weight_kg": 36.0
+      },
+      "components_as_recorded": {
+        "height": [
+          155.0,
+          "cm"
+        ],
+        "weight": [
+          36.0,
+          "kg"
+        ]
+      }
+    },
+    {
+      "note_id": "pmc-5385225-1",
+      "split": "train",
+      "quantity": "bmi",
+      "stated_value": 19.6,
+      "recomputed_value": 19.626,
+      "components": {
+        "height_m": 1.612,
+        "weight_kg": 51.0
+      },
+      "components_as_recorded": {
+        "height": [
+          161.2,
+          "cm"
+        ],
+        "weight": [
+          51.0,
+          "kg"
+        ]
+      }
+    },
+    {
+      "note_id": "pmc-7249747-1",
+      "split": "train",
+      "quantity": "bmi",
+      "stated_value": 19.7,
+      "recomputed_value": 19.708,
+      "components": {
+        "height_m": 1.83,
+        "weight_kg": 66.0
+      },
+      "components_as_recorded": {
+        "height": [
+          183.0,
+          "cm"
+        ],
+        "weight": [
+          66.0,
+          "kg"
+        ]
+      }
+    },
+    {
+      "note_id": "pmc-6878684-1",
+      "split": "train",
+      "quantity": "bmi",
+      "stated_value": 24.2,
+      "recomputed_value": 24.242,
+      "components": {
+        "height_m": 1.66,
+        "weight_kg": 66.8
+      },
+      "components_as_recorded": {
+        "height": [
+          166.0,
+          "cm"
+        ],
+        "weight": [
+          66.8,
+          "kg"
+        ]
+      }
+    },
+    {
+      "note_id": "pmc-3746150-1",
+      "split": "train",
+      "quantity": "bmi",
+      "stated_value": 20.3,
+      "recomputed_value": 20.285,
+      "components": {
+        "height_m": 1.57,
+        "weight_kg": 50.0
+      },
+      "components_as_recorded": {
+        "height": [
+          157.0,
+          "cm"
+        ],
+        "weight": [
+          50.0,
+          "kg"
+        ]
+      }
+    },
+    {
+      "note_id": "pmc-3772920-1",
+      "split": "train",
+      "quantity": "bmi",
+      "stated_value": 34.3,
+      "recomputed_value": 34.256,
+      "components": {
+        "height_m": 1.7,
+        "weight_kg": 99.0
+      },
+      "components_as_recorded": {
+        "height": [
+          170.0,
+          "cm"
+        ],
+        "weight": [
+          99.0,
+          "kg"
+        ]
+      }
+    },
+    {
+      "note_id": "usmle-3434",
+      "split": "train",
+      "quantity": "bmi",
+      "stated_value": 31.0,
+      "recomputed_value": 30.615,
+      "components": {
+        "height_m": 1.78,
+        "weight_kg": 97.0
+      },
+      "components_as_recorded": {
+        "height": [
+          178.0,
+          "cm"
+        ],
+        "weight": [
+          97.0,
+          "kg"
+        ]
+      }
+    },
+    {
+      "note_id": "pmc-6751414-1",
+      "split": "train",
+      "quantity": "bmi",
+      "stated_value": 20.0,
+      "recomputed_value": 20.55,
+      "components": {
+        "height_m": 1.68,
+        "weight_kg": 58.0
+      },
+      "components_as_recorded": {
+        "height": [
+          168.0,
+          "cm"
+        ],
+        "weight": [
+          58.0,
+          "kg"
+        ]
+      }
+    },
+    {
+      "note_id": "usmle-819",
+      "split": "train",
+      "quantity": "bmi",
+      "stated_value": 35.0,
+      "recomputed_value": 33.857,
+      "components": {
+        "height_m": 1.71,
+        "weight_kg": 99.0
+      },
+      "components_as_recorded": {
+        "height": [
+          171.0,
+          "cm"
+        ],
+        "weight": [
+          99.0,
+          "kg"
+        ]
+      }
+    },
+    {
+      "note_id": "pmc-6787412-1",
+      "split": "train",
+      "quantity": "bmi",
+      "stated_value": 17.4,
+      "recomputed_value": 17.441,
+      "components": {
+        "height_m": 1.71,
+        "weight_kg": 51.0
+      },
+      "components_as_recorded": {
+        "height": [
+          171.0,
+          "cm"
+        ],
+        "weight": [
+          51.0,
+          "kg"
+        ]
+      }
+    },
+    {
+      "note_id": "pmc-5297160-1",
+      "split": "train",
+      "quantity": "bmi",
+      "stated_value": 19.9,
+      "recomputed_value": 19.841,
+      "components": {
+        "height_m": 1.68,
+        "weight_kg": 56.0
+      },
+      "components_as_recorded": {
+        "height": [
+          168.0,
+          "cm"
+        ],
+        "weight": [
+          56.0,
+          "kg"
+        ]
+      }
+    }
+  ]
+}
