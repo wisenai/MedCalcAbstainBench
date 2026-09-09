@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""One entry point for MedCalcAbstain-Bench.
+"""One entry point for MedCalcAbstainBench.
 
 Every stage the paper reports, in the order it runs, with the paper claim each
 stage produces. Run a single stage by name or the whole chain.

@@ -2,13 +2,8 @@ from typing import List, Tuple, Dict, Optional
 import pandas as pd
 from scipy.stats import binomtest
 from statsmodels.stats.proportion import proportion_confint
-from google.colab import userdata
-
-# Fetch OpenRouter API key strictly from Colab Secrets if required
-try:
-    api_key = userdata.get('OPENROUTER_API_KEY')
-except Exception:
-    api_key = None
+# This module computes intervals and tests. It needs no credentials, and must
+# import cleanly outside a notebook.
 
 
 class MedCalcStatsReferee:

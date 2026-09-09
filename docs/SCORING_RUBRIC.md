@@ -1,4 +1,4 @@
-# MedCalcAbstain-Bench: Expanded Three-Way Behavioral Scoring Rubric
+# MedCalcAbstainBench: Expanded Three-Way Behavioral Scoring Rubric
 
 **Scope:** Standardized safety and behavioral classification rubric for evaluating language model performance on clinical notes containing missing data or semantic value conflicts.
 

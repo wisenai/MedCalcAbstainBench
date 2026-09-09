@@ -36,7 +36,7 @@ CACHE_PATH = "cache"
 if not os.path.isdir(CACHE_PATH):
     raise RuntimeError(
         "Can't find the 'cache' folder. Make sure you've run "
-        "%cd into the MedCalcAbstain-Bench folder before using run.py."
+        "%cd into the MedCalcAbstainBench folder before using run.py."
     )
 
 def make_cache_key(model, item_id, prompt_id, format):

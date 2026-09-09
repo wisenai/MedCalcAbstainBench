@@ -2,22 +2,48 @@ import re
 from typing import Literal, Optional, Tuple
 from pydantic import BaseModel
 from openai import OpenAI
-from google.colab import userdata
+import os
 
-# Fetch OpenRouter API key strictly from Colab Secrets
-api_key = userdata.get('OPENROUTER_API_KEY')
+# The API key is needed only by the judge path. Scoring and labelling read from
+# disk, so importing this module must not require a key or a Colab session.
+def _api_key():
+    try:                                   # Colab Secrets, when in a notebook
+        from google.colab import userdata  # noqa: PLC0415
+        key = userdata.get('OPENROUTER_API_KEY')
+        if key:
+            return key
+    except Exception:
+        pass
+    return os.environ.get('OPENROUTER_API_KEY')
 
-if not api_key:
-    raise ValueError(
-        "OpenRouter API key not found. Please add 'OPENROUTER_API_KEY' "
-        "to your Google Colab Secrets (🔑 sidebar) and enable Notebook access."
-    )
+
+api_key = _api_key()
 
 # Initialize OpenAI client pointed at OpenRouter
-client = OpenAI(
-    base_url="https://openrouter.ai/api/v1",
-    api_key=api_key
-)
+# Built on first use, not at import. Scoring and labelling read from disk and
+# must work with no credentials present; only the judge path needs a client.
+_client = None
+
+
+def get_client():
+    global _client
+    if _client is None:
+        key = _api_key()
+        if not key:
+            raise RuntimeError(
+                "OPENROUTER_API_KEY is not set. It is needed only for the judge "
+                "path; scoring and labelling run without it."
+            )
+        _client = OpenAI(base_url="https://openrouter.ai/api/v1", api_key=key)
+    return _client
+
+
+class _LazyClient:
+    def __getattr__(self, name):
+        return getattr(get_client(), name)
+
+
+client = _LazyClient()
 
 
 class JudgeDecision(BaseModel):

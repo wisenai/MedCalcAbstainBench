@@ -67,11 +67,12 @@ def score_rows(rows):
             row["extracted_value"] = extracted
             row["value_correct"] = correct
         elif pid == "program_aided":
-            label, extracted, correct = classify_program_aided(
-                row["completion_text"], row["correct_answer"])
-            row["assigned_label"] = label
-            row["extracted_value"] = extracted
-            row["value_correct"] = correct
+            # classify_program_aided returns the label only, by design: this
+            # format gives no output-format instruction, so the extracted value
+            # is not recoverable reliably. See its module docstring.
+            row["assigned_label"] = classify_program_aided(row["completion_text"])
+            row["extracted_value"] = None
+            row["value_correct"] = None
             row["low_confidence"] = True
         # neutral_exit rows pass through unscored here -- Task 2 owns them.
     return rows
