@@ -33,11 +33,16 @@ import the calculator module it needs.
 The other reported tables:
 
 ```bash
-python3 reproduce.py validity       # clean accuracy, 76.2-88.1%
-python3 reproduce.py silent         # silent commit: 1.5, 23.5, 95.4, 67.6%
-python3 reproduce.py program-aided  # the low-confidence arm
-python3 reproduce.py --list         # every stage, and the table it produces
+python3 reproduce.py validity   # clean accuracy, 76.2-88.1%
+python3 reproduce.py silent     # silent commit: 1.5, 23.5, 95.4, 67.6%
+python3 reproduce.py --list     # every stage
 ```
+
+One stage produces no reported table. `reproduce.py program-aided` scores the
+program-aided prompt, which the paper excludes from its tables because its flag
+rates omit unparseable responses, 214 of 600 in Family B alone. It is here
+because the prompt is a quarter of the 13,520-response grid and the exclusion is
+worth being able to check.
 
 ## What is where
 
